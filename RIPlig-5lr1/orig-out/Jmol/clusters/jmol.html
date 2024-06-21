@@ -1,0 +1,48 @@
+<html>
+<meta charset="utf-8"/>
+<script type="text/javascript" src="../Jmol/JSmol.min.js"></script>
+<script type="text/javascript" src="../Jmol//js/Jmol2.js"></script>
+<script type="text/javascript" src="../../html/bootstrap/js/bootstrap.min.js"></script>
+<style type="text/css"> .jmolBox { background-image:url(../../html/JSmol_spinner.gif); background-repeat:no-repeat; background-position:center; } </style>
+<link href="../../html/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<div class="container scrollable">
+<div class="row">
+<div class="col-md-12 center-block" style="width:100%; height:65%;">
+<form>
+<script type="text/javascript">
+var Info = {width:"100%",
+            height:"100%",
+            debug:false,
+            serverURL:"php/jsmol.php",
+            j2sPath: "../Jmol/j2s",
+            use:"HTML5",
+            script: " load ./ref.pdb ;   select all; cartoon  ONLY; spacefill OFF; wireframe OFF;  hide _H;    ; select 1.1; color cartoon lightcoral ; cartoon 75; select 1.1 and (51:A  or 54:A  or 55:A  or 93:A  or 96:A  or 97:A  or 138:A  or 186:A ); wireframe 0.2 ; spacefill 0.4;  set bonds on;  color cartoon firebrick;  color bonds firebrick; select 1.1 and carbon; color firebrick;      load APPEND ./1_trj_equil_supLEU3-bb_24.pdb ;select 2.1; cartoon 75; color cartoon lightblue;  spacefill OFF; wireframe OFF;  hide _H; refresh;   select 2.1 and (36:A  or 39:A  or 40:A  or 78:A  or 81:A  or 82:A  or 123:A  or 171:A ); wireframe 0.2 ; spacefill 0.4;  set bonds on; color cartoon [0,255,199]; color bonds [0,255,199]; select 2.1 and  carbon; color atoms [0,255,199];  load APPEND ./2_trj_equil_supLEU3-bb_63.pdb ;select 3.1; cartoon 75; color cartoon lightblue;  spacefill OFF; wireframe OFF;  hide _H; refresh;   select 3.1 and (36:A  or 39:A  or 40:A  or 78:A  or 81:A  or 82:A  or 123:A  or 171:A ); wireframe 0.2 ; spacefill 0.4;  set bonds on; color cartoon [72,255,199]; color bonds [72,255,199]; select 3.1 and  carbon; color atoms [72,255,199];; set backgroundModel 1.1 ; refresh; ",
+            disableInitialConsole: true,
+            disableJ2SLoadMonitor: true,
+            allowJavaScript: true
+}
+Jmol.setAppletCss("jmolBox");
+Jmol.getApplet("jmolApplet0",Info);
+Jmol.jmolBr()
+Jmol.jmolHtml("<FONT size=3.5> Use <b>Right Click</b> to select models to visualize</FONT>");
+Jmol.jmolBr()
+Jmol.jmolBr()
+Jmol.jmolCheckbox("jmolApplet0","select 1.1; cartoon off ; select 1.1 and (51:A  or 54:A  or 55:A  or 93:A  or 96:A  or 97:A  or 138:A  or 186:A ) ; cartoon on; refresh; ","  ; select 1.1;   cartoon on;  refresh; ","For the reference structure: Show  only the binding site")
+Jmol.jmolBr()
+Jmol.jmolBr()
+jmolHtml("<FONT size=3> Select the model currently visualized to show its binding site only:</FONT>")
+Jmol.jmolBr()
+Jmol.jmolCheckbox("jmolApplet0","select 2.1 ; cartoon off ; select 2.1 and (36:A  or 39:A  or 40:A  or 78:A  or 81:A  or 82:A  or 123:A  or 171:A ) ; cartoon on; refresh; "," ; select 2.1;  cartoon on;  refresh; ","2")
+Jmol.jmolCheckbox("jmolApplet0","select 3.1 ; cartoon off ; select 3.1 and (36:A  or 39:A  or 40:A  or 78:A  or 81:A  or 82:A  or 123:A  or 171:A ) ; cartoon on; refresh; "," ; select 3.1;  cartoon on;  refresh; ","3")
+Jmol.jmolBr()
+Jmol.jmolHtml("<FONT size=3.5> Model 1.1 (red cartoon) is the reference structure ; binding site residues are shown by ball/sticks<br></FONT>");
+Jmol.jmolHtml("<FONT size=3.5> Binding site visualization only works, if the uploaded structures/trajectories have the same chain order and IDs</FONT>");
+Jmol.jmolHtml("<FONT size=3.5> as the reference structure.</FONT>");
+Jmol.jmolHtml("<FONT size=3.5> Models starting from 2.1 are cluster representative structures </FONT><br>");
+Jmol.jmolHtml("<FONT size=3.5> </FONT>");
+</script>
+</form>
+</div>
+</div>
+</div>
+</html>

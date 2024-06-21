@@ -1,0 +1,3427 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.12.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.9.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20240516-084049-0912-35904059-p1m.sequence  -task blastp -num_threads 32 -outfmt 11 -out ncbiblast-R20240516-084049-0912-35904059-p1m.archive -matrix BLOSUM62 -max_target_seqs 200 -evalue 1e-4 -seg no -word_size 6 -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="PDB|A" type="PROTEIN" length="97"/>
+   </sequences>
+   <databases total="1" sequences="248846868" letters="87599111242">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2024-03-14T03:29:00+00:00"/>
+   </databases>
+   <alignments>200</alignments>
+   <expectationUpper>0.0001</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+   <scores>200</scores>
+  </parameters>
+  <timeInfo start="2024-05-16T08:40:49+01:00" end="2024-05-16T08:49:09+01:00" search="P0Y0M0DT0H0M500.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="200">
+   <hit number="1" database="TR" id="A0A837HAF9_9ACTN" ac="A0A837HAF9" length="157" description="Voltage-gated potassium channel OS=Streptomyces sp. WM6391 OX=1415559 GN=TR66_03005 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>489</score>
+      <bits>192.971</bits>
+      <expectation>3.5e-61</expectation>
+      <identity>99.0</identity>
+      <positives>99.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGR VAVVVMVAGITSFGLVTAALATWFVGREQ</pattern>
+      <matchSeq start="20" end="116">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRLVAVVVMVAGITSFGLVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0A7U9DYN2_STRLI" ac="A0A7U9DYN2" length="157" description="Voltage-gated potassium channel OS=Streptomyces lividans 1326 OX=1200984 GN=SLI_7888 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>489</score>
+      <bits>192.971</bits>
+      <expectation>3.5e-61</expectation>
+      <identity>99.0</identity>
+      <positives>99.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGR VAVVVMVAGITSFGLVTAALATWFVGREQ</pattern>
+      <matchSeq start="20" end="116">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRLVAVVVMVAGITSFGLVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0AA41ARS5_9ACTN" ac="A0AA41ARS5" length="160" description="PH-gated potassium channel KcsA OS=Streptomyces sp. RK76 OX=2824896 GN=kcsA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>489</score>
+      <bits>192.971</bits>
+      <expectation>3.9e-61</expectation>
+      <identity>99.0</identity>
+      <positives>99.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGR VAVVVMVAGITSFGLVTAALATWFVGREQ</pattern>
+      <matchSeq start="23" end="119">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRLVAVVVMVAGITSFGLVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0A7K2UST1_9ACTN" ac="A0A7K2UST1" length="160" description="pH-gated potassium channel KcsA OS=Streptomyces sp. SID7813 OX=2690330 GN=kcsA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>489</score>
+      <bits>192.971</bits>
+      <expectation>3.9e-61</expectation>
+      <identity>99.0</identity>
+      <positives>99.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGR VAVVVMVAGITSFGLVTAALATWFVGREQ</pattern>
+      <matchSeq start="23" end="119">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRLVAVVVMVAGITSFGLVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0A4S2VKE3_9ACTN" ac="A0A4S2VKE3" length="160" description="pH-gated potassium channel KcsA OS=Streptomyces sp. LRa12 OX=2563107 GN=E6R61_32065 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>489</score>
+      <bits>192.971</bits>
+      <expectation>3.9e-61</expectation>
+      <identity>99.0</identity>
+      <positives>99.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGR VAVVVMVAGITSFGLVTAALATWFVGREQ</pattern>
+      <matchSeq start="23" end="119">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRLVAVVVMVAGITSFGLVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0A7U8YMI2_STRLI" ac="A0A7U8YMI2" length="160" description="Voltage-gated potassium channel OS=Streptomyces lividans TK24 OX=457428 GN=SSPG_00189 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>489</score>
+      <bits>192.971</bits>
+      <expectation>3.9e-61</expectation>
+      <identity>99.0</identity>
+      <positives>99.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGR VAVVVMVAGITSFGLVTAALATWFVGREQ</pattern>
+      <matchSeq start="23" end="119">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRLVAVVVMVAGITSFGLVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="KCSA_STRLI" ac="P0A334" length="160" description="pH-gated potassium channel KcsA OS=Streptomyces lividans OX=1916 GN=kcsA PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>489</score>
+      <bits>192.971</bits>
+      <expectation>3.9e-61</expectation>
+      <identity>99.0</identity>
+      <positives>99.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGR VAVVVMVAGITSFGLVTAALATWFVGREQ</pattern>
+      <matchSeq start="23" end="119">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRLVAVVVMVAGITSFGLVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="KCSA_STRCO" ac="P0A333" length="160" description="pH-gated potassium channel KcsA OS=Streptomyces coelicolor (strain ATCC BAA-471 / A3(2) / M145) OX=100226 GN=kcsA PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>489</score>
+      <bits>192.971</bits>
+      <expectation>3.9e-61</expectation>
+      <identity>99.0</identity>
+      <positives>99.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGR VAVVVMVAGITSFGLVTAALATWFVGREQ</pattern>
+      <matchSeq start="23" end="119">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRLVAVVVMVAGITSFGLVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0A346CBS0_9ACTN" ac="A0A346CBS0" length="160" description="Voltage-gated potassium channel OS=Streptomyces sp. CB09001 OX=2083284 GN=C4J65_34260 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>483</score>
+      <bits>190.66</bits>
+      <expectation>3.2e-60</expectation>
+      <identity>96.9</identity>
+      <positives>99.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>ALHWRAAGAATV+LVIVLLAGSY+AVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGR VAVVVMVAGITSFGLVTAALATWFVGREQ</pattern>
+      <matchSeq start="23" end="119">ALHWRAAGAATVVLVIVLLAGSYVAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRVVAVVVMVAGITSFGLVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0A6G3T7G7_9ACTN" ac="A0A6G3T7G7" length="160" description="pH-gated potassium channel KcsA OS=Streptomyces rubrogriseus OX=194673 GN=kcsA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>480</score>
+      <bits>189.504</bits>
+      <expectation>9.2e-60</expectation>
+      <identity>96.9</identity>
+      <positives>97.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>ALHWRAA AATV+LVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGR VAVVVMVAGITSFGLVTAALATWFVGREQ</pattern>
+      <matchSeq start="23" end="119">ALHWRAASAATVVLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRLVAVVVMVAGITSFGLVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0A7K2NYR6_9ACTN" ac="A0A7K2NYR6" length="160" description="pH-gated potassium channel KcsA OS=Streptomyces sp. SID5926 OX=2690314 GN=kcsA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>479</score>
+      <bits>189.119</bits>
+      <expectation>1.3e-59</expectation>
+      <identity>95.9</identity>
+      <positives>97.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>ALHWRAAGAATV+LVIVLL GSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGR VAVVVMVAGIT+FGLVTAALATWFVGREQ</pattern>
+      <matchSeq start="23" end="119">ALHWRAAGAATVVLVIVLLVGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRLVAVVVMVAGITAFGLVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0A7H8PEJ0_9ACTN" ac="A0A7H8PEJ0" length="159" description="Two pore domain potassium channel family protein OS=Streptomyces sp. NA03103 OX=2742134 GN=HUT15_34425 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>457</score>
+      <bits>180.644</bits>
+      <expectation>2.8e-56</expectation>
+      <identity>91.8</identity>
+      <positives>94.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>ALHWRAA AATV+L +VLLAGSY AVLAERGAPGAQL TYPRALWWSVETATTVGYGDLYPVTLWGR VAVVVMVAGIT+FGLVTAALATWFVGREQ</pattern>
+      <matchSeq start="23" end="119">ALHWRAAAAATVVLSVVLLAGSYGAVLAERGAPGAQLTTYPRALWWSVETATTVGYGDLYPVTLWGRLVAVVVMVAGITAFGLVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="A0A3S8XZX4_9ACTN" ac="A0A3S8XZX4" length="159" description="Two pore domain potassium channel family protein OS=Streptomyces sp. KPB2 OX=2305221 GN=D1J63_35165 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>457</score>
+      <bits>180.644</bits>
+      <expectation>2.8e-56</expectation>
+      <identity>91.8</identity>
+      <positives>94.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>ALHWRAA AATV+L +VLLAGSY AVLAERGAPGAQL TYPRALWWSVETATTVGYGDLYPVTLWGR VAVVVMVAGIT+FGLVTAALATWFVGREQ</pattern>
+      <matchSeq start="23" end="119">ALHWRAAAAATVVLSVVLLAGSYGAVLAERGAPGAQLTTYPRALWWSVETATTVGYGDLYPVTLWGRLVAVVVMVAGITAFGLVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="A0A6B2RQY0_9ACTN" ac="A0A6B2RQY0" length="159" description="Two pore domain potassium channel family protein OS=Streptomyces sp. SID10362 OX=2706021 GN=G3I36_36400 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>456</score>
+      <bits>180.259</bits>
+      <expectation>4e-56</expectation>
+      <identity>90.7</identity>
+      <positives>94.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>ALHWRA+ AATV+L +VLLAGSY AVLAERGAPGAQL TYPRALWWSVETATTVGYGDLYPVTLWGR VAVVVMVAGIT+FGLVTAALATWFVGREQ</pattern>
+      <matchSeq start="23" end="119">ALHWRASAAATVVLAVVLLAGSYGAVLAERGAPGAQLTTYPRALWWSVETATTVGYGDLYPVTLWGRLVAVVVMVAGITAFGLVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0A6N9UC15_9ACTN" ac="A0A6N9UC15" length="167" description="Two pore domain potassium channel family protein OS=Streptomyces coelicoflavus OX=285562 GN=G3I46_01310 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>451</score>
+      <bits>178.333</bits>
+      <expectation>3e-55</expectation>
+      <identity>89.7</identity>
+      <positives>94.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAGAATV+LVIV+L GSYLAVLAERG PGAQL+TYPRALWWSVETATTVGYGDLYPVT WGR VAVVVMVAGITSFGLVTAALATWFVGREQ</pattern>
+      <matchSeq start="23" end="119">SLHLKAAGAATVVLVIVVLVGSYLAVLAERGTPGAQLVTYPRALWWSVETATTVGYGDLYPVTFWGRIVAVVVMVAGITSFGLVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="A0A209B8R4_9ACTN" ac="A0A209B8R4" length="167" description="Voltage-gated potassium channel OS=Streptomyces sp. CS159 OX=1982762 GN=B9W64_35420 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>451</score>
+      <bits>178.333</bits>
+      <expectation>3e-55</expectation>
+      <identity>89.7</identity>
+      <positives>94.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAGAATV+LVIV+L GSYLAVLAERG PGAQL+TYPRALWWSVETATTVGYGDLYPVT WGR VAVVVMVAGITSFGLVTAALATWFVGREQ</pattern>
+      <matchSeq start="23" end="119">SLHLKAAGAATVVLVIVVLVGSYLAVLAERGTPGAQLVTYPRALWWSVETATTVGYGDLYPVTFWGRIVAVVVMVAGITSFGLVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="A0A8I2DUK9_9ACTN" ac="A0A8I2DUK9" length="164" description="Two pore domain potassium channel family protein OS=Streptomyces sp. RM72 OX=1115510 GN=KBZ94_11845 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>449</score>
+      <bits>177.563</bits>
+      <expectation>5.5e-55</expectation>
+      <identity>90.7</identity>
+      <positives>95.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +A+ AATVLLVIV+LAGSY+AVLAERGAPGAQL TYPRALWWSVETATTVGYGDLYPVTLWGR VAVVVMVAGITSFGLVTAALATWFVGREQ</pattern>
+      <matchSeq start="23" end="119">SLHLKASRAATVLLVIVILAGSYVAVLAERGAPGAQLTTYPRALWWSVETATTVGYGDLYPVTLWGRLVAVVVMVAGITSFGLVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="A0A2S6XG63_9ACTN" ac="A0A2S6XG63" length="161" description="pH-gated potassium channel KcsA OS=Streptomyces sp. MH60 OX=1940758 GN=kcsA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>448</score>
+      <bits>177.178</bits>
+      <expectation>7.1e-55</expectation>
+      <identity>90.7</identity>
+      <positives>95.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +A+ AATVLLVIV+LAGSY+AVLAERGAPGAQL TYPRALWWSVETATTVGYGDLYPVTLWGR VAVVVMVAGITSFGLVTAALATWFVGREQ</pattern>
+      <matchSeq start="20" end="116">SLHLKASCAATVLLVIVILAGSYVAVLAERGAPGAQLTTYPRALWWSVETATTVGYGDLYPVTLWGRLVAVVVMVAGITSFGLVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0A0N6ZUF2_9ACTN" ac="A0A0N6ZUF2" length="156" description="Voltage-gated potassium channel OS=Streptomyces sp. CCM_MD2014 OX=1561022 GN=NI25_36350 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>446</score>
+      <bits>176.407</bits>
+      <expectation>1.2e-54</expectation>
+      <identity>91.8</identity>
+      <positives>94.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>ALHWRAA AATV+LV+VLLAGSY AVLAERGAPGAQL TYPRALWWSVETATTVGYGDLYPVTL GR VAVVVMVAGIT+FGLVTAALATWFVGREQ</pattern>
+      <matchSeq start="20" end="116">ALHWRAACAATVVLVLVLLAGSYGAVLAERGAPGAQLTTYPRALWWSVETATTVGYGDLYPVTLGGRLVAVVVMVAGITAFGLVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A0A7K2MYW6_9ACTN" ac="A0A7K2MYW6" length="159" description="Voltage-gated potassium channel OS=Streptomyces sp. SID6013 OX=2690317 GN=GTW46_33750 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>446</score>
+      <bits>176.407</bits>
+      <expectation>1.3e-54</expectation>
+      <identity>91.8</identity>
+      <positives>94.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>ALHWRAA AATV+LV+VLLAGSY AVLAERGAPGAQL TYPRALWWSVETATTVGYGDLYPVTL GR VAVVVMVAGIT+FGLVTAALATWFVGREQ</pattern>
+      <matchSeq start="23" end="119">ALHWRAACAATVVLVLVLLAGSYGAVLAERGAPGAQLTTYPRALWWSVETATTVGYGDLYPVTLGGRLVAVVVMVAGITAFGLVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="A0A7K3PPG8_9ACTN" ac="A0A7K3PPG8" length="167" description="Two pore domain potassium channel family protein OS=Streptomyces coelicoflavus OX=285562 GN=G3I32_23295 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>446</score>
+      <bits>176.407</bits>
+      <expectation>1.7e-54</expectation>
+      <identity>88.7</identity>
+      <positives>93.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAGAATV LVIV+L GSYLAVLAERG PGAQL+TYPRALWWSVETATTVGYGDLYPVT WGR VAVVVMVAGITSFGLVTAALATWFVG+EQ</pattern>
+      <matchSeq start="23" end="119">SLHLKAAGAATVALVIVVLVGSYLAVLAERGTPGAQLVTYPRALWWSVETATTVGYGDLYPVTFWGRIVAVVVMVAGITSFGLVTAALATWFVGKEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="A0A5P9WWY1_9ACTN" ac="A0A5P9WWY1" length="167" description="Voltage-gated potassium channel OS=Streptomyces sp. SYP-A7193 OX=2662065 GN=GEV49_36770 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>445</score>
+      <bits>176.022</bits>
+      <expectation>2.4e-54</expectation>
+      <identity>87.6</identity>
+      <positives>94.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAGAATV+LVIV+L GSYLAVLAERG PGAQL+TYPRALWWSVETATTVGYGDLYPVT WGR VAVVVMVAGIT+FGLVTAALATWFVG+EQ</pattern>
+      <matchSeq start="23" end="119">SLHLKAAGAATVVLVIVVLVGSYLAVLAERGTPGAQLVTYPRALWWSVETATTVGYGDLYPVTFWGRIVAVVVMVAGITAFGLVTAALATWFVGKEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="A0A209B5A6_9ACTN" ac="A0A209B5A6" length="164" description="Voltage-gated potassium channel OS=Streptomyces sp. CS113 OX=1982761 GN=B9W62_38475 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>442</score>
+      <bits>174.866</bits>
+      <expectation>6.4e-54</expectation>
+      <identity>89.7</identity>
+      <positives>93.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH RA+ AATVLLVIV+L GSY AVLAERGAPGAQL TYPRALWWSVETATTVGYGDLYPVTLWGR VAVVVMVAGIT+FGLVTAALATWFVGREQ</pattern>
+      <matchSeq start="23" end="119">SLHLRASCAATVLLVIVILVGSYCAVLAERGAPGAQLTTYPRALWWSVETATTVGYGDLYPVTLWGRLVAVVVMVAGITAFGLVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="A0A6B3QP05_STRTE" ac="A0A6B3QP05" length="164" description="Two pore domain potassium channel family protein OS=Streptomyces tendae OX=1932 GN=GUR47_23940 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>437</score>
+      <bits>172.94</bits>
+      <expectation>3.7e-53</expectation>
+      <identity>88.7</identity>
+      <positives>92.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH RA+ AAT LLVIV+L GSY AVLAERGAPGAQL TYPRALWWSVETATTVGYGDLYPVTLWGR VAVVVMVAGIT+FGLVTAALATWFVGREQ</pattern>
+      <matchSeq start="23" end="119">SLHLRASCAATFLLVIVILVGSYCAVLAERGAPGAQLTTYPRALWWSVETATTVGYGDLYPVTLWGRLVAVVVMVAGITAFGLVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="A0A6G3DK45_9ACTN" ac="A0A6G3DK45" length="164" description="Voltage-gated potassium channel OS=Streptomyces sp. SID5914 OX=2690313 GN=GTY44_40090 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>437</score>
+      <bits>172.94</bits>
+      <expectation>3.7e-53</expectation>
+      <identity>88.7</identity>
+      <positives>92.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH RA+ AAT LLVIV+L GSY AVLAERGAPGAQL TYPRALWWSVETATTVGYGDLYPVTLWGR VAVVVMVAGIT+FGLVTAALATWFVGREQ</pattern>
+      <matchSeq start="23" end="119">SLHLRASCAATFLLVIVILVGSYCAVLAERGAPGAQLTTYPRALWWSVETATTVGYGDLYPVTLWGRLVAVVVMVAGITAFGLVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="A0A4V3EQJ3_9ACTN" ac="A0A4V3EQJ3" length="161" description="Voltage-gated potassium channel OS=Streptomyces sp. BK208 OX=2512150 GN=EV562_101117 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>433</score>
+      <bits>171.4</bits>
+      <expectation>1.4e-52</expectation>
+      <identity>87.6</identity>
+      <positives>91.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +A+ AA  LLVIV+L GSY AVLAERGAPGAQL TYPRALWWSVETATTVGYGDLYPVTLWGR VAVVVMVAGITSFGLVTAALATWFVGREQ</pattern>
+      <matchSeq start="20" end="116">SLHLKASCAAAALLVIVVLVGSYFAVLAERGAPGAQLTTYPRALWWSVETATTVGYGDLYPVTLWGRIVAVVVMVAGITSFGLVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="A0A6G3XHP5_9ACTN" ac="A0A6G3XHP5" length="164" description="Voltage-gated potassium channel OS=Streptomyces sp. SID7499 OX=2706086 GN=G3M58_64085 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>426</score>
+      <bits>168.703</bits>
+      <expectation>1.7e-51</expectation>
+      <identity>85.6</identity>
+      <positives>91.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AA AATV+L+IV+LAGSY AVLAE  AP AQL TYPRALWWSVETATTVGYGDLYPVTLWGR VAVVVMVAGITSFGLVTAA+ATWFVGREQ</pattern>
+      <matchSeq start="23" end="119">SLHMKAASAATVVLLIVILAGSYFAVLAEHDAPHAQLTTYPRALWWSVETATTVGYGDLYPVTLWGRLVAVVVMVAGITSFGLVTAAMATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="A0A429AAZ0_9ACTN" ac="A0A429AAZ0" length="158" description="Voltage-gated potassium channel OS=Streptomyces sp. WAC 01325 OX=2203202 GN=DMH25_30515 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>401</score>
+      <bits>159.073</bits>
+      <expectation>9.2e-48</expectation>
+      <identity>76.3</identity>
+      <positives>91.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH++AAGAAT++L++V+LAGS L V AERGAPGA+L +YP ALWWSVETATTVGYGD YPVTLWGR +AVVVMV GIT++G+VTAALATWFVGR+Q</pattern>
+      <matchSeq start="20" end="116">SLHFKAAGAATLVLLVVVLAGSGLVVAAERGAPGAKLTSYPLALWWSVETATTVGYGDFYPVTLWGRLIAVVVMVVGITAYGMVTAALATWFVGRDQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0A1H4MIG5_9ACTN" ac="A0A1H4MIG5" length="158" description="Voltage-gated potassium channel OS=Streptomyces sp. PAN_FS17 OX=1855351 GN=SAMN05216482_1074 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>400</score>
+      <bits>158.688</bits>
+      <expectation>1.3e-47</expectation>
+      <identity>76.3</identity>
+      <positives>90.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH++AAGAATV+L++V+L GS L V AERGAPGA+L +YP ALWWSVETATTVGYGD YPVTLWGR +AVVVMV GIT++G+VTAALATWFVGR+Q</pattern>
+      <matchSeq start="20" end="116">SLHFKAAGAATVVLLVVVLVGSGLVVAAERGAPGAKLTSYPLALWWSVETATTVGYGDFYPVTLWGRLIAVVVMVVGITAYGMVTAALATWFVGRDQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="A0A429HH79_9ACTN" ac="A0A429HH79" length="158" description="Two pore domain potassium channel family protein OS=Streptomyces sp. WAC 05379 OX=2203207 GN=DMH26_25530 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>394</score>
+      <bits>156.377</bits>
+      <expectation>1.1e-46</expectation>
+      <identity>75.3</identity>
+      <positives>89.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH++AAGAATV+L+ V+L GS L V AERGAPGA+L +YP ALWWSVETATTVGYGD YPVT+WGR +AVVVMV GIT++G+VTAALATWFVGR+Q</pattern>
+      <matchSeq start="20" end="116">SLHFKAAGAATVVLLFVVLVGSGLVVAAERGAPGAKLTSYPLALWWSVETATTVGYGDFYPVTVWGRLIAVVVMVVGITAYGMVTAALATWFVGRDQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="A0A8E3PRN1_STRCX" ac="A0A8E3PRN1" length="158" description="PH-gated potassium channel KcsA OS=Streptomyces chartreusis OX=1969 GN=kcsA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>394</score>
+      <bits>156.377</bits>
+      <expectation>1.1e-46</expectation>
+      <identity>75.3</identity>
+      <positives>89.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH++AAGAATV+L+ V+L GS L V AERGAPGA+L +YP ALWWSVETATTVGYGD YPVT+WGR +AVVVMV GIT++G+VTAALATWFVGR+Q</pattern>
+      <matchSeq start="20" end="116">SLHFKAAGAATVVLLFVVLVGSGLVVAAERGAPGAKLTSYPLALWWSVETATTVGYGDFYPVTVWGRLIAVVVMVVGITAYGMVTAALATWFVGRDQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="TR" id="A0A7H8TLS5_STRCX" ac="A0A7H8TLS5" length="161" description="Two pore domain potassium channel family protein OS=Streptomyces chartreusis OX=1969 GN=HUT05_47490 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>394</score>
+      <bits>156.377</bits>
+      <expectation>1.2e-46</expectation>
+      <identity>75.3</identity>
+      <positives>89.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH++AAGAATV+L+ V+L GS L V AERGAPGA+L +YP ALWWSVETATTVGYGD YPVT+WGR +AVVVMV GIT++G+VTAALATWFVGR+Q</pattern>
+      <matchSeq start="23" end="119">SLHFKAAGAATVVLLFVVLVGSGLVVAAERGAPGAKLTSYPLALWWSVETATTVGYGDFYPVTVWGRLIAVVVMVVGITAYGMVTAALATWFVGRDQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="TR" id="A0A177HXQ4_9ACTN" ac="A0A177HXQ4" length="167" description="pH-gated potassium channel KcsA OS=Streptomyces jeddahensis OX=1716141 GN=kcsA_1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>387</score>
+      <bits>153.68</bits>
+      <expectation>1.6e-45</expectation>
+      <identity>71.1</identity>
+      <positives>85.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG ATV+L + +L GS+  V AERGAPGA + TYP+ALWWSVETATTVGYGDLYPVT+WGR +A VVM  GIT++G+VTAA+ATWFVGREQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGGATVILAVTMLTGSWAVVAAERGAPGAGITTYPKALWWSVETATTVGYGDLYPVTVWGRIIATVVMAVGITTYGMVTAAIATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="TR" id="A0A1H4VPS3_9ACTN" ac="A0A1H4VPS3" length="155" description="Voltage-gated potassium channel OS=Streptomyces sp. 3213.3 OX=1855348 GN=SAMN05216489_01740 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>380</score>
+      <bits>150.984</bits>
+      <expectation>1.3e-44</expectation>
+      <identity>74.2</identity>
+      <positives>83.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAGAAT +L +V+L GS+  V AE GA GA L TYPRALWWS+ETATTVGYGD YPVTLWGR V  VVMV GIT++GLVTAALATWFVGREQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGAATAVLGVVMLLGSWAVVAAEHGARGANLTTYPRALWWSIETATTVGYGDFYPVTLWGRVVGSVVMVVGITTYGLVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="TR" id="A0A6G2MAS9_9ACTN" ac="A0A6G2MAS9" length="161" description="Voltage-gated potassium channel OS=Streptomyces sp. SID4923 OX=2690273 GN=GTW64_16100 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>379</score>
+      <bits>150.599</bits>
+      <expectation>2.2e-44</expectation>
+      <identity>74.2</identity>
+      <positives>85.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG ATVLL + +LAGS+L VLAER AP A + +YPRALWWSVETATTVGYGDL+PVTLWGR VA VVM  GIT++G+VTAALATWFVG EQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGWATVLLAVTMLAGSWLVVLAERHAPDATITSYPRALWWSVETATTVGYGDLFPVTLWGRVVAAVVMGVGITTYGMVTAALATWFVGHEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="TR" id="A0A6G2V752_9ACTN" ac="A0A6G2V752" length="161" description="Voltage-gated potassium channel OS=Streptomyces sp. SID2563 OX=2690255 GN=GT034_21810 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>379</score>
+      <bits>150.599</bits>
+      <expectation>2.2e-44</expectation>
+      <identity>74.2</identity>
+      <positives>85.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG ATVLL + +LAGS+L VLAER AP A + +YPRALWWSVETATTVGYGDL+PVTLWGR VA VVM  GIT++G+VTAALATWFVG EQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGWATVLLAVTMLAGSWLVVLAERHAPDATITSYPRALWWSVETATTVGYGDLFPVTLWGRVVAAVVMGVGITTYGMVTAALATWFVGHEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="TR" id="A0A1Q5DGL3_9ACTN" ac="A0A1Q5DGL3" length="161" description="Voltage-gated potassium channel OS=Streptomyces sp. CB01249 OX=1703929 GN=AMK18_29390 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>379</score>
+      <bits>150.599</bits>
+      <expectation>2.2e-44</expectation>
+      <identity>74.2</identity>
+      <positives>85.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG ATVLL + +LAGS+L VLAER AP A + +YPRALWWSVETATTVGYGDL+PVTLWGR VA VVM  GIT++G+VTAALATWFVG EQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGWATVLLAVTMLAGSWLVVLAERHAPDATITSYPRALWWSVETATTVGYGDLFPVTLWGRVVAAVVMGVGITTYGMVTAALATWFVGHEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="TR" id="A0A974AZK8_9ACTN" ac="A0A974AZK8" length="151" description="Two pore domain potassium channel family protein OS=Streptomyces sp. PKU-EA00015 OX=2748326 GN=HW130_13950 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>377</score>
+      <bits>149.828</bits>
+      <expectation>3.3e-44</expectation>
+      <identity>71.1</identity>
+      <positives>84.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG ATV+LV+V+L GS+  V AE GAPGA L +YPRALWWS+ETATTVGYGD YP+T WGR V  VVMV GIT++G+VTAALATWFVGRE+</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGGATVVLVLVMLGGSWAVVAAEDGAPGANLTSYPRALWWSIETATTVGYGDFYPITPWGRVVGSVVMVVGITTYGMVTAALATWFVGREE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="TR" id="A0A5P8KE15_9ACTN" ac="A0A5P8KE15" length="156" description="Two pore domain potassium channel family protein OS=Streptomyces phaeolivaceus OX=2653200 GN=F9278_41025 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>377</score>
+      <bits>149.828</bits>
+      <expectation>3.9e-44</expectation>
+      <identity>71.9</identity>
+      <positives>85.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AAGAAT +LV+V+L GS+  ++AE GAP A L +YP+ALWWSVETATTVGYGD +PVTLWGR V  VVMV GIT++G+VTAALATWFVGREQ</pattern>
+      <matchSeq start="23" end="118">LHLQAAGAATAVLVVVMLLGSWAVIVAEHGAPRANLTSYPKALWWSVETATTVGYGDFFPVTLWGRVVGAVVMVVGITTYGMVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="TR" id="A0A327URW5_9ACTN" ac="A0A327URW5" length="161" description="Voltage-gated potassium channel OS=Streptomyces sp. KhCrAH-43 OX=1305827 GN=K388_02991 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>377</score>
+      <bits>149.828</bits>
+      <expectation>4.5e-44</expectation>
+      <identity>73.2</identity>
+      <positives>84.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG ATVLL + +L GS+L VLAER AP A + +YPRALWWSVETATTVGYGDL+PVTLWGR VA VVM  GIT++G+VTAALATWFVG EQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGWATVLLAVTMLLGSWLVVLAERHAPDATITSYPRALWWSVETATTVGYGDLFPVTLWGRVVAAVVMAVGITTYGMVTAALATWFVGHEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="TR" id="A0A6G2Z0K7_9ACTN" ac="A0A6G2Z0K7" length="161" description="Voltage-gated potassium channel OS=Streptomyces sp. SID8373 OX=2690353 GN=GTW90_29530 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>377</score>
+      <bits>149.828</bits>
+      <expectation>4.5e-44</expectation>
+      <identity>73.2</identity>
+      <positives>84.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG ATVLL + +L GS+L VLAER AP A + +YPRALWWSVETATTVGYGDL+PVTLWGR VA VVM  GIT++G+VTAALATWFVG EQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGWATVLLAVTMLLGSWLVVLAERHAPDATITSYPRALWWSVETATTVGYGDLFPVTLWGRVVAAVVMAVGITTYGMVTAALATWFVGHEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="TR" id="A0A7K2LI33_9ACTN" ac="A0A7K2LI33" length="161" description="Voltage-gated potassium channel OS=Streptomyces sp. SID4920 OX=2690271 GN=GT025_22940 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>377</score>
+      <bits>149.828</bits>
+      <expectation>4.5e-44</expectation>
+      <identity>73.2</identity>
+      <positives>84.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG ATVLL + +L GS+L VLAER AP A + +YPRALWWSVETATTVGYGDL+PVTLWGR VA VVM  GIT++G+VTAALATWFVG EQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGWATVLLAVTMLLGSWLVVLAERHAPDATITSYPRALWWSVETATTVGYGDLFPVTLWGRVVAAVVMAVGITTYGMVTAALATWFVGHEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="TR" id="A0A6B2ZRM6_9ACTN" ac="A0A6B2ZRM6" length="161" description="Potassium channel family protein OS=Streptomyces sp. SID7909 OX=2706092 GN=G3I26_08035 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>376</score>
+      <bits>149.443</bits>
+      <expectation>6.4e-44</expectation>
+      <identity>73.2</identity>
+      <positives>85.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG ATVLL + +LAGS+L +LAER AP A + +YPRALWWSVETATTVGYGDL+PVTLWGR VA VVM  GIT++G+VTAALATWFVG EQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGWATVLLAVTMLAGSWLVLLAERHAPDATITSYPRALWWSVETATTVGYGDLFPVTLWGRVVAAVVMGVGITTYGMVTAALATWFVGHEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="TR" id="A0A7W0I8Y1_9ACTN" ac="A0A7W0I8Y1" length="169" description="Two pore domain potassium channel family protein OS=Streptomyces himalayensis subsp. himalayensis OX=2756131 GN=H1D24_13610 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>376</score>
+      <bits>149.443</bits>
+      <expectation>8.1e-44</expectation>
+      <identity>72.2</identity>
+      <positives>84.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG ATV+L + +L GS+  V AERGAPGA + TYP+ALWWSVETATTVGYGDLYPVTL GR VA VVM  GIT++G+VTAA+ATWFVGREQ</pattern>
+      <matchSeq start="23" end="119">SLHLKAAGGATVVLAVTMLMGSWAVVAAERGAPGAGITTYPKALWWSVETATTVGYGDLYPVTLGGRIVATVVMAVGITTYGMVTAAIATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="TR" id="A0A7W2HJL6_9ACTN" ac="A0A7W2HJL6" length="169" description="Two pore domain potassium channel family protein OS=Streptomyces himalayensis subsp. aureolus OX=2758039 GN=H1V43_34010 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>376</score>
+      <bits>149.443</bits>
+      <expectation>8.1e-44</expectation>
+      <identity>72.2</identity>
+      <positives>84.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG ATV+L + +L GS+  V AERGAPGA + TYP+ALWWSVETATTVGYGDLYPVTL GR VA VVM  GIT++G+VTAA+ATWFVGREQ</pattern>
+      <matchSeq start="23" end="119">SLHLKAAGGATVVLAVTMLMGSWAVVAAERGAPGAGITTYPKALWWSVETATTVGYGDLYPVTLGGRIVATVVMAVGITTYGMVTAAIATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="TR" id="A0A1Q5JKW5_9ACTN" ac="A0A1Q5JKW5" length="161" description="Voltage-gated potassium channel OS=Streptomyces sp. CB02460 OX=1703941 GN=AMK30_27620 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>375</score>
+      <bits>149.058</bits>
+      <expectation>9e-44</expectation>
+      <identity>73.2</identity>
+      <positives>84.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG ATVLL + +LAGS+L VLAER AP A + +YPR LWWSVETATTVGYGDL+PVTLWGR VA VVM  GIT++G+VTAALATWFVG EQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGWATVLLAVTMLAGSWLVVLAERHAPDATITSYPRGLWWSVETATTVGYGDLFPVTLWGRVVAAVVMGVGITTYGMVTAALATWFVGHEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="TR" id="A0A7W9Q277_9ACTN" ac="A0A7W9Q277" length="150" description="Voltage-gated potassium channel OS=Streptomyces echinatus OX=67293 GN=FHS34_007510 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>374</score>
+      <bits>148.673</bits>
+      <expectation>9.2e-44</expectation>
+      <identity>70.1</identity>
+      <positives>83.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH RAAG AT++LV+V+L GS+  V  E GA  A L +YPRALWWS+ETATTVGYGD YPVT+WGR VA +VMV GIT++G+VTAALATWFVGREQ</pattern>
+      <matchSeq start="20" end="116">SLHLRAAGGATIVLVVVMLCGSWAVVAVEEGAHRANLTSYPRALWWSIETATTVGYGDFYPVTVWGRVVAAIVMVVGITTYGMVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="TR" id="A0A1H5HCD9_9ACTN" ac="A0A1H5HCD9" length="161" description="Voltage-gated potassium channel OS=Streptomyces sp. 2131.1 OX=1855346 GN=SAMN05216483_5739 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>374</score>
+      <bits>148.673</bits>
+      <expectation>1.3e-43</expectation>
+      <identity>73.2</identity>
+      <positives>84.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG ATVLL + +L GS+L VLAER AP A + +YPRALWWSVETATTVGYGDL+PVTLWGR VA VVM  GIT++G+VTAALATWFVG EQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGWATVLLAVTMLLGSWLVVLAERHAPDATITSYPRALWWSVETATTVGYGDLFPVTLWGRVVAAVVMGVGITTYGMVTAALATWFVGHEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="TR" id="A0A6G3UWQ2_9ACTN" ac="A0A6G3UWQ2" length="161" description="Potassium channel family protein OS=Streptomyces sp. SID9124 OX=2706108 GN=G3I33_32080 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>374</score>
+      <bits>148.673</bits>
+      <expectation>1.3e-43</expectation>
+      <identity>73.2</identity>
+      <positives>84.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG ATVLL + +L GS+L VLAER AP A + +YPRALWWSVETATTVGYGDL+PVTLWGR VA VVM  GIT++G+VTAALATWFVG EQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGWATVLLAVTMLLGSWLVVLAERHAPDATITSYPRALWWSVETATTVGYGDLFPVTLWGRVVAAVVMGVGITTYGMVTAALATWFVGHEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="TR" id="A0A944HGP6_9ACTN" ac="A0A944HGP6" length="165" description="Two pore domain potassium channel family protein OS=Streptomyces sp. ISL-10 OX=2819172 GN=J7E88_11190 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>374</score>
+      <bits>148.673</bits>
+      <expectation>1.4e-43</expectation>
+      <identity>72.9</identity>
+      <positives>83.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="96">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGRE</querySeq>
+      <pattern>+LH +AAG ATV+L + +LAGS+  V AE GA GA L TYPRALWWSVETATTVGYGD YPVTLWGR +  VVMV GIT++G+VTAALATWFVGRE</pattern>
+      <matchSeq start="20" end="115">SLHVKAAGGATVVLGLTMLAGSWAVVAAEHGAVGANLTTYPRALWWSVETATTVGYGDFYPVTLWGRIIGAVVMVVGITTYGMVTAALATWFVGRE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="51" database="TR" id="A0A5Q4TGC2_9ACTN" ac="A0A5Q4TGC2" length="150" description="Voltage-gated potassium channel OS=Streptomyces sp. t39 OX=1828156 GN=EAO77_00085 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>372</score>
+      <bits>147.902</bits>
+      <expectation>1.8e-43</expectation>
+      <identity>71.9</identity>
+      <positives>83.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="96">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGRE</querySeq>
+      <pattern>+LH RAAGAAT +LV+V+L GS+  V AE GA GA L +YP+ALWWS+ETATTVGYGD YPVT WGR V  VVMV GIT++G+VTAALATWFVGRE</pattern>
+      <matchSeq start="20" end="115">SLHLRAAGAATAVLVLVMLGGSWAVVAAEEGAHGANLTSYPKALWWSIETATTVGYGDFYPVTAWGRVVGAVVMVVGITTYGVVTAALATWFVGRE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="52" database="TR" id="A0A117EDB0_STRSC" ac="A0A117EDB0" length="155" description="PH-gated potassium channel KcsA OS=Streptomyces scabiei OX=1930 GN=kcsA_1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>371</score>
+      <bits>147.517</bits>
+      <expectation>3.1e-43</expectation>
+      <identity>70.8</identity>
+      <positives>82.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH RAAG ATV+L +V+L GS+   +AE GAP A L +YP+ALWWSVETATTVGYGD YPVT WGR V  VVMVAGIT++G+VTAA+A WFVGREQ</pattern>
+      <matchSeq start="22" end="117">LHLRAAGGATVVLAVVMLLGSWAVTVAEHGAPRANLTSYPKALWWSVETATTVGYGDFYPVTFWGRIVGAVVMVAGITTYGMVTAAIAAWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="53" database="TR" id="A0A285CDE3_9ACTN" ac="A0A285CDE3" length="151" description="Voltage-gated potassium channel OS=Streptomyces sp. TLI_55 OX=1938861 GN=SAMN06272735_7202 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>370</score>
+      <bits>147.132</bits>
+      <expectation>3.8e-43</expectation>
+      <identity>70.1</identity>
+      <positives>84.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAGAAT +LV+V+LAGS+  + AE GA GA L +YP+ALWWS+ETATTVGYGD +PVT WGR V  VVMV GIT++G+VTAALATWFVGREQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGAATAVLVVVMLAGSWAVIGAEEGARGANLTSYPKALWWSIETATTVGYGDFFPVTPWGRVVGAVVMVVGITTYGMVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="54" database="TR" id="A0A101Q4U6_STRAT" ac="A0A101Q4U6" length="151" description="Voltage-gated potassium channel OS=Streptomyces antibioticus OX=1890 GN=AQJ23_25375 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>370</score>
+      <bits>147.132</bits>
+      <expectation>3.8e-43</expectation>
+      <identity>70.1</identity>
+      <positives>84.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAGAAT +LV+V+LAGS+  + AE GA GA L +YP+ALWWS+ETATTVGYGD +PVT WGR V  VVMV GIT++G+VTAALATWFVGREQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGAATAVLVVVMLAGSWAVIGAEEGARGANLTSYPKALWWSIETATTVGYGDFFPVTPWGRVVGAVVMVVGITTYGMVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="55" database="TR" id="A0A1V4E9I6_9ACTN" ac="A0A1V4E9I6" length="151" description="Voltage-gated potassium channel OS=Streptomyces sp. GKU 895 OX=1662404 GN=B1R27_06005 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>368</score>
+      <bits>146.362</bits>
+      <expectation>7.7e-43</expectation>
+      <identity>71.1</identity>
+      <positives>84.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAGAAT +LV V+LAGS+  V AE+GA GA L +YP+ALWWS+ETATTVGYGD +PVT WGR V  VVMV GIT++G+VTAALATWFVGREQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGAATAVLVAVMLAGSWAVVGAEQGARGANLTSYPKALWWSIETATTVGYGDFFPVTPWGRVVGAVVMVVGITTYGMVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="56" database="TR" id="A0A286EAI8_9ACTN" ac="A0A286EAI8" length="155" description="Voltage-gated potassium channel OS=Streptomyces sp. 1222.2 OX=1938833 GN=SAMN06272781_1281 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>368</score>
+      <bits>146.362</bits>
+      <expectation>8.7e-43</expectation>
+      <identity>70.1</identity>
+      <positives>81.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH RAAG ATV+LV+V+L GS+    AE GAP A L +YP+ALWWSVETATTVGYGD YPVT WGR V  VVM  GIT++G+VTAA+ATWFVGREQ</pattern>
+      <matchSeq start="21" end="117">SLHLRAAGGATVVLVVVMLLGSWAVTAAEHGAPRANLTSYPKALWWSVETATTVGYGDFYPVTFWGRVVGAVVMGVGITTYGMVTAAIATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="57" database="TR" id="A0A8I0TVE7_9ACTN" ac="A0A8I0TVE7" length="155" description="Voltage-gated potassium channel OS=Streptomyces stelliscabiei OX=146820 GN=H4687_007906 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>368</score>
+      <bits>146.362</bits>
+      <expectation>8.7e-43</expectation>
+      <identity>70.1</identity>
+      <positives>81.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH RAAG ATV+LV+V+L GS+    AE GAP A L +YP+ALWWSVETATTVGYGD YPVT WGR V  VVM  GIT++G+VTAA+ATWFVGREQ</pattern>
+      <matchSeq start="21" end="117">SLHLRAAGGATVVLVVVMLLGSWAVTAAEHGAPRANLTSYPKALWWSVETATTVGYGDFYPVTFWGRVVGAVVMGVGITTYGMVTAAIATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="58" database="TR" id="A0A973K0Z5_STRSQ" ac="A0A973K0Z5" length="158" description="Two pore domain potassium channel family protein OS=Streptomyces sp. OX=1931 GN=HOV82_28865 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>368</score>
+      <bits>146.362</bits>
+      <expectation>9.6e-43</expectation>
+      <identity>70.1</identity>
+      <positives>84.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAGAAT +LV+V+LAGS+  V AE+GA  A L +YP+ALWWS+ETATTVGYGD YPVT WGR +  VVMV GIT++G+VTAALATWFVGREQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGAATAVLVVVMLAGSWAVVEAEQGAHRANLTSYPKALWWSIETATTVGYGDFYPVTPWGRVIGAVVMVVGITTYGMVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="59" database="TR" id="A0A0F5W2T6_9ACTN" ac="A0A0F5W2T6" length="148" description="Voltage-gated potassium channel OS=Streptomyces sp. WM6386 OX=1415558 GN=TN53_06675 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>367</score>
+      <bits>145.976</bits>
+      <expectation>1e-42</expectation>
+      <identity>70.1</identity>
+      <positives>82.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG AT +LV+V+L GS+  V AE GA GA L +YP+ALWWS+ETATTVGYGD YPVT WGR V  VVMV GIT++G+VTAALATWFVGREQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGGATAVLVVVMLLGSWAVVAAEDGARGANLTSYPKALWWSIETATTVGYGDFYPVTPWGRVVGAVVMVVGITTYGMVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="60" database="TR" id="A0A3Q9C4T7_9ACTN" ac="A0A3Q9C4T7" length="151" description="Two pore domain potassium channel family protein OS=Streptomyces aquilus OX=2548456 GN=EJC51_39750 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>367</score>
+      <bits>145.976</bits>
+      <expectation>1.1e-42</expectation>
+      <identity>70.1</identity>
+      <positives>83.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAGAAT +L +V+LAGS+  V AE GA GA L +YP+ALWWS+ETATTVGYGD +PVT WGR V  VVMV GIT++G+VTAALATWFVGREQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGAATAVLAVVMLAGSWAVVGAEEGARGANLTSYPKALWWSIETATTVGYGDFFPVTPWGRVVGAVVMVVGITTYGMVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="61" database="TR" id="A0A919DP69_9ACTN" ac="A0A919DP69" length="158" description="PH-gated potassium channel KcsA OS=Streptomyces capitiformicae OX=2014920 GN=kcsA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>367</score>
+      <bits>145.976</bits>
+      <expectation>1.4e-42</expectation>
+      <identity>68.8</identity>
+      <positives>82.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AAG AT +LV+V+L GS+  + AE GA GA L +YP+ALWWS+ETATTVGYGD YPVTLWGR V  VVMV GIT++G+VTAA+A WFVGREQ</pattern>
+      <matchSeq start="23" end="118">LHLKAAGGATAVLVVVMLLGSWAVIAAEHGARGANLTSYPKALWWSIETATTVGYGDFYPVTLWGRVVGAVVMVVGITTYGMVTAAIAAWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="62" database="TR" id="A0A0M8TGD0_9ACTN" ac="A0A0M8TGD0" length="155" description="Voltage-gated potassium channel OS=Streptomyces sp. MMG1533 OX=1415546 GN=ADK57_44220 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>366</score>
+      <bits>145.591</bits>
+      <expectation>1.8e-42</expectation>
+      <identity>72.9</identity>
+      <positives>83.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AAG AT++LV+V+L GS+  V AE GA GA L TYPRALWWS+ETATTVGYGD YPVTL GR V  VVMV GIT++G+VTAALATWFVGREQ</pattern>
+      <matchSeq start="21" end="116">LHLKAAGGATLVLVLVMLTGSWAVVAAEDGARGANLTTYPRALWWSIETATTVGYGDFYPVTLGGRIVGSVVMVVGITTYGMVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="63" database="TR" id="A0A952G8U6_9ACTN" ac="A0A952G8U6" length="155" description="Two pore domain potassium channel family protein OS=Streptomyces turgidiscabies OX=85558 GN=JF621_25665 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>366</score>
+      <bits>145.591</bits>
+      <expectation>1.8e-42</expectation>
+      <identity>70.8</identity>
+      <positives>80.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="96">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGRE</querySeq>
+      <pattern>+LH RAAG ATV L++V+L GSY  V  E G  GA L +YP+ALWWSVETATTVGYGD YPVT WGR V  VVMV GIT++G+VTAALATWFVGRE</pattern>
+      <matchSeq start="20" end="115">SLHVRAAGGATVALLVVMLGGSYAVVTVEEGVRGANLTSYPKALWWSVETATTVGYGDFYPVTWWGRAVGAVVMVVGITAYGMVTAALATWFVGRE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="64" database="TR" id="A0A426U2Z7_9ACTN" ac="A0A426U2Z7" length="147" description="Two pore domain potassium channel family protein OS=Streptomyces sp. RP5T OX=2490848 GN=EHS43_36110 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>365</score>
+      <bits>145.206</bits>
+      <expectation>2e-42</expectation>
+      <identity>70.8</identity>
+      <positives>82.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AAG AT++L+ V+L GS+  VLAE GA GA L +YP+ALWWSVETATTVGYGD YPVT WGR V  VVMV GIT++G+VTAALATWFV REQ</pattern>
+      <matchSeq start="21" end="116">LHLKAAGGATLVLLTVMLTGSWAVVLAEEGARGADLTSYPKALWWSVETATTVGYGDFYPVTWWGRAVGTVVMVVGITTYGMVTAALATWFVAREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="65" database="TR" id="A0A552R9W4_9ACTN" ac="A0A552R9W4" length="161" description="Two pore domain potassium channel family protein OS=Streptomyces sp. 130 OX=2591006 GN=FKN01_13185 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>366</score>
+      <bits>145.591</bits>
+      <expectation>2.1e-42</expectation>
+      <identity>72.2</identity>
+      <positives>83.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG ATVLL + +LAGS+L VLAER A  A + +YPR LWWSVETATTVGYGDL+PVTLWGR VA VVM  GIT++G+VTAALATWFVG EQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGWATVLLAVTVLAGSWLVVLAERHARAATITSYPRGLWWSVETATTVGYGDLFPVTLWGRIVAAVVMGVGITTYGMVTAALATWFVGHEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="66" database="TR" id="A0A6I7Y4V0_9ACTN" ac="A0A6I7Y4V0" length="161" description="Two pore domain potassium channel family protein OS=Streptomyces sp. col6 OX=2478958 GN=EAO73_24925 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>366</score>
+      <bits>145.591</bits>
+      <expectation>2.1e-42</expectation>
+      <identity>71.1</identity>
+      <positives>82.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG ATVLL + +L GS+L VLAER AP A + +YPR LWWS ETATTVGYGDL+PVTLWGR VA VVM  GIT++G+VTAALATWFVG EQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGWATVLLAVTMLIGSWLVVLAERHAPDATITSYPRGLWWSAETATTVGYGDLFPVTLWGRIVAAVVMGVGITTYGMVTAALATWFVGHEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="67" database="TR" id="A0A6B3B494_9ACTN" ac="A0A6B3B494" length="161" description="Two pore domain potassium channel family protein OS=Streptomyces sp. SID9727 OX=2706114 GN=G3I41_02575 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>366</score>
+      <bits>145.591</bits>
+      <expectation>2.1e-42</expectation>
+      <identity>72.2</identity>
+      <positives>83.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG ATVLL + +L GS+L VLAER AP A + +YPR LWWSVETATTVGYGDL+PVT WGR VAVVVM  GIT++G+VTAALATWFVG EQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGWATVLLALTVLVGSWLVVLAERHAPDATITSYPRGLWWSVETATTVGYGDLFPVTPWGRIVAVVVMGVGITTYGMVTAALATWFVGHEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="68" database="TR" id="C9Z6M3_STRSW" ac="C9Z6M3" length="155" description="Putative voltage-gated potassium channel OS=Streptomyces scabiei (strain 87.22) OX=680198 GN=kcsA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>365</score>
+      <bits>145.206</bits>
+      <expectation>2.5e-42</expectation>
+      <identity>69.8</identity>
+      <positives>81.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH RAAG ATV+L +V+L GS+   +AE GAP A L +YP+ALWWSVETATTVGYGD YPVT WGR V  VVMV GIT++G+VTAA+A WFVGREQ</pattern>
+      <matchSeq start="22" end="117">LHLRAAGGATVVLAVVMLLGSWAVTVAEDGAPRANLTSYPKALWWSVETATTVGYGDFYPVTFWGRIVGAVVMVVGITTYGMVTAAIAAWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="69" database="TR" id="A0A6B2X6E0_9ACTN" ac="A0A6B2X6E0" length="151" description="Two pore domain potassium channel family protein OS=Streptomyces sp. SID13726 OX=2706058 GN=G3I78_09535 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>364</score>
+      <bits>144.821</bits>
+      <expectation>3.1e-42</expectation>
+      <identity>70.1</identity>
+      <positives>83.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAGAAT +L++V+L GS+  V AE GA GA L +YP+ALWWSVETATTVGYGD YPVT WGR V  VVMV GIT++G+VTAALATWFVGRE+</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGAATAVLLVVMLLGSWAVVGAEDGARGANLTSYPKALWWSVETATTVGYGDFYPVTWWGRAVGTVVMVVGITTYGMVTAALATWFVGRER</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="70" database="TR" id="A0A7H0HM53_9ACTN" ac="A0A7H0HM53" length="155" description="Two pore domain potassium channel family protein OS=Streptomyces genisteinicus OX=2768068 GN=IAG43_00895 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>364</score>
+      <bits>144.821</bits>
+      <expectation>3.5e-42</expectation>
+      <identity>67.0</identity>
+      <positives>85.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAGAA+++L++V+LAGS+  V AE GA GA L +YP+ALWWS+ETATTVGYGD YPVT WGR +  +VMV GIT++G+VTAALATWFVGRE+</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGAASLVLLLVMLAGSWAVVAAEEGARGANLTSYPKALWWSIETATTVGYGDFYPVTPWGRVIGALVMVVGITTYGMVTAALATWFVGREE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="71" database="TR" id="A0A086GKI9_STRSC" ac="A0A086GKI9" length="156" description="Voltage-gated potassium channel OS=Streptomyces scabiei OX=1930 GN=IQ62_39200 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>364</score>
+      <bits>144.821</bits>
+      <expectation>3.7e-42</expectation>
+      <identity>68.8</identity>
+      <positives>81.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AAG AT +LV+V+L GS+  + AE  AP A L +YP+ALWWS+ETATTVGYGD YPVT WGR V  VVMV GIT++G+VTAALATWFVGREQ</pattern>
+      <matchSeq start="23" end="118">LHLKAAGGATAVLVVVMLLGSWAVIAAEHDAPRANLTSYPKALWWSIETATTVGYGDFYPVTFWGRVVGAVVMVVGITTYGMVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="72" database="TR" id="K4QYN4_STRDJ" ac="K4QYN4" length="155" description="Voltage-gated potassium channel OS=Streptomyces davaonensis (strain DSM 101723 / JCM 4913 / KCC S-0913 / 768) OX=1214101 GN=kcsA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>363</score>
+      <bits>144.436</bits>
+      <expectation>5e-42</expectation>
+      <identity>71.1</identity>
+      <positives>82.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AA  AT +L +V+LAGS+  V AE+ A GA L TYPRALWWS+ETATTVGYGD YPVT WGR VA VVMV GIT++G+VTAALATWFVGREQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAMGATGVLGVVMLAGSWAVVAAEQDARGANLTTYPRALWWSIETATTVGYGDFYPVTFWGRVVAAVVMVVGITTYGMVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="73" database="TR" id="A0A7Y3PTF0_9ACTN" ac="A0A7Y3PTF0" length="148" description="Two pore domain potassium channel family protein OS=Streptomyces sp. S3(2020) OX=2732044 GN=HLK59_37855 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>362</score>
+      <bits>144.05</bits>
+      <expectation>5.8e-42</expectation>
+      <identity>69.1</identity>
+      <positives>82.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG AT +LV+V+L GS+  V AE GA GA L +YP+ALWWS+ETATTVGYGD YPVT WGR V  VVMV GIT++G+VTAALATWFVG+EQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGGATAVLVVVMLLGSWAVVAAEDGARGANLTSYPKALWWSIETATTVGYGDFYPVTPWGRVVGSVVMVVGITTYGMVTAALATWFVGKEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="74" database="TR" id="A0A1J4NKS6_9ACTN" ac="A0A1J4NKS6" length="153" description="Voltage-gated potassium channel OS=Streptomyces mangrovisoli OX=1428628 GN=WN71_037250 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>362</score>
+      <bits>144.05</bits>
+      <expectation>6.7e-42</expectation>
+      <identity>72.2</identity>
+      <positives>83.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAGAAT +LV V++ GS+  V AE GA  A + +YP ALWWSVETATTVGYGDLYPVT WGR VAVVVMV GIT++G+VTAALATWFVGREQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGAATAVLVAVMVLGSWAVVAAEDGAHRATITSYPLALWWSVETATTVGYGDLYPVTPWGRVVAVVVMVVGITTYGMVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="75" database="TR" id="L1KU36_9ACTN" ac="L1KU36" length="161" description="Ion channel OS=Streptomyces ipomoeae 91-03 OX=698759 GN=STRIP9103_08629 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>361</score>
+      <bits>143.665</bits>
+      <expectation>1.2e-41</expectation>
+      <identity>68.8</identity>
+      <positives>81.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AAG AT +L++V+L GS+  V AE  A  A L TYP+ALWWS+ETATTVGYGD YPVTLWGR V  VVMV GIT++G+VTAA+ATWFVGREQ</pattern>
+      <matchSeq start="23" end="118">LHLKAAGGATAVLLVVMLLGSWAVVAAEHDARNANLTTYPKALWWSIETATTVGYGDFYPVTLWGRVVGAVVMVVGITTYGMVTAAIATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="76" database="TR" id="A0A540QQ94_9ACTN" ac="A0A540QQ94" length="161" description="Two pore domain potassium channel family protein OS=Streptomyces ipomoeae OX=103232 GN=Sipo7851_08250 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>361</score>
+      <bits>143.665</bits>
+      <expectation>1.2e-41</expectation>
+      <identity>68.8</identity>
+      <positives>81.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AAG AT +L++V+L GS+  V AE  A  A L TYP+ALWWS+ETATTVGYGD YPVTLWGR V  VVMV GIT++G+VTAA+ATWFVGREQ</pattern>
+      <matchSeq start="23" end="118">LHLKAAGGATAVLLVVMLLGSWAVVAAEHDARNANLTTYPKALWWSIETATTVGYGDFYPVTLWGRVVGAVVMVVGITTYGMVTAAIATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="77" database="TR" id="A0A1Q5KBE0_9ACTN" ac="A0A1Q5KBE0" length="152" description="Voltage-gated potassium channel OS=Streptomyces sp. CB01883 OX=1703943 GN=AMK32_28785 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>360</score>
+      <bits>143.28</bits>
+      <expectation>1.3e-41</expectation>
+      <identity>68.8</identity>
+      <positives>84.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="96">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGRE</querySeq>
+      <pattern>+LH +AAG AT++LV+V+LAGS+  V AE+GA  A L +YP+ALWWS+ETATTVGYGD +PVT WGR V  VVMV GIT++G+VTAALATWFVGRE</pattern>
+      <matchSeq start="20" end="115">SLHLKAAGGATIVLVLVMLAGSWAVVTAEQGARHANLTSYPKALWWSIETATTVGYGDFFPVTPWGRVVGAVVMVVGITTYGMVTAALATWFVGRE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="78" database="TR" id="A0A060ZQY3_9ACTN" ac="A0A060ZQY3" length="182" description="Potassium channel domain-containing protein OS=Streptomyces iranensis OX=576784 GN=SIRAN5256 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>362</score>
+      <bits>144.05</bits>
+      <expectation>1.6e-41</expectation>
+      <identity>68.8</identity>
+      <positives>82.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AA  AT++L + +L GSY AV AERGAP A L +YP+ALWWSVETATTVGYGD YPVTLWGR +A VVM  GIT++G++TAA+A WFVGREQ</pattern>
+      <matchSeq start="22" end="117">LHTQAAVVATLVLGVTMLLGSYAAVAAERGAPSANLTSYPKALWWSVETATTVGYGDFYPVTLWGRLIACVVMFVGITAYGMITAAIAAWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="79" database="TR" id="A0A0A0NB44_STRRN" ac="A0A0A0NB44" length="185" description="Potassium channel domain-containing protein OS=Streptomyces rapamycinicus (strain ATCC 29253 / DSM 41530 / NRRL 5491 / AYB-994) OX=1343740 GN=D3C57_117655 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>362</score>
+      <bits>144.05</bits>
+      <expectation>1.7e-41</expectation>
+      <identity>68.8</identity>
+      <positives>82.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AA  AT++L + +L GSY AV AERGAP A L +YP+ALWWSVETATTVGYGD YPVTLWGR +A VVM  GIT++G++TAA+A WFVGREQ</pattern>
+      <matchSeq start="25" end="120">LHTQAAVVATLVLGVTMLLGSYAAVAAERGAPSANLTSYPKALWWSVETATTVGYGDFYPVTLWGRLIACVVMFVGITAYGMITAAIAAWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="80" database="TR" id="A0A7K2PXV3_9ACTN" ac="A0A7K2PXV3" length="147" description="Voltage-gated potassium channel OS=Streptomyces sp. SID5470 OX=2690297 GN=GT021_37060 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>358</score>
+      <bits>142.51</bits>
+      <expectation>2.3e-41</expectation>
+      <identity>67.0</identity>
+      <positives>82.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG AT +L++V+L GS+  ++AE GA GA L +YP+ALWWSVETATTVGYGD YPVT WGR V  VVMV GIT++G+VTAALATWFV R+Q</pattern>
+      <matchSeq start="20" end="116">SLHVKAAGGATAVLLVVMLTGSWAVLVAEEGARGASLTSYPKALWWSVETATTVGYGDFYPVTWWGRVVGTVVMVVGITTYGMVTAALATWFVARQQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="81" database="TR" id="A0A4S2TQD8_9ACTN" ac="A0A4S2TQD8" length="161" description="Two pore domain potassium channel family protein OS=Streptomyces sp. A0958 OX=2563101 GN=E6P78_25805 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>359</score>
+      <bits>142.895</bits>
+      <expectation>2.4e-41</expectation>
+      <identity>69.1</identity>
+      <positives>83.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG ATVLL + +L GS++ ++AER AP A + +YPRALWWSVETATTVGYGD +PVTLWGR VAV VM  GIT++G+VTAALATWFVG EQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGWATVLLALTVLVGSWVVLVAERHAPHATITSYPRALWWSVETATTVGYGDFFPVTLWGRIVAVAVMGVGITTYGMVTAALATWFVGHEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="82" database="TR" id="A0A926GEB6_9ACTN" ac="A0A926GEB6" length="161" description="Two pore domain potassium channel family protein OS=Streptomyces sp. TRM68367 OX=2758415 GN=H8R17_12950 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>359</score>
+      <bits>142.895</bits>
+      <expectation>2.4e-41</expectation>
+      <identity>68.8</identity>
+      <positives>80.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="96">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGRE</querySeq>
+      <pattern>+LH +AAG AT +L I +LAGS+  V AE G+  A L TYPRALWWS+ETATTVGYGD YPVT WGR +  VVMV GIT++G+VTAALATWFVGRE</pattern>
+      <matchSeq start="20" end="115">SLHLKAAGGATAVLAITMLAGSWAVVAAEHGSRNANLTTYPRALWWSIETATTVGYGDFYPVTPWGRVIGAVVMVVGITTYGIVTAALATWFVGRE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="83" database="TR" id="A0A3N1HYP2_9ACTN" ac="A0A3N1HYP2" length="152" description="Voltage-gated potassium channel OS=Streptomyces sp. PanSC9 OX=1520461 GN=EDD94_7315 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>358</score>
+      <bits>142.51</bits>
+      <expectation>2.6e-41</expectation>
+      <identity>68.8</identity>
+      <positives>84.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="96">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGRE</querySeq>
+      <pattern>+LH +AAG AT++LV+V+LAGS+  V AE+GA  A L +YP+ALWWS+ETATTVGYGD +PVT WGR V  VVMV GIT++G+VTAALATWFVGRE</pattern>
+      <matchSeq start="20" end="115">SLHLKAAGGATIVLVLVMLAGSWAVVAAEQGARHANLTSYPKALWWSIETATTVGYGDFFPVTPWGRGVGAVVMVVGITTYGMVTAALATWFVGRE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="84" database="TR" id="B5HWC0_STRX2" ac="B5HWC0" length="162" description="Voltage-gated potassium channel OS=Streptomyces sviceus (strain ATCC 29083 / DSM 924 / JCM 4929 / NBRC 13980 / NCIMB 11184 / NRRL 5439 / UC 5370) OX=463191 GN=SSEG_03705 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>358</score>
+      <bits>142.51</bits>
+      <expectation>3.6e-41</expectation>
+      <identity>67.0</identity>
+      <positives>82.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG AT +L++V+L GS+  ++AE GA GA L +YP+ALWWSVETATTVGYGD YPVT WGR V  VVMV GIT++G+VTAALATWFV R+Q</pattern>
+      <matchSeq start="35" end="131">SLHVKAAGGATAVLLVVMLTGSWAVLVAEEGARGASLTSYPKALWWSVETATTVGYGDFYPVTWWGRVVGTVVMVVGITTYGMVTAALATWFVARQQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="85" database="TR" id="A0A124HYE7_9ACTN" ac="A0A124HYE7" length="151" description="Voltage-gated potassium channel OS=Streptomyces griseorubiginosus OX=67304 GN=AQJ54_13940 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>356</score>
+      <bits>141.739</bits>
+      <expectation>5.2e-41</expectation>
+      <identity>68.0</identity>
+      <positives>81.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG AT +L++V+L GS+  V AE GA GA L +YP+ALWWSVETATTVGYGD +PVT WGR V  VVMV GIT++G+VTAALATWFV REQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGGATAVLLVVMLLGSWAVVAAEDGARGANLTSYPKALWWSVETATTVGYGDFFPVTWWGRVVGTVVMVVGITTYGMVTAALATWFVAREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="86" database="TR" id="A0A385ZE03_9ACTN" ac="A0A385ZE03" length="151" description="pH-gated potassium channel KcsA OS=Streptomyces griseorubiginosus OX=67304 GN=kcsA_1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>356</score>
+      <bits>141.739</bits>
+      <expectation>5.2e-41</expectation>
+      <identity>68.0</identity>
+      <positives>81.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG AT +L++V+L GS+  V AE GA GA L +YP+ALWWSVETATTVGYGD +PVT WGR V  VVMV GIT++G+VTAALATWFV REQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGGATAVLLVVMLLGSWAVVAAEDGARGANLTSYPKALWWSVETATTVGYGDFFPVTWWGRVVGTVVMVVGITTYGMVTAALATWFVAREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="87" database="TR" id="A0A6H9USA3_9ACTN" ac="A0A6H9USA3" length="159" description="Potassium channel family protein OS=Streptomyces luteolifulvus OX=2615112 GN=F7R91_32420 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>356</score>
+      <bits>141.739</bits>
+      <expectation>6.6e-41</expectation>
+      <identity>68.0</identity>
+      <positives>82.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG AT++LV+V+L GS+  V AE+ A  A L +YP+ LWWS+ETATTVGYGD YPVTLWGR V  VVMV GIT++G+VTAALATWFVGREQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGGATLVLVVVMLLGSWAVVEAEQHARRANLTSYPKGLWWSIETATTVGYGDFYPVTLWGRIVGAVVMVVGITTYGMVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="88" database="TR" id="A0A4R3B3N7_9ACTN" ac="A0A4R3B3N7" length="151" description="Voltage-gated potassium channel OS=Streptomyces sp. BK205 OX=2512164 GN=EV578_107264 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>355</score>
+      <bits>141.354</bits>
+      <expectation>7.3e-41</expectation>
+      <identity>67.0</identity>
+      <positives>81.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG AT +L++V+L GS+  + AE GA GA L +YP+ALWWSVETATTVGYGD +PVT WGR V  VVMV GIT++G+VTAALATWFV REQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGGATAVLIVVMLLGSWAVLAAEDGARGANLTSYPKALWWSVETATTVGYGDFFPVTWWGRVVGTVVMVVGITTYGMVTAALATWFVAREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="89" database="TR" id="A0A7X1M9E7_9ACTN" ac="A0A7X1M9E7" length="155" description="Two pore domain potassium channel family protein OS=Streptomyces cupreus OX=2759956 GN=H4N64_02835 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>355</score>
+      <bits>141.354</bits>
+      <expectation>8.3e-41</expectation>
+      <identity>68.0</identity>
+      <positives>81.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AA  AT  L +V+LAGS+  V AE+GA GA L +YP+ALWWS+ETATTVGYGD YPVT WGR +A VVM  GIT++G+VTAALATWFVGREQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAIGATGALGVVMLAGSWAVVAAEQGARGANLTSYPKALWWSIETATTVGYGDFYPVTFWGRVIAAVVMAVGITTYGMVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="90" database="TR" id="M3ESU2_9ACTN" ac="M3ESU2" length="155" description="KcsA protein OS=Streptomyces bottropensis ATCC 25435 OX=1054862 GN=SBD_6685 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>355</score>
+      <bits>141.354</bits>
+      <expectation>8.3e-41</expectation>
+      <identity>68.0</identity>
+      <positives>79.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH RAAG ATV+LV+V+L GS+    AE GAP A L +YP+ALWWSVETATTVGYGD Y VT WGR V   VM  GIT++G+VTAA+ATWFVGREQ</pattern>
+      <matchSeq start="21" end="117">SLHLRAAGGATVVLVVVMLLGSWAVTAAEHGAPRANLTSYPKALWWSVETATTVGYGDFYHVTFWGRVVGAAVMGVGITTYGMVTAAIATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="91" database="TR" id="A0A7K3EHV2_9ACTN" ac="A0A7K3EHV2" length="155" description="Voltage-gated potassium channel OS=Streptomyces sp. SID5476 OX=2690302 GN=GTY82_36290 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>355</score>
+      <bits>141.354</bits>
+      <expectation>8.3e-41</expectation>
+      <identity>68.0</identity>
+      <positives>79.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH RAAG ATV+LV+V+L GS+    AE GAP A L +YP+ALWWSVETATTVGYGD Y VT WGR V   VM  GIT++G+VTAA+ATWFVGREQ</pattern>
+      <matchSeq start="21" end="117">SLHLRAAGGATVVLVVVMLLGSWAVTAAEHGAPRANLTSYPKALWWSVETATTVGYGDFYHVTFWGRVVGAAVMGVGITTYGMVTAAIATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="92" database="TR" id="A0A0L8KUF4_9ACTN" ac="A0A0L8KUF4" length="155" description="Voltage-gated potassium channel OS=Streptomyces resistomycificus OX=67356 GN=ADK37_37430 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>355</score>
+      <bits>141.354</bits>
+      <expectation>8.3e-41</expectation>
+      <identity>67.0</identity>
+      <positives>82.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG AT++LV+V+L GS+  + AE GA  A L +YP+ALWWS+ETATTVGYGD YPVTLWGR +  VVMV GIT++G+VTAALATWFV REQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGWATLVLVVVMLLGSWAVIAAEDGAERANLTSYPKALWWSIETATTVGYGDFYPVTLWGRIIGSVVMVVGITTYGMVTAALATWFVSREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="93" database="TR" id="A0A6G2IA45_9ACTN" ac="A0A6G2IA45" length="159" description="Voltage-gated potassium channel OS=Streptomyces sp. HUCO-GS316 OX=2692198 GN=GR925_14055 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>353</score>
+      <bits>140.584</bits>
+      <expectation>1.9e-40</expectation>
+      <identity>67.0</identity>
+      <positives>82.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG AT++L++V+L GS+  V AE+ A  A L +YP+ LWWS+ETATTVGYGD YPVTLWGR V  VVMV GIT++G+VTAALATWFVGREQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGGATLVLLVVMLLGSWAVVEAEQHARRANLTSYPKGLWWSIETATTVGYGDFYPVTLWGRIVGAVVMVVGITTYGMVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="94" database="TR" id="A0A4S2UTY6_9ACTN" ac="A0A4S2UTY6" length="161" description="Two pore domain potassium channel family protein OS=Streptomyces sp. A0642 OX=2563100 GN=E6R60_15425 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>352</score>
+      <bits>140.198</bits>
+      <expectation>2.8e-40</expectation>
+      <identity>67.0</identity>
+      <positives>81.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>A H+RAA A T    +VLLAG+ L V AERGA GA + ++P+A+WWS+ETATTVGYGDLYPVT WGR +A V M+AGIT+FG+VTAALATWFVGR +</pattern>
+      <matchSeq start="20" end="116">AFHFRAAVAVTSATAVVLLAGAALVVPAERGAAGANITSFPKAVWWSIETATTVGYGDLYPVTAWGRVIAAVTMLAGITTFGMVTAALATWFVGRAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="95" database="TR" id="A0AA49XXS2_9ACTN" ac="A0AA49XXS2" length="161" description="Potassium channel family protein OS=Streptomyces sp. Mut1 OX=3033811 GN=P8A18_02415 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>352</score>
+      <bits>140.198</bits>
+      <expectation>2.8e-40</expectation>
+      <identity>67.0</identity>
+      <positives>82.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG ATVLL + +L GS++ ++AER AP A + +YP+ALWWS ETATTVGYGD +PVTLWGR VAV VM  GIT++G+VTAALATWFVG EQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGWATVLLALTVLVGSWVVLVAERHAPHATITSYPKALWWSAETATTVGYGDFFPVTLWGRIVAVAVMGVGITTYGMVTAALATWFVGHEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="96" database="TR" id="A0A6I5HRS8_9ACTN" ac="A0A6I5HRS8" length="161" description="Voltage-gated potassium channel OS=Streptomyces sp. SID4913 OX=2690266 GN=GT035_13390 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>352</score>
+      <bits>140.198</bits>
+      <expectation>2.8e-40</expectation>
+      <identity>67.0</identity>
+      <positives>82.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG ATVLL + +L GS++ ++AER AP A + +YP+ALWWS ETATTVGYGD +PVTLWGR VAV VM  GIT++G+VTAALATWFVG EQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGWATVLLALTVLVGSWVVLVAERHAPHATITSYPKALWWSAETATTVGYGDFFPVTLWGRIVAVAVMGVGITTYGMVTAALATWFVGHEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="97" database="TR" id="A0A0N0T5B0_9ACTN" ac="A0A0N0T5B0" length="155" description="Voltage-gated potassium channel OS=Streptomyces sp. NRRL WC-3618 OX=1519490 GN=ADL01_16270 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>350</score>
+      <bits>139.428</bits>
+      <expectation>4.8e-40</expectation>
+      <identity>68.8</identity>
+      <positives>79.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="96">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGRE</querySeq>
+      <pattern>+LH RAAG ATV L++V+L GS   V AE G  GA L +YP+ALWWSVETATTVGYGD YPVT WGR V  VVM+ GIT++G+VTAALATWFVG E</pattern>
+      <matchSeq start="20" end="115">SLHLRAAGGATVALLVVMLGGSCAVVGAEEGVRGANLTSYPKALWWSVETATTVGYGDFYPVTWWGRAVGAVVMIVGITAYGMVTAALATWFVGIE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="98" database="TR" id="A0A124HAE5_9ACTN" ac="A0A124HAE5" length="147" description="Voltage-gated potassium channel OS=Streptomyces pseudovenezuelae OX=67350 GN=AQI94_15145 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>348</score>
+      <bits>138.658</bits>
+      <expectation>7.5e-40</expectation>
+      <identity>66.7</identity>
+      <positives>80.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="96">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGRE</querySeq>
+      <pattern>+LH +AAG AT +L+ V+L GS+  V AE GA GA L +YP+ALWW+VETATTVGYGD YPVT WGR V  VVMV GIT++G+VTAALATWFV R+</pattern>
+      <matchSeq start="20" end="115">SLHAKAAGGATAVLLAVMLTGSWAVVAAEEGARGASLTSYPKALWWAVETATTVGYGDFYPVTWWGRAVGTVVMVVGITTYGMVTAALATWFVARQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="99" database="TR" id="A0A4S2RG96_9ACTN" ac="A0A4S2RG96" length="161" description="Voltage-gated potassium channel OS=Streptomyces sp. A1277 OX=2563103 GN=E6R18_20965 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>349</score>
+      <bits>139.043</bits>
+      <expectation>8.1e-40</expectation>
+      <identity>68.0</identity>
+      <positives>81.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG ATVLL + +L GS++ ++AER AP A + +YPRALWWS ETATTVGYGD  PVTLWGR VAV VM  GIT++G+VTAALATWFVG EQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGWATVLLALTVLVGSWVELVAERHAPHATITSYPRALWWSAETATTVGYGDFSPVTLWGRIVAVAVMGVGITTYGMVTAALATWFVGHEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="100" database="TR" id="A0A1C4RZ98_9ACTN" ac="A0A1C4RZ98" length="155" description="Voltage-gated potassium channel OS=Streptomyces sp. SolWspMP-5a-2 OX=1838281 GN=GA0115242_135812 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>348</score>
+      <bits>138.658</bits>
+      <expectation>9.6e-40</expectation>
+      <identity>66.0</identity>
+      <positives>78.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAGA T  LV+VL  G++  V  E GAP A L TYP+ LWWS+ETATTVGYGD YPVTL GR +  VVM+ GIT++G+VTAALATWFVGREQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGATTAALVVVLFLGAWAVVAVEHGAPRANLETYPQGLWWSIETATTVGYGDFYPVTLGGRLIGAVVMIVGITTYGMVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="101" database="TR" id="A0A7K2GCM8_9ACTN" ac="A0A7K2GCM8" length="155" description="Voltage-gated potassium channel OS=Streptomyces sp. SID4950 OX=2690288 GN=GTY92_31030 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>348</score>
+      <bits>138.658</bits>
+      <expectation>9.6e-40</expectation>
+      <identity>66.0</identity>
+      <positives>78.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAGA T  LV+VL  G++  V  E GAP A L TYP+ LWWS+ETATTVGYGD YPVTL GR +  VVM+ GIT++G+VTAALATWFVGREQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGATTAALVVVLFLGAWAVVAVEHGAPRANLETYPQGLWWSIETATTVGYGDFYPVTLGGRLIGAVVMIVGITTYGMVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="102" database="TR" id="A0A2T5B3Z7_9ACTN" ac="A0A2T5B3Z7" length="164" description="Voltage-gated potassium channel OS=Streptomyces sp. VMFN-G11Ma OX=2135609 GN=C7821_10782 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>348</score>
+      <bits>138.658</bits>
+      <expectation>1.3e-39</expectation>
+      <identity>68.0</identity>
+      <positives>81.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAGAAT +L +V+L G++  V AE  AP A L TYP+ALWWS+ETATTVGYGD +PVTL GR V  VVMV GIT++G+VTAALATWFVGREQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGAATAVLGVVMLLGAWAVVAAEHDAPRANLRTYPQALWWSIETATTVGYGDFFPVTLGGRVVGTVVMVVGITTYGMVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="103" database="TR" id="S2YRG1_9ACTN" ac="S2YRG1" length="164" description="Potassium channel domain-containing protein OS=Streptomyces sp. HGB0020 OX=1078086 GN=HMPREF1211_01273 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>347</score>
+      <bits>138.272</bits>
+      <expectation>1.8e-39</expectation>
+      <identity>67.0</identity>
+      <positives>81.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAGAAT +L +V+L G++  V AE  AP A L TYP+ALWWS+ETATTVGYGD +PVTL GR V  VVM+ GIT++G+VTAALATWFVGREQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGAATAVLGVVMLLGAWAVVAAEHDAPRANLKTYPQALWWSIETATTVGYGDFFPVTLGGRVVGAVVMIVGITTYGMVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="104" database="TR" id="A0A3N5A0P5_9ACTN" ac="A0A3N5A0P5" length="155" description="Voltage-gated potassium channel OS=Streptomyces sp. TLI_185 OX=2485151 GN=EDD92_8036 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>345</score>
+      <bits>137.502</bits>
+      <expectation>2.7e-39</expectation>
+      <identity>68.0</identity>
+      <positives>79.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAG AT +L +V+L GS   V AE  AP A L TYP+ALWWS+ETATTVGYGD YPVTL GR +  VVMV GIT++G+VTAALATWFVGREQ</pattern>
+      <matchSeq start="20" end="116">SLHLKAAGGATAVLGVVMLIGSSAVVAAEHDAPRANLRTYPQALWWSIETATTVGYGDFYPVTLAGRVIGTVVMVVGITTYGMVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="105" database="TR" id="A0A3N1SMP7_9ACTN" ac="A0A3N1SMP7" length="161" description="Voltage-gated potassium channel OS=Streptomyces sp. 840.1 OX=2485152 GN=EDD93_6029 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>344</score>
+      <bits>137.117</bits>
+      <expectation>4.6e-39</expectation>
+      <identity>66.0</identity>
+      <positives>81.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +A G ATV+L + +LAGS+  ++AE+ A  A + +YPRALWWS ETATTVGYGD YPVTLWGR VAVVVM  GIT++G+VTAALATWFVG E+</pattern>
+      <matchSeq start="20" end="116">SLHLKAVGGATVVLALTVLAGSWAVLVAEQHAGRATITSYPRALWWSAETATTVGYGDFYPVTLWGRIVAVVVMGVGITTYGMVTAALATWFVGHER</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="106" database="TR" id="A0A3Q9KP49_STRGD" ac="A0A3Q9KP49" length="155" description="Two pore domain potassium channel family protein OS=Streptomyces griseoviridis OX=45398 GN=DDJ31_34345 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>343</score>
+      <bits>136.732</bits>
+      <expectation>5.5e-39</expectation>
+      <identity>66.0</identity>
+      <positives>78.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +AAGA T  LV+VL  G++  V  ERGA  A L TYP+ LWWS+ETATTVGYGD YPVTL GR +  VVM+ GIT++G+VTAALATWFVGREQ</pattern>
+      <matchSeq start="20" end="116">SLHAKAAGATTAALVVVLFLGAWAVVTVERGAARANLETYPQGLWWSIETATTVGYGDFYPVTLGGRLIGTVVMIIGITTYGMVTAALATWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="107" database="TR" id="A0A1Q5MU99_9ACTN" ac="A0A1Q5MU99" length="162" description="Voltage-gated potassium channel OS=Streptomyces sp. CB02488 OX=1703920 GN=AMK09_19170 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>343</score>
+      <bits>136.732</bits>
+      <expectation>6.8e-39</expectation>
+      <identity>70.4</identity>
+      <positives>79.6</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLIT-YPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +A G ATVLL + LLAGS+  + AE+ A  A  IT YPRALWWS ETATTVGYGD YPVTLWGR VAVVVM  GIT++G+VTAALATWFVG EQ</pattern>
+      <matchSeq start="20" end="117">SLHLKAVGWATVLLALTLLAGSWAVLAAEQHAGHAATITSYPRALWWSAETATTVGYGDFYPVTLWGRIVAVVVMGVGITTYGMVTAALATWFVGHEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="108" database="TR" id="A0A7H8IYN7_9ACTN" ac="A0A7H8IYN7" length="173" description="Two pore domain potassium channel family protein OS=Streptomyces sp. NA02950 OX=2742137 GN=HUT19_21145 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>342</score>
+      <bits>136.346</bits>
+      <expectation>1.3e-38</expectation>
+      <identity>65.6</identity>
+      <positives>78.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AA  AT++L  V+L GSY  V AER A  A L +YP+ALWWS ETATTVGYGD YPVTLWGR +A VVM  GIT++G++TAA+A WFVGREQ</pattern>
+      <matchSeq start="24" end="119">LHTQAAAVATLVLGAVMLLGSYAVVAAERDASSANLTSYPKALWWSAETATTVGYGDFYPVTLWGRLIACVVMFVGITTYGMITAAIAAWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="109" database="TR" id="A0A6B3EQ56_9ACTN" ac="A0A6B3EQ56" length="162" description="Two pore domain potassium channel family protein OS=Streptomyces sp. SID11233 OX=2706029 GN=G3I76_37325 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>335</score>
+      <bits>133.65</bits>
+      <expectation>1.1e-37</expectation>
+      <identity>67.3</identity>
+      <positives>78.6</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLIT-YPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH +A G ATV+L + +LAGS+  + AE+ A     IT YPRALWWS ETATTVGYGD YPVTLWGR VAVVVM  GIT++G+VTAALATWFVG EQ</pattern>
+      <matchSeq start="20" end="117">SLHLKAVGWATVILAVTVLAGSWAVLAAEQHAGHTATITSYPRALWWSAETATTVGYGDFYPVTLWGRIVAVVVMGVGITTYGMVTAALATWFVGHEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="110" database="TR" id="A0A640T8P0_9ACTN" ac="A0A640T8P0" length="159" description="pH-gated potassium channel KcsA OS=Streptomyces glebosus OX=249580 GN=kcsA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>332</score>
+      <bits>132.494</bits>
+      <expectation>2.9e-37</expectation>
+      <identity>63.5</identity>
+      <positives>81.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AA   TV++  VLLAG+ L VLAE GAP A + +YP+ALWWS+ETATTVGYGD YPVTLWGR +A ++M++ IT+FG++TAALATWFVG  +</pattern>
+      <matchSeq start="22" end="117">LHAQAAIWVTVVMTAVLLAGAALVVLAESGAPHANITSYPKALWWSIETATTVGYGDFYPVTLWGRVIASLLMLSAITAFGVITAALATWFVGHAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="111" database="TR" id="A0A1H5HU04_9ACTN" ac="A0A1H5HU04" length="191" description="Ion channel OS=Streptomyces sp. 2231.1 OX=1855347 GN=SAMN05216532_7725 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>334</score>
+      <bits>133.265</bits>
+      <expectation>3.6e-37</expectation>
+      <identity>63.5</identity>
+      <positives>79.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="96">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGRE</querySeq>
+      <pattern>+LH +AAG A ++LV+V+L GS+  V AE GA  A L +YP+A WW++ETATTVGYGD +PVT WGR V  VVMV GIT++G+VTAA ATWFVGRE</pattern>
+      <matchSeq start="20" end="115">SLHLKAAGGAAIVLVLVMLTGSWAVVTAEEGARHANLTSYPKAQWWAIETATTVGYGDFFPVTPWGRVVGAVVMVVGITTYGMVTAAPATWFVGRE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="112" database="TR" id="A0A2U8VIZ1_9ACTN" ac="A0A2U8VIZ1" length="164" description="Voltage-gated potassium channel OS=Streptomyces sp. NEAU-S7GS2 OX=2202000 GN=DKG71_03305 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>329</score>
+      <bits>131.339</bits>
+      <expectation>9.6e-37</expectation>
+      <identity>62.5</identity>
+      <positives>81.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AA   TV++  VLLAG+ L V+AE GAP A + +YP+ALWWS+ETATTVGYGD YPVTLWGR +A ++M++ IT+FG++TAALATWFVG  +</pattern>
+      <matchSeq start="21" end="116">LHAQAALWVTVVMTAVLLAGAALVVVAESGAPHANITSYPKALWWSIETATTVGYGDFYPVTLWGRVIASLLMLSAITAFGVITAALATWFVGHAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="113" database="TR" id="A0A212T3S5_9ACTN" ac="A0A212T3S5" length="164" description="Voltage-gated potassium channel OS=Streptomyces sp. 2114.4 OX=1938836 GN=SAMN06272741_0276 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>329</score>
+      <bits>131.339</bits>
+      <expectation>9.6e-37</expectation>
+      <identity>62.5</identity>
+      <positives>80.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AA   T+++  VLL G+ L V+AE GAP A + +YPRALWWS+ETATTVGYGD YPVTLWGR +A  +M++ IT+FG++TAALATWFVGR +</pattern>
+      <matchSeq start="21" end="116">LHAQAAFWVTLVMTAVLLGGAALVVVAESGAPHANITSYPRALWWSIETATTVGYGDFYPVTLWGRIIASFLMLSAITAFGVITAALATWFVGRAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="114" database="TR" id="A0A2A3IA07_9ACTN" ac="A0A2A3IA07" length="164" description="Voltage-gated potassium channel OS=Streptomyces sp. 2321.6 OX=1938840 GN=BX261_0274 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>329</score>
+      <bits>131.339</bits>
+      <expectation>9.6e-37</expectation>
+      <identity>62.5</identity>
+      <positives>80.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AA   T+++  VLL G+ L V+AE GAP A + +YPRALWWS+ETATTVGYGD YPVTLWGR +A  +M++ IT+FG++TAALATWFVGR +</pattern>
+      <matchSeq start="21" end="116">LHAQAAFWVTLVMTAVLLGGAALVVVAESGAPHANITSYPRALWWSIETATTVGYGDFYPVTLWGRIIASFLMLSAITAFGVITAALATWFVGRAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="115" database="TR" id="A0A6G2R149_9ACTN" ac="A0A6G2R149" length="164" description="Voltage-gated potassium channel OS=Streptomyces sp. SID4951 OX=2690289 GN=GTY76_02880 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>329</score>
+      <bits>131.339</bits>
+      <expectation>9.6e-37</expectation>
+      <identity>62.5</identity>
+      <positives>81.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AA   TV++  VLLAG+ L V+AE GAP A + +YP+ALWWS+ETATTVGYGD YPVTLWGR +A ++M++ IT+FG++TAALATWFVG  +</pattern>
+      <matchSeq start="21" end="116">LHAQAALWVTVVMTAVLLAGAALVVVAESGAPHANITSYPKALWWSIETATTVGYGDFYPVTLWGRVIASLLMLSAITAFGVITAALATWFVGHAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="116" database="TR" id="A0A1C6LQY6_9ACTN" ac="A0A1C6LQY6" length="164" description="Voltage-gated potassium channel OS=Streptomyces sp. SceaMP-e96 OX=1100824 GN=YWIDRAFT_00585 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>329</score>
+      <bits>131.339</bits>
+      <expectation>9.6e-37</expectation>
+      <identity>62.5</identity>
+      <positives>81.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AA   TV++  VLLAG+ L V+AE GAP A + +YP+ALWWS+ETATTVGYGD YPVTLWGR +A ++M++ IT+FG++TAALATWFVG  +</pattern>
+      <matchSeq start="21" end="116">LHAQAALWVTVVMTAVLLAGAALVVVAESGAPHANITSYPKALWWSIETATTVGYGDFYPVTLWGRVIASLLMLSAITAFGVITAALATWFVGHAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="117" database="TR" id="A0A5J4LQ64_9ACTN" ac="A0A5J4LQ64" length="165" description="pH-gated potassium channel KcsA OS=Streptomyces angustmyceticus OX=285578 GN=kcsA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>329</score>
+      <bits>131.339</bits>
+      <expectation>9.9e-37</expectation>
+      <identity>62.5</identity>
+      <positives>80.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AA   T+++  VLL G+ L V+AE GAP A + +YPRALWWS+ETATTVGYGD YPVTLWGR +A  +M++ IT+FG++TAALATWFVGR +</pattern>
+      <matchSeq start="22" end="117">LHAQAAFWVTLVMTAVLLGGAALVVVAESGAPHANITSYPRALWWSIETATTVGYGDFYPVTLWGRIIASFLMLSAITAFGVITAALATWFVGRAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="118" database="TR" id="A0A0P4R5M1_9ACTN" ac="A0A0P4R5M1" length="165" description="Potassium channel domain-containing protein OS=Streptomyces lydicamycinicus OX=1546107 GN=TPA0598_03_05750 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>329</score>
+      <bits>131.339</bits>
+      <expectation>9.9e-37</expectation>
+      <identity>62.5</identity>
+      <positives>81.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AA   TV++  VLLAG+ L V+AE GAP A + +YP+ALWWS+ETATTVGYGD YPVTLWGR +A ++M++ IT+FG++TAALATWFVG  +</pattern>
+      <matchSeq start="22" end="117">LHAQAAIWVTVVMTAVLLAGAALVVVAESGAPHANITSYPKALWWSIETATTVGYGDFYPVTLWGRVIASLLMLSAITAFGVITAALATWFVGHAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="119" database="TR" id="A0A640SAI3_9ACTN" ac="A0A640SAI3" length="165" description="pH-gated potassium channel KcsA OS=Streptomyces caniferus OX=285557 GN=kcsA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>329</score>
+      <bits>131.339</bits>
+      <expectation>9.9e-37</expectation>
+      <identity>62.5</identity>
+      <positives>80.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AA   T+++  VLL G+ L V+AE GAP A + +YPRALWWS+ETATTVGYGD YPVTLWGR +A  +M++ IT+FG++TAALATWFVGR +</pattern>
+      <matchSeq start="22" end="117">LHAQAAFWVTLVMTAVLLGGAALVVVAESGAPHANITSYPRALWWSIETATTVGYGDFYPVTLWGRIIASFLMLSAITAFGVITAALATWFVGRAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="120" database="TR" id="A0A640TVG5_9ACTN" ac="A0A640TVG5" length="165" description="pH-gated potassium channel KcsA OS=Streptomyces libani subsp. libani OX=68044 GN=kcsA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>329</score>
+      <bits>131.339</bits>
+      <expectation>9.9e-37</expectation>
+      <identity>62.5</identity>
+      <positives>81.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AA   TV++  VLLAG+ L V+AE GAP A + +YP+ALWWS+ETATTVGYGD YPVTLWGR +A ++M++ IT+FG++TAALATWFVG  +</pattern>
+      <matchSeq start="22" end="117">LHAQAALWVTVVMTAVLLAGAALVVVAESGAPHANITSYPKALWWSIETATTVGYGDFYPVTLWGRVIASLLMLSAITAFGVITAALATWFVGHAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="121" database="TR" id="A0A0L8LV91_9ACTN" ac="A0A0L8LV91" length="165" description="Voltage-gated potassium channel OS=Streptomyces decoyicus OX=249567 GN=ADK74_18250 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>328</score>
+      <bits>130.954</bits>
+      <expectation>1.4e-36</expectation>
+      <identity>62.5</identity>
+      <positives>80.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AA   TV++  VLL G+ L V+AE GAP A + +YPRALWWS+ETATTVGYGD YPVTLWGR +A  +M++ IT+FG++TAALATWFVG+ +</pattern>
+      <matchSeq start="22" end="117">LHAQAAFWVTVVMTAVLLGGAALVVVAESGAPRANITSYPRALWWSIETATTVGYGDFYPVTLWGRVIASFLMLSAITAFGVITAALATWFVGQAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="122" database="TR" id="A0A371PX14_STRIH" ac="A0A371PX14" length="164" description="Voltage-gated potassium channel OS=Streptomyces inhibens OX=2293571 GN=DY245_29130 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>327</score>
+      <bits>130.568</bits>
+      <expectation>1.9e-36</expectation>
+      <identity>63.5</identity>
+      <positives>80.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH RAA   TV++  VLLAG+ L V+AE GA  A + +YP+ALWWS+ETATTVGYGD YPVTLWGR +A ++M++ IT+FG++TAALATWFVG  Q</pattern>
+      <matchSeq start="21" end="116">LHARAAFWVTVVMTAVLLAGAALVVVAESGAQHANITSYPKALWWSLETATTVGYGDFYPVTLWGRIIASLLMLSAITAFGVITAALATWFVGHAQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="123" database="TR" id="A0A640V329_9ACTN" ac="A0A640V329" length="165" description="pH-gated potassium channel KcsA OS=Streptomyces tubercidicus OX=47759 GN=kcsA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>327</score>
+      <bits>130.568</bits>
+      <expectation>2e-36</expectation>
+      <identity>62.5</identity>
+      <positives>81.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AA   TV++  VLLAG+ L  +AE GAP A + +YP+ALWWS+ETATTVGYGD YPVTLWGR +A ++M++ IT+FG++TAALATWFVGR +</pattern>
+      <matchSeq start="22" end="117">LHAQAALWVTVVMTAVLLAGAALVGVAESGAPHANITSYPKALWWSIETATTVGYGDFYPVTLWGRVIASLLMLSAITAFGVITAALATWFVGRAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="124" database="TR" id="A0A1Y2N0C5_STRPT" ac="A0A1Y2N0C5" length="158" description="pH-gated potassium channel KcsA OS=Streptomyces platensis OX=58346 GN=kcsA_2 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>323</score>
+      <bits>129.028</bits>
+      <expectation>6.6e-36</expectation>
+      <identity>61.5</identity>
+      <positives>80.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AA   TV++  VLLAG+ L V+AE  AP A + +YP+ALWWS+ETATTVGYGD YPVTLWGR +A ++M++ IT+FG++TAALATWFVG  +</pattern>
+      <matchSeq start="21" end="116">LHAQAAIWVTVVMTAVLLAGAALVVVAESSAPHANITSYPKALWWSIETATTVGYGDFYPVTLWGRVIASLLMLSAITAFGVITAALATWFVGHAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="125" database="TR" id="A0A4R4SBJ7_9ACTN" ac="A0A4R4SBJ7" length="145" description="Two pore domain potassium channel family protein (Fragment) OS=Streptomyces hainanensis OX=402648 GN=E1283_36590 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>319</score>
+      <bits>127.487</bits>
+      <expectation>1.8e-35</expectation>
+      <identity>61.9</identity>
+      <positives>78.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+LH + A AA ++LV  +L G++L ++AE GA  A L +Y  +LWW+VETATTVGYG+ YPVT WGR VAVVVMV GIT+FG +TAA+A WFVGREQ</pattern>
+      <matchSeq start="21" end="117">SLHQQVAIAAPLVLVASMLLGAFLVMVAEHGAAHANLTSYGDSLWWTVETATTVGYGEFYPVTFWGRVVAVVVMVVGITTFGAITAAIAAWFVGREQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="126" database="TR" id="A0A286I794_9ACTN" ac="A0A286I794" length="164" description="Voltage-gated potassium channel OS=Streptomyces sp. 2323.1 OX=1938841 GN=SAMN06272775_6823 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>318</score>
+      <bits>127.102</bits>
+      <expectation>4.5e-35</expectation>
+      <identity>59.4</identity>
+      <positives>79.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AA   T+++  VLL G+ L V+AE GAP A + ++P  LWWS+ETATTVGYGD YPVTLWGR +A ++M++ IT+FG++TAALATWFVGR +</pattern>
+      <matchSeq start="21" end="116">LHAQAALWVTLVMTAVLLGGAALVVVAESGAPHANITSFPTGLWWSIETATTVGYGDFYPVTLWGRIIAALLMLSAITAFGVITAALATWFVGRAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="127" database="TR" id="A0A2M8XA68_9ACTN" ac="A0A2M8XA68" length="164" description="Voltage-gated potassium channel OS=Streptomyces sp. 2333.5 OX=1938842 GN=BX264_0317 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>316</score>
+      <bits>126.331</bits>
+      <expectation>9e-35</expectation>
+      <identity>59.4</identity>
+      <positives>79.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AA   T+++  VLL G+ L V+AE GAP A + ++P  LWWS+ETATTVGYGD YPVTLWGR +A ++M++ IT+FG++TAALATWFVGR +</pattern>
+      <matchSeq start="21" end="116">LHAQAALWVTLVMTAVLLGGAALVVVAESGAPHANITSFPTGLWWSIETATTVGYGDFYPVTLWGRIIASLLMLSAITAFGVITAALATWFVGRAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="128" database="TR" id="A0A5C6WMW1_9ACTN" ac="A0A5C6WMW1" length="164" description="Two pore domain potassium channel family protein OS=Streptomyces sp. ISID311 OX=2601673 GN=FS847_14050 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>316</score>
+      <bits>126.331</bits>
+      <expectation>9e-35</expectation>
+      <identity>59.4</identity>
+      <positives>79.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AA   T+++  VLL G+ L V+AE GAP A + ++P  LWWS+ETATTVGYGD YPVTLWGR +A ++M++ IT+FG++TAALATWFVGR +</pattern>
+      <matchSeq start="21" end="116">LHAQAALWVTLVMTAVLLGGAALVVVAESGAPHANITSFPTGLWWSIETATTVGYGDFYPVTLWGRIIASLLMLSAITAFGVITAALATWFVGRAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="129" database="TR" id="A0A4Q1QUH7_9ACTN" ac="A0A4Q1QUH7" length="164" description="Two pore domain potassium channel family protein OS=Streptomyces sioyaensis OX=67364 GN=EST54_26510 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>316</score>
+      <bits>126.331</bits>
+      <expectation>9e-35</expectation>
+      <identity>59.4</identity>
+      <positives>79.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AA   T+++  VLL G+ L V+AE GAP A + ++P  LWWS+ETATTVGYGD YPVTLWGR +A ++M++ IT+FG++TAALATWFVGR +</pattern>
+      <matchSeq start="21" end="116">LHAQAALWVTLVMTAVLLGGAALVVVAESGAPHANITSFPTGLWWSIETATTVGYGDFYPVTLWGRIIASLLMLSAITAFGVITAALATWFVGRAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="130" database="TR" id="A0A1H4LM28_9ACTN" ac="A0A1H4LM28" length="164" description="Voltage-gated potassium channel OS=Streptomyces sp. 2314.4 OX=1881025 GN=SAMN05428943_0315 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>316</score>
+      <bits>126.331</bits>
+      <expectation>9e-35</expectation>
+      <identity>59.4</identity>
+      <positives>79.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AA   T+++  VLL G+ L V+AE GAP A + ++P  LWWS+ETATTVGYGD YPVTLWGR +A ++M++ IT+FG++TAALATWFVGR +</pattern>
+      <matchSeq start="21" end="116">LHAQAALWVTLVMTAVLLGGAALVVVAESGAPHANITSFPTGLWWSIETATTVGYGDFYPVTLWGRIIASLLMLSAITAFGVITAALATWFVGRAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="131" database="TR" id="A0A6H1KCA2_9ACTN" ac="A0A6H1KCA2" length="126" description="Voltage-gated potassium channel OS=Streptomyces sp. RPA4-5 OX=2721245 GN=HEP86_01110 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>311</score>
+      <bits>124.405</bits>
+      <expectation>1.7e-34</expectation>
+      <identity>65.5</identity>
+      <positives>83.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="97">LVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+  VLLAG+ L V+AE GAP A + +YP+ALWWS+ETATTVGYGD YPVTLWGR +A +VM++ IT+FG++TAALATWFVG  +</pattern>
+      <matchSeq start="1" end="84">MTAVLLAGAALVVVAESGAPHANITSYPKALWWSIETATTVGYGDFYPVTLWGRVIASLVMLSAITAFGVITAALATWFVGHAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="132" database="TR" id="A0A1D7VMB4_9ACTN" ac="A0A1D7VMB4" length="165" description="Voltage-gated potassium channel OS=Streptomyces lydicus OX=47763 GN=SL103_17860 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>313</score>
+      <bits>125.176</bits>
+      <expectation>2.6e-34</expectation>
+      <identity>58.3</identity>
+      <positives>80.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AA   ++++  +LL G+ L ++AE GAP A + +YP+ALWWS ETATTVGYGD YPVTLWGR VA ++M++ IT+FG++TAALATWFVG+ +</pattern>
+      <matchSeq start="22" end="117">LHAQAAFWVSLVMTAMLLGGAALVLVAESGAPRANITSYPKALWWSFETATTVGYGDFYPVTLWGRVVAALLMLSAITAFGVITAALATWFVGQAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="133" database="TR" id="A0A1W5XH00_9ACTN" ac="A0A1W5XH00" length="165" description="Voltage-gated potassium channel OS=Streptomyces sp. MOE7 OX=1961713 GN=STRMOE7_00985 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>313</score>
+      <bits>125.176</bits>
+      <expectation>2.6e-34</expectation>
+      <identity>58.3</identity>
+      <positives>80.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AA   ++++  +LL G+ L ++AE GAP A + +YP+ALWWS ETATTVGYGD YPVTLWGR VA ++M++ IT+FG++TAALATWFVG+ +</pattern>
+      <matchSeq start="22" end="117">LHAQAAFWVSLVMTAMLLGGAALVLVAESGAPHANITSYPKALWWSFETATTVGYGDFYPVTLWGRIVATLLMLSAITAFGVITAALATWFVGQAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="134" database="TR" id="J2JUX7_9ACTN" ac="J2JUX7" length="164" description="Ion transport 2 domain-containing protein OS=Streptomyces auratus AGR0001 OX=1160718 GN=SU9_27054 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>312</score>
+      <bits>124.79</bits>
+      <expectation>3.6e-34</expectation>
+      <identity>58.3</identity>
+      <positives>78.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="97">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>LH +AA   T+++  VLL G+ L V+AE GAP A + ++P  LWWS+ETATTVGYGD YPVTLWGR +A ++M++ IT+FG++TAALATWFV R +</pattern>
+      <matchSeq start="21" end="116">LHAQAALWVTLVMTAVLLGGAALVVVAESGAPHANITSFPTGLWWSIETATTVGYGDFYPVTLWGRIIAALLMLSAITAFGVITAALATWFVSRAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="135" database="TR" id="A0A6G7T8K0_9ACTN" ac="A0A6G7T8K0" length="132" description="Two pore domain potassium channel family protein OS=Streptomyces sp. ID38640 OX=1265399 GN=G7Z12_35985 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>309</score>
+      <bits>123.635</bits>
+      <expectation>4.1e-34</expectation>
+      <identity>64.3</identity>
+      <positives>83.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="97">LVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+  VLLAG+ L V+AE GAP A + +YP+ALWWS+ETATTVGYGD YPVTLWGR +A ++M++ IT+FG++TAALATWFVG  +</pattern>
+      <matchSeq start="1" end="84">MTAVLLAGAALVVIAESGAPHANITSYPKALWWSIETATTVGYGDFYPVTLWGRVIASLLMLSAITAFGVITAALATWFVGHAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="136" database="TR" id="A0A3Q9KEZ9_9ACTN" ac="A0A3Q9KEZ9" length="132" description="Voltage-gated potassium channel OS=Streptomyces lydicus OX=47763 GN=DDE74_01260 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>308</score>
+      <bits>123.25</bits>
+      <expectation>5.8e-34</expectation>
+      <identity>64.3</identity>
+      <positives>83.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="97">LVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+  VLLAG+ L V+AE GAP A + +YP+ALWWS+ETATTVGYGD YPVTLWGR +A ++M++ IT+FG++TAALATWFVG  +</pattern>
+      <matchSeq start="1" end="84">MTAVLLAGAALVVVAESGAPHANITSYPKALWWSIETATTVGYGDFYPVTLWGRVIASLLMLSAITAFGVITAALATWFVGHAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="137" database="TR" id="A0A6B2RX29_9ACTN" ac="A0A6B2RX29" length="165" description="Two pore domain potassium channel family protein OS=Streptomyces sp. SID10853 OX=2706028 GN=G3I19_12640 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>302</score>
+      <bits>120.939</bits>
+      <expectation>1.2e-32</expectation>
+      <identity>60.2</identity>
+      <positives>75.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="94">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVG</querySeq>
+      <pattern>LH RA+  A  +  +VLL G++L V AE  AP A + ++P  +WWS+ETATTVGYGD+YPVT WGR +A VVM+ GI  FG+VTAALATWFVG</pattern>
+      <matchSeq start="21" end="113">LHVRASLWAAAVTTLVLLGGAWLVVRAEASAPHATITSFPLGVWWSIETATTVGYGDMYPVTAWGRVIACVVMLVGIALFGIVTAALATWFVG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="138" database="TR" id="V6K6T4_9ACTN" ac="V6K6T4" length="170" description="Potassium channel domain-containing protein OS=Streptomycetaceae bacterium MP113-05 OX=1380770 GN=N566_23510 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>302</score>
+      <bits>120.939</bits>
+      <expectation>1.4e-32</expectation>
+      <identity>59.6</identity>
+      <positives>75.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="95">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>+H RA  +   +  +VL+AGS + +  E  APGA + ++PRALWWS+ETATTVGYGD+YPVT  GR VA VVM+ GIT+F +VTAALATWFV R</pattern>
+      <matchSeq start="27" end="120">VHLRAVVSGVAVSAVVLVAGSAVILPVEENAPGATITSFPRALWWSIETATTVGYGDMYPVTAGGRVVAAVVMIVGITTFSVVTAALATWFVSR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="139" database="TR" id="A0A9K3X419_9ACTN" ac="A0A9K3X419" length="168" description="Voltage-gated potassium channel OS=Streptomyces sp. SID4917 OX=2690269 GN=GT002_31640 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>298</score>
+      <bits>119.398</bits>
+      <expectation>5.4e-32</expectation>
+      <identity>60.9</identity>
+      <positives>79.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="93">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFV</querySeq>
+      <pattern>LH +AA  AT+LL++VLL GS++ V  E  +  A + ++PRALWWSVETATTVGYGD+YP+T WGR +A VVM+ GI+ F +VTA+LATWFV</pattern>
+      <matchSeq start="22" end="113">LHVKAAVWATLLLMLVLLVGSWIIVPVEASSRHATITSFPRALWWSVETATTVGYGDMYPITPWGRVIASVVMLVGISVFSIVTASLATWFV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="140" database="TR" id="A0A975Y9U0_9ACTN" ac="A0A975Y9U0" length="172" description="Potassium channel family protein OS=Streptomyces sp. GMY02 OX=1333528 GN=KQY30_13725 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>298</score>
+      <bits>119.398</bits>
+      <expectation>6.1e-32</expectation>
+      <identity>64.1</identity>
+      <positives>77.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="93">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFV</querySeq>
+      <pattern>LH +AA  A +LLV+VLL GS++ V  E  AP A + ++P ALWWSVETATTVGYGDLYPVT WGR +A VVM  GI+ F +VTA+LATWFV</pattern>
+      <matchSeq start="22" end="113">LHVKAAIWAALLLVLVLLIGSWIIVPVETSAPRATITSFPVALWWSVETATTVGYGDLYPVTPWGRVIAGVVMFVGISVFSIVTASLATWFV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="141" database="TR" id="A0A8B1PHE4_9ACTN" ac="A0A8B1PHE4" length="132" description="Two pore domain potassium channel family protein OS=Streptomyces auratus AGR0001 OX=1160718 GN=SU9_001215 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>294</score>
+      <bits>117.857</bits>
+      <expectation>7.8e-32</expectation>
+      <identity>60.7</identity>
+      <positives>79.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="97">LVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>+  VLL G+ L V+AE GAP A + ++P  LWWS+ETATTVGYGD YPVTLWGR +A ++M++ IT+FG++TAALATWFV R +</pattern>
+      <matchSeq start="1" end="84">MTAVLLGGAALVVVAESGAPHANITSFPTGLWWSIETATTVGYGDFYPVTLWGRIIAALLMLSAITAFGVITAALATWFVSRAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="142" database="TR" id="A0A1C5F9Q4_9ACTN" ac="A0A1C5F9Q4" length="198" description="Voltage-gated potassium channel OS=Streptomyces sp. MnatMP-M17 OX=1839780 GN=GA0115259_108751 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>298</score>
+      <bits>119.398</bits>
+      <expectation>1.2e-31</expectation>
+      <identity>60.9</identity>
+      <positives>79.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="93">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFV</querySeq>
+      <pattern>LH +AA  AT+LL++VLL GS++ V  E  +  A + ++PRALWWSVETATTVGYGD+YP+T WGR +A VVM+ GI+ F +VTA+LATWFV</pattern>
+      <matchSeq start="52" end="143">LHVKAAVWATLLLMLVLLVGSWIIVPVEASSRHATITSFPRALWWSVETATTVGYGDMYPITPWGRVIASVVMLVGISVFSIVTASLATWFV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="143" database="TR" id="A0A4Q4DHN3_9ACTN" ac="A0A4Q4DHN3" length="173" description="Potassium voltage-gated channel subfamily KQT OS=Streptomyces sp. L-9-10 OX=1478131 GN=CU044_4907 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>296</score>
+      <bits>118.627</bits>
+      <expectation>1.2e-31</expectation>
+      <identity>61.3</identity>
+      <positives>79.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="94">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVG</querySeq>
+      <pattern>LH RAA  A++ +V++LLAGS++ V  E  AP A + ++P ALWWS+ETATTVGYGDLYPVT  GR +A VVM+AGI+ F +VTA++ATWFVG</pattern>
+      <matchSeq start="22" end="114">LHVRAAAWASLAVVVILLAGSWIIVPFEVAAPHATITSFPLALWWSIETATTVGYGDLYPVTAPGRVIASVVMLAGISVFSIVTASVATWFVG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="144" database="TR" id="A0A4S2R439_9ACTN" ac="A0A4S2R439" length="159" description="Two pore domain potassium channel family protein OS=Streptomyces sp. RKND-216 OX=2562581 GN=E4198_12505 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>293</score>
+      <bits>117.472</bits>
+      <expectation>2.4e-31</expectation>
+      <identity>62.8</identity>
+      <positives>73.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="95">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>+H RAA A   +  +VLL GS + +  E  APGA + +YP ALWWS+ETATTVGYGDLYPVT  GR VA VVMV GIT+F +VTAALAT FV R</pattern>
+      <matchSeq start="21" end="114">VHLRAAIAGVAVSTVVLLVGSAVILPLEENAPGATITSYPLALWWSIETATTVGYGDLYPVTAGGRVVAAVVMVVGITTFSVVTAALATGFVSR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="145" database="TR" id="A0A919FYX1_9ACTN" ac="A0A919FYX1" length="166" description="PH-gated potassium channel KcsA OS=Streptomyces sulfonofaciens OX=68272 GN=kcsA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>293</score>
+      <bits>117.472</bits>
+      <expectation>2.9e-31</expectation>
+      <identity>60.2</identity>
+      <positives>73.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="95">HWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>H RAA  AT    + LLAGS+  V  E GAP A L T+PRALWWS+ETATTVGYGD +PVT  GR +A ++M+ GI +F +VTAA+ATWFV R</pattern>
+      <matchSeq start="23" end="115">HVRAAAWATGFTALFLLAGSWAIVPVEEGAPRATLTTFPRALWWSIETATTVGYGDFFPVTAGGRVIAALMMLVGIAAFSIVTAAIATWFVDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="146" database="TR" id="A0A852ZKT5_9ACTN" ac="A0A852ZKT5" length="163" description="Voltage-gated potassium channel OS=Actinopolymorpha rutila OX=446787 GN=F4554_006252 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>290</score>
+      <bits>116.316</bits>
+      <expectation>7.7e-31</expectation>
+      <identity>60.2</identity>
+      <positives>75.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="94">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVG</querySeq>
+      <pattern>+H +A+  A   +V VLL GS + V AE  +P A + ++P ALWWSVETATTVGYGDLYPVTL GR +A +VM+ GI SF +VTA+LATWFVG</pattern>
+      <matchSeq start="21" end="113">IHVKASVWAVAGVVAVLLVGSLIIVPAESSSPRANITSFPLALWWSVETATTVGYGDLYPVTLAGRIIATIVMIVGIASFSIVTASLATWFVG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="147" database="TR" id="A0A370B134_9ACTN" ac="A0A370B134" length="171" description="Two pore domain potassium channel family protein OS=Streptomyces corynorhini OX=2282652 GN=DVH02_24455 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>290</score>
+      <bits>116.316</bits>
+      <expectation>9.6e-31</expectation>
+      <identity>62.4</identity>
+      <positives>77.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="94">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVG</querySeq>
+      <pattern>LH +AA  A V +V+VLL GS++ V  E  AP A + ++P ALWWSVETATTVGYGDLYPVT+ GR +A VVM+ GI+ F +VTA+LATWFVG</pattern>
+      <matchSeq start="22" end="114">LHVKAAAWAAVGVVVVLLLGSWIIVPFELAAPKATITSFPLALWWSVETATTVGYGDLYPVTVPGRLIAGVVMLVGISVFSIVTASLATWFVG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="148" database="TR" id="A0A1I3BGN6_9ACTN" ac="A0A1I3BGN6" length="164" description="Voltage-gated potassium channel OS=Actinopolymorpha cephalotaxi OX=504797 GN=SAMN05421678_1245 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>286</score>
+      <bits>114.775</bits>
+      <expectation>3.2e-30</expectation>
+      <identity>60.2</identity>
+      <positives>75.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="94">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVG</querySeq>
+      <pattern>+H +A+  A V +V VLL GS + V AE   P A + ++P ALWWS+ETATTVGYGDLYPVTL GR +A VVM+ GI +F +VTA+LATWFVG</pattern>
+      <matchSeq start="21" end="113">IHVKASVWAVVGVVAVLLLGSAIIVPAESSNPRANITSFPLALWWSIETATTVGYGDLYPVTLAGRIIATVVMIVGIAAFSIVTASLATWFVG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="149" database="TR" id="A0A1U9QLY0_STRNV" ac="A0A1U9QLY0" length="168" description="Voltage-gated potassium channel OS=Streptomyces niveus OX=193462 GN=BBN63_02540 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>286</score>
+      <bits>114.775</bits>
+      <expectation>3.6e-30</expectation>
+      <identity>59.1</identity>
+      <positives>77.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="94">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVG</querySeq>
+      <pattern>LH +A+  A + +V+VLL GS++ V  E  AP A + ++P ALWWSVETATTVGYGDLYPVT+ GR +A +VM+ GI+ F +VTA+LATWFVG</pattern>
+      <matchSeq start="22" end="114">LHVKASAWAAIGVVLVLLIGSWIIVPFESSAPRATITSFPLALWWSVETATTVGYGDLYPVTVAGRVIAGIVMLVGISVFSIVTASLATWFVG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="150" database="TR" id="A0A3N6EY38_9ACTN" ac="A0A3N6EY38" length="170" description="pH-gated potassium channel KcsA OS=Streptomyces sp. ADI96-02 OX=1522760 GN=kcsA2 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>285</score>
+      <bits>114.39</bits>
+      <expectation>5.3e-30</expectation>
+      <identity>61.3</identity>
+      <positives>76.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="94">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVG</querySeq>
+      <pattern>LH +A+  A V +V+VL+ GS+  V  E  AP A + ++P ALWWSVETATTVGYGDLYPVT  GR +AVVVM+ GI+ F +VTA+LATWFVG</pattern>
+      <matchSeq start="22" end="114">LHVKASAWAVVGVVVVLVLGSWAIVPFESTAPRATITSFPLALWWSVETATTVGYGDLYPVTAPGRVIAVVVMLVGISVFSIVTASLATWFVG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="151" database="TR" id="V6JNH5_STRNV" ac="V6JNH5" length="165" description="Potassium channel domain-containing protein OS=Streptomyces niveus NCIMB 11891 OX=1352941 GN=M877_38715 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>284</score>
+      <bits>114.005</bits>
+      <expectation>6.6e-30</expectation>
+      <identity>58.1</identity>
+      <positives>75.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="94">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVG</querySeq>
+      <pattern>LH +A+  A V +V+V+L GS++ V  E  AP A + ++P ALWWS+ETATTVGYGDLYPVT  GR +A +VM+ GI  F +VTA+LATWFVG</pattern>
+      <matchSeq start="22" end="114">LHVKASVWAAVGIVLVMLIGSWIIVPCEASAPRATITSFPLALWWSIETATTVGYGDLYPVTAAGRVIAAIVMLVGIAVFSIVTASLATWFVG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="152" database="TR" id="A0A4Y8Y827_9ACTN" ac="A0A4Y8Y827" length="165" description="Two pore domain potassium channel family protein OS=Streptomyces sp. 4R-3d OX=2559605 GN=E4P36_07985 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>283</score>
+      <bits>113.62</bits>
+      <expectation>9.3e-30</expectation>
+      <identity>58.1</identity>
+      <positives>75.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="94">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVG</querySeq>
+      <pattern>LH +A+  A V +V+V+L GS++ V  E  AP A + ++P ALWWS+ETATTVGYGDLYPVT  GR +A +VM+ GI  F +VTA+LATWFVG</pattern>
+      <matchSeq start="22" end="114">LHVKASMWAAVGVVLVMLIGSWIIVPCEASAPRATITSFPLALWWSIETATTVGYGDLYPVTAAGRVIAAIVMLVGIAVFSIVTASLATWFVG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="153" database="TR" id="A0A345HST6_9ACTN" ac="A0A345HST6" length="173" description="Two pore domain potassium channel family protein OS=Streptomyces paludis OX=2282738 GN=DVK44_21265 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>283</score>
+      <bits>113.62</bits>
+      <expectation>1.2e-29</expectation>
+      <identity>60.2</identity>
+      <positives>75.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="94">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVG</querySeq>
+      <pattern>LH +AA  A +  V+VLL GS++ V  E  AP A + ++P ALWWSVETATTVGYGDLYPVT+ GR +A VVM+ GI+ F +VTA+LATW VG</pattern>
+      <matchSeq start="22" end="114">LHVKAAAGAGMAFVLVLLLGSWIIVPYEARAPRATITSFPLALWWSVETATTVGYGDLYPVTVPGRVIACVVMLVGISVFSVVTASLATWLVG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="154" database="TR" id="A0A353KEG6_STRSQ" ac="A0A353KEG6" length="168" description="Voltage-gated potassium channel OS=Streptomyces sp. OX=1931 GN=DD420_20125 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>277</score>
+      <bits>111.309</bits>
+      <expectation>8.2e-29</expectation>
+      <identity>58.7</identity>
+      <positives>76.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="94">HWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVG</querySeq>
+      <pattern>H RA+  A + L++V+L GS++ V  E  AP A + ++P ALWWSVETATTVGYGDLYPVT  GR +A +VM+ GI+ F +VTA+LATWFVG</pattern>
+      <matchSeq start="23" end="114">HVRASVWAALGLILVMLVGSWIIVPFEAPAPRATITSFPLALWWSVETATTVGYGDLYPVTTAGRVIAGIVMLVGISVFSIVTASLATWFVG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="155" database="TR" id="A0A5C8QHV8_9ACTN" ac="A0A5C8QHV8" length="168" description="Two pore domain potassium channel family protein OS=Streptomyces sp. IB2014 016-6 OX=2517818 GN=EW053_13205 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>274</score>
+      <bits>110.153</bits>
+      <expectation>2.3e-28</expectation>
+      <identity>58.1</identity>
+      <positives>74.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="94">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVG</querySeq>
+      <pattern>LH +A+  A + +V+VLL  S++ V  E  AP A + ++P ALWWSVETATTVGYGDLYPVT  GR +A  VM+ GI+ F +VTA+LATWFVG</pattern>
+      <matchSeq start="22" end="114">LHVKASAWAAIGVVLVLLISSWIIVPFESSAPRATITSFPLALWWSVETATTVGYGDLYPVTAPGRVIAGAVMLVGISVFSIVTASLATWFVG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="156" database="TR" id="A0A327T863_9ACTN" ac="A0A327T863" length="168" description="Voltage-gated potassium channel OS=Streptomyces sp. DpondAA-E10 OX=1305832 GN=K351_03486 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>269</score>
+      <bits>108.227</bits>
+      <expectation>1.3e-27</expectation>
+      <identity>58.7</identity>
+      <positives>75.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="94">HWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVG</querySeq>
+      <pattern>H RA+  A + LV+V+L GS++ V  E  A  A + ++P ALWWSVETATTVGYGDLYPVT  GR +A +VM+ GI+ F +VTA+LATWFVG</pattern>
+      <matchSeq start="23" end="114">HVRASVWAALGLVLVMLVGSWIIVPFEAPAHRATITSFPLALWWSVETATTVGYGDLYPVTTAGRVIAGIVMLVGISVFSIVTASLATWFVG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="157" database="TR" id="A0A7K2TZM7_9ACTN" ac="A0A7K2TZM7" length="168" description="Voltage-gated potassium channel OS=Streptomyces sp. SID8358 OX=2690342 GN=GTW52_21050 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>269</score>
+      <bits>108.227</bits>
+      <expectation>1.3e-27</expectation>
+      <identity>58.7</identity>
+      <positives>75.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="94">HWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVG</querySeq>
+      <pattern>H RA+  A + LV+V+L GS++ V  E  A  A + ++P ALWWSVETATTVGYGDLYPVT  GR +A +VM+ GI+ F +VTA+LATWFVG</pattern>
+      <matchSeq start="23" end="114">HVRASVWAALGLVLVMLVGSWIIVPFEAPAHRATITSFPLALWWSVETATTVGYGDLYPVTTAGRVIAGIVMLVGISVFSIVTASLATWFVG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="158" database="TR" id="A0A6G2ZKF4_9ACTN" ac="A0A6G2ZKF4" length="168" description="Voltage-gated potassium channel OS=Streptomyces sp. SID3915 OX=2690263 GN=GT016_27660 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>269</score>
+      <bits>108.227</bits>
+      <expectation>1.3e-27</expectation>
+      <identity>58.7</identity>
+      <positives>75.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="94">HWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVG</querySeq>
+      <pattern>H RA+  A + LV+V+L GS++ V  E  A  A + ++P ALWWSVETATTVGYGDLYPVT  GR +A +VM+ GI+ F +VTA+LATWFVG</pattern>
+      <matchSeq start="23" end="114">HVRASVWAALGLVLVMLVGSWIIVPFEAPAHRATITSFPLALWWSVETATTVGYGDLYPVTTAGRVIAGIVMLVGISVFSIVTASLATWFVG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="159" database="TR" id="G2NJU4_STREK" ac="G2NJU4" length="168" description="Ion transport 2 domain protein OS=Streptomyces sp. (strain SirexAA-E / ActE) OX=862751 GN=SACTE_5969 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>269</score>
+      <bits>108.227</bits>
+      <expectation>1.3e-27</expectation>
+      <identity>58.7</identity>
+      <positives>75.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="94">HWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVG</querySeq>
+      <pattern>H RA+  A + LV+V+L GS++ V  E  A  A + ++P ALWWSVETATTVGYGDLYPVT  GR +A +VM+ GI+ F +VTA+LATWFVG</pattern>
+      <matchSeq start="23" end="114">HVRASVWAALGLVLVMLVGSWIIVPFEAPAHRATITSFPLALWWSVETATTVGYGDLYPVTTAGRVIAGIVMLVGISVFSIVTASLATWFVG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="160" database="TR" id="A0A225TLW6_9NOCA" ac="A0A225TLW6" length="239" description="Ion transporter OS=Rhodococcus sp. BUPNP1 OX=1432786 GN=B9C99_12885 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>261</score>
+      <bits>105.145</bits>
+      <expectation>1.2e-25</expectation>
+      <identity>55.0</identity>
+      <positives>67.0</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="95">RAAGAATVLLVIVLLAGSYLAVL---------AERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>R+AGAA    V++  AGS L +L         AERGAPGA + TYP+ALWWS  T TTVGYGD  PVT+ GR +AV +MVAGI   G++TA LA+W V R</pattern>
+      <matchSeq start="102" end="201">RSAGAAVRGRVVLYAAGSTLLLLIISSLAMLDAERGAPGASIETYPQALWWSTVTVTTVGYGDFSPVTITGRAIAVALMVAGIALLGVITATLASWLVER</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="161" database="TR" id="A0A7W3IPN6_9ACTN" ac="A0A7W3IPN6" length="250" description="Voltage-gated potassium channel OS=Microlunatus kandeliicorticis OX=1759536 GN=FHX74_000504 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>259</score>
+      <bits>104.375</bits>
+      <expectation>3e-25</expectation>
+      <identity>53.7</identity>
+      <positives>69.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="95">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>+L  R A    +  V+VL AG+   + AERGAPGA + T+  +LWW+V T TTVGYGD+YPVT  GR VA  +MVAG+   G+VTA+LA+WFV R</pattern>
+      <matchSeq start="114" end="208">SLQGRVAVYVALSTVLVLYAGALAELAAERGAPGANIETFGTSLWWAVTTITTVGYGDVYPVTTEGRWVAAALMVAGVALLGVVTASLASWFVAR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="162" database="TR" id="A0A0T2L0A2_9MICO" ac="A0A0T2L0A2" length="238" description="Potassium channel domain-containing protein OS=Microbacterium sp. Root61 OX=1736570 GN=ASD65_13655 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>257</score>
+      <bits>103.605</bits>
+      <expectation>4.7e-25</expectation>
+      <identity>57.3</identity>
+      <positives>71.9</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="95">AGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>AGAA +L+ +  LA     + AERGAPGA + T+P A+WWS  T TTVGYGD YPVT WGR VAV++MV G+T  G+VTA LA+W + R</pattern>
+      <matchSeq start="117" end="201">AGAAVILIWMTSLA----ELDAERGAPGANIETFPDAIWWSFVTLTTVGYGDFYPVTGWGRTVAVLLMVGGVTVVGIVTATLASWVIER</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="163" database="TR" id="A0A323VC96_9ACTN" ac="A0A323VC96" length="255" description="Two pore domain potassium channel family protein OS=Modestobacter versicolor OX=429133 GN=DMO24_04510 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>257</score>
+      <bits>103.605</bits>
+      <expectation>6.7e-25</expectation>
+      <identity>55.3</identity>
+      <positives>68.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="95">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>LH R A   T    +V+   S  A  AER APGA + +Y  A+WW+V T TTVGYGD YPVT  GR VAV++MV+GI   G+VTAA+A+WFVGR</pattern>
+      <matchSeq start="113" end="206">LHGRVAAYVTATASLVVFMASLAAYDAERAAPGASITSYGDAVWWAVTTITTVGYGDEYPVTPEGRLVAVLLMVSGIALLGVVTAAVASWFVGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="164" database="TR" id="A0A1H3LFW1_9ACTN" ac="A0A1H3LFW1" length="250" description="Voltage-gated potassium channel OS=Modestobacter sp. DSM 44400 OX=1550230 GN=SAMN05661080_04090 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>256</score>
+      <bits>103.219</bits>
+      <expectation>8.5e-25</expectation>
+      <identity>52.6</identity>
+      <positives>69.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="95">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>+LH R AG   +   +V+   S  A  AERGAPGA +  Y  A+WW++ T TTVGYGD YPVT  GR VAV++M++GI   G+VTA++A+WFVGR</pattern>
+      <matchSeq start="112" end="206">SLHGRVAGYTALAASLVVFMASLAAYDAERGAPGATMDNYGDAVWWALTTITTVGYGDQYPVTAEGRLVAVLLMLSGIALLGVVTASVASWFVGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="165" database="TR" id="I4EVB6_9ACTN" ac="I4EVB6" length="257" description="Voltage-gated potassium channel OS=Modestobacter marinus OX=477641 GN=kcsA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>256</score>
+      <bits>103.219</bits>
+      <expectation>9.8e-25</expectation>
+      <identity>53.7</identity>
+      <positives>69.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="95">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>+LH R A   T+   +V+   S     AERGAPGA + +Y  A+WW++ T TTVGYGD YPVT  GR VAV++MV+GI   G+VTAA+A+WFVGR</pattern>
+      <matchSeq start="112" end="206">SLHGRVAAYVTLTASLVVFMASLAVYDAERGAPGASITSYGDAVWWALTTITTVGYGDEYPVTGDGRLVAVLLMVSGIALLGVVTAAVASWFVGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="166" database="TR" id="A0A849BQY6_9ACTN" ac="A0A849BQY6" length="260" description="Two pore domain potassium channel family protein OS=Pseudokineococcus marinus OX=351215 GN=HLB09_11960 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>256</score>
+      <bits>103.219</bits>
+      <expectation>1e-24</expectation>
+      <identity>64.0</identity>
+      <positives>76.4</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="95">GAATVLLVIVLLAGSYLAVL-AERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>G ATVL+V+V  AG  LAVL AERGAPGA + TYP A+WW+V T +TVGYGDLYPVT  GR VAV +MVAG+   G VTA+LA+W + R</pattern>
+      <matchSeq start="125" end="209">GGATVLVVVV--AG--LAVLDAERGAPGALIETYPDAVWWAVTTISTVGYGDLYPVTDGGRAVAVGLMVAGVALLGTVTASLASWLIDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="167" database="TR" id="A0A1H0FNS7_9ACTN" ac="A0A1H0FNS7" length="177" description="Voltage-gated potassium channel OS=Geodermatophilus sp. DSM 45219 OX=1881103 GN=SAMN05428965_2121 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>243</score>
+      <bits>98.2117</bits>
+      <expectation>1.4e-23</expectation>
+      <identity>50.5</identity>
+      <positives>67.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="97">RAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>R+  A  V   +++  G   A+ AERGAP A + ++  ALWW+V T TTVGYGDLYPVT  GR VAV +MV G++  GLVTA +A+WF+ + Q</pattern>
+      <matchSeq start="50" end="142">RSGQAVVVAAGLLVFIGGLAALDAERGAPEASITSFGNALWWAVTTVTTVGYGDLYPVTTLGRLVAVSLMVVGVSLVGLVTATVASWFIAQGQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="168" database="TR" id="A0A6I6GUP9_9ACTN" ac="A0A6I6GUP9" length="241" description="Putative ion transport protein OS=Dietzia sp. DQ12-45-1b OX=912801 GN=GJR88_05077 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>243</score>
+      <bits>98.2117</bits>
+      <expectation>6.1e-23</expectation>
+      <identity>57.1</identity>
+      <positives>72.5</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="95">AAGAATVLLVIVLLAGSYLAVL-AERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>AAG+ +VLL++     S LA+L AERGAPGA + TY +ALWW+V T TTVGYGD+ PVT  GR +A  +M+AGI   G+VTA LA+W V R</pattern>
+      <matchSeq start="103" end="188">AAGSTSVLLIV-----SSLAILDAERGAPGASIETYGQALWWAVVTVTTVGYGDIAPVTPTGRMIATGLMLAGIALLGVVTATLASWIVDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="169" database="TR" id="M2YL48_9NOCA" ac="M2YL48" length="124" description="Ion transport protein (Fragment) OS=Rhodococcus ruber BKS 20-38 OX=1278076 GN=G352_16227 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>234</score>
+      <bits>94.7449</bits>
+      <expectation>8e-23</expectation>
+      <identity>56.0</identity>
+      <positives>68.1</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="95">AAGAATVLLVIVLLAGSYLAVL-AERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>A+G+  +LLV+     S LA+L AER AP A + TYP ALWWS  T TTVGYGD  PVT  GR +AV +M+AGI   G+VTA LA+W V R</pattern>
+      <matchSeq start="33" end="118">ASGSTALLLVV-----SSLAMLDAERTAPDATITTYPDALWWSAVTVTTVGYGDFAPVTATGRLIAVALMIAGIALLGVVTATLASWLVER</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="170" database="TR" id="A0A6P0ET59_9ACTN" ac="A0A6P0ET59" length="263" description="Potassium channel family protein OS=Modestobacter muralis OX=1608614 GN=G3R41_07990 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>243</score>
+      <bits>98.2117</bits>
+      <expectation>9.3e-23</expectation>
+      <identity>52.6</identity>
+      <positives>65.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="95">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>+LH R A   T+   +V+   S   + AERG P A + T+  ALWW+  T TTVGYGD YPVT  GR VA ++MVAGI   G VTAA+A+WFVGR</pattern>
+      <matchSeq start="112" end="206">SLHGRVAAYVTLTASLVVFMASLAELDAERGDPDATITTFGDALWWAFTTITTVGYGDRYPVTAEGRLVAGMLMVAGIALLGTVTAAVASWFVGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="171" database="TR" id="A0A2A2WNV4_9ACTN" ac="A0A2A2WNV4" length="271" description="Ion transporter OS=Dietzia natronolimnaea OX=161920 GN=CEY15_11155 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>243</score>
+      <bits>98.2117</bits>
+      <expectation>1.1e-22</expectation>
+      <identity>58.2</identity>
+      <positives>72.5</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="95">AAGAATVLLVIVLLAGSYLAVL-AERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>AAG+ +VLLV+     S LA+L AERGAPGA + TY +ALWW+V T TTVGYGD+ PVT  GR +A  +M+AGI   G+VTA LA+W V R</pattern>
+      <matchSeq start="133" end="218">AAGSTSVLLVV-----SSLAILDAERGAPGATIETYGQALWWAVVTVTTVGYGDIAPVTPTGRVIATGLMLAGIALLGVVTATLASWIVDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="172" database="TR" id="A0A1J5QYH9_9ZZZZ" ac="A0A1J5QYH9" length="251" description="pH-gated potassium channel KcsA OS=mine drainage metagenome OX=410659 GN=kcsA_1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>241</score>
+      <bits>97.4413</bits>
+      <expectation>1.5e-22</expectation>
+      <identity>53.8</identity>
+      <positives>68.1</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="97">GAATVLLVIVLLAGSYLAVL-AERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGREQ</querySeq>
+      <pattern>G A VL   VL+    LA+L AER +PGA + ++P ALWW++ T TTVGYGD YPVT  GR VA  +M+ GI+  GLVTA +A WF+  EQ</pattern>
+      <matchSeq start="120" end="210">GQAIVLAASVLIVIGALAILDAERSSPGANIASFPDALWWAITTVTTVGYGDRYPVTGLGRLVAAALMLVGISLLGLVTATVAAWFMRAEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="173" database="TR" id="M3A2N1_9NOCA" ac="M3A2N1" length="239" description="Ion transport protein OS=Rhodococcus ruber BKS 20-38 OX=1278076 GN=G352_01177 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>240</score>
+      <bits>97.0561</bits>
+      <expectation>1.6e-22</expectation>
+      <identity>51.0</identity>
+      <positives>63.0</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="95">RAAGAATVLLVIVLLAGSYLAVL---------AERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>R+AG A    V++  AGS L +L         +ERGAP A + TYP ALWWS  T TTVGYGD  PVT  GR +AV +M+AGI   G++TA LA+W V R</pattern>
+      <matchSeq start="102" end="201">RSAGTAVRGRVVMYAAGSTLLLLITSSLAMLDSERGAPHASIETYPEALWWSTVTVTTVGYGDFSPVTTTGRLIAVALMIAGIALLGVITATLASWLVER</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="174" database="TR" id="A0A1S8C9L4_9ACTN" ac="A0A1S8C9L4" length="249" description="Voltage-gated potassium channel OS=Modestobacter sp. VKM Ac-2676 OX=1678130 GN=A7K94_0211995 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>240</score>
+      <bits>97.0561</bits>
+      <expectation>2e-22</expectation>
+      <identity>50.5</identity>
+      <positives>66.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="95">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>+LH R A   T++ +++    S     AER A  A + +Y  A+WW+V T TTVGYGD YPVT  GR VAV++MV GI   G+VTAA+A+WFVGR</pattern>
+      <matchSeq start="107" end="201">SLHGRVAWYVTLIALLISFMASLAVYDAERDAADAVITSYGDAVWWAVATITTVGYGDAYPVTAEGRLVAVLLMVGGIALLGVVTAAVASWFVGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="175" database="TR" id="A0A4V2Z6N2_9ACTN" ac="A0A4V2Z6N2" length="251" description="Two pore domain potassium channel family protein OS=Actinomadura sp. 6K520 OX=2530364 GN=E1289_12870 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>240</score>
+      <bits>97.0561</bits>
+      <expectation>2.1e-22</expectation>
+      <identity>56.1</identity>
+      <positives>70.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="93">VLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFV</querySeq>
+      <pattern>V  V+++L  +   + AERGAP A + ++P ALWW+  T TTVGYGDLYPVTL GR VA V+  AGI   G+VTA LA+WFV</pattern>
+      <matchSeq start="127" end="208">VAAVLIVLCAALAVLDAERGAPDAVITSFPDALWWAATTVTTVGYGDLYPVTLGGRVVASVLFTAGIALLGVVTATLASWFV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="176" database="TR" id="A0A022L6U3_9ACTN" ac="A0A022L6U3" length="270" description="Ion transporter OS=Dietzia sp. UCD-THP OX=1292020 GN=H483_0115995 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>241</score>
+      <bits>97.4413</bits>
+      <expectation>2.1e-22</expectation>
+      <identity>58.2</identity>
+      <positives>69.2</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="95">AAGAATVLLVIVLLAGSYLAVL-AERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>AAG+  +LLV+     S LA+L AERGAPG  + TY  ALWWSV T TTVGYGDL PVT  GR +A  +M+AGI   G+VTA LA+W V R</pattern>
+      <matchSeq start="116" end="201">AAGSTAILLVV-----SSLAMLDAERGAPGGSIETYGEALWWSVVTVTTVGYGDLAPVTPVGRLIATGLMIAGIALLGVVTATLASWIVDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="177" database="TR" id="A0A2S1RCR3_9ACTN" ac="A0A2S1RCR3" length="242" description="Ion transporter OS=Dietzia lutea OX=546160 GN=A6035_16185 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>239</score>
+      <bits>96.6709</bits>
+      <expectation>2.4e-22</expectation>
+      <identity>58.2</identity>
+      <positives>69.2</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="95">AAGAATVLLVIVLLAGSYLAVL-AERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>AAG+  VLLV+     S LA+L AERGAPGA + +Y  ALWWS  T TTVGYGD  PVT  GR +AV +MVAGI   G++TA LA+W V R</pattern>
+      <matchSeq start="102" end="187">AAGSTAVLLVV-----SSLAMLDAERGAPGASIDSYGEALWWSAVTVTTVGYGDYSPVTAVGRAIAVGLMVAGIALLGVITATLASWIVER</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="178" database="TR" id="A0A562IN32_9ACTN" ac="A0A562IN32" length="260" description="Voltage-gated potassium channel OS=Modestobacter roseus OX=1181884 GN=JD78_00767 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>240</score>
+      <bits>97.0561</bits>
+      <expectation>2.5e-22</expectation>
+      <identity>49.5</identity>
+      <positives>66.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="95">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>+LH R A   + + +++    S     AER AP A + +Y  A+WW++ T TTVGYGD YPVT  GR VAV++MV GI   G+VTAA+A+WFVGR</pattern>
+      <matchSeq start="112" end="206">SLHGRVAWYVSAIALLISFMASLAVYDAERDAPDAVITSYGDAVWWALTTITTVGYGDTYPVTTEGRLVAVLLMVGGIALLGVVTAAVASWFVGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="179" database="TR" id="A0A917BDK1_9ACTN" ac="A0A917BDK1" length="236" description="Ion transporter OS=Marmoricola endophyticus OX=2040280 GN=GCM10011519_06100 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>238</score>
+      <bits>96.2857</bits>
+      <expectation>3e-22</expectation>
+      <identity>49.5</identity>
+      <positives>68.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="95">RAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>R A        +V+L G+   + AERGAPGA + T+  A+WW++ T +TVGYGDLYPVT+ GR VA V+M+AGI   G VTA+LA+W + +</pattern>
+      <matchSeq start="104" end="194">RVAAYVASAATLVVLTGALAGLDAERGAPGANIETFGDAVWWALTTVSTVGYGDLYPVTVTGRLVAAVLMLAGIALLGAVTASLASWLIDK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="180" database="TR" id="A0A1A3KYA0_MYCAS" ac="A0A1A3KYA0" length="241" description="Ion transporter OS=Mycobacterium asiaticum OX=1790 GN=A5640_28095 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>238</score>
+      <bits>96.2857</bits>
+      <expectation>3.4e-22</expectation>
+      <identity>52.4</identity>
+      <positives>76.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="95">LVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>+++++ AGS   + AERG PGA + ++ +ALWWS+ T TTVGYG+LYPVT+ GR VA ++M+ GI+  G+VTA+LA+W V R</pattern>
+      <matchSeq start="122" end="203">VILLVYAGSLAILDAERGQPGATIDSFGKALWWSITTVTTVGYGNLYPVTVTGRVVAALLMIGGISLVGVVTASLASWIVQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="181" database="TR" id="A0A1C4VAJ0_9ACTN" ac="A0A1C4VAJ0" length="256" description="Voltage-gated potassium channel OS=Micromonospora marina OX=307120 GN=GA0070215_10336 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>238</score>
+      <bits>96.2857</bits>
+      <expectation>4.5e-22</expectation>
+      <identity>60.7</identity>
+      <positives>70.8</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="95">GAATVLLVIVLLAGSYLAVL-AERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>GA TVLLV+V    S LAVL AERGAP A + ++  ALWW+V T TTVGYGDL+PVT  GR VA+ +MV GI   G VT +LATW V R</pattern>
+      <matchSeq start="128" end="212">GATTVLLVLV----SALAVLDAERGAPDASITSFADALWWAVVTITTVGYGDLFPVTTAGRLVALGLMVGGIGLIGFVTGSLATWIVER</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="182" database="TR" id="A0A6N8GCQ4_9ACTN" ac="A0A6N8GCQ4" length="260" description="Two pore domain potassium channel family protein OS=Streptomonospora sp. PA3 OX=2607326 GN=FZ103_11210 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>238</score>
+      <bits>96.2857</bits>
+      <expectation>4.8e-22</expectation>
+      <identity>60.0</identity>
+      <positives>70.6</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="93">ATVLLVIVLLAGSYLAVL-AERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFV</querySeq>
+      <pattern>A  LL++   A   LAVL AERGAPGA + T+P ALWW+  T TTVGYGD+YPVT  GR VA V+  AGI   G+VTA LA+WFV</pattern>
+      <matchSeq start="131" end="212">AAALLIVFCAA---LAVLDAERGAPGAVIRTFPDALWWAATTVTTVGYGDMYPVTAGGRIVAGVLFTAGIALLGVVTATLASWFV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="183" database="TR" id="A0A928EI66_9ACTO" ac="A0A928EI66" length="267" description="Potassium channel family protein OS=Actinomycetaceae bacterium OX=1898202 GN=E7Z96_07210 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>238</score>
+      <bits>96.2857</bits>
+      <expectation>5.5e-22</expectation>
+      <identity>50.5</identity>
+      <positives>69.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFV</querySeq>
+      <pattern>AL  R    AT  +V++ L G+  A+ AERGAPGA + T+PRA+WW++ T TTVGYGD+ PVT  G+ VAV++M  GI   G+V+A LA+W +</pattern>
+      <matchSeq start="113" end="205">ALRGRITIYATGGVVLITLVGALTALNAERGAPGATITTFPRAVWWALVTITTVGYGDVSPVTPSGQLVAVLLMTGGIALIGVVSATLASWII</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="184" database="TR" id="A0A2T0RGG0_9ACTN" ac="A0A2T0RGG0" length="254" description="Voltage-gated potassium channel OS=Pseudosporangium ferrugineum OX=439699 GN=CLV70_12592 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>237</score>
+      <bits>95.9005</bits>
+      <expectation>6.1e-22</expectation>
+      <identity>58.4</identity>
+      <positives>68.5</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="95">GAATVLLVIVLLAGSYLAVL-AERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>G ATVLLV V    + LAVL AERG PGA + +YP ALWW V T TTVGYGDL PVT+ GR VAV +M+ GI   G VT ++ +W V R</pattern>
+      <matchSeq start="123" end="207">GGATVLLVAV----AALAVLDAERGQPGAAIDSYPEALWWGVVTITTVGYGDLAPVTMEGRLVAVAMMIGGIGLLGFVTGSVTSWIVDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="185" database="TR" id="A0A2T5AS41_9ACTN" ac="A0A2T5AS41" length="240" description="Voltage-gated potassium channel OS=Dietzia psychralcaliphila OX=139021 GN=C8N39_102388 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>236</score>
+      <bits>95.5153</bits>
+      <expectation>6.5e-22</expectation>
+      <identity>57.1</identity>
+      <positives>70.3</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="95">AAGAATVLLVIVLLAGSYLAVL-AERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>AAG+ +VLLV+     S LA+L AERGAPG  + TY  ALWW+V T TTVGYGD+ PVT  GR +A  +M+AGI   G+VTA LA+W V R</pattern>
+      <matchSeq start="102" end="187">AAGSTSVLLVV-----SSLAMLDAERGAPGGSIETYGEALWWAVVTVTTVGYGDIAPVTPVGRVIATGLMLAGIALLGVVTATLASWIVDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="186" database="TR" id="A0A5J6U9L2_9ACTN" ac="A0A5J6U9L2" length="258" description="Two pore domain potassium channel family protein OS=Actinomadura sp. WMMB 499 OX=1219491 GN=F7P10_24170 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>237</score>
+      <bits>95.9005</bits>
+      <expectation>6.6e-22</expectation>
+      <identity>60.5</identity>
+      <positives>70.9</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="93">AATVLLVIVLLAGSYLAVL-AERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFV</querySeq>
+      <pattern>A    L+IV  A   LAVL AERG+P A + T+P ALWW+  T TTVGYGDLYPVTL GR VA V+  AGI   G+VTA+LA+WFV</pattern>
+      <matchSeq start="125" end="208">AIVAALLIVFCAA--LAVLDAERGSPEAVITTFPDALWWAATTVTTVGYGDLYPVTLGGRVVAGVLFTAGIALLGVVTASLASWFV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="187" database="TR" id="A0A4P6Q6H8_9ACTN" ac="A0A4P6Q6H8" length="261" description="pH-gated potassium channel KcsA OS=Streptomonospora litoralis OX=2498135 GN=kcsA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>237</score>
+      <bits>95.9005</bits>
+      <expectation>6.9e-22</expectation>
+      <identity>59.1</identity>
+      <positives>69.3</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="95">AATVLLVIVLLAGSYLAVL-AERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>AA   LV+   A   LAVL AERGAP A + T+P+ALWW+  T TTVGYGDLYPVT  GR VA V+  AGI   G+VTA LA+WFV +</pattern>
+      <matchSeq start="127" end="211">AAAAFLVVFCAA---LAVLDAERGAPDALIQTFPQALWWAATTVTTVGYGDLYPVTASGRLVAGVLFTAGIALLGVVTATLASWFVDK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="188" database="TR" id="A0A8J3C2B9_9ACTN" ac="A0A8J3C2B9" length="283" description="Ion transporter OS=Mangrovihabitans endophyticus OX=1751298 GN=GCM10012284_37830 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>238</score>
+      <bits>96.2857</bits>
+      <expectation>7.3e-22</expectation>
+      <identity>57.3</identity>
+      <positives>68.5</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="95">GAATVLLVIVLLAGSYLAVL-AERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>G  TVLLV +    + LAVL AERG P + + TYP+ALWW V T TTVGYGD YP TL GR VA+ +M+AGI   G VT +LA+W V R</pattern>
+      <matchSeq start="115" end="199">GGTTVLLVAI----AALAVLDAERGRPDSNIETYPQALWWGVVTITTVGYGDFYPATLEGRFVALAMMIAGIGLIGFVTGSLASWIVDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="189" database="TR" id="A0A077LVD0_9MICO" ac="A0A077LVD0" length="250" description="Ion transport 2 domain protein OS=Tetrasphaera japonica T1-X7 OX=1194083 GN=BN12_210009 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>236</score>
+      <bits>95.5153</bits>
+      <expectation>7.9e-22</expectation>
+      <identity>51.1</identity>
+      <positives>64.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="95">LHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>L  R A   T+  + VLL  S   + AERGAP A + T+  ALWWS+ T TTVGYGDLYPVT  GR VA  +M+ G+   G+VTA+ A+WF+ R</pattern>
+      <matchSeq start="113" end="206">LRGRVATYVTMGTLGVLLVSSLAVLDAERGAPKATITTFGDALWWSITTMTTVGYGDLYPVTFTGRIVAAGLMICGVALLGIVTASFASWFLRR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="190" database="TR" id="A0A1A3N6E8_MYCAS" ac="A0A1A3N6E8" length="240" description="Ion transporter OS=Mycobacterium asiaticum OX=1790 GN=A5635_06110 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>235</score>
+      <bits>95.1301</bits>
+      <expectation>9.2e-22</expectation>
+      <identity>51.2</identity>
+      <positives>76.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="95">LVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>+++++ AGS   + AERG PGA + ++ +ALWWS+ T TTVGYG+LYP+T+ GR VA ++M+ GI+  G+VTA+LA+W V R</pattern>
+      <matchSeq start="122" end="203">VILLVYAGSLAILDAERGQPGATIDSFGKALWWSITTVTTVGYGNLYPMTVTGRVVAALLMIGGISLVGVVTASLASWIVQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="191" database="TR" id="A0A1X0IV54_MYCRH" ac="A0A1X0IV54" length="261" description="Ion transporter OS=Mycolicibacterium rhodesiae OX=36814 GN=BST42_12830 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>236</score>
+      <bits>95.5153</bits>
+      <expectation>9.7e-22</expectation>
+      <identity>46.3</identity>
+      <positives>67.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="95">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>AL  R    AT +  +++ A S   +  ERGAPGA ++++  ALWW++ T TTVGYGD YPVT+ GR +A ++MV GI+  G++TA +A+W V R</pattern>
+      <matchSeq start="112" end="206">ALRGRVVVYATAVATLLVYASSLAVLDVERGAPGANIVSFGDALWWALATITTVGYGDQYPVTVVGRLIAALLMVGGISLIGVITATVASWIVQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="192" database="TR" id="A0A0C2G8M6_9ACTN" ac="A0A0C2G8M6" length="259" description="Ion transporter OS=Streptomonospora alba OX=183763 GN=LP52_06060 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>235</score>
+      <bits>95.1301</bits>
+      <expectation>1.3e-21</expectation>
+      <identity>60.0</identity>
+      <positives>69.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="93">ATVLLVIVLLAGSYLAVL-AERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFV</querySeq>
+      <pattern>A  LL++   A   LAVL AERG PGA + T+P ALWW+  T TTVGYGDLYPVT  GR VA V+  AGI   G+VTA LA+WFV</pattern>
+      <matchSeq start="129" end="210">AAALLIVFCAA---LAVLDAERGVPGAVIHTFPDALWWAATTVTTVGYGDLYPVTAEGRLVAGVLFTAGIALLGVVTATLASWFV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="193" database="TR" id="A0A852TXD5_9ACTN" ac="A0A852TXD5" length="250" description="Voltage-gated potassium channel OS=Spinactinospora alkalitolerans OX=687207 GN=HDA32_001824 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>234</score>
+      <bits>94.7449</bits>
+      <expectation>1.6e-21</expectation>
+      <identity>55.4</identity>
+      <positives>68.5</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="95">RAAGAATVLLVIVLLAGSYLAVL-AERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>R A AA++L+V      + LAVL AERGAP A + T+  ALWWS  T TTVGYGD+YPVT  GR VA+ + +AGI   G+VT  LA+WFV R</pattern>
+      <matchSeq start="119" end="206">RYAAAASLLVVFC----AALAVLDAERGAPEATITTFTDALWWSATTVTTVGYGDMYPVTAMGRLVAIGLFIAGIALLGVVTGTLASWFVER</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="194" database="TR" id="A0A7Y9MLC1_9MICO" ac="A0A7Y9MLC1" length="251" description="Voltage-gated potassium channel OS=Microbacterium sp. AK009 OX=2723068 GN=HDC37_002790 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>234</score>
+      <bits>94.7449</bits>
+      <expectation>1.6e-21</expectation>
+      <identity>52.8</identity>
+      <positives>68.5</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="95">AGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>AGAA VL+ I  LA     + AERGAPGA +  +  A+WW+  T+TTVGYGD YPVT WGR VAV++M  GI   G+VTA +++W + R</pattern>
+      <matchSeq start="130" end="214">AGAAVVLIWIAALA----VLEAERGAPGANIENFGDAVWWAFVTSTTVGYGDFYPVTWWGRVVAVLLMCGGIAVVGVVTATVSSWVIER</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="195" database="TR" id="A0A2W2BS64_9ACTN" ac="A0A2W2BS64" length="268" description="Ion transporter OS=Micromonospora deserti OX=2070366 GN=C1I99_24825 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>234</score>
+      <bits>94.7449</bits>
+      <expectation>2.2e-21</expectation>
+      <identity>58.0</identity>
+      <positives>69.3</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="95">AATVLLVIVLLAGSYLAVL-AERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>AAT LL++V+ A   LA L AERGAP A + +YP ALWW+  T TTVGYGD YPVT  GR VA+ +M+ GI   G VT +LATW V R</pattern>
+      <matchSeq start="129" end="213">AATTLLLVVVAA---LAALDAERGAPDATITSYPNALWWAAVTITTVGYGDYYPVTGEGRIVALGLMIGGIGLIGFVTGSLATWIVDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="196" database="TR" id="A0A846LUY7_9ACTN" ac="A0A846LUY7" length="269" description="Voltage-gated potassium channel OS=Modestobacter marinus OX=477641 GN=FB380_004702 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>234</score>
+      <bits>94.7449</bits>
+      <expectation>2.2e-21</expectation>
+      <identity>50.5</identity>
+      <positives>63.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="95">ALHWRAAGAATVLLVIVLLAGSYLAVLAERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>+LH R A   T +  +V+   S     AER AP A +  Y  A+WW + T TTVGYGD YPVT  GR VA ++MV GI   G+VTAA+A+WFVGR</pattern>
+      <matchSeq start="112" end="206">SLHGRVAYYVTSISALVVFMASLAVYDAERDAPDAVITDYGDAVWWGLTTITTVGYGDEYPVTAEGRLVAALLMVGGIALLGVVTAAVASWFVGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="197" database="TR" id="A0A7Z7NAM3_9MYCO" ac="A0A7Z7NAM3" length="239" description="pH-gated potassium channel KcsA OS=Mycobacterium simulans OX=627089 GN=kcsA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>232</score>
+      <bits>93.9745</bits>
+      <expectation>2.5e-21</expectation>
+      <identity>50.0</identity>
+      <positives>74.4</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="95">TVLLVIVLLAGSYLAVL-AERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>T+  V++L+  + LA+L  ER  PGA + T+ +A+WWS+ T TT+GYG LYP+T+ GR +AV++M+ GIT  G+VTA+LA+W V R</pattern>
+      <matchSeq start="120" end="205">TIAAVVLLIYVASLAILDTERDQPGATINTFGQAVWWSITTVTTIGYGHLYPITVTGRVIAVLLMIGGITLVGVVTASLASWIVQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="198" database="TR" id="A0A1X2D468_9MYCO" ac="A0A1X2D468" length="239" description="Ion transporter OS=Mycobacterium riyadhense OX=486698 GN=AWC22_16005 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>232</score>
+      <bits>93.9745</bits>
+      <expectation>2.5e-21</expectation>
+      <identity>50.0</identity>
+      <positives>74.4</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="95">TVLLVIVLLAGSYLAVL-AERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>T+  V++L+  + LA+L  ER  PGA + T+ +A+WWS+ T TT+GYG LYP+T+ GR +AV++M+ GIT  G+VTA+LA+W V R</pattern>
+      <matchSeq start="120" end="205">TIAAVVLLIYVASLAILDTERDQPGATINTFGQAVWWSITTVTTIGYGHLYPITVTGRVIAVLLMIGGITLVGVVTASLASWIVQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="199" database="TR" id="A0A0Q8ZUF2_9MYCO" ac="A0A0Q8ZUF2" length="247" description="Ion transporter OS=Mycobacterium sp. Root265 OX=1736504 GN=ASE48_06765 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>232</score>
+      <bits>93.9745</bits>
+      <expectation>2.9e-21</expectation>
+      <identity>53.0</identity>
+      <positives>66.0</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="95">RAAGAA--------TVLLVIVLLAGSYLAVL-AERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>RAAG+A        TV   ++L+  + LAVL AER APGA +  +  ALWWSV T TTVGYGDL PVT  GR +AV++M+ GIT  G +TA LA+W V R</pattern>
+      <matchSeq start="105" end="204">RAAGSAIRGKVVLYTVSGAVLLVLVASLAVLDAERAAPGAHVTDFGEALWWSVTTITTVGYGDLTPVTTTGRVIAVLLMIGGITLVGSITATLASWIVER</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="200" database="TR" id="A0A653EJC0_9MYCO" ac="A0A653EJC0" length="249" description="pH-gated potassium channel KcsA OS=Mycobacterium riyadhense OX=486698 GN=kcsA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>232</score>
+      <bits>93.9745</bits>
+      <expectation>3e-21</expectation>
+      <identity>50.0</identity>
+      <positives>74.4</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="95">TVLLVIVLLAGSYLAVL-AERGAPGAQLITYPRALWWSVETATTVGYGDLYPVTLWGRCVAVVVMVAGITSFGLVTAALATWFVGR</querySeq>
+      <pattern>T+  V++L+  + LA+L  ER  PGA + T+ +A+WWS+ T TT+GYG LYP+T+ GR +AV++M+ GIT  G+VTA+LA+W V R</pattern>
+      <matchSeq start="130" end="215">TIAAVVLLIYVASLAILDTERDQPGATINTFGQAVWWSITTVTTIGYGHLYPITVTGRVIAVLLMIGGITLVGVVTASLASWIVQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

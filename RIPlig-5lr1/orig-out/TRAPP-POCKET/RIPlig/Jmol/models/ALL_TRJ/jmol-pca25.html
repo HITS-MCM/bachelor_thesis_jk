@@ -1,0 +1,57 @@
+<html>
+<meta charset="utf-8"/>
+<script type="text/javascript" src="../../../Jmol//JSmol.min.js"></script>
+<script type="text/javascript" src="../../../Jmol//js/Jmol2.js"></script>
+<script type="text/javascript" src="../../../html/bootstrap/js/bootstrap.min.js"></script>
+<link href="../../../html/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css"> .jmolBox { background-image:url(../../../html/JSmol_spinner.gif); background-repeat:no-repeat; background-position:center; } </style>
+<div class="container scrollable">
+<div class="row">
+<h2 align="center">PCA of transient regions are analyzed at pocket occurrence of 25%</h2>
+</div>
+<div class="row">
+<form>
+<div class="col-md-12" align="center">
+<script>
+var Info = {
+        width: "100%",
+        height: "65%",
+        debug:false,
+        serverURL: "php/jsmol.php",
+        j2sPath: "../../../Jmol//j2s",
+        use:"HTML5",
+        script:" fr=0;  isoT=25;  isoC=0.6; set navigationDepth 100;load ./ligand_position.pdb ; set appendNew= false;  load APPEND ./ref.pdb; select not hetero; cartoon  ONLY; cartoon on; spacefill OFF; wireframe OFF;   select protein and carbon; color atoms gray; hide _H;select 48:A  or 51:A  or 52:A  or 54:A  or 55:A  or 93:A  or 96:A  or 97:A  or 98:A  or 107:A  or 138:A  or 150:A  or 184:A  or 186:A ; wireframe 0.1;select hetero; spacefill 0.4; wireframe 0.1; set bonds on;  color bonds black; select hetero and carbon; color atoms black; isosurface PcaP0    ANGSTROMS CUTOFF 0.1 INSIDEOUT ./pca-tr-25_1.dx MESH ; select PcaP0; color isosurface [250,100,0]  translucent 0.5;  isosurface PcaN0    ANGSTROMS CUTOFF -0.1 INSIDEOUT ./pca-tr-25_1.dx MESH ; select PcaN0; color isosurface [100,0,250]  translucent 0.5;  isosurface PcaP1    ANGSTROMS CUTOFF 0.1 INSIDEOUT ./pca-tr-25_2.dx MESH ; select PcaP1; color isosurface [250,100,100]  translucent 0.5;  isosurface PcaN1    ANGSTROMS CUTOFF -0.1 INSIDEOUT ./pca-tr-25_2.dx MESH ; select PcaN1; color isosurface [100,100,250]  translucent 0.5;  isosurface PcaP2    ANGSTROMS CUTOFF 0.1 INSIDEOUT ./pca-tr-25_3.dx MESH ; select PcaP2; color isosurface [250,100,200]  translucent 0.5;  isosurface PcaN2    ANGSTROMS CUTOFF -0.1 INSIDEOUT ./pca-tr-25_3.dx MESH ; select PcaN2; color isosurface [100,200,250]  translucent 0.5;  isosurface T1    ANGSTROMS CUTOFF 0.25 INSIDEOUT ./transT_5.dx MESH ; select T1; color isosurface red  translucent 0.8;  isosurface T2    ANGSTROMS CUTOFF -0.25 INSIDEOUT ./transT_5.dx MESH ; select T2; color isosurface blue  translucent 0.8;  center hetero;  zoom 80; refresh; isosurface  OFF; ",
+        disableInitialConsole: true,
+        disableJ2SLoadMonitor: true,
+        allowJavaScript: true
+}
+Jmol.setAppletCss("jmolBox");
+Jmol.getApplet("jmolApplet0",Info);
+Jmol.jmolBr()
+Jmol.jmolBr()
+Jmol.jmolHtml(" PCA vector - PCA value  ")
+Jmol.jmolBr()
+jmolCheckbox(" model 1.1 ; isosurface PcaP0 ON;  refresh;","model 1.1 ; isosurface PcaP0 OFF;  refresh; " ,"  ")
+jmolCheckbox(" model 1.1 ; isosurface PcaN0 ON;  refresh;","model 1.1 ; isosurface PcaN0 OFF;  refresh; " ,"1")
+jmolHtml("  -  ")
+jmolHtml("    0.15304")
+jmolBr()
+ jmolCheckbox(" model 1.1 ; isosurface PcaP1 ON;  refresh;","model 1.1 ; isosurface PcaP1 OFF;  refresh; " ,"  ")
+jmolCheckbox(" model 1.1 ; isosurface PcaN1 ON;  refresh;","model 1.1 ; isosurface PcaN1 OFF;  refresh; " ,"2")
+jmolHtml("  -  ")
+jmolHtml("    0.12233")
+jmolBr()
+ jmolCheckbox(" model 1.1 ; isosurface PcaP2 ON;  refresh;","model 1.1 ; isosurface PcaP2 OFF;  refresh; " ,"  ")
+jmolCheckbox(" model 1.1 ; isosurface PcaN2 ON;  refresh;","model 1.1 ; isosurface PcaN2 OFF;  refresh; " ,"3")
+jmolHtml("  -  ")
+jmolHtml("    0.07286")
+jmolBr()
+ jmolBr()
+jmolCheckbox(" model 1.1 ; isosurface T1 ON;  isosurface T2 ON; refresh;","model 1.1 ; isosurface T1 OFF; isosurface T2 OFF;  refresh; " ," Show all transient regions")
+
+</script>
+</div>
+</form>
+</div>
+</div>
+</html>

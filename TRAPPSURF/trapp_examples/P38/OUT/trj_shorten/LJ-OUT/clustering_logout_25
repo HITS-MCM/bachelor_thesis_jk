@@ -1,0 +1,590 @@
+
+
+TRAPP: clustering starts now- ; grid file used: /home/kunzjn/trapptool/examples/Paper-2020-onlyP38/OUT/trj_shorten/LJ-OUT/transT_1.dx   at the iso-value 0.25
+
+TRAPP: hierarchical clustering of transient pockets: total volume (grid points): 2860
+hierarchical -clustering TRAPP: cluster size is: 2860
+hierarchical -clustering : number of clusters old: 2860 new:1280
+hierarchical -clustering : number of clusters old: 1280 new:353
+hierarchical -clustering : number of clusters old: 353 new:119
+hierarchical -clustering : number of clusters old: 119 new:51
+hierarchical -clustering : number of clusters old: 51 new:27
+hierarchical -clustering : number of clusters old: 27 new:24
+hierarchical -clustering : number of clusters old: 24 new:12
+hierarchical -clustering : number of clusters was not changed: 12
+TRAPP: cluster 0  size 2447
+ TRAPP: cluster 1  size 401
+ TRAPP: Pocket hierarchical -clustering- finished; found 2  clusters; 
+ 
+TRAPP: hierarchical clusters found: 2; max. cluster size: 2447
+TRAPP: cluster 1 (size=2447) will be splitted to sub-clusters
+k-mean clustering; Starting number of cluster centers is :16  min distance between clusters  20; min cluster size 150 at iso-value 0.24752475247524752
+TRAPP: k-mean clustering of the largest sub-pockets: total volume (grid points): 2860 pocket volume: 2447; centers: [1187, 787, 681, 751, 1720, 1810, 1667, 986, 1071, 1925, 2192, 1777, 1324, 1299, 2431, 1858]
+ cluster 1 is not compact- cluster_volume/sphere_volume = 0.024527766540190454
+ cluster 11 is not compact- cluster_volume/sphere_volume = 0.4863775858736607
+Cluster center is outside : old position: 0new position: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Cluster center is outside : old position: 0new position: [232   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0]
+Cluster center is outside : old position: 0new position: [232 658   0   0   0   0   0   0   0   0   0   0   0   0   0   0]
+Cluster center is outside : old position: 0new position: [232 658 691   0   0   0   0   0   0   0   0   0   0   0   0   0]
+Cluster center is outside : old position: 0new position: [232 658 691 604   0   0   0   0   0   0   0   0   0   0   0   0]
+Cluster center is outside : old position: 0new position: [ 232  658  691  604 1721    0    0    0    0    0    0    0    0    0
+    0    0]
+Cluster center is outside : old position: 0new position: [ 232  658  691  604 1721 1984    0    0    0    0    0    0    0    0
+    0    0]
+Cluster center is outside : old position: 0new position: [ 232  658  691  604 1721 1984 1497    0    0    0    0    0    0    0
+    0    0]
+Cluster center is outside : old position: 0new position: [ 232  658  691  604 1721 1984 1497  773    0    0    0    0    0    0
+    0    0]
+Cluster center is outside : old position: 0new position: [ 232  658  691  604 1721 1984 1497  773  743    0    0    0    0    0
+    0    0]
+Cluster center is outside : old position: 0new position: [ 232  658  691  604 1721 1984 1497  773  743 2110    0    0    0    0
+    0    0]
+Cluster center is outside : old position: 0new position: [ 232  658  691  604 1721 1984 1497  773  743 2110 1850    0    0    0
+    0    0]
+Cluster center is outside : old position: 0new position: [ 232  658  691  604 1721 1984 1497  773  743 2110 1850 1601    0    0
+    0    0]
+Cluster center is outside : old position: 0new position: [ 232  658  691  604 1721 1984 1497  773  743 2110 1850 1601 1325    0
+    0    0]
+Cluster center is outside : old position: 0new position: [ 232  658  691  604 1721 1984 1497  773  743 2110 1850 1601 1325 1280
+    0    0]
+Cluster center is outside : old position: 0new position: [ 232  658  691  604 1721 1984 1497  773  743 2110 1850 1601 1325 1280
+ 2384    0]
+ clustering step-  1number of clusters- 16; cluster size: [341  77 318 192 147 246  67  89 153 117  38 182  53 183  41 203]
+1: # clusters 16; relative change in the position of cluster centers 61.398238906149004; cluster size: [341  77 318 192 147 246  67  89 153 117  38 182  53 183  41 203]
+Cluster center is outside : old position: 232new position: [ 232  658  691  604 1721 1984 1497  773  743 2110 1850 1601 1325 1280
+ 2384 1507]
+Cluster center is outside : old position: 658new position: [ 169  658  691  604 1721 1984 1497  773  743 2110 1850 1601 1325 1280
+ 2384 1507]
+Cluster center is outside : old position: 691new position: [ 169  649  691  604 1721 1984 1497  773  743 2110 1850 1601 1325 1280
+ 2384 1507]
+Cluster center is outside : old position: 604new position: [ 169  649  691  604 1721 1984 1497  773  743 2110 1850 1601 1325 1280
+ 2384 1507]
+Cluster center is outside : old position: 1721new position: [ 169  649  691  589 1721 1984 1497  773  743 2110 1850 1601 1325 1280
+ 2384 1507]
+Cluster center is outside : old position: 1984new position: [ 169  649  691  589 1722 1984 1497  773  743 2110 1850 1601 1325 1280
+ 2384 1507]
+Cluster center is outside : old position: 1497new position: [ 169  649  691  589 1722 2149 1497  773  743 2110 1850 1601 1325 1280
+ 2384 1507]
+Cluster center is outside : old position: 773new position: [ 169  649  691  589 1722 2149 1673  773  743 2110 1850 1601 1325 1280
+ 2384 1507]
+Cluster center is outside : old position: 743new position: [ 169  649  691  589 1722 2149 1673  645  743 2110 1850 1601 1325 1280
+ 2384 1507]
+Cluster center is outside : old position: 2110new position: [ 169  649  691  589 1722 2149 1673  645  610 2110 1850 1601 1325 1280
+ 2384 1507]
+Cluster center is outside : old position: 1850new position: [ 169  649  691  589 1722 2149 1673  645  610 2110 1850 1601 1325 1280
+ 2384 1507]
+Cluster center is outside : old position: 1601new position: [ 169  649  691  589 1722 2149 1673  645  610 2110 2038 1601 1325 1280
+ 2384 1507]
+Cluster center is outside : old position: 1325new position: [ 169  649  691  589 1722 2149 1673  645  610 2110 2038 1601 1325 1280
+ 2384 1507]
+Cluster center is outside : old position: 1280new position: [ 169  649  691  589 1722 2149 1673  645  610 2110 2038 1601 1315 1280
+ 2384 1507]
+Cluster center is outside : old position: 2384new position: [ 169  649  691  589 1722 2149 1673  645  610 2110 2038 1601 1315 1149
+ 2384 1507]
+Cluster center is outside : old position: 1507new position: [ 169  649  691  589 1722 2149 1673  645  610 2110 2038 1601 1315 1149
+ 2325 1507]
+ clustering step-  2number of clusters- 16; cluster size: [340 117 169 181 163 250  50  70 143 101  38 177 148 177  76 247]
+2: # clusters 16; relative change in the position of cluster centers 13.601192720092623; cluster size: [340 117 169 181 163 250  50  70 143 101  38 177 148 177  76 247]
+Cluster center is outside : old position: 649new position: [ 169  649  691  589 1722 2149 1673  645  610 2110 2038 1601 1315 1149
+ 2325 1358]
+Cluster center is outside : old position: 691new position: [ 169  649  691  589 1722 2149 1673  645  610 2110 2038 1601 1315 1149
+ 2325 1358]
+Cluster center is outside : old position: 589new position: [ 169  649  691  589 1722 2149 1673  645  610 2110 2038 1601 1315 1149
+ 2325 1358]
+Cluster center is outside : old position: 1722new position: [ 169  649  691  589 1722 2149 1673  645  610 2110 2038 1601 1315 1149
+ 2325 1358]
+Cluster center is outside : old position: 2149new position: [ 169  649  691  589 1722 2149 1673  645  610 2110 2038 1601 1315 1149
+ 2325 1358]
+Cluster center is outside : old position: 1673new position: [ 169  649  691  589 1722 2149 1673  645  610 2110 2038 1601 1315 1149
+ 2325 1358]
+Cluster center is outside : old position: 645new position: [ 169  649  691  589 1722 2149 1864  645  610 2110 2038 1601 1315 1149
+ 2325 1358]
+Cluster center is outside : old position: 610new position: [ 169  649  691  589 1722 2149 1864  516  610 2110 2038 1601 1315 1149
+ 2325 1358]
+Cluster center is outside : old position: 2110new position: [ 169  649  691  589 1722 2149 1864  516  458 2110 2038 1601 1315 1149
+ 2325 1358]
+Cluster center is outside : old position: 2038new position: [ 169  649  691  589 1722 2149 1864  516  458 1939 2038 1601 1315 1149
+ 2325 1358]
+Cluster center is outside : old position: 1601new position: [ 169  649  691  589 1722 2149 1864  516  458 1939 2034 1601 1315 1149
+ 2325 1358]
+Cluster center is outside : old position: 1315new position: [ 169  649  691  589 1722 2149 1864  516  458 1939 2034 1601 1315 1149
+ 2325 1358]
+Cluster center is outside : old position: 1149new position: [ 169  649  691  589 1722 2149 1864  516  458 1939 2034 1601 1314 1149
+ 2325 1358]
+Cluster center is outside : old position: 2325new position: [ 169  649  691  589 1722 2149 1864  516  458 1939 2034 1601 1314 1033
+ 2325 1358]
+Cluster center is outside : old position: 1358new position: [ 169  649  691  589 1722 2149 1864  516  458 1939 2034 1601 1314 1033
+ 2325 1358]
+ clustering step-  3number of clusters- 16; cluster size: [320 158 115 147 181 240  56  92 134  90  34 182 188 159  99 252]
+3: # clusters 16; relative change in the position of cluster centers 8.875572207932546; cluster size: [320 158 115 147 181 240  56  92 134  90  34 182 188 159  99 252]
+Cluster center is outside : old position: 649new position: [ 169  649  691  589 1722 2149 1864  516  458 1939 2034 1601 1314 1033
+ 2325 1358]
+Cluster center is outside : old position: 691new position: [ 169  649  691  589 1722 2149 1864  516  458 1939 2034 1601 1314 1033
+ 2325 1358]
+Cluster center is outside : old position: 589new position: [ 169  649  691  589 1722 2149 1864  516  458 1939 2034 1601 1314 1033
+ 2325 1358]
+Cluster center is outside : old position: 1722new position: [ 169  649  691  589 1722 2149 1864  516  458 1939 2034 1601 1314 1033
+ 2325 1358]
+Cluster center is outside : old position: 2149new position: [ 169  649  691  589 1722 2149 1864  516  458 1939 2034 1601 1314 1033
+ 2325 1358]
+Cluster center is outside : old position: 1864new position: [ 169  649  691  589 1722 2149 1864  516  458 1939 2034 1601 1314 1033
+ 2325 1358]
+Cluster center is outside : old position: 516new position: [ 169  649  691  589 1722 2149 1863  516  458 1939 2034 1601 1314 1033
+ 2325 1358]
+Cluster center is outside : old position: 458new position: [ 169  649  691  589 1722 2149 1863  505  458 1939 2034 1601 1314 1033
+ 2325 1358]
+Cluster center is outside : old position: 1939new position: [ 169  649  691  589 1722 2149 1863  505  338 1939 2034 1601 1314 1033
+ 2325 1358]
+Cluster center is outside : old position: 2034new position: [ 169  649  691  589 1722 2149 1863  505  338 1939 2034 1601 1314 1033
+ 2325 1358]
+Cluster center is outside : old position: 1601new position: [ 169  649  691  589 1722 2149 1863  505  338 1939 2034 1601 1314 1033
+ 2325 1358]
+Cluster center is outside : old position: 1314new position: [ 169  649  691  589 1722 2149 1863  505  338 1939 2034 1446 1314 1033
+ 2325 1358]
+Cluster center is outside : old position: 1033new position: [ 169  649  691  589 1722 2149 1863  505  338 1939 2034 1446 1305 1033
+ 2325 1358]
+Cluster center is outside : old position: 2325new position: [ 169  649  691  589 1722 2149 1863  505  338 1939 2034 1446 1305 1033
+ 2325 1358]
+Cluster center is outside : old position: 1358new position: [ 169  649  691  589 1722 2149 1863  505  338 1939 2034 1446 1305 1033
+ 2325 1358]
+ clustering step-  4number of clusters- 16; cluster size: [311 173  73 136 172 244  61 109 139  86  29 205 198 169  99 243]
+4: Too small cluster (29), cl.11 will be eleminated
+4: # clusters 15; relative change in the position of cluster centers 4.914373388886459; cluster size: [311 173  73 136 172 244  61 109 139  86 205 198 169  99 243   0]
+Cluster center is outside : old position: 169new position: [ 169  649  691  589 1722 2149 1863  505  338 1939 2034 1446 1305 1033
+ 2325 1358]
+Cluster center is outside : old position: 649new position: [ 168  649  691  589 1722 2149 1863  505  338 1939 2034 1446 1305 1033
+ 2325 1358]
+Cluster center is outside : old position: 691new position: [ 168  649  691  589 1722 2149 1863  505  338 1939 2034 1446 1305 1033
+ 2325 1358]
+Cluster center is outside : old position: 589new position: [ 168  649  691  589 1722 2149 1863  505  338 1939 2034 1446 1305 1033
+ 2325 1358]
+Cluster center is outside : old position: 1722new position: [ 168  649  691  589 1722 2149 1863  505  338 1939 2034 1446 1305 1033
+ 2325 1358]
+Cluster center is outside : old position: 2149new position: [ 168  649  691  589 1722 2149 1863  505  338 1939 2034 1446 1305 1033
+ 2325 1358]
+Cluster center is outside : old position: 1863new position: [ 168  649  691  589 1722 2149 1863  505  338 1939 2034 1446 1305 1033
+ 2325 1358]
+Cluster center is outside : old position: 505new position: [ 168  649  691  589 1722 2149 1851  505  338 1939 2034 1446 1305 1033
+ 2325 1358]
+Cluster center is outside : old position: 338new position: [ 168  649  691  589 1722 2149 1851  504  338 1939 2034 1446 1305 1033
+ 2325 1358]
+Cluster center is outside : old position: 1939new position: [ 168  649  691  589 1722 2149 1851  504  261 1939 2034 1446 1305 1033
+ 2325 1358]
+Cluster center is outside : old position: 2034new position: [ 168  649  691  589 1722 2149 1851  504  261 1939 2034 1446 1305 1033
+ 2325 1358]
+Cluster center is outside : old position: 1446new position: [ 168  649  691  589 1722 2149 1851  504  261 1939 1445 1446 1305 1033
+ 2325 1358]
+Cluster center is outside : old position: 1305new position: [ 168  649  691  589 1722 2149 1851  504  261 1939 1445 1305 1305 1033
+ 2325 1358]
+Cluster center is outside : old position: 1033new position: [ 168  649  691  589 1722 2149 1851  504  261 1939 1445 1305 1025 1033
+ 2325 1358]
+Cluster center is outside : old position: 2325new position: [ 168  649  691  589 1722 2149 1851  504  261 1939 1445 1305 1025 2253
+ 2325 1358]
+ clustering step-  5number of clusters- 15; cluster size: [298 168  76 135 163 250  86 126 130  86 198 202 157 124 248   0]
+5: Too small cluster (76), cl.3 will be eleminated
+5: # clusters 14; relative change in the position of cluster centers 3.498929569141728; cluster size: [298 168 135 163 250  86 126 130  86 198 202 157 124 248   0   0]
+Cluster center is outside : old position: 649new position: [ 168  649  691  589 1722 2149 1851  504  261 1939 1445 1305 1025 2253
+ 1358 1358]
+Cluster center is outside : old position: 691new position: [ 168  648  691  589 1722 2149 1851  504  261 1939 1445 1305 1025 2253
+ 1358 1358]
+Cluster center is outside : old position: 589new position: [ 168  648  589  589 1722 2149 1851  504  261 1939 1445 1305 1025 2253
+ 1358 1358]
+Cluster center is outside : old position: 1722new position: [ 168  648  589 1722 1722 2149 1851  504  261 1939 1445 1305 1025 2253
+ 1358 1358]
+Cluster center is outside : old position: 2149new position: [ 168  648  589 1722 2149 2149 1851  504  261 1939 1445 1305 1025 2253
+ 1358 1358]
+Cluster center is outside : old position: 1851new position: [ 168  648  589 1722 2149 1851 1851  504  261 1939 1445 1305 1025 2253
+ 1358 1358]
+Cluster center is outside : old position: 504new position: [ 168  648  589 1722 2149 1851  493  504  261 1939 1445 1305 1025 2253
+ 1358 1358]
+Cluster center is outside : old position: 261new position: [ 168  648  589 1722 2149 1851  493  201  261 1939 1445 1305 1025 2253
+ 1358 1358]
+Cluster center is outside : old position: 1939new position: [ 168  648  589 1722 2149 1851  493  201 1925 1939 1445 1305 1025 2253
+ 1358 1358]
+Cluster center is outside : old position: 1445new position: [ 168  648  589 1722 2149 1851  493  201 1925 1300 1445 1305 1025 2253
+ 1358 1358]
+Cluster center is outside : old position: 1305new position: [ 168  648  589 1722 2149 1851  493  201 1925 1300 1179 1305 1025 2253
+ 1358 1358]
+Cluster center is outside : old position: 1025new position: [ 168  648  589 1722 2149 1851  493  201 1925 1300 1179  914 1025 2253
+ 1358 1358]
+Cluster center is outside : old position: 2253new position: [ 168  648  589 1722 2149 1851  493  201 1925 1300 1179  914 2253 2253
+ 1358 1358]
+ clustering step-  6number of clusters- 14; cluster size: [278 185 146 161 250  82 152 137  88 202 194 188 149 235   0   0]
+6: Too small cluster (82), cl.6 will be eleminated
+6: # clusters 13; relative change in the position of cluster centers 6.694886649199953; cluster size: [278 185 146 161 250 152 137  88 202 194 188 149 235   0   0   0]
+Cluster center is outside : old position: 648new position: [ 168  648  589 1722 2149 1851  493  201 1925 1300 1179  914 2253 1358
+ 1358 1358]
+Cluster center is outside : old position: 589new position: [ 168  648  589 1722 2149 1851  493  201 1925 1300 1179  914 2253 1358
+ 1358 1358]
+Cluster center is outside : old position: 1722new position: [ 168  648  589 1722 2149 1851  493  201 1925 1300 1179  914 2253 1358
+ 1358 1358]
+Cluster center is outside : old position: 2149new position: [ 168  648  589 1708 2149 1851  493  201 1925 1300 1179  914 2253 1358
+ 1358 1358]
+Cluster center is outside : old position: 1851new position: [ 168  648  589 1708 2149 1851  493  201 1925 1300 1179  914 2253 1358
+ 1358 1358]
+Cluster center is outside : old position: 493new position: [ 168  648  589 1708 2149  480  493  201 1925 1300 1179  914 2253 1358
+ 1358 1358]
+Cluster center is outside : old position: 201new position: [ 168  648  589 1708 2149  480  201  201 1925 1300 1179  914 2253 1358
+ 1358 1358]
+Cluster center is outside : old position: 1925new position: [ 168  648  589 1708 2149  480  201 1891 1925 1300 1179  914 2253 1358
+ 1358 1358]
+Cluster center is outside : old position: 1300new position: [ 168  648  589 1708 2149  480  201 1891 1300 1300 1179  914 2253 1358
+ 1358 1358]
+Cluster center is outside : old position: 1179new position: [ 168  648  589 1708 2149  480  201 1891 1300 1179 1179  914 2253 1358
+ 1358 1358]
+Cluster center is outside : old position: 914new position: [ 168  648  589 1708 2149  480  201 1891 1300 1179  914  914 2253 1358
+ 1358 1358]
+Cluster center is outside : old position: 2253new position: [ 168  648  589 1708 2149  480  201 1891 1300 1179  914 2129 2253 1358
+ 1358 1358]
+ clustering step-  7number of clusters- 13; cluster size: [278 181 150 201 265 149 120 135 233 164 152 162 257   0   0   0]
+7: Too small cluster (120), cl.7 will be eleminated
+7: # clusters 12; relative change in the position of cluster centers 1.115032661738458; cluster size: [278 181 150 201 265 149 135 233 164 152 162 257   0   0   0   0]
+Cluster center is outside : old position: 168new position: [ 168  648  589 1708 2149  480  201 1891 1300 1179  914 2129 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 648new position: [ 169  648  589 1708 2149  480  201 1891 1300 1179  914 2129 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 589new position: [ 169  648  589 1708 2149  480  201 1891 1300 1179  914 2129 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1708new position: [ 169  648  589 1708 2149  480  201 1891 1300 1179  914 2129 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 2149new position: [ 169  648  589 1708 2149  480  201 1891 1300 1179  914 2129 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 480new position: [ 169  648  589 1708 2149  480  201 1891 1300 1179  914 2129 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 201new position: [ 169  648  589 1708 2149  347  201 1891 1300 1179  914 2129 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1891new position: [ 169  648  589 1708 2149  347 1872 1891 1300 1179  914 2129 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1300new position: [ 169  648  589 1708 2149  347 1872 1300 1300 1179  914 2129 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1179new position: [ 169  648  589 1708 2149  347 1872 1300 1179 1179  914 2129 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 914new position: [ 169  648  589 1708 2149  347 1872 1300 1179  914  914 2129 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 2129new position: [ 169  648  589 1708 2149  347 1872 1300 1179  914 2119 2129 1358 1358
+ 1358 1358]
+ clustering step-  8number of clusters- 12; cluster size: [316 198 150 187 304 209 105 218 173 152 187 248   0   0   0   0]
+8: Too small cluster (105), cl.7 will be eleminated
+8: # clusters 11; relative change in the position of cluster centers 4.040712421797411; cluster size: [316 198 150 187 304 209 218 173 152 187 248   0   0   0   0   0]
+Cluster center is outside : old position: 648new position: [ 169  648  589 1708 2149  347 1872 1300 1179  914 2119 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 589new position: [ 169  647  589 1708 2149  347 1872 1300 1179  914 2119 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1708new position: [ 169  647  589 1708 2149  347 1872 1300 1179  914 2119 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 2149new position: [ 169  647  589 1720 2149  347 1872 1300 1179  914 2119 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 347new position: [ 169  647  589 1720 2140  347 1872 1300 1179  914 2119 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1872new position: [ 169  647  589 1720 2140  342 1872 1300 1179  914 2119 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1300new position: [ 169  647  589 1720 2140  342 1300 1300 1179  914 2119 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1179new position: [ 169  647  589 1720 2140  342 1300 1179 1179  914 2119 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 914new position: [ 169  647  589 1720 2140  342 1300 1179  913  914 2119 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 2119new position: [ 169  647  589 1720 2140  342 1300 1179  913 2119 2119 1358 1358 1358
+ 1358 1358]
+ clustering step-  9number of clusters- 11; cluster size: [306 227 150 279 310 179 222 178 158 200 238   0   0   0   0   0]
+9: # clusters 11; relative change in the position of cluster centers 0.28443120009630285; cluster size: [306 227 150 279 310 179 222 178 158 200 238   0   0   0   0   0]
+Cluster center is outside : old position: 169new position: [ 169  647  589 1720 2140  342 1300 1179  913 2119 1358 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 647new position: [ 168  647  589 1720 2140  342 1300 1179  913 2119 1358 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 589new position: [ 168  507  589 1720 2140  342 1300 1179  913 2119 1358 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1720new position: [ 168  507  589 1720 2140  342 1300 1179  913 2119 1358 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 2140new position: [ 168  507  589 1901 2140  342 1300 1179  913 2119 1358 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 342new position: [ 168  507  589 1901 2149  342 1300 1179  913 2119 1358 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1300new position: [ 168  507  589 1901 2149  265 1300 1179  913 2119 1358 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1179new position: [ 168  507  589 1901 2149  265 1300 1179  913 2119 1358 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 913new position: [ 168  507  589 1901 2149  265 1300 1179  913 2119 1358 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 2119new position: [ 168  507  589 1901 2149  265 1300 1179  913 2119 1358 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1358new position: [ 168  507  589 1901 2149  265 1300 1179  913 2119 1358 1358 1358 1358
+ 1358 1358]
+ clustering step-  10number of clusters- 11; cluster size: [301 234 169 236 301 162 238 174 159 211 262   0   0   0   0   0]
+10: # clusters 11; relative change in the position of cluster centers 6.727905008333478; cluster size: [301 234 169 236 301 162 238 174 159 211 262   0   0   0   0   0]
+Cluster center is outside : old position: 507new position: [ 168  507  589 1901 2149  265 1300 1179  913 2119 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 589new position: [ 168  507  589 1901 2149  265 1300 1179  913 2119 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1901new position: [ 168  507  589 1901 2149  265 1300 1179  913 2119 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 2149new position: [ 168  507  589 1891 2149  265 1300 1179  913 2119 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 265new position: [ 168  507  589 1891 2140  265 1300 1179  913 2119 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1300new position: [ 168  507  589 1891 2140  261 1300 1179  913 2119 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1179new position: [ 168  507  589 1891 2140  261 1175 1179  913 2119 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 913new position: [ 168  507  589 1891 2140  261 1175 1170  913 2119 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 2119new position: [ 168  507  589 1891 2140  261 1175 1170  913 2119 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1357new position: [ 168  507  589 1891 2140  261 1175 1170  913 2119 1357 1358 1358 1358
+ 1358 1358]
+ clustering step-  11number of clusters- 11; cluster size: [293 220 180 181 310 145 258 204 157 224 275   0   0   0   0   0]
+11: Too small cluster (145), cl.6 will be eleminated
+11: # clusters 10; relative change in the position of cluster centers 1.3889477168815783; cluster size: [293 220 180 181 310 258 204 157 224 275   0   0   0   0   0   0]
+Cluster center is outside : old position: 168new position: [ 168  507  589 1891 2140  261 1175 1170  913 2119 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 507new position: [ 169  507  589 1891 2140  261 1175 1170  913 2119 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 589new position: [ 169  495  589 1891 2140  261 1175 1170  913 2119 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1891new position: [ 169  495  589 1891 2140  261 1175 1170  913 2119 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 2140new position: [ 169  495  589 1873 2140  261 1175 1170  913 2119 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 261new position: [ 169  495  589 1873 2140  261 1175 1170  913 2119 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1175new position: [ 169  495  589 1873 2140 1175 1175 1170  913 2119 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1170new position: [ 169  495  589 1873 2140 1175 1295 1170  913 2119 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 913new position: [ 169  495  589 1873 2140 1175 1295  691  913 2119 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 2119new position: [ 169  495  589 1873 2140 1175 1295  691 2119 2119 1357 1358 1358 1358
+ 1358 1358]
+ clustering step-  12number of clusters- 10; cluster size: [334 257 171 127 356 256 221 205 242 278   0   0   0   0   0   0]
+12: Too small cluster (127), cl.4 will be eleminated
+12: # clusters 9; relative change in the position of cluster centers 4.575684481077113; cluster size: [334 257 171 356 256 221 205 242 278   0   0   0   0   0   0   0]
+Cluster center is outside : old position: 495new position: [ 169  495  589 1873 2140 1175 1295  691 2119 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 589new position: [ 169  494  589 1873 2140 1175 1295  691 2119 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1873new position: [ 169  494  588 1873 2140 1175 1295  691 2119 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 2140new position: [ 169  494  588 2132 2140 1175 1295  691 2119 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1175new position: [ 169  494  588 2132 1066 1175 1295  691 2119 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1295new position: [ 169  494  588 2132 1066 1285 1295  691 2119 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 691new position: [ 169  494  588 2132 1066 1285  442  691 2119 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 2119new position: [ 169  494  588 2132 1066 1285  442 2119 2119 1357 1357 1358 1358 1358
+ 1358 1358]
+ clustering step-  13number of clusters- 9; cluster size: [325 229 191 409 285 265 174 234 335   0   0   0   0   0   0   0]
+13: # clusters 9; relative change in the position of cluster centers 6.815967046990519; cluster size: [325 229 191 409 285 265 174 234 335   0   0   0   0   0   0   0]
+Cluster center is outside : old position: 169new position: [ 169  494  588 2132 1066 1285  442 2119 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 494new position: [ 168  494  588 2132 1066 1285  442 2119 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 588new position: [ 168  494  588 2132 1066 1285  442 2119 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 2132new position: [ 168  494  588 2132 1066 1285  442 2119 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1066new position: [ 168  494  588 2123 1066 1285  442 2119 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1285new position: [ 168  494  588 2123  964 1285  442 2119 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 442new position: [ 168  494  588 2123  964 1285  442 2119 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 2119new position: [ 168  494  588 2123  964 1285  262 2119 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1356new position: [ 168  494  588 2123  964 1285  262 1948 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+ clustering step-  14number of clusters- 9; cluster size: [302 182 228 432 315 251 135 270 332   0   0   0   0   0   0   0]
+14: Too small cluster (135), cl.7 will be eleminated
+14: # clusters 8; relative change in the position of cluster centers 8.908060352408985; cluster size: [302 182 228 432 315 251 270 332   0   0   0   0   0   0   0   0]
+Cluster center is outside : old position: 168new position: [ 168  494  588 2123  964 1285  262 1948 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 494new position: [ 169  494  588 2123  964 1285  262 1948 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 588new position: [ 169  355  588 2123  964 1285  262 1948 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 2123new position: [ 169  355  588 2123  964 1285  262 1948 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 964new position: [ 169  355  588 2123  964 1285  262 1948 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1285new position: [ 169  355  588 2123  973 1285  262 1948 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 262new position: [ 169  355  588 2123  973 1285  262 1948 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1948new position: [ 169  355  588 2123  973 1285 1948 1948 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+ clustering step-  15number of clusters- 8; cluster size: [326 279 219 451 288 261 310 313   0   0   0   0   0   0   0   0]
+15: # clusters 8; relative change in the position of cluster centers 4.067161986006542; cluster size: [326 279 219 451 288 261 310 313   0   0   0   0   0   0   0   0]
+Cluster center is outside : old position: 355new position: [ 169  355  588 2123  973 1285 1948 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 588new position: [ 169  348  588 2123  973 1285 1948 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 2123new position: [ 169  348  711 2123  973 1285 1948 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 973new position: [ 169  348  711 2123  973 1285 1948 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1285new position: [ 169  348  711 2123  872 1285 1948 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1948new position: [ 169  348  711 2123  872 1285 1948 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1356new position: [ 169  348  711 2123  872 1285 1948 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+ clustering step-  16number of clusters- 8; cluster size: [315 243 237 451 308 270 309 314   0   0   0   0   0   0   0   0]
+16: # clusters 8; relative change in the position of cluster centers 3.0893641119284743; cluster size: [315 243 237 451 308 270 309 314   0   0   0   0   0   0   0   0]
+Cluster center is outside : old position: 348new position: [ 169  348  711 2123  872 1285 1948 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 711new position: [ 169  342  711 2123  872 1285 1948 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 2123new position: [ 169  342  711 2123  872 1285 1948 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 872new position: [ 169  342  711 2123  872 1285 1948 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1285new position: [ 169  342  711 2123  766 1285 1948 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1948new position: [ 169  342  711 2123  766 1285 1948 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1356new position: [ 169  342  711 2123  766 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+ clustering step-  17number of clusters- 8; cluster size: [308 209 263 451 313 274 325 304   0   0   0   0   0   0   0   0]
+17: # clusters 8; relative change in the position of cluster centers 2.65264468438384; cluster size: [308 209 263 451 313 274 325 304   0   0   0   0   0   0   0   0]
+Cluster center is outside : old position: 169new position: [ 169  342  711 2123  766 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 342new position: [ 168  342  711 2123  766 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 711new position: [ 168  342  711 2123  766 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 2123new position: [ 168  342  696 2123  766 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 766new position: [ 168  342  696 2123  766 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1285new position: [ 168  342  696 2123  765 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1756new position: [ 168  342  696 2123  765 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1356new position: [ 168  342  696 2123  765 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+ clustering step-  18number of clusters- 8; cluster size: [301 186 252 451 312 282 360 303   0   0   0   0   0   0   0   0]
+18: # clusters 8; relative change in the position of cluster centers 0.2881129463279565; cluster size: [301 186 252 451 312 282 360 303   0   0   0   0   0   0   0   0]
+Cluster center is outside : old position: 342new position: [ 168  342  696 2123  765 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 696new position: [ 168  265  696 2123  765 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 2123new position: [ 168  265  696 2123  765 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 765new position: [ 168  265  696 2123  765 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1285new position: [ 168  265  696 2123  647 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1756new position: [ 168  265  696 2123  647 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1356new position: [ 168  265  696 2123  647 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+ clustering step-  19number of clusters- 8; cluster size: [297 180 255 451 332 278 365 289   0   0   0   0   0   0   0   0]
+19: # clusters 8; relative change in the position of cluster centers 4.729462541191566; cluster size: [297 180 255 451 332 278 365 289   0   0   0   0   0   0   0   0]
+Cluster center is outside : old position: 265new position: [ 168  265  696 2123  647 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 696new position: [ 168  265  696 2123  647 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 2123new position: [ 168  265  696 2123  647 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 647new position: [ 168  265  696 2123  647 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1285new position: [ 168  265  696 2123  637 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1756new position: [ 168  265  696 2123  637 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1356new position: [ 168  265  696 2123  637 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+ clustering step-  20number of clusters- 8; cluster size: [293 162 265 451 316 298 373 289   0   0   0   0   0   0   0   0]
+20: # clusters 8; relative change in the position of cluster centers 0.15698587127158556; cluster size: [293 162 265 451 316 298 373 289   0   0   0   0   0   0   0   0]
+Cluster center is outside : old position: 265new position: [ 168  265  696 2123  637 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 696new position: [ 168  262  696 2123  637 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 2123new position: [ 168  262  696 2123  637 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 637new position: [ 168  262  696 2123  637 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1285new position: [ 168  262  696 2123  637 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1756new position: [ 168  262  696 2123  637 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1356new position: [ 168  262  696 2123  637 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+ clustering step-  21number of clusters- 8; cluster size: [293 155 245 451 336 303 375 289   0   0   0   0   0   0   0   0]
+21: # clusters 8; relative change in the position of cluster centers 0.11450381679389313; cluster size: [293 155 245 451 336 303 375 289   0   0   0   0   0   0   0   0]
+Cluster center is outside : old position: 262new position: [ 168  262  696 2123  637 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 696new position: [ 168  261  696 2123  637 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 2123new position: [ 168  261  696 2123  637 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 637new position: [ 168  261  696 2123  637 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1285new position: [ 168  261  696 2123  637 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1756new position: [ 168  261  696 2123  637 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1356new position: [ 168  261  696 2123  637 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+ clustering step-  22number of clusters- 8; cluster size: [287 155 245 451 342 303 375 289   0   0   0   0   0   0   0   0]
+22: # clusters 8; relative change in the position of cluster centers 0.038314176245210725; cluster size: [287 155 245 451 342 303 375 289   0   0   0   0   0   0   0   0]
+Cluster center is outside : old position: 261new position: [ 168  261  696 2123  637 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 696new position: [ 168  261  696 2123  637 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 2123new position: [ 168  261  696 2123  637 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 637new position: [ 168  261  696 2123  637 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1285new position: [ 168  261  696 2123  636 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1756new position: [ 168  261  696 2123  636 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1356new position: [ 168  261  696 2123  636 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+ clustering step-  23number of clusters- 8; cluster size: [278 159 245 451 347 303 375 289   0   0   0   0   0   0   0   0]
+23: # clusters 8; relative change in the position of cluster centers 0.015723270440251572; cluster size: [278 159 245 451 347 303 375 289   0   0   0   0   0   0   0   0]
+Cluster center is outside : old position: 261new position: [ 168  261  696 2123  636 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 696new position: [ 168  261  696 2123  636 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 2123new position: [ 168  261  696 2123  636 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 636new position: [ 168  261  696 2123  636 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1285new position: [ 168  261  696 2123  636 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1756new position: [ 168  261  696 2123  636 1285 1756 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1356new position: [ 168  261  696 2123  636 1285 1601 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+ clustering step-  24number of clusters- 8; cluster size: [278 154 267 451 332 295 381 289   0   0   0   0   0   0   0   0]
+24: # clusters 8; relative change in the position of cluster centers 0.9681449094316052; cluster size: [278 154 267 451 332 295 381 289   0   0   0   0   0   0   0   0]
+Cluster center is outside : old position: 261new position: [ 168  261  696 2123  636 1285 1601 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 696new position: [ 168  261  696 2123  636 1285 1601 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 2123new position: [ 168  261  696 2123  636 1285 1601 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 636new position: [ 168  261  696 2123  636 1285 1601 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1285new position: [ 168  261  696 2123  636 1285 1601 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1601new position: [ 168  261  696 2123  636 1285 1601 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+Cluster center is outside : old position: 1356new position: [ 168  261  696 2123  636 1285 1601 1356 1356 1357 1357 1358 1358 1358
+ 1358 1358]
+ clustering step-  25number of clusters- 8; cluster size: [278 154 264 451 323 276 394 307   0   0   0   0   0   0   0   0]
+25: # clusters 8; relative change in the position of cluster centers 0.0; cluster size: [278 154 264 451 323 276 394 307   0   0   0   0   0   0   0   0]
+TRAPP: results of clustering will be saved in ovlp_snap-trans_S_25.dat
+ovlp_snap-trans_S Claster size: 1 278
+ovlp_snap-trans_S Claster size: 2 154
+ovlp_snap-trans_S Claster size: 3 264
+ovlp_snap-trans_S Claster size: 4 451
+ovlp_snap-trans_S Claster size: 5 323
+ovlp_snap-trans_S Claster size: 6 276
+ovlp_snap-trans_S Claster size: 7 394
+ovlp_snap-trans_S Claster size: 8 307
+ovlp_snap-trans_S Claster size: 9 401
+TRAPP: result of k-mean clustering : 8 clusters found ; size: [278 154 264 451 323 276 394 307   0   0   0   0   0   0   0   0]

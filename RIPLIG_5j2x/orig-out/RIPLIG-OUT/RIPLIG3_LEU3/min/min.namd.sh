@@ -1,0 +1,1 @@
+namd2 min.in 2>&1 > min.namd.log

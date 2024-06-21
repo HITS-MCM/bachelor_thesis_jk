@@ -1,0 +1,10 @@
+#This file allows the user to make some specifications about the analysis method prior to the start of the workflow. This file should be kept in this structure and should be named 'input_autodock.dat'. To avoid issues with the input please insert only the named variables for the input. It needs to be in the INP folder of TRAPP 
+#Docking Software to be used can either be Autodock-Vina "vina" or Autodock4 "ad4"; be aware that not both methods can't be run simultaniusly and one needs to be chosen prior to the analysis 
+Method = vina
+#Calculation Method by TRAPP; Decide by which the different snapshots should be evaluated either 'LR' or 'CNN'
+Calculation = LR
+#Grid Calculation for Autodock-Vina; Decide if you want to use the ligand which is also used in trapp as center 'lig' or another pdb file as position 'grid'. If you provide your own pdb file for the grid it needs to be saved in the INP folder for TRAPP and named 'position.pdb'. 
+Grid_Reference = lig
+#Analysis Method by which the snapshots should be retrieved. An explanation for all the different methods can be found in 'README'. The possible variables are 'highest', 'all', 'quantile',  'list: #list_of_numbers# (separated by ',')', 'over_score: #number#'
+Analysis = all
+

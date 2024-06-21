@@ -1,0 +1,56 @@
+CRYST1   66.359   89.188   99.864  90.00  90.00  90.00 I 2 2 2       8
+ATOM      1  N   GLN A 194       0.560  26.337   7.074  1.00 17.79      A    N  
+ATOM      2  CA  GLN A 194      -0.058  25.040   7.356  1.00 17.50      A    C  
+ATOM      3  C   GLN A 194      -1.478  25.175   7.854  1.00 19.55      A    C  
+ATOM      4  O   GLN A 194      -1.998  24.270   8.510  1.00 18.84      A    O  
+ATOM      5  CB  GLN A 194       0.810  24.228   8.347  1.00 18.50      A    C  
+ATOM      6  CG  GLN A 194       2.241  24.007   7.875  1.00 18.07      A    C  
+ATOM      7  CD  GLN A 194       2.313  23.247   6.579  1.00 21.65      A    C  
+ATOM      8  NE2 GLN A 194       3.316  23.531   5.758  1.00 20.18      A    N  
+ATOM      9  OE1 GLN A 194       1.482  22.386   6.297  1.00 21.52      A    O  
+TER   
+HETATM   10  C1 A6DL A 301      -0.826  12.457  22.906  0.30 15.02      B    C  
+HETATM   11  C2 A6DL A 301      -2.038  11.913  23.316  0.30 13.82      B    C  
+HETATM   12  C3 A6DL A 301      -2.028  11.131  24.462  0.30 13.33      B    C  
+HETATM   13  C4 A6DL A 301      -0.845  10.928  25.204  0.30 11.51      B    C  
+HETATM   14  C5 A6DL A 301       0.366  11.442  24.737  0.30 13.17      B    C  
+HETATM   15  C6 A6DL A 301       0.340  12.235  23.614  0.30 12.04      B    C  
+HETATM   16  O7 A6DL A 301      -0.731  13.195  21.782  0.30 15.96      B    O  
+HETATM   17  O8 A6DL A 301      -3.196  10.625  24.914  0.30 17.12      B    O  
+HETATM   18  C9 A6DL A 301      -0.856  10.047  26.384  0.30 11.61      B    C  
+HETATM   19  N10A6DL A 301      -1.594  10.275  27.432  0.30 11.90      B    N  
+HETATM   20  N11A6DL A 301      -1.395   9.204  28.308  0.30 10.92      B    N  
+HETATM   21  C12A6DL A 301      -0.546   8.327  27.748  0.30 13.44      B    C  
+HETATM   22  N13A6DL A 301      -0.198   8.823  26.540  0.30 12.18      B    N  
+HETATM   23  C14A6DL A 301       0.716   8.192  25.661  0.30 12.00      B    C  
+HETATM   24  C15A6DL A 301       2.047   7.971  26.058  0.30 11.28      B    C  
+HETATM   25  C16A6DL A 301       2.948   7.322  25.225  0.30 12.43      B    C  
+HETATM   26  C17A6DL A 301       2.496   6.871  23.990  0.30 12.20      B    C  
+HETATM   27  C18A6DL A 301       1.177   7.061  23.585  0.30 11.89      B    C  
+HETATM   28  C19A6DL A 301       0.282   7.704  24.427  0.30 10.04      B    C  
+HETATM   29  O20A6DL A 301      -0.177   7.268  28.230  0.30 12.92      B    O  
+HETATM   30 BR  A6DL A 301       1.892  13.146  23.092  0.10  9.88      B   BR  
+HETATM   31  F21A6DL A 301       2.484   8.402  27.256  0.30 13.68      B    F  
+CONECT   10   11   15   16
+CONECT   11   10   12
+CONECT   12   11   13   17
+CONECT   13   12   14   18
+CONECT   14   13   15
+CONECT   15   10   14   30
+CONECT   16   10
+CONECT   17   12
+CONECT   18   13   19   22
+CONECT   19   18   20
+CONECT   20   19   21
+CONECT   21   20   22   29
+CONECT   22   18   21   23
+CONECT   23   22   24   28
+CONECT   24   23   25   31
+CONECT   25   24   26
+CONECT   26   25   27
+CONECT   27   26   28
+CONECT   28   23   27
+CONECT   29   21
+CONECT   30   15
+CONECT   31   24
+END

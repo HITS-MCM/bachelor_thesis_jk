@@ -1,0 +1,215 @@
+<html>
+<meta charset="utf-8"/>
+<script type="text/javascript" src="../../../Jmol//JSmol.min.js"></script>
+<script type="text/javascript" src="../../../Jmol//js/Jmol2.js"></script>
+<script type="text/javascript" src="../../../html/bootstrap/js/bootstrap.min.js"></script>
+<link href="../../../html/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css"> .jmolBox { background-image:url(../../../html/JSmol_spinner.gif); background-repeat:no-repeat; background-position:center; } </style>
+<script>
+    $(function() {
+            $('.pop').on('click', function() {
+		    var desc = $(this).data('desc');
+		    $('.desc').text(desc);
+                    $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+		    $('#imagemodal').modal('show');
+		    return false;
+		    // e.preventDefault();
+            });
+    });
+     function zIndexChange(zIndexJmol) {
+        document.getElementById("divjmol").style.zIndex = zIndexJmol;
+     };
+     $(document).on('hide.bs.modal','#imagemodal', function () {
+            document.getElementById("divjmol").style.zIndex = 'auto';
+     });
+     $(document).on('hide.bs.modal','#occurenceDataModal', function () {
+            document.getElementById("divjmol").style.zIndex = 'auto';
+     });
+     $(document).on('hide.bs.modal','#disappearDataModal', function () {
+            document.getElementById("divjmol").style.zIndex = 'auto';
+     });
+</script>
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg" style="z-index: 1">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<img src="" class="imagepreview" style="width: 90%; height:90%">
+<p class="text-left desc"></p>
+</div>
+</div>
+</div>
+</div>
+<div class="container scrollable">
+<form>
+<div class="row">
+<div class="col-md-12">
+<h2 align="center">Clustering of transient regions are analyzed at pocket occurrence of 25"%</h2>
+</div>
+</div>
+<div class="row">
+<div id="divjmol" class="col-md-6">
+<script>
+var Info = {
+        width: "100%",
+        height: "65%",
+        debug:false,
+        serverURL: "php/jsmol.php",
+        j2sPath: "../../../Jmol//j2s",
+        use:"HTML5",
+        script:" fr=0;  isoT=25;  isoC=0.6 ; set navigationDepth 100; load ./ligand_position.pdb ; set appendNew= false;  load APPEND ./ref.pdb; select not hetero; cartoon  ONLY; cartoon on; spacefill OFF; wireframe OFF;   select protein and carbon; color atoms gray; hide _H;select 48:A  or 51:A  or 52:A  or 54:A  or 55:A  or 58:A  or 93:A  or 96:A  or 97:A  or 98:A  or 103:A  or 106:A  or 107:A  or 108:A  or 109:A  or 138:A  or 150:A  or 184:A  or 186:A ; wireframe 0.1;select hetero; spacefill 0.4; wireframe 0.1; set bonds on;  color bonds black; select hetero and carbon; color atoms black; isosurface Hp1    ANGSTROMS CUTOFF 0.25 INSIDEOUT ./trans_S1_25.dx MESH ; select Hp1; color isosurface [250,40,100]  translucent 0.5;  isosurface Hp2    ANGSTROMS CUTOFF 0.25 INSIDEOUT ./trans_S2_25.dx MESH ; select Hp2; color isosurface [250,80,100]  translucent 0.5;  isosurface Hp3    ANGSTROMS CUTOFF 0.25 INSIDEOUT ./trans_S3_25.dx MESH ; select Hp3; color isosurface [250,120,100]  translucent 0.5;  isosurface Hp4    ANGSTROMS CUTOFF 0.25 INSIDEOUT ./trans_S4_25.dx MESH ; select Hp4; color isosurface [250,160,100]  translucent 0.5;  isosurface Hp5    ANGSTROMS CUTOFF 0.25 INSIDEOUT ./trans_S5_25.dx MESH ; select Hp5; color isosurface [250,200,100]  translucent 0.5;  isosurface Hp6    ANGSTROMS CUTOFF 0.25 INSIDEOUT ./trans_S6_25.dx MESH ; select Hp6; color isosurface [250,240,0]  translucent 0.5;  isosurface Hp7    ANGSTROMS CUTOFF 0.25 INSIDEOUT ./trans_S7_25.dx MESH ; select Hp7; color isosurface [250,280,0]  translucent 0.5;  isosurface Hp8    ANGSTROMS CUTOFF 0.25 INSIDEOUT ./trans_S8_25.dx MESH ; select Hp8; color isosurface [250,320,0]  translucent 0.5;  isosurface Hp9    ANGSTROMS CUTOFF 0.25 INSIDEOUT ./trans_S9_25.dx MESH ; select Hp9; color isosurface [250,360,0]  translucent 0.5;  isosurface Hp10    ANGSTROMS CUTOFF 0.25 INSIDEOUT ./trans_S10_25.dx MESH ; select Hp10; color isosurface [250,400,0]  translucent 0.5;  isosurface Hp11    ANGSTROMS CUTOFF 0.25 INSIDEOUT ./trans_S11_25.dx MESH ; select Hp11; color isosurface [250,440,0]  translucent 0.5;  isosurface Hn1    ANGSTROMS CUTOFF -0.25 INSIDEOUT ./trans_S1_-25.dx MESH ; select Hn1; color isosurface [100,40,250]  translucent 0.5;  isosurface Hn2    ANGSTROMS CUTOFF -0.25 INSIDEOUT ./trans_S2_-25.dx MESH ; select Hn2; color isosurface [100,80,250]  translucent 0.5;  isosurface Hn3    ANGSTROMS CUTOFF -0.25 INSIDEOUT ./trans_S3_-25.dx MESH ; select Hn3; color isosurface [100,120,250]  translucent 0.5;  isosurface Hn4    ANGSTROMS CUTOFF -0.25 INSIDEOUT ./trans_S4_-25.dx MESH ; select Hn4; color isosurface [100,160,250]  translucent 0.5;  center hetero;  zoom 80; refresh; isosurface  OFF; ",
+        disableInitialConsole: true,
+        disableJ2SLoadMonitor: true,
+        allowJavaScript: true
+}
+Jmol.setAppletCss("jmolBox");
+Jmol.getApplet("jmolApplet0",Info);
+</script>
+<div class="row">
+<div class="col-md-3">
+<h4>Show regions that appear</h4>
+</div>
+<div id="divjmol" class="col-md-5">
+<script>
+Jmol.jmolBr()
+Jmol.jmolCheckbox("jmolApplet0"," model 1.1 ; isosurface Hp1 ON;  refresh;","model 1.1 ; isosurface Hp1 OFF;  refresh; " ,"1")
+Jmol.jmolCheckbox("jmolApplet0"," model 1.1 ; isosurface Hp2 ON;  refresh;","model 1.1 ; isosurface Hp2 OFF;  refresh; " ,"2")
+Jmol.jmolCheckbox("jmolApplet0"," model 1.1 ; isosurface Hp3 ON;  refresh;","model 1.1 ; isosurface Hp3 OFF;  refresh; " ,"3")
+Jmol.jmolCheckbox("jmolApplet0"," model 1.1 ; isosurface Hp4 ON;  refresh;","model 1.1 ; isosurface Hp4 OFF;  refresh; " ,"4")
+Jmol.jmolCheckbox("jmolApplet0"," model 1.1 ; isosurface Hp5 ON;  refresh;","model 1.1 ; isosurface Hp5 OFF;  refresh; " ,"5")
+Jmol.jmolCheckbox("jmolApplet0"," model 1.1 ; isosurface Hp6 ON;  refresh;","model 1.1 ; isosurface Hp6 OFF;  refresh; " ,"6")
+Jmol.jmolCheckbox("jmolApplet0"," model 1.1 ; isosurface Hp7 ON;  refresh;","model 1.1 ; isosurface Hp7 OFF;  refresh; " ,"7")
+Jmol.jmolCheckbox("jmolApplet0"," model 1.1 ; isosurface Hp8 ON;  refresh;","model 1.1 ; isosurface Hp8 OFF;  refresh; " ,"8")
+Jmol.jmolCheckbox("jmolApplet0"," model 1.1 ; isosurface Hp9 ON;  refresh;","model 1.1 ; isosurface Hp9 OFF;  refresh; " ,"9")
+Jmol.jmolCheckbox("jmolApplet0"," model 1.1 ; isosurface Hp10 ON;  refresh;","model 1.1 ; isosurface Hp10 OFF;  refresh; " ,"10")
+Jmol.jmolCheckbox("jmolApplet0"," model 1.1 ; isosurface Hp11 ON;  refresh;","model 1.1 ; isosurface Hp11 OFF;  refresh; " ,"11")
+
+
+</script>
+</div>
+<div id="divjmol" class="col-md-4">
+<script>
+Jmol.jmolBr()
+Jmol.jmolButton("jmolApplet0","isosurface  OFF; ","hide all surfaces")
+
+</script>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<h4>Show regions that disappear</h4>
+</div>
+<div id="divjmol" class="col-md-5">
+<script>
+Jmol.jmolBr()
+Jmol.jmolCheckbox("jmolApplet0"," model 1.1 ; isosurface Hn1 ON; refresh;","model 1.1 ; isosurface Hn1 OFF;  refresh; " ,"1")
+Jmol.jmolCheckbox("jmolApplet0"," model 1.1 ; isosurface Hn2 ON; refresh;","model 1.1 ; isosurface Hn2 OFF;  refresh; " ,"2")
+Jmol.jmolCheckbox("jmolApplet0"," model 1.1 ; isosurface Hn3 ON; refresh;","model 1.1 ; isosurface Hn3 OFF;  refresh; " ,"3")
+Jmol.jmolCheckbox("jmolApplet0"," model 1.1 ; isosurface Hn4 ON; refresh;","model 1.1 ; isosurface Hn4 OFF;  refresh; " ,"4")
+
+
+</script>
+</div>
+<div id="divjmol" class="col-md-4">
+<script>
+Jmol.jmolBr()
+Jmol.jmolCheckbox("jmolApplet0"," display (not hetero and not _H); refresh; " ," display not _H; refresh;","Hide/Show Ligand")
+
+</script>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3" align="center">
+<h4>Pocket occurrence in the trajectory of regions that appear</h4>
+<br>
+
+<a href="#" data-toggle="modal" data-target="#occurenceDataModal" onclick="zIndexChange('-1')">Used data</a>
+    <div class="modal fade" id="occurenceDataModal" tabindex="-1" role="dialog" aria-labelledby="occurenceDataModal" aria-hidden="true">
+<div class="modal-dialog modal-lg" style="z-index: 1">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="myModalLabel">Pocket occurrence in the trajectory of regions</h4>
+</div>
+<div class="modal-body">
+<object data="./ovlp_snap-trans_S_25.dat" style="width:90%; height:80%; overflow: auto;"></object>
+</div>
+</div>
+</div>
+</div>
+<br>
+<a href="#" class="pop" onclick="zIndexChange('-1')"><IMG class="img-responsive" style="z-index: 1" SRC="./ovlp_snap-trans_S_25.png" NAME="graphics1"></a>
+
+</div>
+<div class="col-md-3" align="center">
+<h4>Statistics of pocket occurrence of regions that appear</h4>
+<br>
+
+<a href="#" data-toggle="modal" data-target="#occurenceDataModal" onclick="zIndexChange('-1')">Used data</a>
+    <div class="modal fade" id="occurenceDataModal" tabindex="-1" role="dialog" aria-labelledby="occurenceDataModal" aria-hidden="true">
+<div class="modal-dialog modal-lg" style="z-index: 1">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="myModalLabel">Pocket occurrence in the trajectory of regions</h4>
+</div>
+<div class="modal-body">
+<object data="./ovlp_snap-trans_S_25.dat" style="width:90%; height:80%; overflow: auto;"></object>
+</div>
+</div>
+</div>
+</div>
+<br>
+<a href="#" class="pop" onclick="zIndexChange('-1')"><IMG class="img-responsive" style="z-index: 1" SRC="./ovlp_snap-trans_S_25-stat.png" NAME="graphics1"></a>
+
+</div>
+<div class="col-md-3" align="center">
+<h4 >Pocket occurrence in the trajectory of regions that disappear</h4>
+<br>
+
+<a href="#" data-toggle="modal" data-target="#disappearDataModal" onclick="zIndexChange('-1')">Used data</a>
+    <div class="modal fade" id="disappearDataModal" tabindex="-1" role="dialog" aria-labelledby="disappearDataModal" aria-hidden="true">
+<div class="modal-dialog modal-lg" style="z-index: 1">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span onclick="zIndexChange('-1')" aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="myModalLabel">Pocket occurrence in the trajectory of regions</h4>
+</div>
+<div class="modal-body">
+<object data="./ovlp_snap-trans_S_-25.dat" style="width:90%; height:80%; overflow: auto;"></object>
+</div>
+</div>
+</div>
+</div>
+<br>
+<a href="#" class="pop" onclick="zIndexChange('-1')"><IMG class="img-responsive" style="z-index: 1" SRC="./ovlp_snap-trans_S_-25.png" NAME="graphics1"></a>
+
+</div>
+<div class="col-md-3" align="center">
+<h4>Statistics of pocket occurrence of regions that disappear</h4>
+<br>
+
+<a href="#" data-toggle="modal" data-target="#disappearDataModal" onclick="zIndexChange('-1')">Used data</a>
+    <div class="modal fade" id="disappearDataModal" tabindex="-1" role="dialog" aria-labelledby="disappearDataModal" aria-hidden="true">
+<div class="modal-dialog modal-lg" style="z-index: 1">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span onclick="zIndexChange('-1')" aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="myModalLabel">Pocket occurrence in the trajectory of regions</h4>
+</div>
+<div class="modal-body">
+<object data="./ovlp_snap-trans_S_-25.dat" style="width:90%; height:80%; overflow: auto;"></object>
+</div>
+</div>
+</div>
+</div>
+<br>
+<a href="#" class="pop" onclick="zIndexChange('-1')"><IMG class="img-responsive" style="z-index: 1" SRC="./ovlp_snap-trans_S_-25-stat.png" NAME="graphics1"></a>
+
+</div>
+</div>
+</div>
+</form>
+</div>
+</html>

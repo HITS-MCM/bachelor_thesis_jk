@@ -1,0 +1,92 @@
+CRYST1   47.710   41.680   55.980  90.00 102.81  90.00 P 1 21 1      1
+MODEL        1
+HETATM    1  C1  KOS A 280       5.796   9.533  21.160  1.00  9.99      B    C  
+HETATM    2  N1  KOS A 280       5.165   8.244  20.948  1.00 11.09      B    N  
+HETATM    3  O1  KOS A 280       6.249  10.022  20.242  1.00  9.57      B    O  
+HETATM    4  C2  KOS A 280       5.821  10.127  22.587  1.00  8.55      B    C  
+HETATM    5  N2  KOS A 280      -2.552  11.433  24.089  1.00  8.57      B    N  
+HETATM    6  O2  KOS A 280       1.497  12.729  24.139  1.00 11.28      B    O  
+HETATM    7  C3  KOS A 280       4.635  10.225  23.280  1.00 10.26      B    C  
+HETATM    8  O3  KOS A 280      -0.435  10.740  24.282  1.00  8.35      B    O  
+HETATM    9  C4  KOS A 280       4.391  10.723  24.639  1.00  8.59      B    C  
+HETATM   10  O4  KOS A 280      -1.840  10.833  26.171  1.00  8.88      B    O  
+HETATM   11  C5  KOS A 280       3.232  11.179  25.099  1.00  9.53      B    C  
+HETATM   12  O5  KOS A 280       2.017   5.874  28.962  1.00 10.68      B    O  
+HETATM   13  C6  KOS A 280       1.940  11.290  24.339  1.00  9.88      B    C  
+HETATM   14  O6  KOS A 280       4.452   7.414  29.084  1.00 11.27      B    O  
+HETATM   15  C7  KOS A 280       0.721  10.603  25.067  1.00  7.76      B    C  
+HETATM   16  C8  KOS A 280       0.872   9.015  25.427  1.00  8.86      B    C  
+HETATM   17  O8  KOS A 280       1.601   5.081  22.141  1.00 14.82      B    O  
+HETATM   18  C9  KOS A 280       0.886   8.668  26.683  1.00 10.24      B    C  
+HETATM   19  O9  KOS A 280       6.429   7.258  23.169  1.00  9.91      B    O  
+HETATM   20  C10 KOS A 280       0.990   7.309  27.345  1.00  9.91      B    C  
+HETATM   21  C11 KOS A 280       2.067   7.245  28.436  1.00  9.33      B    C  
+HETATM   22  C12 KOS A 280       3.558   7.460  27.959  1.00  8.49      B    C  
+HETATM   23  C13 KOS A 280       4.080   6.329  26.985  1.00 12.73      B    C  
+HETATM   24  C14 KOS A 280       5.538   6.304  26.409  1.00 15.16      B    C  
+HETATM   25  C15 KOS A 280       5.736   5.348  25.054  1.00 13.65      B    C  
+HETATM   26  C16 KOS A 280       4.782   5.687  23.860  1.00 12.60      B    C  
+HETATM   27  C17 KOS A 280       3.522   5.145  23.522  1.00 14.33      B    C  
+HETATM   28  C18 KOS A 280       2.701   5.606  22.339  1.00 13.64      B    C  
+HETATM   29  C19 KOS A 280       3.251   6.680  21.449  1.00 13.15      B    C  
+HETATM   30  C20 KOS A 280       4.492   7.237  21.705  1.00 10.57      B    C  
+HETATM   31  C21 KOS A 280       5.315   6.753  22.939  1.00 11.46      B    C  
+HETATM   32  C22 KOS A 280       7.182  10.531  23.101  1.00  8.55      B    C  
+HETATM   33  C23 KOS A 280       2.423  13.735  23.942  1.00 12.91      B    C  
+HETATM   34  C24 KOS A 280      -1.636  10.989  24.975  1.00 11.02      B    C  
+HETATM   35  C25 KOS A 280       0.961   8.056  24.244  1.00  8.97      B    C  
+HETATM   36  C26 KOS A 280      -0.433   7.070  27.896  1.00 11.12      B    C  
+HETATM   37  C27 KOS A 280       4.178   8.503  30.243  1.00 11.65      B    C  
+HETATM   38  C28 KOS A 280       5.965   7.775  26.179  1.00 16.61      B    C  
+HETATM   39  N29 KOS A 280       2.890   4.085  24.282  1.00 18.08      B    N  
+HETATM   40  C30 KOS A 280       3.487   2.783  24.546  1.00 25.91      B    C  
+HETATM   41  C31 KOS A 280       3.454   1.649  23.447  1.00 30.78      B    C  
+HETATM   42  N32 KOS A 280       2.311   1.270  22.480  1.00 34.85      B    N  
+HETATM   43  C33 KOS A 280       2.675   0.130  21.683  1.00 36.07      B    C  
+HETATM   44  C34 KOS A 280       2.021   2.227  21.454  1.00 36.18      B    C  
+ENDMDL
+CONECT    1    2    3    4
+CONECT    2    1   30
+CONECT    3    1
+CONECT    4    1    7   32
+CONECT    5   34
+CONECT    6   13   33
+CONECT    7    4    9
+CONECT    8   15   34
+CONECT    9    7   11
+CONECT   10   34
+CONECT   11    9   13
+CONECT   12   21
+CONECT   13    6   11   15
+CONECT   14   22   37
+CONECT   15    8   13   16
+CONECT   16   15   18   35
+CONECT   17   28
+CONECT   18   16   20
+CONECT   19   31
+CONECT   20   18   21   36
+CONECT   21   12   20   22
+CONECT   22   14   21   23
+CONECT   23   22   24
+CONECT   24   23   25   38
+CONECT   25   24   26
+CONECT   26   25   27   31
+CONECT   27   26   28   39
+CONECT   28   17   27   29
+CONECT   29   28   30
+CONECT   30    2   29   31
+CONECT   31   19   26   30
+CONECT   32    4
+CONECT   33    6
+CONECT   34    5    8   10
+CONECT   35   16
+CONECT   36   20
+CONECT   37   14
+CONECT   38   24
+CONECT   39   27   40
+CONECT   40   39   41
+CONECT   41   40   42
+CONECT   42   41   43   44
+CONECT   43   42
+CONECT   44   42
+END

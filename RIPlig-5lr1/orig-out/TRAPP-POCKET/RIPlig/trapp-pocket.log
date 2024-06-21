@@ -1,0 +1,174 @@
+
+TRAPP :  ======= INPUT DATA: ==========
+
+
+TRAPP :  ======= to be done: ==========
+TRAPP :  SUPERIMPOSE_STRUCT = yes
+TRAPP :  LJ-GRID = yes
+TRAPP :  MOTION_ANALYSIS = yes
+TRAPP :  DRUGGABILITY_PREDICTION = yes
+TRAPP :  SIMILARITY_ANALYSIS = no
+TRAPP :  SAVE PLOTS = yes
+
+TRAPP :  ======= PATH: ==========
+TRAPP :  DIR= ./
+
+TRAPP :  ======= trajectories to be analyzed: ==========
+TRAPP :  MAXTRJ = 4
+
+TRAPP :  ===== name min max step reference===========
+TRAPP :  TRJ LEU0 ; first snapshot 0 ; last snapshot 0 ; step 1
+TRAPP :  TRJ LEU1 ; first snapshot 0 ; last snapshot 0 ; step 1
+TRAPP :  TRJ LEU2 ; first snapshot 0 ; last snapshot 0 ; step 1
+TRAPP :  TRJ LEU3 ; first snapshot 0 ; last snapshot 0 ; step 1
+
+TRAPP :  ======= input files: ==========
+TRAPP :  PDB = structure_5lr1.pdb
+TRAPP :  LIG = ligand_position.pdb
+TRAPP :  hydrogen will be added  to the refernce structure
+TRAPP: all HETATM and also HOH atoms will be removed from input structures
+TRAPP :  SITE = no-act-site
+
+======= grid parameters to be used: ==========
+TRAPP :  RADIUS = 3.5
+TRAPP :  GRD = 0.75
+
+TRAPP :  ======= parameters of LJ-pocket: ==========
+TRAPP :  HATOMS = yes
+TRAPP :  atom-dependent LJrad will be used
+TRAPP :  VECT-L = 7.0
+TRAPP :  VECT-alpha = 0.6
+TRAPP :  VECT-direct = 12.0
+TRAPP :  VECT-accuracy = 2.0
+TRAPP :  SPACIAL-AVERAGE = 3
+TRAPP :  CENTRAL-POCKET = yes
+
+TRAPP :  ======= PCA analysis: ==========
+TRAPP :  PCA-analysis no
+TRAPP :  PCA-TRJ 0
+TRAPP :  PCA-MODES 2
+
+TRAPP :  ======= parameters of visualization: ==========
+TRAPP :  LJ-SPHERES = 1.5
+TRAPP :  ISO = 0.6
+TRAPP :  ISO-T = [25, 50]%
+TRAPP :  CLUSTER = 0
+TRAPP :  PCA-TRANS-POCK = yes
+TRAPP :  CLUSTER-TRANS-POCK = yes
+TRAPP :  Jsmol = yes
+TRAPP:  2 cores will be used for simulations (as defined by a system variable TRAPP_NCORES)
+
+TRAPP:  standard NAMD  OMP version to be used , the command  namd2 +p threads
+
+
+TRAPP: ################################	STEP 0: some preparation needed...   ########################
+
+TRAPP: all residues within 3.5 Angstrom from a ligand will be considered as an active site
+TRAPP: active site includes  14 residues: 48; 51; 52; 54; 55; 93; 96; 97; 98; 107; 138; 150; 184; 186; 
+
+TRAPP: ################################	STEP 1: ALIGNMENT and SUPERIMPOSITION of  each trajectory to the reference structure  ########################
+
+TRAPP: ----------------------  ALIGNMENT and SUPERIMPOSITION -of the trajectory------LEU0
+TRAPP: the expected length of the trajectory to be analyzed is 100 from trj_length-MODEL
+
+TRAPP: ++++++++++++++++++++++++++++++++ Trajectory will be splitted and superimosed by parts +++++++++++++++++++++++++++++++++++++
+TRAPP: Warning - this piece of the trajectory is empty; file -  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU0/md_part2.pdbs
+TRAPP: ++++++++++++++++++++++++++++++++ Trajectory  superimosition finished ++++++++++++++++++++++++++++++++++++++++++++
+
+TRAPP: ----------------------  ALIGNMENT and SUPERIMPOSITION -of the trajectory------LEU1
+TRAPP: the expected length of the trajectory to be analyzed is 100 from trj_length-MODEL
+
+TRAPP: ++++++++++++++++++++++++++++++++ Trajectory will be splitted and superimosed by parts +++++++++++++++++++++++++++++++++++++
+TRAPP: Warning - this piece of the trajectory is empty; file -  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU1/md_part2.pdbs
+TRAPP: ++++++++++++++++++++++++++++++++ Trajectory  superimosition finished ++++++++++++++++++++++++++++++++++++++++++++
+
+TRAPP: ----------------------  ALIGNMENT and SUPERIMPOSITION -of the trajectory------LEU2
+TRAPP: the expected length of the trajectory to be analyzed is 100 from trj_length-MODEL
+
+TRAPP: ++++++++++++++++++++++++++++++++ Trajectory will be splitted and superimosed by parts +++++++++++++++++++++++++++++++++++++
+TRAPP: Warning - this piece of the trajectory is empty; file -  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU2/md_part2.pdbs
+TRAPP: ++++++++++++++++++++++++++++++++ Trajectory  superimosition finished ++++++++++++++++++++++++++++++++++++++++++++
+
+TRAPP: ----------------------  ALIGNMENT and SUPERIMPOSITION -of the trajectory------LEU3
+TRAPP: the expected length of the trajectory to be analyzed is 100 from trj_length-MODEL
+
+TRAPP: ++++++++++++++++++++++++++++++++ Trajectory will be splitted and superimosed by parts +++++++++++++++++++++++++++++++++++++
+TRAPP: Warning - this piece of the trajectory is empty; file -  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU3/md_part2.pdbs
+TRAPP: ++++++++++++++++++++++++++++++++ Trajectory  superimosition finished ++++++++++++++++++++++++++++++++++++++++++++
+
+
+TRAPP:#############################	STEP 2: LJ grid calculation and/or analysis   ##############################
+
+
+TRAPP: multi-core mode for LJ pocket simulations starts
+
+
+TRAPP: multi-core mode for LJ pocket simulations finished
+
+TRAPP: computing transient and conserved pocket regions averaged over all snapshots in a trajectory 0
+
+TRAPP: ++++++++++++++++++++++  multicore starts  ++++++++++++++++++++++++++++++++++++
+
+TRAPP: 	PCA analysis of the transient pockets at the occurence of 25
+TRAPP: 	PCA analysis of the transient pockets at the occurence of 50
+
+TRAPP: ++++++++++++++++++++++++++++  multicore finished  +++++++++++++++++++++++++++++++++++++
+
+
+TRAPP: multi-core mode for LJ pocket simulations starts
+
+
+TRAPP: multi-core mode for LJ pocket simulations finished
+
+TRAPP: computing transient and conserved pocket regions averaged over all snapshots in a trajectory 1
+
+TRAPP: ++++++++++++++++++++++  multicore starts  ++++++++++++++++++++++++++++++++++++
+
+TRAPP: 	PCA analysis of the transient pockets at the occurence of 25
+TRAPP: 	PCA analysis of the transient pockets at the occurence of 50
+
+TRAPP: ++++++++++++++++++++++++++++  multicore finished  +++++++++++++++++++++++++++++++++++++
+
+
+TRAPP: multi-core mode for LJ pocket simulations starts
+
+
+TRAPP: multi-core mode for LJ pocket simulations finished
+
+TRAPP: computing transient and conserved pocket regions averaged over all snapshots in a trajectory 2
+
+TRAPP: ++++++++++++++++++++++  multicore starts  ++++++++++++++++++++++++++++++++++++
+
+TRAPP: 	PCA analysis of the transient pockets at the occurence of 25
+TRAPP: 	PCA analysis of the transient pockets at the occurence of 50
+
+TRAPP: ++++++++++++++++++++++++++++  multicore finished  +++++++++++++++++++++++++++++++++++++
+
+
+TRAPP: multi-core mode for LJ pocket simulations starts
+
+
+TRAPP: multi-core mode for LJ pocket simulations finished
+
+TRAPP: computing transient and conserved pocket regions averaged over all snapshots in a trajectory 3
+
+TRAPP: ++++++++++++++++++++++  multicore starts  ++++++++++++++++++++++++++++++++++++
+
+TRAPP: 	PCA analysis of the transient pockets at the occurence of 25
+TRAPP: 	PCA analysis of the transient pockets at the occurence of 50
+
+TRAPP: ++++++++++++++++++++++++++++  multicore finished  +++++++++++++++++++++++++++++++++++++
+
+TRAPP: NOW compare all trajectories 
+TRAPP: clustering of transient pocket starts at the iso-value of 25 (Multicore regime)
+TRAPP: 		PCA analysis of the transient pockets at the occurence of 25
+TRAPP: clustering of transient pocket starts at the iso-value of 50 (Multicore regime)
+TRAPP: 		PCA analysis of the transient pockets at the occurence of 50
+
+TRAPP: ++++++++++++++++++++++++++++++++multicore starts++++++++++++++++++++++++++++++++++++++++++++
+
+TRAPP: shift in residue numbering relative the original numbers - -1
+TRAPP: shift in residue numbering relative the original numbers - -1
+TRAPP: shift in residue numbering relative the original numbers - -1
+TRAPP: shift in residue numbering relative the original numbers - -1
+  Total simulation time: 1054.39016008 sec:   0 h 17 min

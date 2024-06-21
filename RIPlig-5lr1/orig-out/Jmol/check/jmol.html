@@ -1,0 +1,28 @@
+<html>
+<meta charset="utf-8"/>
+<script type="text/javascript" src="../Jmol/JSmol.min.js"></script>
+<script type="text/javascript" src="../Jmol/js/Jmol2.js"></script>
+<style type="text/css"> .jmolBox { background-image:url(../../html/JSmol_spinner.gif); background-repeat:no-repeat; background-position:center; } </style>
+<div id="container" style="width:260px">
+<body>
+<form>
+<script>
+var Info = {
+	width:"100%",
+	height: "100%",
+	debug:false,
+	serverURL: "php/jsmol.php",
+	j2sPath: "../Jmol//j2s",
+	use:"HTML5",
+	script:" load FILE ./ligand_position.pdb ;  appendNew = false; load APPEND ./ref.pdb;isosurface AA    ANGSTROMS CUTOFF 0.6 INSIDEOUT ref.dx  MESH ; select AA; color isosurface orange translucent 0.5;  select hetero; spacefill 0.4; wireframe 0.1; set bonds on;  color bonds black; select hetero and carbon; color atoms black;  select not hetero; cartoon  ONLY; cartoon 30; spacefill OFF; wireframe OFF;   select protein and carbon; color atoms gray; hide _H;  select (51:A  or 54:A  or 55:A  or 93:A  or 96:A  or 97:A  or 138:A  or 186:A ); wireframe 0.2 ; color blue; spacefill  off;  center hetero; zoom 200; refresh;",
+	disableInitialConsole: true,
+	disableJ2SLoadMonitor: true,
+        allowJavaScript: true
+}
+Jmol.setAppletCss("jmolBox");
+Jmol.getApplet("jmolApplet0",Info);
+</script>
+</form>
+</body>
+</div>
+</html>

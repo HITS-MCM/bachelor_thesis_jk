@@ -1,0 +1,86 @@
+TRAPP: active site residues from contact_residues_ref_analysis.dat will be used
+[(1, 51), (1, 52), (1, 54), (1, 55), (1, 58), (1, 93), (1, 96), (1, 97), (1, 98), (1, 106), (1, 107), (1, 108), (1, 138), (1, 184), (1, 186)]
+======================Flexibility analysis : RUN_method=RIPLIG
+INP:  ./trj_equil_supLEU1_part0.pdbs
+OUT:  ./trj_equil_supLEU1_part0.pdb
+REF:  /scratch/mcm/trapp/jobs/pocket_1f2cd40d-8da8-4e03-b579-e495771b7375/ref.pdb  align -yes
+----------- Alignment Started--------------- 
+Sequence 1 (reference)    :  209 AVETFAFQAEIAQLMSLIINTFYSNKEIFLRELISNSSDALDKIRYESLTDPSKLDSGKELHINLIPNKQDRTLTIVDTGIGMTKADLINNLGTIAKSGTKAFMEALQAGADISMIGQFGVGFYSAYLVAEKVTVITKHNDDEQYAWESSAGGSFTVRTDTGEPMGRGTKVILHLKEDQTEYLEERRIKEIVKKHSQFIGYPITLFVEK
+Sequence 2 (to be aligned):  209 AVETFAFQAEIAQLMSLIINTFYSNKEIFLRELISNSSDALDKIRYESLTDPSKLDSGKELSINLIPNKQDRTLTIVDTGIGMTKADLINNLGTIAKSGTKAFMEALQAGADISMIGQFGVGFYSAYLVAEKVTVITKSNDDEQYAWESSAGGSFTVRTDTGEPMGRGTKVILSLKEDQTEYLEERRIKEIVKKSSQFIGYPITLFVEK
+NEW site [(chain, residue)]:  15 [(1, 36), (1, 37), (1, 39), (1, 40), (1, 43), (1, 78), (1, 81), (1, 82), (1, 83), (1, 91), (1, 92), (1, 93), (1, 123), (1, 169), (1, 171)]
+REF site [(chain, residue)]:  15 [(1, 51), (1, 52), (1, 54), (1, 55), (1, 58), (1, 93), (1, 96), (1, 97), (1, 98), (1, 106), (1, 107), (1, 108), (1, 138), (1, 184), (1, 186)]
+shift in the first residues relative to the reference snapshot:  [0]
+----------- Alignment is Finished--------------- 
+TRAPP: Warning - this piece of the trajectory is empty; file -  ./trj_equil_supLEU1_part1.pdbs
+TRAPP: new active site: [51, 52, 54, 55, 58, 93, 96, 97, 98, 106, 107, 108, 138, 184, 186]
+INP:  ./trj_equil_supLEU2_part0.pdbs
+OUT:  ./trj_equil_supLEU2_part0.pdb
+REF:  /scratch/mcm/trapp/jobs/pocket_1f2cd40d-8da8-4e03-b579-e495771b7375/ref.pdb  align -yes
+----------- Alignment Started--------------- 
+Sequence 1 (reference)    :  209 AVETFAFQAEIAQLMSLIINTFYSNKEIFLRELISNSSDALDKIRYESLTDPSKLDSGKELHINLIPNKQDRTLTIVDTGIGMTKADLINNLGTIAKSGTKAFMEALQAGADISMIGQFGVGFYSAYLVAEKVTVITKHNDDEQYAWESSAGGSFTVRTDTGEPMGRGTKVILHLKEDQTEYLEERRIKEIVKKHSQFIGYPITLFVEK
+Sequence 2 (to be aligned):  209 AVETFAFQAEIAQLMSLIINTFYSNKEIFLRELISNSSDALDKIRYESLTDPSKLDSGKELSINLIPNKQDRTLTIVDTGIGMTKADLINNLGTIAKSGTKAFMEALQAGADISMIGQFGVGFYSAYLVAEKVTVITKSNDDEQYAWESSAGGSFTVRTDTGEPMGRGTKVILSLKEDQTEYLEERRIKEIVKKSSQFIGYPITLFVEK
+NEW site [(chain, residue)]:  15 [(1, 36), (1, 37), (1, 39), (1, 40), (1, 43), (1, 78), (1, 81), (1, 82), (1, 83), (1, 91), (1, 92), (1, 93), (1, 123), (1, 169), (1, 171)]
+REF site [(chain, residue)]:  15 [(1, 51), (1, 52), (1, 54), (1, 55), (1, 58), (1, 93), (1, 96), (1, 97), (1, 98), (1, 106), (1, 107), (1, 108), (1, 138), (1, 184), (1, 186)]
+shift in the first residues relative to the reference snapshot:  [0]
+----------- Alignment is Finished--------------- 
+TRAPP: Warning - this piece of the trajectory is empty; file -  ./trj_equil_supLEU2_part1.pdbs
+TRAPP: new active site: [51, 52, 54, 55, 58, 93, 96, 97, 98, 106, 107, 108, 138, 184, 186]
+INP:  ./trj_equil_supLEU3_part0.pdbs
+OUT:  ./trj_equil_supLEU3_part0.pdb
+REF:  /scratch/mcm/trapp/jobs/pocket_1f2cd40d-8da8-4e03-b579-e495771b7375/ref.pdb  align -yes
+----------- Alignment Started--------------- 
+Sequence 1 (reference)    :  209 AVETFAFQAEIAQLMSLIINTFYSNKEIFLRELISNSSDALDKIRYESLTDPSKLDSGKELHINLIPNKQDRTLTIVDTGIGMTKADLINNLGTIAKSGTKAFMEALQAGADISMIGQFGVGFYSAYLVAEKVTVITKHNDDEQYAWESSAGGSFTVRTDTGEPMGRGTKVILHLKEDQTEYLEERRIKEIVKKHSQFIGYPITLFVEK
+Sequence 2 (to be aligned):  209 AVETFAFQAEIAQLMSLIINTFYSNKEIFLRELISNSSDALDKIRYESLTDPSKLDSGKELSINLIPNKQDRTLTIVDTGIGMTKADLINNLGTIAKSGTKAFMEALQAGADISMIGQFGVGFYSAYLVAEKVTVITKSNDDEQYAWESSAGGSFTVRTDTGEPMGRGTKVILSLKEDQTEYLEERRIKEIVKKSSQFIGYPITLFVEK
+NEW site [(chain, residue)]:  15 [(1, 36), (1, 37), (1, 39), (1, 40), (1, 43), (1, 78), (1, 81), (1, 82), (1, 83), (1, 91), (1, 92), (1, 93), (1, 123), (1, 169), (1, 171)]
+REF site [(chain, residue)]:  15 [(1, 51), (1, 52), (1, 54), (1, 55), (1, 58), (1, 93), (1, 96), (1, 97), (1, 98), (1, 106), (1, 107), (1, 108), (1, 138), (1, 184), (1, 186)]
+shift in the first residues relative to the reference snapshot:  [0]
+----------- Alignment is Finished--------------- 
+TRAPP: Warning - this piece of the trajectory is empty; file -  ./trj_equil_supLEU3_part1.pdbs
+TRAPP: new active site: [51, 52, 54, 55, 58, 93, 96, 97, 98, 106, 107, 108, 138, 184, 186]
+INP:  ./trj_equil_supLEU0_part0.pdbs
+OUT:  ./trj_equil_supLEU0_part0.pdb
+REF:  /scratch/mcm/trapp/jobs/pocket_1f2cd40d-8da8-4e03-b579-e495771b7375/ref.pdb  align -yes
+----------- Alignment Started--------------- 
+Sequence 1 (reference)    :  209 AVETFAFQAEIAQLMSLIINTFYSNKEIFLRELISNSSDALDKIRYESLTDPSKLDSGKELHINLIPNKQDRTLTIVDTGIGMTKADLINNLGTIAKSGTKAFMEALQAGADISMIGQFGVGFYSAYLVAEKVTVITKHNDDEQYAWESSAGGSFTVRTDTGEPMGRGTKVILHLKEDQTEYLEERRIKEIVKKHSQFIGYPITLFVEK
+Sequence 2 (to be aligned):  209 AVETFAFQAEIAQLMSLIINTFYSNKEIFLRELISNSSDALDKIRYESLTDPSKLDSGKELSINLIPNKQDRTLTIVDTGIGMTKADLINNLGTIAKSGTKAFMEALQAGADISMIGQFGVGFYSAYLVAEKVTVITKSNDDEQYAWESSAGGSFTVRTDTGEPMGRGTKVILSLKEDQTEYLEERRIKEIVKKSSQFIGYPITLFVEK
+NEW site [(chain, residue)]:  15 [(1, 36), (1, 37), (1, 39), (1, 40), (1, 43), (1, 78), (1, 81), (1, 82), (1, 83), (1, 91), (1, 92), (1, 93), (1, 123), (1, 169), (1, 171)]
+REF site [(chain, residue)]:  15 [(1, 51), (1, 52), (1, 54), (1, 55), (1, 58), (1, 93), (1, 96), (1, 97), (1, 98), (1, 106), (1, 107), (1, 108), (1, 138), (1, 184), (1, 186)]
+shift in the first residues relative to the reference snapshot:  [0]
+----------- Alignment is Finished--------------- 
+TRAPP: Warning - this piece of the trajectory is empty; file -  ./trj_equil_supLEU0_part1.pdbs
+TRAPP: new active site: [51, 52, 54, 55, 58, 93, 96, 97, 98, 106, 107, 108, 138, 184, 186]
+TRAPP: Warning- file found: /scratch/mcm/trapp/jobs/pocket_1f2cd40d-8da8-4e03-b579-e495771b7375/RIPLIG-OUT/trj_equil_supLEU0-bb-t.pdb
+TRAPP: Warning- file found: /scratch/mcm/trapp/jobs/pocket_1f2cd40d-8da8-4e03-b579-e495771b7375/RIPLIG-OUT/trj_equil_supLEU1-bb-t.pdb
+TRAPP: Warning- file found: /scratch/mcm/trapp/jobs/pocket_1f2cd40d-8da8-4e03-b579-e495771b7375/RIPLIG-OUT/trj_equil_supLEU2-bb-t.pdb
+TRAPP: Warning- file found: /scratch/mcm/trapp/jobs/pocket_1f2cd40d-8da8-4e03-b579-e495771b7375/RIPLIG-OUT/trj_equil_supLEU3-bb-t.pdb
+TRAPP : ===============  NOW CLUSTERING STARTS ===================
+Hierarchical Clustering starts; threshold = 3.0
+TRAPP: Clusters found  2
+
+TRAPP: CLUSTER REPRESENTATIVEs for each simulation method: 
+(files can be found in the trapp-analysis output directory; the first snapshot is number 1 (not 0 !))
+  ------------------- MAKE CLUSTER PLOT  ----------------
+
+TRAPP: NUMBER of different clusters to be used for k-mean clustering is 1
+INP:  /scratch/mcm/trapp/jobs/pocket_1f2cd40d-8da8-4e03-b579-e495771b7375/TRAPP-Analysis-bb/Representatives/CLUSTER_1_trj_equil_supLEU0-bb_31.pdb
+OUT:  /scratch/mcm/trapp/jobs/pocket_1f2cd40d-8da8-4e03-b579-e495771b7375/TRAPP-Analysis-bb/Representatives/CLUSTER_1_trj_equil_supLEU0-bb_31.pdbs
+REF:  /scratch/mcm/trapp/jobs/pocket_1f2cd40d-8da8-4e03-b579-e495771b7375/ref.pdb  align -yes
+----------- Alignment Started--------------- 
+Sequence 1 (reference)    :  209 AVETFAFQAEIAQLMSLIINTFYSNKEIFLRELISNSSDALDKIRYESLTDPSKLDSGKELHINLIPNKQDRTLTIVDTGIGMTKADLINNLGTIAKSGTKAFMEALQAGADISMIGQFGVGFYSAYLVAEKVTVITKHNDDEQYAWESSAGGSFTVRTDTGEPMGRGTKVILHLKEDQTEYLEERRIKEIVKKHSQFIGYPITLFVEK
+Sequence 2 (to be aligned):  209 AVETFAFQAEIAQLMSLIINTFYSNKEIFLRELISNSSDALDKIRYESLTDPSKLDSGKELSINLIPNKQDRTLTIVDTGIGMTKADLINNLGTIAKSGTKAFMEALQAGADISMIGQFGVGFYSAYLVAEKVTVITKSNDDEQYAWESSAGGSFTVRTDTGEPMGRGTKVILSLKEDQTEYLEERRIKEIVKKSSQFIGYPITLFVEK
+NEW site [(chain, residue)]:  15 [(1, 36), (1, 37), (1, 39), (1, 40), (1, 43), (1, 78), (1, 81), (1, 82), (1, 83), (1, 91), (1, 92), (1, 93), (1, 123), (1, 169), (1, 171)]
+REF site [(chain, residue)]:  15 [(1, 51), (1, 52), (1, 54), (1, 55), (1, 58), (1, 93), (1, 96), (1, 97), (1, 98), (1, 106), (1, 107), (1, 108), (1, 138), (1, 184), (1, 186)]
+shift in the first residues relative to the reference snapshot:  [0]
+----------- Alignment is Finished--------------- 
+INP:  /scratch/mcm/trapp/jobs/pocket_1f2cd40d-8da8-4e03-b579-e495771b7375/TRAPP-Analysis-bb/Representatives/CLUSTER_2_trj_equil_supLEU1-bb_99.pdb
+OUT:  /scratch/mcm/trapp/jobs/pocket_1f2cd40d-8da8-4e03-b579-e495771b7375/TRAPP-Analysis-bb/Representatives/CLUSTER_2_trj_equil_supLEU1-bb_99.pdbs
+REF:  /scratch/mcm/trapp/jobs/pocket_1f2cd40d-8da8-4e03-b579-e495771b7375/ref.pdb  align -yes
+----------- Alignment Started--------------- 
+Sequence 1 (reference)    :  209 AVETFAFQAEIAQLMSLIINTFYSNKEIFLRELISNSSDALDKIRYESLTDPSKLDSGKELHINLIPNKQDRTLTIVDTGIGMTKADLINNLGTIAKSGTKAFMEALQAGADISMIGQFGVGFYSAYLVAEKVTVITKHNDDEQYAWESSAGGSFTVRTDTGEPMGRGTKVILHLKEDQTEYLEERRIKEIVKKHSQFIGYPITLFVEK
+Sequence 2 (to be aligned):  209 AVETFAFQAEIAQLMSLIINTFYSNKEIFLRELISNSSDALDKIRYESLTDPSKLDSGKELSINLIPNKQDRTLTIVDTGIGMTKADLINNLGTIAKSGTKAFMEALQAGADISMIGQFGVGFYSAYLVAEKVTVITKSNDDEQYAWESSAGGSFTVRTDTGEPMGRGTKVILSLKEDQTEYLEERRIKEIVKKSSQFIGYPITLFVEK
+NEW site [(chain, residue)]:  15 [(1, 36), (1, 37), (1, 39), (1, 40), (1, 43), (1, 78), (1, 81), (1, 82), (1, 83), (1, 91), (1, 92), (1, 93), (1, 123), (1, 169), (1, 171)]
+REF site [(chain, residue)]:  15 [(1, 51), (1, 52), (1, 54), (1, 55), (1, 58), (1, 93), (1, 96), (1, 97), (1, 98), (1, 106), (1, 107), (1, 108), (1, 138), (1, 184), (1, 186)]
+shift in the first residues relative to the reference snapshot:  [0]
+----------- Alignment is Finished--------------- 
+TRAPP:  JOB DONE !   
+TRAPP:  RUN TIME   2.36356590192 min

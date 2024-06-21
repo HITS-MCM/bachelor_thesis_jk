@@ -1,0 +1,173 @@
+<html>
+<meta charset="utf-8"/>
+<script type="text/javascript" src="../../../Jmol//JSmol.min.js"></script>
+<script type="text/javascript" src="../../../Jmol//js/Jmol2.js"></script>
+<script type="text/javascript" src="../../../html/bootstrap/js/bootstrap.min.js"></script>
+<link href="../../../html/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css"> .jmolBox { background-image:url(../../../html/JSmol_spinner.gif); background-repeat:no-repeat; background-position:center; } </style>
+<script>
+    $(function() {
+            $('.pop').on('click', function() {
+		    var desc = $(this).data('desc');
+		    $('.desc').text(desc);
+                    $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+		    $('#imagemodal').modal('show');
+		    return false;
+		    // e.preventDefault();
+            });
+    });
+     function zIndexChange(zIndexJmol) {
+        document.getElementById("divjmol").style.zIndex = zIndexJmol;
+     };
+     $(document).on('hide.bs.modal','#imagemodal', function () {
+            document.getElementById("divjmol").style.zIndex = 'auto';
+     });
+     $(document).on('hide.bs.modal','#occurenceDataModal', function () {
+            document.getElementById("divjmol").style.zIndex = 'auto';
+     });
+     $(document).on('hide.bs.modal','#disappearDataModal', function () {
+            document.getElementById("divjmol").style.zIndex = 'auto';
+     });
+</script>
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg" style="z-index: 1">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<img src="" class="imagepreview" style="width: 90%; height:90%">
+<p class="text-left desc"></p>
+</div>
+</div>
+</div>
+</div>
+<div class="container scrollable">
+<form>
+<div class="row">
+<div class="col-md-12">
+<h2 align="center">Clustering of transient regions are analyzed at pocket occurrence of 50"%</h2>
+</div>
+</div>
+<div class="row">
+<div id="divjmol" class="col-md-6">
+<script>
+var Info = {
+        width: "100%",
+        height: "65%",
+        debug:false,
+        serverURL: "php/jsmol.php",
+        j2sPath: "../../../Jmol//j2s",
+        use:"HTML5",
+        script:" fr=0;  isoT=50;  isoC=0.6 ; set navigationDepth 100; load ./ligand_position.pdb ; set appendNew= false;  load APPEND ./ref.pdb; select not hetero; cartoon  ONLY; cartoon on; spacefill OFF; wireframe OFF;   select protein and carbon; color atoms gray; hide _H;select 48:A  or 51:A  or 52:A  or 54:A  or 55:A  or 58:A  or 93:A  or 96:A  or 97:A  or 98:A  or 103:A  or 106:A  or 107:A  or 108:A  or 109:A  or 138:A  or 150:A  or 184:A  or 186:A ; wireframe 0.1;select hetero; spacefill 0.4; wireframe 0.1; set bonds on;  color bonds black; select hetero and carbon; color atoms black; isosurface Hn1    ANGSTROMS CUTOFF -0.5 INSIDEOUT ./trans_S1_-50.dx MESH ; select Hn1; color isosurface [100,40,250]  translucent 0.5;  isosurface Hn2    ANGSTROMS CUTOFF -0.5 INSIDEOUT ./trans_S2_-50.dx MESH ; select Hn2; color isosurface [100,80,250]  translucent 0.5;  center hetero;  zoom 80; refresh; isosurface  OFF; ",
+        disableInitialConsole: true,
+        disableJ2SLoadMonitor: true,
+        allowJavaScript: true
+}
+Jmol.setAppletCss("jmolBox");
+Jmol.getApplet("jmolApplet0",Info);
+</script>
+<div class="row">
+<div class="col-md-3">
+<h4>Show regions that appear</h4>
+</div>
+<div id="divjmol" class="col-md-5">
+<script>
+Jmol.jmolBr()
+
+jmolHtml("<b><FONT size=2 COLOR="red">NO transient regions found at the selected occurrence!</FONT></b><br>")
+
+</script>
+</div>
+<div id="divjmol" class="col-md-4">
+<script>
+Jmol.jmolBr()
+Jmol.jmolButton("jmolApplet0","isosurface  OFF; ","hide all surfaces")
+
+</script>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<h4>Show regions that disappear</h4>
+</div>
+<div id="divjmol" class="col-md-5">
+<script>
+Jmol.jmolBr()
+Jmol.jmolCheckbox("jmolApplet0"," model 1.1 ; isosurface Hn1 ON; refresh;","model 1.1 ; isosurface Hn1 OFF;  refresh; " ,"1")
+Jmol.jmolCheckbox("jmolApplet0"," model 1.1 ; isosurface Hn2 ON; refresh;","model 1.1 ; isosurface Hn2 OFF;  refresh; " ,"2")
+
+
+</script>
+</div>
+<div id="divjmol" class="col-md-4">
+<script>
+Jmol.jmolBr()
+Jmol.jmolCheckbox("jmolApplet0"," display (not hetero and not _H); refresh; " ," display not _H; refresh;","Hide/Show Ligand")
+
+</script>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3" align="center">
+<h4>Pocket occurrence in the trajectory of regions that appear</h4>
+<br>
+
+<br>
+
+</div>
+<div class="col-md-3" align="center">
+<h4>Statistics of pocket occurrence of regions that appear</h4>
+<br>
+
+<br>
+
+</div>
+<div class="col-md-3" align="center">
+<h4 >Pocket occurrence in the trajectory of regions that disappear</h4>
+<br>
+
+<a href="#" data-toggle="modal" data-target="#disappearDataModal" onclick="zIndexChange('-1')">Used data</a>
+    <div class="modal fade" id="disappearDataModal" tabindex="-1" role="dialog" aria-labelledby="disappearDataModal" aria-hidden="true">
+<div class="modal-dialog modal-lg" style="z-index: 1">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span onclick="zIndexChange('-1')" aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="myModalLabel">Pocket occurrence in the trajectory of regions</h4>
+</div>
+<div class="modal-body">
+<object data="./ovlp_snap-trans_S_-50.dat" style="width:90%; height:80%; overflow: auto;"></object>
+</div>
+</div>
+</div>
+</div>
+<br>
+<a href="#" class="pop" onclick="zIndexChange('-1')"><IMG class="img-responsive" style="z-index: 1" SRC="./ovlp_snap-trans_S_-50.png" NAME="graphics1"></a>
+
+</div>
+<div class="col-md-3" align="center">
+<h4>Statistics of pocket occurrence of regions that disappear</h4>
+<br>
+
+<a href="#" data-toggle="modal" data-target="#disappearDataModal" onclick="zIndexChange('-1')">Used data</a>
+    <div class="modal fade" id="disappearDataModal" tabindex="-1" role="dialog" aria-labelledby="disappearDataModal" aria-hidden="true">
+<div class="modal-dialog modal-lg" style="z-index: 1">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span onclick="zIndexChange('-1')" aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="myModalLabel">Pocket occurrence in the trajectory of regions</h4>
+</div>
+<div class="modal-body">
+<object data="./ovlp_snap-trans_S_-50.dat" style="width:90%; height:80%; overflow: auto;"></object>
+</div>
+</div>
+</div>
+</div>
+<br>
+<a href="#" class="pop" onclick="zIndexChange('-1')"><IMG class="img-responsive" style="z-index: 1" SRC="./ovlp_snap-trans_S_-50-stat.png" NAME="graphics1"></a>
+
+</div>
+</div>
+</div>
+</form>
+</div>
+</html>

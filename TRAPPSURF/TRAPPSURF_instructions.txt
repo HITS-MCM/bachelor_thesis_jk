@@ -1,0 +1,33 @@
+This file contains some general instructions for the use of TRAPPSURF. These were taken from my bachelor thesis. 
+
+
+TRAPPSURFs stand-alone version needs two files in the directory from where it is executed.
+The files are “input_conservation.txt” and the pdb-file of the query sequence. TRAPPSURF
+can then be executed using the command “python {path}/stand_alone_conv_script.py”. The
+generated output can be found in the folder “conservation”. The generated PyMol-session can
+be found in this folder stored as “colored_str.pse”. The changed pdb-file of the query-sequence
+including the conservation score as B-values is saved as “changed_str.pdb”. Furthermore, in
+the folder all the output-files of the used programs (BLAST, ClustalO, R4S) can be accessed
+as well.
+The implementation in TRAPP can be executed by the command “python
+{path}/conv_script_TRAPP.py” from the directory over the INP and OUT folder of TRAPP. The
+“input_conservation.txt” file needs to be stored by the user in the INP-folder of TRAPP. After
+TRAPPSURF finished its analysis, the user can find the output in “./OUT/conservation/”. The
+output folder’s structure is identical to the stand-alone version. The changed PyMol scripts
+and the preparation for the web-server can be found in their respective folders of TRAPP.
+
+The default values in the 'input_conservation.txt' were taken from the EMBL-EBI job dispatcher. Be aware that depending
+on the used search methods (NCBI BLAST and PSI-BLAST) the default values can differ and
+needs to be changed accordingly. For further references refer to the EMBL-EBI job
+dispatcher. The input-file does not contain all possible parameters which can be used for the
+Job dispatcher as it was not possible to test all default parameters if they work with the
+submission script. However, the user can define the most important parameters and a further
+implementation of all the parameters should be feasible in the future.
+The user needs to define the whole path to the python scripts for TRAPPSURF and their email.
+This needs to be done only for the first analysis as this should not change between analyses.
+The parameter that can change depending on the analysis is the name of the “rec_name”.
+This parameter is the name of the pdb-file for the query sequence. It should be mentioned that
+the whole name with extension needs to be declared as it won’t be automatically completed
+by TRAPPSURF. The pdb-file should only contain the query protein and not any other
+structures or water molecules. Furthermore, one should try to avoid multiple conformations of
+the same residues as this can result in errors during the “plotting” module of TRAPPSURF. 

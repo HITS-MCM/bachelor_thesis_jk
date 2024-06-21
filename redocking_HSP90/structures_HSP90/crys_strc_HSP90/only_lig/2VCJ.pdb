@@ -1,0 +1,68 @@
+CRYST1   66.038   89.289   99.516  90.00  90.00  90.00 I 2 2 2       1
+MODEL        1
+HETATM    1 CL1  2EQ A1224       1.673  12.635  22.760  1.00 58.17      B   CL  
+HETATM    2  C1  2EQ A1224      -2.094  11.362  24.792  1.00 54.72      B    C  
+HETATM    3  O1  2EQ A1224      -3.229  10.997  25.383  1.00 55.26      B    O  
+HETATM    4  C2  2EQ A1224      -2.131  12.111  23.639  1.00 55.51      B    C  
+HETATM    5  N2  2EQ A1224      -1.242   9.458  28.535  1.00 59.24      B    N  
+HETATM    6  O2  2EQ A1224      -0.977  13.232  21.903  1.00 55.03      B    O  
+HETATM    7  C3  2EQ A1224      -0.958  12.500  23.025  1.00 54.89      B    C  
+HETATM    8  N3  2EQ A1224       0.214   7.579  30.006  1.00 59.95      B    N  
+HETATM    9  O3  2EQ A1224       0.978   6.695  28.106  1.00 60.43      B    O  
+HETATM   10  C4  2EQ A1224       0.248  12.132  23.564  1.00 57.10      B    C  
+HETATM   11  N4  2EQ A1224       3.649   5.692  22.986  1.00 67.67      B    N  
+HETATM   12  O4  2EQ A1224       5.359   4.136  22.656  1.00 73.30      B    O  
+HETATM   13  C5  2EQ A1224      -0.897  10.982  25.335  1.00 55.55      B    C  
+HETATM   14  O5  2EQ A1224      -1.587  10.433  27.604  1.00 61.25      B    O  
+HETATM   15  C6  2EQ A1224       0.281  11.372  24.725  1.00 56.52      B    C  
+HETATM   16  C7  2EQ A1224      -0.861  10.225  26.495  1.00 59.23      B    C  
+HETATM   17  C8  2EQ A1224      -0.336   8.681  27.989  1.00 58.89      B    C  
+HETATM   18  C9  2EQ A1224      -0.069   9.131  26.721  1.00 60.45      B    C  
+HETATM   19  C10 2EQ A1224       0.315   7.523  28.699  1.00 59.47      B    C  
+HETATM   20  C11 2EQ A1224       0.788   6.566  30.887  1.00 59.50      B    C  
+HETATM   21  C12 2EQ A1224       2.293   6.740  30.994  1.00 58.59      B    C  
+HETATM   22  C13 2EQ A1224       0.809   8.629  25.789  1.00 61.82      B    C  
+HETATM   23  C14 2EQ A1224       0.315   7.883  24.737  1.00 62.95      B    C  
+HETATM   24  C15 2EQ A1224       1.163   7.393  23.768  1.00 62.18      B    C  
+HETATM   25  C16 2EQ A1224       2.507   7.650  23.861  1.00 62.66      B    C  
+HETATM   26  C17 2EQ A1224       2.998   8.400  24.908  1.00 61.96      B    C  
+HETATM   27  C18 2EQ A1224       2.154   8.892  25.875  1.00 60.49      B    C  
+HETATM   28  C19 2EQ A1224       3.450   7.119  22.810  1.00 66.63      B    C  
+HETATM   29  C20 2EQ A1224       4.097   5.170  24.272  1.00 67.77      B    C  
+HETATM   30  C21 2EQ A1224       5.040   4.023  24.019  1.00 72.30      B    C  
+HETATM   31  C22 2EQ A1224       4.336   3.632  21.877  1.00 69.33      B    C  
+HETATM   32  C23 2EQ A1224       3.386   4.799  21.860  1.00 68.99      B    C  
+ENDMDL
+CONECT    1   10
+CONECT    2    3    4   13
+CONECT    3    2
+CONECT    4    2    7
+CONECT    5   14   17
+CONECT    6    7
+CONECT    7    4    6   10
+CONECT    8   19   20
+CONECT    9   19
+CONECT   10    1    7   15
+CONECT   11   28   29   32
+CONECT   12   30   31
+CONECT   13    2   15   16
+CONECT   14    5   16
+CONECT   15   10   13
+CONECT   16   13   14   18
+CONECT   17    5   18   19
+CONECT   18   16   17   22
+CONECT   19    8    9   17
+CONECT   20    8   21
+CONECT   21   20
+CONECT   22   18   23   27
+CONECT   23   22   24
+CONECT   24   23   25
+CONECT   25   24   26   28
+CONECT   26   25   27
+CONECT   27   22   26
+CONECT   28   11   25
+CONECT   29   11   30
+CONECT   30   12   29
+CONECT   31   12   32
+CONECT   32   11   31
+END

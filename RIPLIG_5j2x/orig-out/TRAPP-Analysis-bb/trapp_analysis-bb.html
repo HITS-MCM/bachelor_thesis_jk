@@ -1,0 +1,64 @@
+<html><script src="../html/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="../html/bootstrap/js/bootstrap.min.js"></script>
+<link href="../html/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script>$(function() {$('.pop').on('click', function() {$('.imagepreview').attr('src', $(this).find('img').attr('src'));$('#imagemodal').modal('show');});});</script><div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">  <div class="modal-dialog modal-lg">    <div class="modal-content">      <div class="modal-body">          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>          <img src="" class="imagepreview" style="width: 100%;">      </div>    </div>  </div></div>
+<div class="container scrollable">
+<div class="row">
+        <div class="col-md-12">
+                <h4 align="center">Binding site flexibility: Summary of TRAPP-analysis output</h4>
+        </div>
+</div>
+
+<div class="row">
+        <div class="col-md-12">
+                <p class="text-center"><b>RMS deviation of backbone atom positions  from those in a reference structure</b></p>
+        </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+        <p class="text-center"><b>Summary</b> of <br> RIPlig:<br></p>
+        <a href="#" class="pop"><img src="RIPLIG/RIPLIG-OUT-bb-summary.png" width="95%" style="margin: 0 auto"></a>
+        <a href="RIPLIG/RIPLIG-OUT-bb-summary.dat">&#8801;</a><br>
+
+<div class="row">
+        <div class="col-md-12">
+                <p class="text-center"><b>Summary for each particular trajectory: </b></p>
+        </div>
+</div>
+<div class="row">
+
+    <div class="col-sm-6">
+        <p class="text-center">LEU0<br></p>
+        <a href="#" class="pop"><img src="RIPLIG/trj_equil_supLEU0-bb-matrix.png" width="92%" style="margin: 0 auto" title="Click to enlarge picture."></a>
+        <a href="RIPLIG/trj_equil_supLEU0-bb-matrix.dat">&#8801;</a><br>
+    </div>
+
+    <div class="col-sm-6">
+        <p class="text-center">LEU1<br></p>
+        <a href="#" class="pop"><img src="RIPLIG/trj_equil_supLEU1-bb-matrix.png" width="92%" style="margin: 0 auto" title="Click to enlarge picture."></a>
+        <a href="RIPLIG/trj_equil_supLEU1-bb-matrix.dat">&#8801;</a><br>
+    </div>
+
+    <div class="col-sm-6">
+        <p class="text-center">LEU2<br></p>
+        <a href="#" class="pop"><img src="RIPLIG/trj_equil_supLEU2-bb-matrix.png" width="92%" style="margin: 0 auto" title="Click to enlarge picture."></a>
+        <a href="RIPLIG/trj_equil_supLEU2-bb-matrix.dat">&#8801;</a><br>
+    </div>
+
+    <div class="col-sm-6">
+        <p class="text-center">LEU3<br></p>
+        <a href="#" class="pop"><img src="RIPLIG/trj_equil_supLEU3-bb-matrix.png" width="92%" style="margin: 0 auto" title="Click to enlarge picture."></a>
+        <a href="RIPLIG/trj_equil_supLEU3-bb-matrix.dat">&#8801;</a><br>
+    </div>
+</div></div></div>
+<div class="row">
+        <div class="col-md-12">
+                Each element of the matrix shows the deviation of a residue geometry center in a particular snapshot from that in a reference structure.<br>                The horizontal 2D plot - averaged deviation over all residues in each snapshot/structure.<br>                The vertical 2D plot - maximum deviation in a trajectory/ensemble for each residue.<br>                Only active site residues are included in the analysis.
+        </div>
+</div>
+<div class="row">
+<div class="col-md-12" style="padding-top:8px">
+<h4 align="center">Clustering of the binding site conformations</h4>
+Preliminary hierarchical clustering - <a href="trapp_analysis-clust_list-bb.dat">List of the cluster representatives</a><br><br>RMSD of the cluster representatives from the reference structure (see the List of the cluster representatives)<br></div><div class="col-sm-4"><a href="#" class="pop"><img src="Representatives/cluster-RMSD.png" width="85%"></a></div><div class="col-sm-4"><a href="#" class="pop"><img src="clustering.png" width="95%" alt="Clustering"></a>
+</div>
+</div>

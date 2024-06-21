@@ -1,0 +1,140 @@
+####======================initialization======================####
+
+load packages
+
+if "conservation" not in file_path:
+	create 'conservation' (directory)
+	copy all pdb-files from current directory to 'conservation'
+	copy input-file in 'conservation'
+	change to 'conservation'
+else:	
+	continue	
+	
+read input-file:
+	set all parameter values from input-file
+
+get querry_sequence in FASTA-format from querry_pdb-file
+
+####======================search======================####
+
+if not any output-files from blast-search in directory:
+	if search-parameter equals ncbiblast:
+		start ncbiblast search with all defined parameters
+	elif search-parameter equls psiblast:
+		start ncbiblast search with all defined parameters
+	if search-paramter is neither of them:
+		stop program
+else:
+	continue
+	
+load output-file from search
+get IDs of the found sequences from output-file
+store IDs in "sequences-files"  with 50 IDs in each file #if not uniref90 as database will not work
+download all sequences using IDs from "sequences-files"	in FASTA-formta
+combine all sequences in one "sequence-all-file"
+
+####======================align======================####
+
+if not any output-files from clustalo-run in directory:
+	start clustalo run  with "sequence-all-file" as input and parameters from input-file
+else:
+	continue
+	
+####======================scoring======================####
+
+if not any output-files from rate4site-run in directory:
+	perform rate4site analyis with output-file from clustalo-run
+else:
+	continue	
+
+####======================Standalone-version======================####
+
+####======================plotting======================####
+
+get all 'cons-values' for each residue from rate4site-output
+load querry_pdb-file
+for every residue in querry_pdb-file:
+	assign each residue the 'cons-values' as b-value
+	save the changes as 'changed_structure' in pdb-format
+create PyMol-session:	
+	load 'changed_structure' 
+	load 'ligand' as pdb-format 
+	hide everything 
+	show everthing as cartoon 
+	calculate 'interactions' between 'ligand' and 'change_structure'
+	set label digits as 2 
+	show label for b-values ('cons-values') which are below average of b-values at C-Atom
+	color 'changed_structure' as rainbow for b-values
+	save PyMol-session as .pse
+
+####======================TRAPP-version======================####
+
+####======================plotting======================####
+
+get all 'cons-values' for each residue from rate4site-output
+
+####---------JMOL---------####
+
+change_b_values <- function(){
+
+create list for all pdb files except ligands and not protein pdb-files
+	for file in list:
+		for every residue in file:
+			assign each residue the 'cons-values' as b-value
+			overwrite the file in pdb-format 
+}
+
+search in whole TRAPP-OUT directory for folder that contains 'pdb-files' that are used by JMOL using the JMOL-directory name 'Jmol/models'
+change to this directory
+for folder in directory:
+	if folder is relevant for JMOL generation: #defined by a list of relevant folder names
+		change to folder
+		change_b_values
+		change back from folder
+
+change back to TRAPPSURF-OUT folder
+
+####---------PyMol---------####
+
+change_b_values-general_pse <- function(){
+
+create list for all pdb files that contain all snapshots of one trajectory
+	for file in list:
+		for every model in file
+			for every residue in model:
+				assign each residue the 'cons-values' as b-value
+				overwrite the file in pdb-format
+}
+
+search in whole TRAPP-OUT directory for folder that contains 'pse-files' using the PyMol-directory name '/PyMol'
+change to this directory
+for file in this directory:
+	if file is 'pse-file' for single trajectory:
+		append 'pse-file' with:
+			set label digits as 2 
+			show label for b-values ('cons-values') which are below average of b-values at C-Atom
+			color all structures as rainbow for b-values
+		set check as FALSE
+		for line in 'pse-file':
+			if check is TRUE:
+				break for-loop # it needs only to be done once as all pdb-files are in the same trajectory 
+			if 'load' and 'pdb' in line: #line which contains the directory link to loaded pdb-file
+				get directory link to pdb-file
+				change to directory
+				change_b_value
+				change back to previous directory
+				set check as TRUE
+	if file is 'pse-file' for all trajectories:
+		append 'pse-file' with:
+			set label digits as 2 
+			show label for b-values ('cons-values') which are below average of b-values at C-Atom
+			color all structures as rainbow for b-values	
+		go to directory which contains 'pdb-files' for 'pse-file' #link is predefined as it does not change
+		change_b_values-general_pse
+		go to previous directory
+
+change to TRAPP-OUT directory
+
+for every residue in reference_pdb-file:
+	assign each residue the 'cons-values' as b-value
+	save the changes as 'ref' in pdb-format

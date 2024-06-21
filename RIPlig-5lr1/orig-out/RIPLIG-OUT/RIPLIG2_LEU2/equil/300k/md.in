@@ -1,0 +1,62 @@
+# initial structure and coordinates
+structure /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/RIPLIG-OUT/RIPLIG2_LEU2/equil/300k/equil.psf
+coordinates /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/RIPLIG-OUT/RIPLIG2_LEU2/equil/300k/equil.coor
+
+
+# output
+outputName md
+binaryOutput no
+
+
+# forcefield parameters
+paraTypeCharmm on
+parameters /share/apps/mcm/trapp4/trapptool/auxi/rip-script-NAMD/pdbtool/parms/charmm27.parameter
+exclude	scaled1-4
+1-4scaling 1.0
+
+# cutoffs
+switching on
+switchDist 15.0
+cutoff 17.0
+pairListDist 18
+
+
+# constraint
+constraints on
+consExp 2
+consKFile /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/RIPLIG-OUT/RIPLIG2_LEU2/equil/300k/equil.coor.constraint
+consKCol B
+consRef /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/RIPLIG-OUT/RIPLIG2_LEU2/equil/300k/equil.coor.constraint
+# initial temperature/velocities
+velocities /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/RIPLIG-OUT/RIPLIG2_LEU2/equil/300k/equil.vel
+# dcdectory output
+dcdFile md.dcd
+dcdFreq 50
+velDcdFile md.vel.dcd
+velDcdFreq 50
+
+# molecular dynamics timesteps
+numSteps 10000
+timeStep 1  # fs
+rigidBonds all
+firstTimeStep 0
+stepsPerCycle 10
+nonBondedFreq 2
+fullElectFrequency 2
+#GBIS parameters
+GBIS on
+ionConcentration 0.3
+alphaCutoff 15
+SASA on
+GBISDelta 1.0
+GBISBeta 0.8
+GBISGamma 4.85
+
+extendedSystem md.in.xsc
+# temperature coupling
+langevin on
+langevinHydrogen on
+langevinTemp 300
+langevinDamping     5.0
+
+# constant pressure

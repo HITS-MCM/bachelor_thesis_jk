@@ -1,0 +1,64 @@
+CRYST1   67.421   90.460   99.131  90.00  90.00  90.00 I 2 2 2       1
+MODEL        1
+HETATM    1 CL   C4N A 302       5.199   8.069  23.795  1.00 60.94      C   CL  
+HETATM    2  C1  C4N A 302      -0.966  10.892  25.688  1.00 39.01      C    C  
+HETATM    3  C2  C4N A 302      -2.129  11.276  24.979  1.00 37.24      C    C  
+HETATM    4  C3  C4N A 302      -2.045  11.995  23.797  1.00 34.39      C    C  
+HETATM    5  C4  C4N A 302       0.300  11.271  25.204  1.00 35.43      C    C  
+HETATM    6  O5  C4N A 302      -3.342  10.988  25.496  1.00 39.71      C    O  
+HETATM    7  C6  C4N A 302      -1.063  10.197  26.999  1.00 41.99      C    C  
+HETATM    8  N7  C4N A 302      -0.692   8.890  27.170  1.00 43.96      C    N  
+HETATM    9  O8  C4N A 302      -1.415  10.873  27.959  1.00 40.98      C    O  
+HETATM   10  C9  C4N A 302       0.387  11.901  23.953  1.00 38.32      C    C  
+HETATM   11  C10 C4N A 302      -0.792  12.290  23.256  1.00 37.45      C    C  
+HETATM   12  N11 C4N A 302      -0.389  12.878  22.085  1.00 38.19      C    N  
+HETATM   13  N12 C4N A 302       1.007  12.811  22.018  1.00 35.96      C    N  
+HETATM   14  C13 C4N A 302       1.507  12.329  23.122  1.00 38.78      C    C  
+HETATM   15  C14 C4N A 302       2.969  12.017  23.373  1.00 39.15      C    C  
+HETATM   16  C15 C4N A 302       3.644  12.701  24.532  1.00 41.14      C    C  
+HETATM   17  C16 C4N A 302       4.180  11.922  25.564  1.00 42.93      C    C  
+HETATM   18  C17 C4N A 302       5.121  13.885  26.602  1.00 40.61      C    C  
+HETATM   19  C18 C4N A 302       4.612  14.656  25.555  1.00 40.54      C    C  
+HETATM   20  C19 C4N A 302       4.904  12.513  26.608  1.00 42.64      C    C  
+HETATM   21  C20 C4N A 302       3.882  14.078  24.511  1.00 41.20      C    C  
+HETATM   22  C21 C4N A 302      -0.772   8.270  28.496  1.00 42.70      C    C  
+HETATM   23  C22 C4N A 302      -0.364   7.980  26.058  1.00 47.50      C    C  
+HETATM   24  C23 C4N A 302       1.049   8.009  25.550  1.00 52.52      C    C  
+HETATM   25  C24 C4N A 302       1.219   7.931  24.165  1.00 53.65      C    C  
+HETATM   26  C25 C4N A 302       3.598   8.055  24.478  1.00 58.48      C    C  
+HETATM   27  C26 C4N A 302       3.419   8.135  25.863  1.00 56.68      C    C  
+HETATM   28  C27 C4N A 302       2.497   7.957  23.625  1.00 56.35      C    C  
+HETATM   29  C28 C4N A 302       2.142   8.112  26.411  1.00 52.66      C    C  
+HETATM   30  C30 C4N A 302       4.888  16.125  25.556  1.00 37.35      C    C  
+ENDMDL
+CONECT    1   26
+CONECT    2    3    5    7
+CONECT    3    2    4    6
+CONECT    4    3   11
+CONECT    5    2   10
+CONECT    6    3
+CONECT    7    2    8    9
+CONECT    8    7   22   23
+CONECT    9    7
+CONECT   10    5   11   14
+CONECT   11    4   10   12
+CONECT   12   11   13
+CONECT   13   12   14
+CONECT   14   10   13   15
+CONECT   15   14   16
+CONECT   16   15   17   21
+CONECT   17   16   20
+CONECT   18   19   20
+CONECT   19   18   21   30
+CONECT   20   17   18
+CONECT   21   16   19
+CONECT   22    8
+CONECT   23    8   24
+CONECT   24   23   25   29
+CONECT   25   24   28
+CONECT   26    1   27   28
+CONECT   27   26   29
+CONECT   28   25   26
+CONECT   29   24   27
+CONECT   30   19
+END

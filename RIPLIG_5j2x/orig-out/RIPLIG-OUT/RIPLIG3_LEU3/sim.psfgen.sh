@@ -1,0 +1,1 @@
+psfgen /scratch/mcm/trapp/jobs/pocket_1f2cd40d-8da8-4e03-b579-e495771b7375/RIPLIG-OUT/RIPLIG3_LEU3/sim.psfgen.in 2>&1 > /scratch/mcm/trapp/jobs/pocket_1f2cd40d-8da8-4e03-b579-e495771b7375/RIPLIG-OUT/RIPLIG3_LEU3/sim.psfgen.log

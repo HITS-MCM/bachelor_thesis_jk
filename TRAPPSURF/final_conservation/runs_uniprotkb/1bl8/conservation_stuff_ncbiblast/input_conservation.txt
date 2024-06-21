@@ -1,0 +1,24 @@
+PATH: /home/kunzjn/final_conservation/scrps
+#link to the directory for all the scripts
+rec_name: 1bl8.pdb
+database: uniprotkb
+exp: 1e-4
+#needs to be changed depending which search program as used as they are defined different
+word_size: 6
+search_method: ncbiblast
+lig_name: position.pdb
+matrix: BLOSUM62
+droppoff: 0
+gapopen: -1
+gapext: -1
+seqrange: START-END
+gapalign: true
+alignments: 200
+scores: 200
+email: jonathan.kunz@h-its.org
+
+expthr: 10.0
+psithr: 1.0e-3
+finaldropoff: 25
+filter: no
+

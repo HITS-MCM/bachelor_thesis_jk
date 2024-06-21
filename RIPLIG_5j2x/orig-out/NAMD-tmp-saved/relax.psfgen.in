@@ -1,0 +1,12 @@
+package require psfgen
+topology /share/apps/mcm/trapp4/trapptool//auxi/rip-script-NAMD/pdbtool/parms/charmm27.topology
+alias residue HIS HSE
+alias residue CYX CYS
+alias atom ILE CD1 CD
+segment ch0 { 
+pdb .././structure_5j2x_clean.pdb-A
+}
+coordpdb .././structure_5j2x_clean.pdb-A ch0
+guesscoord
+writepdb relax.pdb
+writepsf relax.psf

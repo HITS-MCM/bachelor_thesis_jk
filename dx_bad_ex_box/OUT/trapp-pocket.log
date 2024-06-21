@@ -1,0 +1,97 @@
+
+TRAPP :  ======= INPUT DATA: ==========
+
+
+TRAPP :  ======= to be done: ==========
+TRAPP :  SUPERIMPOSE_STRUCT = yes
+TRAPP :  LJ-GRID = yes
+TRAPP :  MOTION_ANALYSIS = yes
+TRAPP :  DRUGGABILITY_PREDICTION = yes
+TRAPP :  SIMILARITY_ANALYSIS = no
+TRAPP :  SAVE PLOTS = yes
+
+TRAPP :  ======= PATH: ==========
+TRAPP :  DIR= ./
+
+TRAPP :  ======= trajectories to be analyzed: ==========
+TRAPP :  MAXTRJ = 1
+
+TRAPP :  ===== name min max step reference===========
+TRAPP :  TRJ trj_shorten ; first snapshot 1 ; last snapshot -1 ; step 1
+
+TRAPP :  ======= input files: ==========
+TRAPP :  PDB = structure_1jwp_protein.pdb
+TRAPP :  LIG = ligand_1pzp_ligand.pdb
+TRAPP :  hydrogen will be added  to the refernce structure
+TRAPP: all HETATM and also HOH atoms will be removed from input structures
+TRAPP :  SITE = no-act-site
+
+======= grid parameters to be used: ==========
+TRAPP :  RADIUS = 6.0
+TRAPP :  GRD = 0.75
+
+TRAPP :  ======= parameters of LJ-pocket: ==========
+TRAPP :  HATOMS = yes
+TRAPP :  atom-dependent LJrad will be used
+TRAPP :  VECT-L = 7.0
+TRAPP :  VECT-alpha = 0.6
+TRAPP :  VECT-direct = 12.0
+TRAPP :  VECT-accuracy = 2.0
+TRAPP :  SPACIAL-AVERAGE = 3
+TRAPP :  CENTRAL-POCKET = yes
+
+TRAPP :  ======= PCA analysis: ==========
+TRAPP :  PCA-analysis no
+TRAPP :  PCA-TRJ 0
+TRAPP :  PCA-MODES 2
+
+TRAPP :  ======= parameters of visualization: ==========
+TRAPP :  LJ-SPHERES = 1.5
+TRAPP :  ISO = 0.6
+TRAPP :  ISO-T = [25, 50]%
+TRAPP :  CLUSTER = 0
+TRAPP :  PCA-TRANS-POCK = yes
+TRAPP :  CLUSTER-TRANS-POCK = yes
+TRAPP :  Jsmol = yes
+TRAPP:  3 cores will be used for simulations (as defined by a system variable TRAPP_NCORES)
+
+TRAPP:  standard NAMD  OMP version to be used , the command  namd2 +p threads
+
+
+TRAPP: ################################	STEP 0: some preparation needed...   ########################
+
+TRAPP: all residues within 6.0 Angstrom from a ligand will be considered as an active site
+TRAPP: active site includes  31 residues: 46; 219; 220; 221; 222; 223; 224; 225; 226; 231; 233; 246; 247; 248; 250; 261; 262; 263; 277; 278; 279; 280; 281; 282; 283; 284; 285; 286; 287; 288; 290; 
+
+TRAPP: ################################	STEP 1: ALIGNMENT and SUPERIMPOSITION of  each trajectory to the reference structure  ########################
+
+TRAPP: ----------------------  ALIGNMENT and SUPERIMPOSITION -of the trajectory------trj_shorten
+TRAPP: Warning! backbone atoms in the active site are different: (30, 'OT1') found:O263
+TRAPP: the expected length of the trajectory to be analyzed is 300 from trj_length-MODEL
+
+TRAPP: ++++++++++++++++++++++++++++++++ Trajectory will be splitted and superimosed by parts +++++++++++++++++++++++++++++++++++++
+TRAPP: Warning - this piece of the trajectory is empty; file -  /home/kunzjn/trapptool/examples/Paper-2020/OUT/trj_shorten/md_part3.pdbs
+TRAPP: ++++++++++++++++++++++++++++++++ Trajectory  superimosition finished ++++++++++++++++++++++++++++++++++++++++++++
+
+
+TRAPP:#############################	STEP 2: LJ grid calculation and/or analysis   ##############################
+
+
+TRAPP: multi-core mode for LJ pocket simulations starts
+
+
+TRAPP: multi-core mode for LJ pocket simulations finished
+
+TRAPP: computing transient and conserved pocket regions averaged over all snapshots in a trajectory 0
+
+TRAPP: ++++++++++++++++++++++  multicore starts  ++++++++++++++++++++++++++++++++++++
+
+TRAPP: 	PCA analysis of the transient pockets at the occurence of 25
+TRAPP: 	PCA analysis of the transient pockets at the occurence of 50
+
+TRAPP: ++++++++++++++++++++++++++++  multicore finished  +++++++++++++++++++++++++++++++++++++
+
+TRAPP: NOW compare all trajectories 
+TRAPP: Warning- too many snapshots in the trajectory trj_shorten only 100 snapshots  (selected with a step of 3) will be shown
+TRAPP: shift in residue numbering relative the original numbers - -1
+  Total simulation time: 349.636931180954 sec:   0 h 5 min

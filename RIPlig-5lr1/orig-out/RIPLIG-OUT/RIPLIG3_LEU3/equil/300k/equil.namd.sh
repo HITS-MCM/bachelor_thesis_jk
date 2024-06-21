@@ -1,0 +1,1 @@
+namd2 equil.in 2>&1 > equil.namd.log

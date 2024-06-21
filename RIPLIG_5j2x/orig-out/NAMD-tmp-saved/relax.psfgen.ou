@@ -1,0 +1,52 @@
+PSFGEN 1.6 from NAMD 2.9 for Linux-x86_64-multicore
+psfgen) reading topology file /share/apps/mcm/trapp4/trapptool//auxi/rip-script-NAMD/pdbtool/parms/charmm27.topology
+
+psfgen) >>>>>>>>CHARMM22 All-Hydrogen Topology File for Proteins <<<<<<<
+psfgen) >>>>>>>>>>>>>>>>>>>> and Nucleic Acids <<<<<<<<<<<<<<<<<<<<<<<<<
+psfgen) >>>>> Includes phi, psi cross term map (CMAP) correction <<<<<<<
+psfgen) >>>>>>>>>>>>>>>>>>>>>>   July, 2004    <<<<<<<<<<<<<<<<<<<<<<<<<<
+psfgen)  All comments to ADM jr. via the CHARMM web site: www.charmm.org
+psfgen)                parameter set discussion forum
+psfgen) 
+psfgen) Created by CHARMM version 31 1
+psfgen) cross-term entries present in topology definitions
+psfgen) aliasing residue HIS to HSE
+psfgen) aliasing residue CYX to CYS
+psfgen) aliasing residue ILE atom CD1 to CD
+psfgen) building segment CH0
+psfgen) reading residues from pdb file .././structure_5j2x_clean.pdb-A
+psfgen) extracted 209 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping improper N-C-CA-HN at beginning of segment.
+psfgen) Info: skipping cross-term C-N-CA-C-N-CA-C-N at beginning of segment.
+psfgen) Info: skipping conformation C-N-CA-C at beginning of segment.
+psfgen) Info: skipping conformation C-CA-N-HN at beginning of segment.
+psfgen) Info: skipping bond C-N at end of segment.
+psfgen) Info: skipping improper C-CA-N-O at end of segment.
+psfgen) Info: skipping cross-term C-N-CA-C-N-CA-C-N at end of segment.
+psfgen) Info: skipping conformation CA-C-N-CA at end of segment.
+psfgen) Info: skipping conformation N-CA-C-O at end of segment.
+psfgen) Info: skipping conformation N-CA-C-N at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file .././structure_5j2x_clean.pdb-A for segment ch0
+psfgen) Warning: failed to set coordinate for atom O	 LYS:209	  CH0
+psfgen) Info: guessing coordinates for 1651 atoms (2 non-hydrogen)
+psfgen) Warning: poorly guessed coordinates for 6 atoms (2 non-hydrogen):
+psfgen) Warning: poorly guessed coordinate for atom HT1	 ALA:1	  CH0
+psfgen) Warning: poorly guessed coordinate for atom HT2	 ALA:1	  CH0
+psfgen) Warning: poorly guessed coordinate for atom HT3	 ALA:1	  CH0
+psfgen) Warning: poorly guessed coordinate for atom HG2	 PRO:164	  CH0
+psfgen) Warning: poorly guessed coordinate for atom OT1	 LYS:209	  CH0
+psfgen) Warning: poorly guessed coordinate for atom OT2	 LYS:209	  CH0
+psfgen) Info: writing pdb file relax.pdb
+psfgen) Info: Atoms with guessed coordinates will have occupancy of 0.0.
+psfgen) Info: pdb file complete.
+psfgen) Info: writing psf file relax.psf
+psfgen) total of 3290 atoms
+psfgen) total of 3316 bonds
+psfgen) total of 6003 angles
+psfgen) total of 8760 dihedrals
+psfgen) total of 541 impropers
+psfgen) total of 207 cross-terms
+psfgen) Info: psf file complete.
+CH0:1 
+CH0:209 

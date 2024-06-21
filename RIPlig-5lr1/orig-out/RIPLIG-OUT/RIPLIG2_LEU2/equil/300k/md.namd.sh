@@ -1,0 +1,1 @@
+namd2 md.in 2>&1 > md.namd.log

@@ -1,0 +1,50 @@
+CRYST1   66.050   89.210   99.880  90.00  90.00  90.00 I 2 2 2       1
+MODEL        1
+HETATM    1  C1  BAW A 301      -0.624  12.526  22.916  1.00 11.84      B    C  
+HETATM    2  C2  BAW A 301      -1.825  12.006  23.383  1.00 13.59      B    C  
+HETATM    3  C3  BAW A 301      -1.854  11.236  24.535  1.00 12.69      B    C  
+HETATM    4  C4  BAW A 301      -0.670  10.941  25.213  1.00 10.12      B    C  
+HETATM    5  C5  BAW A 301       0.545  11.465  24.759  1.00 11.01      B    C  
+HETATM    6  C6  BAW A 301       0.558  12.298  23.629  1.00  7.29      B    C  
+HETATM    7  O7  BAW A 301      -0.663  13.280  21.787  1.00 10.40      B    O  
+HETATM    8  O8  BAW A 301      -3.048  10.750  24.963  1.00 10.93      B    O  
+HETATM    9  C9  BAW A 301       1.882  12.898  23.257  1.00 14.55      B    C  
+HETATM   10  C10 BAW A 301       2.022  14.271  23.958  1.00 13.10      B    C  
+HETATM   11  C11 BAW A 301      -0.711  10.103  26.422  1.00 12.28      B    C  
+HETATM   12  N12 BAW A 301      -1.460  10.345  27.467  1.00 13.89      B    N  
+HETATM   13  N13 BAW A 301      -1.258   9.308  28.402  1.00 11.17      B    N  
+HETATM   14  C14 BAW A 301      -0.341   8.446  27.906  1.00 10.77      B    C  
+HETATM   15  C15 BAW A 301      -0.040   8.857  26.622  1.00 16.49      B    C  
+HETATM   16  C16 BAW A 301       0.869   8.209  25.628  1.00 22.09      B    C  
+HETATM   17  C17 BAW A 301       2.234   8.097  25.920  1.00 29.13      B    C  
+HETATM   18  C18 BAW A 301       3.100   7.471  25.011  1.00 25.41      B    C  
+HETATM   19  C19 BAW A 301       2.625   6.996  23.790  1.00 21.14      B    C  
+HETATM   20  C20 BAW A 301       1.267   7.093  23.500  1.00 19.44      B    C  
+HETATM   21  C21 BAW A 301       0.389   7.694  24.413  1.00 20.49      B    C  
+HETATM   22  C23 BAW A 301       0.091   7.175  28.605  1.00 10.34      B    C  
+HETATM   23  F22 BAW A 301       2.662   8.535  27.127  1.00 33.78      B    F  
+ENDMDL
+CONECT    1    2    6    7
+CONECT    2    1    3
+CONECT    3    2    4    8
+CONECT    4    3    5   11
+CONECT    5    4    6
+CONECT    6    1    5    9
+CONECT    7    1
+CONECT    8    3
+CONECT    9    6   10
+CONECT   10    9
+CONECT   11    4   12   15
+CONECT   12   11   13
+CONECT   13   12   14
+CONECT   14   13   15   22
+CONECT   15   11   14   16
+CONECT   16   15   17   21
+CONECT   17   16   18   23
+CONECT   18   17   19
+CONECT   19   18   20
+CONECT   20   19   21
+CONECT   21   16   20
+CONECT   22   14
+CONECT   23   17
+END

@@ -1,0 +1,1 @@
+namd2 heating.in 2>&1 > heating.namd.log

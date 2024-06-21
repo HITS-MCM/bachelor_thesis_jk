@@ -1,0 +1,8 @@
+#Method can either be "vina" or "ad4"; be aware that not both methods can't be run simultaniusly and one needs to be chosen prior to the analysis 
+Method = vina
+#Calculation Method by trapptool 
+Calculation = LR
+#Grid Calculation, Either "lig" or "grid"
+Grid_Reference = lig
+
+Analysis = over_score: 0.991

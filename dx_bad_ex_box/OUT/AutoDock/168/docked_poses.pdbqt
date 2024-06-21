@@ -1,0 +1,424 @@
+MODEL 1
+REMARK VINA RESULT:    -6.011      0.000      0.000
+REMARK INTER + INTRA:          -8.886
+REMARK INTER:                  -7.918
+REMARK INTRA:                  -0.968
+REMARK UNBOUND:                -1.118
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N8_1  and  C24_2 
+REMARK    2  A    between atoms: N8_1  and  C7_8 
+REMARK    3  A    between atoms: C2_13  and  N1_14 
+REMARK    4  A    between atoms: N1_14  and  C17_15 
+REMARK    5  A    between atoms: C14_16  and  C13_19 
+ROOT
+ATOM      1  C17 FTA A   1       1.267  14.617  17.056  1.00  0.00     0.142 C 
+ATOM      2  C14 FTA A   1       0.880  15.307  15.964  1.00  0.00     0.158 C 
+ATOM      3  C18 FTA A   1       1.725  16.351  15.426  1.00  0.00     0.069 C 
+ATOM      4  N21 FTA A   1       2.479  17.202  15.137  1.00  0.00    -0.197 NA
+ENDROOT
+BRANCH   2   5
+ATOM      5  C13 FTA A   1      -0.408  14.975  15.312  1.00  0.00     0.197 A 
+ATOM      6  N15 FTA A   1      -0.646  14.925  13.941  1.00  0.00    -0.093 NA
+ATOM      7  N19 FTA A   1      -1.990  14.624  13.761  1.00  0.00    -0.231 N 
+ATOM      8  N20 FTA A   1      -2.596  14.487  15.002  1.00  0.00    -0.017 NA
+ATOM      9  H15 FTA A   1      -2.462  14.518  12.851  1.00  0.00     0.200 HD
+ATOM     10  N16 FTA A   1      -1.614  14.694  15.965  1.00  0.00    -0.090 NA
+ENDBRANCH   2   5
+BRANCH   1  11
+ATOM     11  N1  FTA A   1       0.426  14.532  18.104  1.00  0.00    -0.389 N 
+ATOM     12  H11 FTA A   1      -0.289  15.267  18.201  1.00  0.00     0.159 HD
+BRANCH  11  13
+ATOM     13  C2  FTA A   1       0.450  13.505  19.087  1.00  0.00     0.028 A 
+ATOM     14  C4  FTA A   1       1.573  12.710  19.300  1.00  0.00     0.031 A 
+ATOM     15  C6  FTA A   1       1.457  11.574  20.114  1.00  0.00     0.031 A 
+ATOM     16  C7  FTA A   1       0.253  11.214  20.714  1.00  0.00     0.032 A 
+ATOM     17  C5  FTA A   1      -0.847  12.028  20.512  1.00  0.00     0.031 A 
+ATOM     18  C3  FTA A   1      -0.756  13.151  19.699  1.00  0.00     0.031 A 
+BRANCH  16  19
+ATOM     19  N8  FTA A   1       0.060   9.967  21.363  1.00  0.00    -0.356 N 
+ATOM     20  H1  FTA A   1      -0.894   9.744  21.683  1.00  0.00     0.166 HD
+BRANCH  19  21
+ATOM     21  C24 FTA A   1       1.078   8.998  21.611  1.00  0.00     0.032 A 
+ATOM     22  C26 FTA A   1       1.346   7.989  20.715  1.00  0.00     0.029 A 
+ATOM     23  C28 FTA A   1       2.219   6.986  21.090  1.00  0.00     0.002 A 
+ATOM     24  C30 FTA A   1       2.857   6.976  22.319  1.00  0.00     0.000 A 
+ATOM     25  C29 FTA A   1       2.628   7.995  23.204  1.00  0.00     0.002 A 
+ATOM     26  C27 FTA A   1       1.741   9.011  22.830  1.00  0.00     0.029 A 
+ENDBRANCH  19  21
+ENDBRANCH  16  19
+ENDBRANCH  11  13
+ENDBRANCH   1  11
+TORSDOF 5
+ENDMDL
+MODEL 2
+REMARK VINA RESULT:    -5.762     11.136     13.754
+REMARK INTER + INTRA:          -8.564
+REMARK INTER:                  -7.412
+REMARK INTRA:                  -1.152
+REMARK UNBOUND:                -1.118
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N8_1  and  C24_2 
+REMARK    2  A    between atoms: N8_1  and  C7_8 
+REMARK    3  A    between atoms: C2_13  and  N1_14 
+REMARK    4  A    between atoms: N1_14  and  C17_15 
+REMARK    5  A    between atoms: C14_16  and  C13_19 
+ROOT
+ATOM      1  C17 FTA A   1      10.309  21.366  23.225  1.00  0.00     0.142 C 
+ATOM      2  C14 FTA A   1      11.626  21.139  23.404  1.00  0.00     0.158 C 
+ATOM      3  C18 FTA A   1      12.583  21.597  22.421  1.00  0.00     0.069 C 
+ATOM      4  N21 FTA A   1      13.233  21.972  21.520  1.00  0.00    -0.197 NA
+ENDROOT
+BRANCH   2   5
+ATOM      5  C13 FTA A   1      12.084  20.431  24.622  1.00  0.00     0.197 A 
+ATOM      6  N15 FTA A   1      12.498  21.025  25.812  1.00  0.00    -0.093 NA
+ATOM      7  N19 FTA A   1      12.886  20.008  26.674  1.00  0.00    -0.231 N 
+ATOM      8  N20 FTA A   1      12.722  18.786  26.039  1.00  0.00    -0.017 NA
+ATOM      9  H15 FTA A   1      13.239  20.140  27.633  1.00  0.00     0.200 HD
+ATOM     10  N16 FTA A   1      12.215  19.045  24.770  1.00  0.00    -0.090 NA
+ENDBRANCH   2   5
+BRANCH   1  11
+ATOM     11  N1  FTA A   1       9.453  20.328  23.296  1.00  0.00    -0.389 N 
+ATOM     12  H11 FTA A   1       8.838  20.274  24.121  1.00  0.00     0.159 HD
+BRANCH  11  13
+ATOM     13  C2  FTA A   1       9.334  19.302  22.319  1.00  0.00     0.028 A 
+ATOM     14  C4  FTA A   1       9.691  17.982  22.583  1.00  0.00     0.031 A 
+ATOM     15  C6  FTA A   1       9.768  17.073  21.519  1.00  0.00     0.031 A 
+ATOM     16  C7  FTA A   1       9.503  17.448  20.205  1.00  0.00     0.032 A 
+ATOM     17  C5  FTA A   1       9.125  18.756  19.962  1.00  0.00     0.031 A 
+ATOM     18  C3  FTA A   1       9.055  19.676  21.001  1.00  0.00     0.031 A 
+BRANCH  16  19
+ATOM     19  N8  FTA A   1       9.776  16.608  19.095  1.00  0.00    -0.356 N 
+ATOM     20  H1  FTA A   1      10.568  15.955  19.180  1.00  0.00     0.166 HD
+BRANCH  19  21
+ATOM     21  C24 FTA A   1       9.042  16.592  17.870  1.00  0.00     0.032 A 
+ATOM     22  C26 FTA A   1       9.532  17.184  16.730  1.00  0.00     0.029 A 
+ATOM     23  C28 FTA A   1       8.703  17.285  15.629  1.00  0.00     0.002 A 
+ATOM     24  C30 FTA A   1       7.412  16.785  15.622  1.00  0.00     0.000 A 
+ATOM     25  C29 FTA A   1       6.926  16.159  16.739  1.00  0.00     0.002 A 
+ATOM     26  C27 FTA A   1       7.762  16.058  17.857  1.00  0.00     0.029 A 
+ENDBRANCH  19  21
+ENDBRANCH  16  19
+ENDBRANCH  11  13
+ENDBRANCH   1  11
+TORSDOF 5
+ENDMDL
+MODEL 3
+REMARK VINA RESULT:    -5.559     14.174     16.740
+REMARK INTER + INTRA:          -8.302
+REMARK INTER:                  -7.500
+REMARK INTRA:                  -0.803
+REMARK UNBOUND:                -1.118
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N8_1  and  C24_2 
+REMARK    2  A    between atoms: N8_1  and  C7_8 
+REMARK    3  A    between atoms: C2_13  and  N1_14 
+REMARK    4  A    between atoms: N1_14  and  C17_15 
+REMARK    5  A    between atoms: C14_16  and  C13_19 
+ROOT
+ATOM      1  C17 FTA A   1      11.303  19.624  29.551  1.00  0.00     0.142 C 
+ATOM      2  C14 FTA A   1      11.395  18.940  30.709  1.00  0.00     0.158 C 
+ATOM      3  C18 FTA A   1      11.798  19.616  31.923  1.00  0.00     0.069 C 
+ATOM      4  N21 FTA A   1      12.190  20.277  32.809  1.00  0.00    -0.197 NA
+ENDROOT
+BRANCH   2   5
+ATOM      5  C13 FTA A   1      11.065  17.496  30.730  1.00  0.00     0.197 A 
+ATOM      6  N15 FTA A   1      10.079  16.889  31.505  1.00  0.00    -0.093 NA
+ATOM      7  N19 FTA A   1      10.134  15.524  31.258  1.00  0.00    -0.231 N 
+ATOM      8  N20 FTA A   1      11.143  15.268  30.341  1.00  0.00    -0.017 NA
+ATOM      9  H15 FTA A   1       9.524  14.814  31.687  1.00  0.00     0.200 HD
+ATOM     10  N16 FTA A   1      11.715  16.491  30.004  1.00  0.00    -0.090 NA
+ENDBRANCH   2   5
+BRANCH   1  11
+ATOM     11  N1  FTA A   1      11.956  19.161  28.468  1.00  0.00    -0.389 N 
+ATOM     12  H11 FTA A   1      12.575  18.348  28.597  1.00  0.00     0.159 HD
+BRANCH  11  13
+ATOM     13  C2  FTA A   1      11.857  19.711  27.160  1.00  0.00     0.028 A 
+ATOM     14  C4  FTA A   1      10.854  20.610  26.808  1.00  0.00     0.031 A 
+ATOM     15  C6  FTA A   1      10.674  20.933  25.456  1.00  0.00     0.031 A 
+ATOM     16  C7  FTA A   1      11.464  20.380  24.452  1.00  0.00     0.032 A 
+ATOM     17  C5  FTA A   1      12.473  19.508  24.820  1.00  0.00     0.031 A 
+ATOM     18  C3  FTA A   1      12.659  19.165  26.154  1.00  0.00     0.031 A 
+BRANCH  16  19
+ATOM     19  N8  FTA A   1      11.169  20.526  23.072  1.00  0.00    -0.356 N 
+ATOM     20  H1  FTA A   1      11.441  21.412  22.622  1.00  0.00     0.166 HD
+BRANCH  19  21
+ATOM     21  C24 FTA A   1      10.526  19.547  22.256  1.00  0.00     0.032 A 
+ATOM     22  C26 FTA A   1      10.163  18.319  22.756  1.00  0.00     0.029 A 
+ATOM     23  C28 FTA A   1       9.704  17.356  21.878  1.00  0.00     0.002 A 
+ATOM     24  C30 FTA A   1       9.569  17.593  20.520  1.00  0.00     0.000 A 
+ATOM     25  C29 FTA A   1       9.891  18.824  20.016  1.00  0.00     0.002 A 
+ATOM     26  C27 FTA A   1      10.359  19.800  20.903  1.00  0.00     0.029 A 
+ENDBRANCH  19  21
+ENDBRANCH  16  19
+ENDBRANCH  11  13
+ENDBRANCH   1  11
+TORSDOF 5
+ENDMDL
+MODEL 4
+REMARK VINA RESULT:    -5.433     12.315     13.795
+REMARK INTER + INTRA:          -8.139
+REMARK INTER:                  -7.163
+REMARK INTRA:                  -0.976
+REMARK UNBOUND:                -1.118
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N8_1  and  C24_2 
+REMARK    2  A    between atoms: N8_1  and  C7_8 
+REMARK    3  A    between atoms: C2_13  and  N1_14 
+REMARK    4  A    between atoms: N1_14  and  C17_15 
+REMARK    5  A    between atoms: C14_16  and  C13_19 
+ROOT
+ATOM      1  C17 FTA A   1       9.340  19.265  21.088  1.00  0.00     0.142 C 
+ATOM      2  C14 FTA A   1       8.774  18.215  20.461  1.00  0.00     0.158 C 
+ATOM      3  C18 FTA A   1       7.505  17.691  20.920  1.00  0.00     0.069 C 
+ATOM      4  N21 FTA A   1       6.511  17.341  21.433  1.00  0.00    -0.197 NA
+ENDROOT
+BRANCH   2   5
+ATOM      5  C13 FTA A   1       9.453  17.612  19.291  1.00  0.00     0.197 A 
+ATOM      6  N15 FTA A   1       9.205  16.350  18.756  1.00  0.00    -0.093 NA
+ATOM      7  N19 FTA A   1      10.088  16.163  17.701  1.00  0.00    -0.231 N 
+ATOM      8  N20 FTA A   1      10.887  17.289  17.570  1.00  0.00    -0.017 NA
+ATOM      9  H15 FTA A   1      10.142  15.321  17.109  1.00  0.00     0.200 HD
+ATOM     10  N16 FTA A   1      10.488  18.194  18.548  1.00  0.00    -0.090 NA
+ENDBRANCH   2   5
+BRANCH   1  11
+ATOM     11  N1  FTA A   1      10.614  19.159  21.515  1.00  0.00    -0.389 N 
+ATOM     12  H11 FTA A   1      11.320  18.848  20.833  1.00  0.00     0.159 HD
+BRANCH  11  13
+ATOM     13  C2  FTA A   1      11.056  19.445  22.836  1.00  0.00     0.028 A 
+ATOM     14  C4  FTA A   1      12.190  20.214  23.087  1.00  0.00     0.031 A 
+ATOM     15  C6  FTA A   1      12.702  20.265  24.390  1.00  0.00     0.031 A 
+ATOM     16  C7  FTA A   1      12.114  19.570  25.444  1.00  0.00     0.032 A 
+ATOM     17  C5  FTA A   1      10.974  18.830  25.183  1.00  0.00     0.031 A 
+ATOM     18  C3  FTA A   1      10.459  18.756  23.895  1.00  0.00     0.031 A 
+BRANCH  16  19
+ATOM     19  N8  FTA A   1      12.727  19.437  26.716  1.00  0.00    -0.356 N 
+ATOM     20  H1  FTA A   1      13.722  19.168  26.735  1.00  0.00     0.166 HD
+BRANCH  19  21
+ATOM     21  C24 FTA A   1      12.081  19.647  27.971  1.00  0.00     0.032 A 
+ATOM     22  C26 FTA A   1      12.159  18.722  28.985  1.00  0.00     0.029 A 
+ATOM     23  C28 FTA A   1      11.373  18.902  30.108  1.00  0.00     0.002 A 
+ATOM     24  C30 FTA A   1      10.535  19.993  30.261  1.00  0.00     0.000 A 
+ATOM     25  C29 FTA A   1      10.477  20.942  29.275  1.00  0.00     0.002 A 
+ATOM     26  C27 FTA A   1      11.269  20.760  28.135  1.00  0.00     0.029 A 
+ENDBRANCH  19  21
+ENDBRANCH  16  19
+ENDBRANCH  11  13
+ENDBRANCH   1  11
+TORSDOF 5
+ENDMDL
+MODEL 5
+REMARK VINA RESULT:    -5.428      3.014      8.765
+REMARK INTER + INTRA:          -8.133
+REMARK INTER:                  -7.243
+REMARK INTRA:                  -0.890
+REMARK UNBOUND:                -1.118
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N8_1  and  C24_2 
+REMARK    2  A    between atoms: N8_1  and  C7_8 
+REMARK    3  A    between atoms: C2_13  and  N1_14 
+REMARK    4  A    between atoms: N1_14  and  C17_15 
+REMARK    5  A    between atoms: C14_16  and  C13_19 
+ROOT
+ATOM      1  C17 FTA A   1       2.086   7.791  22.500  1.00  0.00     0.142 C 
+ATOM      2  C14 FTA A   1       3.360   7.662  22.919  1.00  0.00     0.158 C 
+ATOM      3  C18 FTA A   1       3.783   6.457  23.599  1.00  0.00     0.069 C 
+ATOM      4  N21 FTA A   1       3.968   5.456  24.182  1.00  0.00    -0.197 NA
+ENDROOT
+BRANCH   2   5
+ATOM      5  C13 FTA A   1       4.325   8.756  22.664  1.00  0.00     0.197 A 
+ATOM      6  N15 FTA A   1       5.513   8.653  21.944  1.00  0.00    -0.093 NA
+ATOM      7  N19 FTA A   1       6.136   9.893  21.985  1.00  0.00    -0.231 N 
+ATOM      8  N20 FTA A   1       5.355  10.770  22.724  1.00  0.00    -0.017 NA
+ATOM      9  H15 FTA A   1       7.035  10.126  21.539  1.00  0.00     0.200 HD
+ATOM     10  N16 FTA A   1       4.226  10.070  23.136  1.00  0.00    -0.090 NA
+ENDBRANCH   2   5
+BRANCH   1  11
+ATOM     11  N1  FTA A   1       1.388   8.884  22.865  1.00  0.00    -0.389 N 
+ATOM     12  H11 FTA A   1       1.261   9.053  23.874  1.00  0.00     0.159 HD
+BRANCH  11  13
+ATOM     13  C2  FTA A   1       0.813   9.822  21.965  1.00  0.00     0.028 A 
+ATOM     14  C4  FTA A   1       1.427  10.171  20.765  1.00  0.00     0.031 A 
+ATOM     15  C6  FTA A   1       0.931  11.262  20.039  1.00  0.00     0.031 A 
+ATOM     16  C7  FTA A   1      -0.156  12.012  20.480  1.00  0.00     0.032 A 
+ATOM     17  C5  FTA A   1      -0.771  11.637  21.662  1.00  0.00     0.031 A 
+ATOM     18  C3  FTA A   1      -0.286  10.567  22.403  1.00  0.00     0.031 A 
+BRANCH  16  19
+ATOM     19  N8  FTA A   1      -0.542  13.236  19.877  1.00  0.00    -0.356 N 
+ATOM     20  H1  FTA A   1      -1.257  13.797  20.363  1.00  0.00     0.166 HD
+BRANCH  19  21
+ATOM     21  C24 FTA A   1      -0.022  13.755  18.653  1.00  0.00     0.032 A 
+ATOM     22  C26 FTA A   1       1.290  14.151  18.539  1.00  0.00     0.029 A 
+ATOM     23  C28 FTA A   1       1.687  14.803  17.387  1.00  0.00     0.002 A 
+ATOM     24  C30 FTA A   1       0.821  15.043  16.333  1.00  0.00     0.000 A 
+ATOM     25  C29 FTA A   1      -0.479  14.620  16.420  1.00  0.00     0.002 A 
+ATOM     26  C27 FTA A   1      -0.884  13.963  17.587  1.00  0.00     0.029 A 
+ENDBRANCH  19  21
+ENDBRANCH  16  19
+ENDBRANCH  11  13
+ENDBRANCH   1  11
+TORSDOF 5
+ENDMDL
+MODEL 6
+REMARK VINA RESULT:    -5.416     10.784     13.555
+REMARK INTER + INTRA:          -8.117
+REMARK INTER:                  -7.087
+REMARK INTRA:                  -1.030
+REMARK UNBOUND:                -1.118
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N8_1  and  C24_2 
+REMARK    2  A    between atoms: N8_1  and  C7_8 
+REMARK    3  A    between atoms: C2_13  and  N1_14 
+REMARK    4  A    between atoms: N1_14  and  C17_15 
+REMARK    5  A    between atoms: C14_16  and  C13_19 
+ROOT
+ATOM      1  C17 FTA A   1       8.866  20.419  23.698  1.00  0.00     0.142 C 
+ATOM      2  C14 FTA A   1       9.424  20.723  24.887  1.00  0.00     0.158 C 
+ATOM      3  C18 FTA A   1       8.733  21.594  25.814  1.00  0.00     0.069 C 
+ATOM      4  N21 FTA A   1       8.089  22.352  26.435  1.00  0.00    -0.197 NA
+ENDROOT
+BRANCH   2   5
+ATOM      5  C13 FTA A   1      10.741  20.147  25.241  1.00  0.00     0.197 A 
+ATOM      6  N15 FTA A   1      11.815  20.835  25.803  1.00  0.00    -0.093 NA
+ATOM      7  N19 FTA A   1      12.866  19.936  25.931  1.00  0.00    -0.231 N 
+ATOM      8  N20 FTA A   1      12.465  18.696  25.454  1.00  0.00    -0.017 NA
+ATOM      9  H15 FTA A   1      13.796  20.154  26.317  1.00  0.00     0.200 HD
+ATOM     10  N16 FTA A   1      11.144  18.823  25.036  1.00  0.00    -0.090 NA
+ENDBRANCH   2   5
+BRANCH   1  11
+ATOM     11  N1  FTA A   1       9.580  20.617  22.574  1.00  0.00    -0.389 N 
+ATOM     12  H11 FTA A   1       9.952  21.563  22.406  1.00  0.00     0.159 HD
+BRANCH  11  13
+ATOM     13  C2  FTA A   1       9.860  19.619  21.600  1.00  0.00     0.028 A 
+ATOM     14  C4  FTA A   1      10.281  19.939  20.312  1.00  0.00     0.031 A 
+ATOM     15  C6  FTA A   1      10.317  18.931  19.338  1.00  0.00     0.031 A 
+ATOM     16  C7  FTA A   1       9.942  17.619  19.617  1.00  0.00     0.032 A 
+ATOM     17  C5  FTA A   1       9.549  17.313  20.908  1.00  0.00     0.031 A 
+ATOM     18  C3  FTA A   1       9.495  18.300  21.884  1.00  0.00     0.031 A 
+BRANCH  16  19
+ATOM     19  N8  FTA A   1       9.769  16.637  18.609  1.00  0.00    -0.356 N 
+ATOM     20  H1  FTA A   1      10.433  15.849  18.598  1.00  0.00     0.166 HD
+BRANCH  19  21
+ATOM     21  C24 FTA A   1       8.752  16.651  17.607  1.00  0.00     0.032 A 
+ATOM     22  C26 FTA A   1       7.519  16.084  17.825  1.00  0.00     0.029 A 
+ATOM     23  C28 FTA A   1       6.642  15.977  16.762  1.00  0.00     0.002 A 
+ATOM     24  C30 FTA A   1       6.948  16.446  15.496  1.00  0.00     0.000 A 
+ATOM     25  C29 FTA A   1       8.159  17.047  15.275  1.00  0.00     0.002 A 
+ATOM     26  C27 FTA A   1       9.050  17.154  16.349  1.00  0.00     0.029 A 
+ENDBRANCH  19  21
+ENDBRANCH  16  19
+ENDBRANCH  11  13
+ENDBRANCH   1  11
+TORSDOF 5
+ENDMDL
+MODEL 7
+REMARK VINA RESULT:    -5.258     11.351     13.209
+REMARK INTER + INTRA:          -7.913
+REMARK INTER:                  -6.979
+REMARK INTRA:                  -0.933
+REMARK UNBOUND:                -1.118
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N8_1  and  C24_2 
+REMARK    2  A    between atoms: N8_1  and  C7_8 
+REMARK    3  A    between atoms: C2_13  and  N1_14 
+REMARK    4  A    between atoms: N1_14  and  C17_15 
+REMARK    5  A    between atoms: C14_16  and  C13_19 
+ROOT
+ATOM      1  C17 FTA A   1       8.634  17.556  19.480  1.00  0.00     0.142 C 
+ATOM      2  C14 FTA A   1       8.860  17.037  18.257  1.00  0.00     0.158 C 
+ATOM      3  C18 FTA A   1       7.811  16.318  17.566  1.00  0.00     0.069 C 
+ATOM      4  N21 FTA A   1       6.894  15.716  17.153  1.00  0.00    -0.197 NA
+ENDROOT
+BRANCH   2   5
+ATOM      5  C13 FTA A   1      10.186  17.221  17.622  1.00  0.00     0.197 A 
+ATOM      6  N15 FTA A   1      10.956  16.226  17.024  1.00  0.00    -0.093 NA
+ATOM      7  N19 FTA A   1      12.140  16.814  16.598  1.00  0.00    -0.231 N 
+ATOM      8  N20 FTA A   1      12.122  18.162  16.925  1.00  0.00    -0.017 NA
+ATOM      9  H15 FTA A   1      12.910  16.326  16.117  1.00  0.00     0.200 HD
+ATOM     10  N16 FTA A   1      10.906  18.419  17.550  1.00  0.00    -0.090 NA
+ENDBRANCH   2   5
+BRANCH   1  11
+ATOM     11  N1  FTA A   1       9.480  17.254  20.483  1.00  0.00    -0.389 N 
+ATOM     12  H11 FTA A   1       9.888  16.308  20.493  1.00  0.00     0.159 HD
+BRANCH  11  13
+ATOM     13  C2  FTA A   1       9.853  18.141  21.530  1.00  0.00     0.028 A 
+ATOM     14  C4  FTA A   1      10.285  19.441  21.281  1.00  0.00     0.031 A 
+ATOM     15  C6  FTA A   1      10.854  20.180  22.327  1.00  0.00     0.031 A 
+ATOM     16  C7  FTA A   1      11.002  19.656  23.609  1.00  0.00     0.032 A 
+ATOM     17  C5  FTA A   1      10.545  18.372  23.846  1.00  0.00     0.031 A 
+ATOM     18  C3  FTA A   1       9.991  17.618  22.819  1.00  0.00     0.031 A 
+BRANCH  16  19
+ATOM     19  N8  FTA A   1      11.758  20.300  24.621  1.00  0.00    -0.356 N 
+ATOM     20  H1  FTA A   1      12.610  20.800  24.329  1.00  0.00     0.166 HD
+BRANCH  19  21
+ATOM     21  C24 FTA A   1      11.434  20.315  26.012  1.00  0.00     0.032 A 
+ATOM     22  C26 FTA A   1      10.483  21.167  26.521  1.00  0.00     0.029 A 
+ATOM     23  C28 FTA A   1      10.339  21.254  27.893  1.00  0.00     0.002 A 
+ATOM     24  C30 FTA A   1      11.095  20.494  28.769  1.00  0.00     0.000 A 
+ATOM     25  C29 FTA A   1      12.019  19.614  28.273  1.00  0.00     0.002 A 
+ATOM     26  C27 FTA A   1      12.169  19.526  26.884  1.00  0.00     0.029 A 
+ENDBRANCH  19  21
+ENDBRANCH  16  19
+ENDBRANCH  11  13
+ENDBRANCH   1  11
+TORSDOF 5
+ENDMDL
+MODEL 8
+REMARK VINA RESULT:    -5.230      9.844     12.038
+REMARK INTER + INTRA:          -7.877
+REMARK INTER:                  -6.759
+REMARK INTRA:                  -1.118
+REMARK UNBOUND:                -1.118
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N8_1  and  C24_2 
+REMARK    2  A    between atoms: N8_1  and  C7_8 
+REMARK    3  A    between atoms: C2_13  and  N1_14 
+REMARK    4  A    between atoms: N1_14  and  C17_15 
+REMARK    5  A    between atoms: C14_16  and  C13_19 
+ROOT
+ATOM      1  C17 FTA A   1       7.331  17.381  17.522  1.00  0.00     0.142 C 
+ATOM      2  C14 FTA A   1       8.044  17.028  16.435  1.00  0.00     0.158 C 
+ATOM      3  C18 FTA A   1       7.373  16.513  15.260  1.00  0.00     0.069 C 
+ATOM      4  N21 FTA A   1       6.706  16.061  14.409  1.00  0.00    -0.197 NA
+ENDROOT
+BRANCH   2   5
+ATOM      5  C13 FTA A   1       9.517  17.185  16.447  1.00  0.00     0.197 A 
+ATOM      6  N15 FTA A   1      10.427  16.353  17.095  1.00  0.00    -0.093 NA
+ATOM      7  N19 FTA A   1      11.695  16.882  16.892  1.00  0.00    -0.231 N 
+ATOM      8  N20 FTA A   1      11.590  18.035  16.128  1.00  0.00    -0.017 NA
+ATOM      9  H15 FTA A   1      12.574  16.482  17.251  1.00  0.00     0.200 HD
+ATOM     10  N16 FTA A   1      10.241  18.219  15.842  1.00  0.00    -0.090 NA
+ENDBRANCH   2   5
+BRANCH   1  11
+ATOM     11  N1  FTA A   1       7.667  16.862  18.719  1.00  0.00    -0.389 N 
+ATOM     12  H11 FTA A   1       7.665  15.835  18.810  1.00  0.00     0.159 HD
+BRANCH  11  13
+ATOM     13  C2  FTA A   1       8.026  17.622  19.865  1.00  0.00     0.028 A 
+ATOM     14  C4  FTA A   1       7.189  18.599  20.398  1.00  0.00     0.031 A 
+ATOM     15  C6  FTA A   1       7.692  19.465  21.378  1.00  0.00     0.031 A 
+ATOM     16  C7  FTA A   1       9.005  19.381  21.836  1.00  0.00     0.032 A 
+ATOM     17  C5  FTA A   1       9.816  18.388  21.315  1.00  0.00     0.031 A 
+ATOM     18  C3  FTA A   1       9.339  17.529  20.333  1.00  0.00     0.031 A 
+BRANCH  16  19
+ATOM     19  N8  FTA A   1       9.595  20.369  22.665  1.00  0.00    -0.356 N 
+ATOM     20  H1  FTA A   1       9.216  21.325  22.604  1.00  0.00     0.166 HD
+BRANCH  19  21
+ATOM     21  C24 FTA A   1      10.670  20.147  23.578  1.00  0.00     0.032 A 
+ATOM     22  C26 FTA A   1      11.968  20.461  23.252  1.00  0.00     0.029 A 
+ATOM     23  C28 FTA A   1      12.980  20.064  24.105  1.00  0.00     0.002 A 
+ATOM     24  C30 FTA A   1      12.732  19.391  25.289  1.00  0.00     0.000 A 
+ATOM     25  C29 FTA A   1      11.440  19.106  25.644  1.00  0.00     0.002 A 
+ATOM     26  C27 FTA A   1      10.414  19.503  24.780  1.00  0.00     0.029 A 
+ENDBRANCH  19  21
+ENDBRANCH  16  19
+ENDBRANCH  11  13
+ENDBRANCH   1  11
+TORSDOF 5
+ENDMDL

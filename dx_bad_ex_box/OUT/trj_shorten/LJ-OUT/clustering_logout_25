@@ -1,0 +1,72 @@
+
+
+TRAPP: clustering starts now- ; grid file used: /home/kunzjn/trapptool/examples/Paper-2020/OUT/trj_shorten/LJ-OUT/transT_1.dx   at the iso-value 0.25
+
+TRAPP: hierarchical clustering of transient pockets: total volume (grid points): 1048
+hierarchical -clustering TRAPP: cluster size is: 1048
+hierarchical -clustering : number of clusters old: 1048 new:480
+hierarchical -clustering : number of clusters old: 480 new:124
+hierarchical -clustering : number of clusters old: 124 new:36
+hierarchical -clustering : number of clusters old: 36 new:14
+hierarchical -clustering : number of clusters old: 14 new:7
+hierarchical -clustering : number of clusters old: 7 new:1
+hierarchical -clustering : number of clusters was not changed: 1
+TRAPP: cluster 0  size 1048
+ TRAPP: Pocket hierarchical -clustering- finished; found 1  clusters; 
+ 
+TRAPP: hierarchical clusters found: 1; max. cluster size: 1048
+TRAPP: cluster 1 (size=1048) will be splitted to sub-clusters
+k-mean clustering; Starting number of cluster centers is :6  min distance between clusters  20; min cluster size 150 at iso-value 0.24752475247524752
+TRAPP: k-mean clustering of the largest sub-pockets: total volume (grid points): 1048 pocket volume: 1048; centers: [723, 827, 775, 122, 234, 695]
+ cluster 1 is not compact- cluster_volume/sphere_volume = 0.34616384688657925
+Cluster center is outside : old position: 0new position: [0 0 0 0 0 0]
+Cluster center is outside : old position: 0new position: [98  0  0  0  0  0]
+Cluster center is outside : old position: 0new position: [ 98 690   0   0   0   0]
+Cluster center is outside : old position: 0new position: [ 98 690 648   0   0   0]
+Cluster center is outside : old position: 0new position: [ 98 690 648 220   0   0]
+Cluster center is outside : old position: 0new position: [ 98 690 648 220 486   0]
+ clustering step-  1number of clusters- 6; cluster size: [172  38 156  59 281 342]
+1: # clusters 6; relative change in the position of cluster centers 79.88314715592148; cluster size: [172  38 156  59 281 342]
+Cluster center is outside : old position: 98new position: [ 98 690 648 220 486 555]
+Cluster center is outside : old position: 690new position: [ 40 690 648 220 486 555]
+Cluster center is outside : old position: 648new position: [ 40 559 648 220 486 555]
+Cluster center is outside : old position: 220new position: [ 40 559 648 220 486 555]
+Cluster center is outside : old position: 486new position: [ 40 559 648 220 486 555]
+Cluster center is outside : old position: 555new position: [ 40 559 648 220 486 555]
+ clustering step-  2number of clusters- 6; cluster size: [148 151 164  83 275 227]
+2: # clusters 6; relative change in the position of cluster centers 16.86152102452161; cluster size: [148 151 164  83 275 227]
+Cluster center is outside : old position: 40new position: [ 40 559 648 220 486 554]
+Cluster center is outside : old position: 559new position: [ 39 559 648 220 486 554]
+Cluster center is outside : old position: 648new position: [ 39 559 648 220 486 554]
+Cluster center is outside : old position: 220new position: [ 39 559 648 220 486 554]
+Cluster center is outside : old position: 486new position: [ 39 559 648 220 486 554]
+Cluster center is outside : old position: 554new position: [ 39 559 648 220 486 554]
+ clustering step-  3number of clusters- 6; cluster size: [124 204 166  83 271 200]
+3: # clusters 6; relative change in the position of cluster centers 0.2564102564102564; cluster size: [124 204 166  83 271 200]
+Cluster center is outside : old position: 559new position: [ 39 559 648 220 486 554]
+Cluster center is outside : old position: 648new position: [ 39 559 648 220 486 554]
+Cluster center is outside : old position: 220new position: [ 39 559 648 220 486 554]
+Cluster center is outside : old position: 486new position: [ 39 559 648 220 486 554]
+Cluster center is outside : old position: 554new position: [ 39 559 648 220 486 554]
+ clustering step-  4number of clusters- 6; cluster size: [127 214 165  83 268 191]
+4: Too small cluster (83), cl.4 will be eleminated
+4: # clusters 5; relative change in the position of cluster centers 0.0; cluster size: [127 214 165 268 191   0]
+Cluster center is outside : old position: 559new position: [ 39 559 648 220 486 554]
+Cluster center is outside : old position: 648new position: [ 39 559 648 220 486 554]
+Cluster center is outside : old position: 220new position: [ 39 559 648 220 486 554]
+Cluster center is outside : old position: 486new position: [ 39 559 648 485 486 554]
+ clustering step-  5number of clusters- 5; cluster size: [127 214 165 351 191   0]
+5: # clusters 5; relative change in the position of cluster centers 0.020618556701030927; cluster size: [127 214 165 351 191   0]
+Cluster center is outside : old position: 559new position: [ 39 559 648 485 554 554]
+Cluster center is outside : old position: 648new position: [ 39 559 648 485 554 554]
+Cluster center is outside : old position: 485new position: [ 39 559 648 485 554 554]
+Cluster center is outside : old position: 554new position: [ 39 559 648 485 554 554]
+ clustering step-  6number of clusters- 5; cluster size: [128 214 165 342 199   0]
+6: # clusters 5; relative change in the position of cluster centers 0.0; cluster size: [128 214 165 342 199   0]
+TRAPP: results of clustering will be saved in ovlp_snap-trans_S_25.dat
+ovlp_snap-trans_S Claster size: 1 128
+ovlp_snap-trans_S Claster size: 2 214
+ovlp_snap-trans_S Claster size: 3 165
+ovlp_snap-trans_S Claster size: 4 342
+ovlp_snap-trans_S Claster size: 5 199
+TRAPP: result of k-mean clustering : 5 clusters found ; size: [128 214 165 342 199   0]

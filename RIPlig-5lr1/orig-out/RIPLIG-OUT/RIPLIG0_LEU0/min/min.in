@@ -1,0 +1,26 @@
+# initial structure and coordinates
+structure /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/RIPLIG-OUT/RIPLIG0_LEU0/sim.psf
+coordinates /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/RIPLIG-OUT/RIPLIG0_LEU0/sim.pdb
+
+
+# output
+outputName min
+binaryOutput no
+
+
+# forcefield parameters
+paraTypeCharmm on
+parameters /share/apps/mcm/trapp4/trapptool/auxi/rip-script-NAMD/pdbtool/parms/charmm27.parameter
+exclude	scaled1-4
+1-4scaling 1.0
+
+# cutoffs
+switching on
+switchDist 15.0
+cutoff 17.0
+pairListDist 18
+
+# minimization parameters
+minimization on 
+numsteps 2000 
+outputenergies 100 

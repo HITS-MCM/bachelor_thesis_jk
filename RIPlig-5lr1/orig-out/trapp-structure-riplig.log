@@ -1,0 +1,526 @@
+TRAPP :   ligand ./ligand_position.pdb structure will be used to find a binding  pocket center 
+                 INPUT PARAMETERS: 
+
+TRAPP: WORKING DIRECTORY = ./
+
+TRAPP: ======= input files: ==========
+TRAPP: LIG = ligand_position.pdb
+TRAPP: PDB = structure_5lr1.pdb
+TRAPP: add H to the reference structure
+TRAPP: SITE =  
+
+TRAPP: ======= cavity parameters: ==========
+TRAPP: RADIUS = 3.5
+
+TRAPP: ======= RIP/RIPlig simulations: ==========
+TRAPP: RIP simulations and analysis= no
+
+TRAPP: ======= RIPLIG simulations: ==========
+TRAPP: RIPLIG simulations and analysis= yes
+TRAPP: number of MD steps in each RIP/RIPlig pulse = 100
+TRAPP: number of  RIP/RIPlig pulses = 100
+
+TRAPP: DIRectory with trajectories simulated by RIP/RIPlig= ./
+TRAPP: structures with a RMSD from 1.0 to 5.0 will be stored in RIP/RIPlig trajectories
+TRAPP: 100 RIP/RIPlig snapshots will be stored for following analysis
+TRAPP: structures generated in  RIPLIG will be not equilibrated 
+TRAPP: artificial ligand for RIPLIG simulations - ['LEU']
+TRAPP: artificial ligand will be placed in the binding pocket only
+TRAPP: artificial ligand will be placed in buired cavities only
+TRAPP: muximum number of RIPlig trajectories will be limited by 4
+
+TRAPP: ======= tCONCOORD parameters: ==========
+TRAPP: tCONCOORD simulations = no
+TRAPP:  2 cores will be used for simulations (as defined by a system variable TRAPP_NCORES)
+
+TRAPP:  standard NAMD  OMP version to be used , the command  namd2 +p threads
+
+TRAPP: MD will be submitted maximum on 2  cores
+
+
+TRAPP: 	skip  tCONCOORD 
+TRAPP: total number of MD steps will be 10000; number of pulses: 100; 100 snapshots will be saved and analyzed later
+TRAPP: all residues within 3.5 Angstrom from a ligand will be considered as an active site
+TRAPP: new binding site resi: 
+
+
+TRAPP: #####################################################
+
+
+TRAPP: 		STEP 3: generation of  RIP-LIG trajectories 
+TRAPP: RIPlig will be submitted to 2  cores
+TRAPP: Number of disconnected pockets found :1
+TRAPP: Pocket :0 found ; pocket size is 3303
+TRAPP: k-mean clustering splitted sub-pocket to 4; pocket size: [ 906  408  763 1226]
+TRAPP: the total number of sub-pockets appropriate for placing  pseudo-ligand is 4
+TRAPP : 4  sub-pockets found
+TRAPP: pseudo-ligand name:  LEU A 209
+TRAPP: pseudo-ligand name:  LEU A 209
+TRAPP: pseudo-ligand name:  LEU A 209
+TRAPP: pseudo-ligand name:  LEU A 209
+TRAPP:  2 RIPlig jobs will be submitted
+Creating: res209.config
+Processing: 300k-rip-300k/209
+Running: converting PDB to MD input files
+Running: minimizing initial pdb
+Running: equilibration to 300K
+Running: pulse0
+Running: pulse1
+Running: pulse2
+Running: pulse3
+Running: pulse4
+Running: pulse5
+Running: pulse6
+Running: pulse7
+Running: pulse8
+Running: pulse9
+Running: pulse10
+Running: pulse11
+Running: pulse12
+Running: pulse13
+Running: pulse14
+Running: pulse15
+Running: pulse16
+Running: pulse17
+Running: pulse18
+Running: pulse19
+Running: pulse20
+Running: pulse21
+Running: pulse22
+Running: pulse23
+Running: pulse24
+Running: pulse25
+Running: pulse26
+Running: pulse27
+Running: pulse28
+Running: pulse29
+Running: pulse30
+Running: pulse31
+Running: pulse32
+Running: pulse33
+Running: pulse34
+Running: pulse35
+Running: pulse36
+Running: pulse37
+Running: pulse38
+Running: pulse39
+Running: pulse40
+Running: pulse41
+Running: pulse42
+Running: pulse43
+Running: pulse44
+Running: pulse45
+Running: pulse46
+Running: pulse47
+Running: pulse48
+Running: pulse49
+Running: pulse50
+Running: pulse51
+Running: pulse52
+Running: pulse53
+Running: pulse54
+Running: pulse55
+Running: pulse56
+Running: pulse57
+Running: pulse58
+Running: pulse59
+Running: pulse60
+Running: pulse61
+Running: pulse62
+Running: pulse63
+Running: pulse64
+Running: pulse65
+Running: pulse66
+Running: pulse67
+Running: pulse68
+Running: pulse69
+Running: pulse70
+Running: pulse71
+Running: pulse72
+Running: pulse73
+Running: pulse74
+Running: pulse75
+Running: pulse76
+Running: pulse77
+Running: pulse78
+Running: pulse79
+Running: pulse80
+Running: pulse81
+Running: pulse82
+Running: pulse83
+Running: pulse84
+Running: pulse85
+Running: pulse86
+Running: pulse87
+Running: pulse88
+Running: pulse89
+Running: pulse90
+Running: pulse91
+Running: pulse92
+Running: pulse93
+Running: pulse94
+Running: pulse95
+Running: pulse96
+Running: pulse97
+Running: pulse98
+Running: pulse99
+TRAPP: Snapshot extracted from the RAMD trajectory with the stride of 1 will be saved in the final trajectory (1)
+TRAPP: Snapshot extracted from the RAMD trajectory with the stride of 1 will be saved in the final trajectory (2)
+INP:  300k-rip-300k/209/trj209_part.pdb
+OUT:  300k-rip-300k/209/trj_equil_sup209.pdbs
+REF:  equil/300k/md_ref.coor  align -no
+TRAPP:                                     maximum RMSD per binding site residue  is : 4.34918582701751
+TRAPP:                                     local/global RMSD= 2.787939632703532
+TRAPP: RIPLIG  in  ./RIPLIG-OUT/RIPLIG0_LEU0/  done
+Creating: res209.config
+Processing: 300k-rip-300k/209
+Running: converting PDB to MD input files
+Running: minimizing initial pdb
+Running: equilibration to 300K
+Running: pulse0
+Running: pulse1
+Running: pulse2
+Running: pulse3
+Running: pulse4
+Running: pulse5
+Running: pulse6
+Running: pulse7
+Running: pulse8
+Running: pulse9
+Running: pulse10
+Running: pulse11
+Running: pulse12
+Running: pulse13
+Running: pulse14
+Running: pulse15
+Running: pulse16
+Running: pulse17
+Running: pulse18
+Running: pulse19
+Running: pulse20
+Running: pulse21
+Running: pulse22
+Running: pulse23
+Running: pulse24
+Running: pulse25
+Running: pulse26
+Running: pulse27
+Running: pulse28
+Running: pulse29
+Running: pulse30
+Running: pulse31
+Running: pulse32
+Running: pulse33
+Running: pulse34
+Running: pulse35
+Running: pulse36
+Running: pulse37
+Running: pulse38
+Running: pulse39
+Running: pulse40
+Running: pulse41
+Running: pulse42
+Running: pulse43
+Running: pulse44
+Running: pulse45
+Running: pulse46
+Running: pulse47
+Running: pulse48
+Running: pulse49
+Running: pulse50
+Running: pulse51
+Running: pulse52
+Running: pulse53
+Running: pulse54
+Running: pulse55
+Running: pulse56
+Running: pulse57
+Running: pulse58
+Running: pulse59
+Running: pulse60
+Running: pulse61
+Running: pulse62
+Running: pulse63
+Running: pulse64
+Running: pulse65
+Running: pulse66
+Running: pulse67
+Running: pulse68
+Running: pulse69
+Running: pulse70
+Running: pulse71
+Running: pulse72
+Running: pulse73
+Running: pulse74
+Running: pulse75
+Running: pulse76
+Running: pulse77
+Running: pulse78
+Running: pulse79
+Running: pulse80
+Running: pulse81
+Running: pulse82
+Running: pulse83
+Running: pulse84
+Running: pulse85
+Running: pulse86
+Running: pulse87
+Running: pulse88
+Running: pulse89
+Running: pulse90
+Running: pulse91
+Running: pulse92
+Running: pulse93
+Running: pulse94
+Running: pulse95
+Running: pulse96
+Running: pulse97
+Running: pulse98
+Running: pulse99
+TRAPP: Snapshot extracted from the RAMD trajectory with the stride of 1 will be saved in the final trajectory (1)
+TRAPP: Snapshot extracted from the RAMD trajectory with the stride of 1 will be saved in the final trajectory (2)
+INP:  300k-rip-300k/209/trj209_part.pdb
+OUT:  300k-rip-300k/209/trj_equil_sup209.pdbs
+REF:  equil/300k/md_ref.coor  align -no
+TRAPP:                                     maximum RMSD per binding site residue  is : 2.400688411315372
+TRAPP:                                     local/global RMSD= 2.182444010286702
+TRAPP: RIPLIG  in  ./RIPLIG-OUT/RIPLIG1_LEU1/  done
+TRAPP: 1RIPlig jobs done; 3 are still in the queue
+TRAPP:  2 RIPlig jobs will be submitted
+Creating: res209.config
+Processing: 300k-rip-300k/209
+Running: converting PDB to MD input files
+Running: minimizing initial pdb
+Running: equilibration to 300K
+Running: pulse0
+Running: pulse1
+Running: pulse2
+Running: pulse3
+Running: pulse4
+Running: pulse5
+Running: pulse6
+Running: pulse7
+Running: pulse8
+Running: pulse9
+Running: pulse10
+Running: pulse11
+Running: pulse12
+Running: pulse13
+Running: pulse14
+Running: pulse15
+Running: pulse16
+Running: pulse17
+Running: pulse18
+Running: pulse19
+Running: pulse20
+Running: pulse21
+Running: pulse22
+Running: pulse23
+Running: pulse24
+Running: pulse25
+Running: pulse26
+Running: pulse27
+Running: pulse28
+Running: pulse29
+Running: pulse30
+Running: pulse31
+Running: pulse32
+Running: pulse33
+Running: pulse34
+Running: pulse35
+Running: pulse36
+Running: pulse37
+Running: pulse38
+Running: pulse39
+Running: pulse40
+Running: pulse41
+Running: pulse42
+Running: pulse43
+Running: pulse44
+Running: pulse45
+Running: pulse46
+Running: pulse47
+Running: pulse48
+Running: pulse49
+Running: pulse50
+Running: pulse51
+Running: pulse52
+Running: pulse53
+Running: pulse54
+Running: pulse55
+Running: pulse56
+Running: pulse57
+Running: pulse58
+Running: pulse59
+Running: pulse60
+Running: pulse61
+Running: pulse62
+Running: pulse63
+Running: pulse64
+Running: pulse65
+Running: pulse66
+Running: pulse67
+Running: pulse68
+Running: pulse69
+Running: pulse70
+Running: pulse71
+Running: pulse72
+Running: pulse73
+Running: pulse74
+Running: pulse75
+Running: pulse76
+Running: pulse77
+Running: pulse78
+Running: pulse79
+Running: pulse80
+Running: pulse81
+Running: pulse82
+Running: pulse83
+Running: pulse84
+Running: pulse85
+Running: pulse86
+Running: pulse87
+Running: pulse88
+Running: pulse89
+Running: pulse90
+Running: pulse91
+Running: pulse92
+Running: pulse93
+Running: pulse94
+Running: pulse95
+Running: pulse96
+Running: pulse97
+Running: pulse98
+Running: pulse99
+TRAPP: Snapshot extracted from the RAMD trajectory with the stride of 1 will be saved in the final trajectory (1)
+TRAPP: Snapshot extracted from the RAMD trajectory with the stride of 1 will be saved in the final trajectory (2)
+INP:  300k-rip-300k/209/trj209_part.pdb
+OUT:  300k-rip-300k/209/trj_equil_sup209.pdbs
+REF:  equil/300k/md_ref.coor  align -no
+TRAPP:                                     maximum RMSD per binding site residue  is : 2.886529289441941
+TRAPP:                                     local/global RMSD= 2.8024556208174185
+TRAPP: RIPLIG  in  ./RIPLIG-OUT/RIPLIG3_LEU3/  done
+Creating: res209.config
+Processing: 300k-rip-300k/209
+Running: converting PDB to MD input files
+Running: minimizing initial pdb
+Running: equilibration to 300K
+Running: pulse0
+Running: pulse1
+Running: pulse2
+Running: pulse3
+Running: pulse4
+Running: pulse5
+Running: pulse6
+Running: pulse7
+Running: pulse8
+Running: pulse9
+Running: pulse10
+Running: pulse11
+Running: pulse12
+Running: pulse13
+Running: pulse14
+Running: pulse15
+Running: pulse16
+Running: pulse17
+Running: pulse18
+Running: pulse19
+Running: pulse20
+Running: pulse21
+Running: pulse22
+Running: pulse23
+Running: pulse24
+Running: pulse25
+Running: pulse26
+Running: pulse27
+Running: pulse28
+Running: pulse29
+Running: pulse30
+Running: pulse31
+Running: pulse32
+Running: pulse33
+Running: pulse34
+Running: pulse35
+Running: pulse36
+Running: pulse37
+Running: pulse38
+Running: pulse39
+Running: pulse40
+Running: pulse41
+Running: pulse42
+Running: pulse43
+Running: pulse44
+Running: pulse45
+Running: pulse46
+Running: pulse47
+Running: pulse48
+Running: pulse49
+Running: pulse50
+Running: pulse51
+Running: pulse52
+Running: pulse53
+Running: pulse54
+Running: pulse55
+Running: pulse56
+Running: pulse57
+Running: pulse58
+Running: pulse59
+Running: pulse60
+Running: pulse61
+Running: pulse62
+Running: pulse63
+Running: pulse64
+Running: pulse65
+Running: pulse66
+Running: pulse67
+Running: pulse68
+Running: pulse69
+Running: pulse70
+Running: pulse71
+Running: pulse72
+Running: pulse73
+Running: pulse74
+Running: pulse75
+Running: pulse76
+Running: pulse77
+Running: pulse78
+Running: pulse79
+Running: pulse80
+Running: pulse81
+Running: pulse82
+Running: pulse83
+Running: pulse84
+Running: pulse85
+Running: pulse86
+Running: pulse87
+Running: pulse88
+Running: pulse89
+Running: pulse90
+Running: pulse91
+Running: pulse92
+Running: pulse93
+Running: pulse94
+Running: pulse95
+Running: pulse96
+Running: pulse97
+Running: pulse98
+Running: pulse99
+TRAPP: Snapshot extracted from the RAMD trajectory with the stride of 1 will be saved in the final trajectory (1)
+TRAPP: Snapshot extracted from the RAMD trajectory with the stride of 1 will be saved in the final trajectory (2)
+INP:  300k-rip-300k/209/trj209_part.pdb
+OUT:  300k-rip-300k/209/trj_equil_sup209.pdbs
+REF:  equil/300k/md_ref.coor  align -no
+TRAPP:                                     maximum RMSD per binding site residue  is : 4.69143198007838
+TRAPP:                                     local/global RMSD= 3.9757898136257457
+TRAPP: RIPLIG  in  ./RIPLIG-OUT/RIPLIG2_LEU2/  done
+TRAPP: 3RIPlig jobs done; 1 are still in the queue
+TRAPP: RIPlig simulations finished 
+TRAPP:  RIPlig- total simulation time 7149.29528284sec:  1 h 59 min
+
+
+TRAPP: 	 skip  implicit solvent MD 
+TRAPP:  trapp-structure: JOB done
+TRAPP:  trapp-structure SUMMARY: total simulation time 7158.26680613 sec:   1 h 59 min
+TRAPP:                              MD simulation time 0 sec:   0 h 0 min
+TRAPP:                          RIPlig simulation time 7149.29528284 sec:   1 h 59 min
+TRAPP:                       tCONCOORD simulation time 0 sec:   0 h 0 min

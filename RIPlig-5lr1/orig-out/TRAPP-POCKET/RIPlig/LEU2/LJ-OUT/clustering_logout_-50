@@ -1,0 +1,56 @@
+
+
+TRAPP: clustering starts now- ; grid file used: /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU2/LJ-OUT/transT_3.dx   at the iso-value -0.5
+
+TRAPP: hierarchical clustering of transient pockets: total volume (grid points): 636
+hierarchical -clustering TRAPP: cluster size is: 636
+hierarchical -clustering : number of clusters old: 636 new:315
+hierarchical -clustering : number of clusters old: 315 new:116
+hierarchical -clustering : number of clusters old: 116 new:58
+hierarchical -clustering : number of clusters old: 58 new:39
+hierarchical -clustering : number of clusters old: 39 new:21
+hierarchical -clustering : number of clusters old: 21 new:18
+hierarchical -clustering : number of clusters was not changed: 18
+TRAPP: cluster 0  size 43
+ TRAPP: cluster 1  size 61
+ TRAPP: cluster 2  size 479
+ TRAPP: Pocket hierarchical -clustering- finished; found 3  clusters; 
+ 
+TRAPP: hierarchical clusters found: 3; max. cluster size: 479
+TRAPP: cluster 3 (size=479) will be splitted to sub-clusters
+k-mean clustering; Starting number of cluster centers is :3  min distance between clusters  20; min cluster size 150 at iso-value -0.49504950495
+TRAPP: k-mean clustering of the largest sub-pockets: total volume (grid points): 636 pocket volume: 479; centers: [450, 265, 291]
+ cluster 1 is not compact- cluster_volume/sphere_volume = 0.22390056148388363
+Cluster center is outside : old position: 0new position: [0 0 0]
+Cluster center is outside : old position: 0new position: [398   0   0]
+Cluster center is outside : old position: 0new position: [398 201   0]
+ clustering step-  1number of clusters- 3; cluster size: [154 205 120]
+1: # clusters 3; relative change in the position of cluster centers 23.5906122653; cluster size: [154 205 120]
+Cluster center is outside : old position: 398new position: [398 201 100]
+Cluster center is outside : old position: 201new position: [363 201 100]
+Cluster center is outside : old position: 100new position: [363 201 100]
+ clustering step-  2number of clusters- 3; cluster size: [166 159 154]
+2: # clusters 3; relative change in the position of cluster centers 1.06519742883; cluster size: [166 159 154]
+Cluster center is outside : old position: 201new position: [363 201  99]
+Cluster center is outside : old position: 99new position: [363 129  99]
+ clustering step-  3number of clusters- 3; cluster size: [186 137 156]
+3: # clusters 3; relative change in the position of cluster centers 5.58139534884; cluster size: [186 137 156]
+Cluster center is outside : old position: 363new position: [363 129  99]
+Cluster center is outside : old position: 129new position: [320 129  99]
+Cluster center is outside : old position: 99new position: [320 124  99]
+ clustering step-  4number of clusters- 3; cluster size: [210 113 156]
+4: Too small cluster (113), cl.2 will be eleminated
+4: # clusters 2; relative change in the position of cluster centers 1.74697580645; cluster size: [210 156   0]
+Cluster center is outside : old position: 320new position: [320 124  99]
+Cluster center is outside : old position: 124new position: [265 124  99]
+ clustering step-  5number of clusters- 2; cluster size: [322 157   0]
+5: # clusters 2; relative change in the position of cluster centers 2.07547169811; cluster size: [322 157   0]
+Cluster center is outside : old position: 99new position: [265  99  99]
+ clustering step-  6number of clusters- 2; cluster size: [323 156   0]
+6: # clusters 2; relative change in the position of cluster centers 0.0; cluster size: [323 156   0]
+TRAPP: results of clustering will be saved in ovlp_snap-trans_S_-50.dat
+ovlp_snap-trans_S Claster size: 1 323
+ovlp_snap-trans_S Claster size: 2 156
+ovlp_snap-trans_S Claster size: 3 43
+ovlp_snap-trans_S Claster size: 4 61
+TRAPP: result of k-mean clustering : 2 clusters found ; size: [323 156   0]

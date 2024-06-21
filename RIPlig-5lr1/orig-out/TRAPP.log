@@ -1,0 +1,774 @@
+(' Input file - ', 'trapp_pocket.input')
+____________________________ BBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+TRAPP :  ======= INPUT DATA: ==========
+
+
+TRAPP :  ======= to be done: ==========
+TRAPP :  SUPERIMPOSE_STRUCT = yes
+TRAPP :  LJ-GRID = yes
+TRAPP :  MOTION_ANALYSIS = yes
+TRAPP :  DRUGGABILITY_PREDICTION = yes
+TRAPP :  SIMILARITY_ANALYSIS = no
+TRAPP :  SAVE PLOTS = yes
+
+TRAPP :  ======= PATH: ==========
+TRAPP :  DIR= ./
+
+TRAPP :  ======= trajectories to be analyzed: ==========
+TRAPP :  MAXTRJ = 4
+
+TRAPP :  ===== name min max step reference===========
+TRAPP :  TRJ LEU0 ; first snapshot 0 ; last snapshot 0 ; step 1
+TRAPP :  TRJ LEU1 ; first snapshot 0 ; last snapshot 0 ; step 1
+TRAPP :  TRJ LEU2 ; first snapshot 0 ; last snapshot 0 ; step 1
+TRAPP :  TRJ LEU3 ; first snapshot 0 ; last snapshot 0 ; step 1
+
+TRAPP :  ======= input files: ==========
+TRAPP :  PDB = structure_5lr1.pdb
+TRAPP :  LIG = ligand_position.pdb
+TRAPP :  hydrogen will be added  to the refernce structure
+TRAPP: all HETATM and also HOH atoms will be removed from input structures
+TRAPP :  SITE = no-act-site
+
+======= grid parameters to be used: ==========
+TRAPP :  RADIUS = 3.5
+TRAPP :  GRD = 0.75
+
+TRAPP :  ======= parameters of LJ-pocket: ==========
+TRAPP :  HATOMS = yes
+TRAPP :  atom-dependent LJrad will be used
+TRAPP :  VECT-L = 7.0
+TRAPP :  VECT-alpha = 0.6
+TRAPP :  VECT-direct = 12.0
+TRAPP :  VECT-accuracy = 2.0
+TRAPP :  SPACIAL-AVERAGE = 3
+TRAPP :  CENTRAL-POCKET = yes
+
+TRAPP :  ======= PCA analysis: ==========
+TRAPP :  PCA-analysis no
+TRAPP :  PCA-TRJ 0
+TRAPP :  PCA-MODES 2
+
+TRAPP :  ======= parameters of visualization: ==========
+TRAPP :  LJ-SPHERES = 1.5
+TRAPP :  ISO = 0.6
+TRAPP :  ISO-T = [25, 50]%
+TRAPP :  CLUSTER = 0
+TRAPP :  PCA-TRANS-POCK = yes
+TRAPP :  CLUSTER-TRANS-POCK = yes
+TRAPP :  Jsmol = yes
+TRAPP:  2 cores will be used for simulations (as defined by a system variable TRAPP_NCORES)
+
+TRAPP:  standard NAMD  OMP version to be used , the command  namd2 +p threads
+
+
+TRAPP: ################################	STEP 0: some preparation needed...   ########################
+
+TRAPP: all residues within 3.5 Angstrom from a ligand will be considered as an active site
+TRAPP: active site includes  14 residues: 48; 51; 52; 54; 55; 93; 96; 97; 98; 107; 138; 150; 184; 186; 
+
+TRAPP: ################################	STEP 1: ALIGNMENT and SUPERIMPOSITION of  each trajectory to the reference structure  ########################
+
+TRAPP: ----------------------  ALIGNMENT and SUPERIMPOSITION -of the trajectory------LEU0
+INP:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU0/first.pdb
+OUT:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU0/ref-trj.pdb
+REF:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/ref.pdb  align -yes
+----------- Alignment Started--------------- 
+Sequence 1 (reference)    :  208 HMETFAFQAEIAQLMSLIINTFYSNKEIFLRELISNSSDALDKIRYESLTDPSKLDSGKELHINLIPNKQDRTLTIVDTGIGMTKADLINNLGTIAKSGTKAFMEALQAGADISMIGQFGVGFYSAYLVAEKVTVITKHNDDEQYAWESSAGGSFTVRTDTGEPMGRGTKVILHLKEDQTEYLEERRIKEIVKKHSQFIGYPITLFVE
+Sequence 2 (to be aligned):  208 SMETFAFQAEIAQLMSLIINTFYSNKEIFLRELISNSSDALDKIRYESLTDPSKLDSGKELSINLIPNKQDRTLTIVDTGIGMTKADLINNLGTIAKSGTKAFMEALQAGADISMIGQFGVGFYSAYLVAEKVTVITKSNDDEQYAWESSAGGSFTVRTDTGEPMGRGTKVILSLKEDQTEYLEERRIKEIVKKSSQFIGYPITLFVE
+NEW site [(chain, residue)]:  14 [(1, 33), (1, 36), (1, 37), (1, 39), (1, 40), (1, 78), (1, 81), (1, 82), (1, 83), (1, 92), (1, 123), (1, 135), (1, 169), (1, 171)]
+REF site [(chain, residue)]:  14 [(1, 48), (1, 51), (1, 52), (1, 54), (1, 55), (1, 93), (1, 96), (1, 97), (1, 98), (1, 107), (1, 138), (1, 150), (1, 184), (1, 186)]
+shift in the first residues relative to the reference snapshot:  [0]
+----------- Alignment is Finished--------------- 
+TRAPP: the expected length of the trajectory to be analyzed is 100 from trj_length-MODEL
+
+TRAPP: ++++++++++++++++++++++++++++++++ Trajectory will be splitted and superimosed by parts +++++++++++++++++++++++++++++++++++++
+INP:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU0/md_part0.pdbs
+OUT:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU0/md_part0.pdb
+REF:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU0/ref-trj.pdb  align -no
+TRAPP: Warning - this piece of the trajectory is empty; file -  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU0/md_part2.pdbs
+INP:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU0/md_part1.pdbs
+OUT:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU0/md_part1.pdb
+REF:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU0/ref-trj.pdb  align -no
+TRAPP: ++++++++++++++++++++++++++++++++ Trajectory  superimosition finished ++++++++++++++++++++++++++++++++++++++++++++
+
+TRAPP: ----------------------  ALIGNMENT and SUPERIMPOSITION -of the trajectory------LEU1
+INP:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU1/first.pdb
+OUT:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU1/ref-trj.pdb
+REF:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/ref.pdb  align -yes
+----------- Alignment Started--------------- 
+Sequence 1 (reference)    :  208 HMETFAFQAEIAQLMSLIINTFYSNKEIFLRELISNSSDALDKIRYESLTDPSKLDSGKELHINLIPNKQDRTLTIVDTGIGMTKADLINNLGTIAKSGTKAFMEALQAGADISMIGQFGVGFYSAYLVAEKVTVITKHNDDEQYAWESSAGGSFTVRTDTGEPMGRGTKVILHLKEDQTEYLEERRIKEIVKKHSQFIGYPITLFVE
+Sequence 2 (to be aligned):  208 SMETFAFQAEIAQLMSLIINTFYSNKEIFLRELISNSSDALDKIRYESLTDPSKLDSGKELSINLIPNKQDRTLTIVDTGIGMTKADLINNLGTIAKSGTKAFMEALQAGADISMIGQFGVGFYSAYLVAEKVTVITKSNDDEQYAWESSAGGSFTVRTDTGEPMGRGTKVILSLKEDQTEYLEERRIKEIVKKSSQFIGYPITLFVE
+NEW site [(chain, residue)]:  14 [(1, 33), (1, 36), (1, 37), (1, 39), (1, 40), (1, 78), (1, 81), (1, 82), (1, 83), (1, 92), (1, 123), (1, 135), (1, 169), (1, 171)]
+REF site [(chain, residue)]:  14 [(1, 48), (1, 51), (1, 52), (1, 54), (1, 55), (1, 93), (1, 96), (1, 97), (1, 98), (1, 107), (1, 138), (1, 150), (1, 184), (1, 186)]
+shift in the first residues relative to the reference snapshot:  [0]
+----------- Alignment is Finished--------------- 
+TRAPP: the expected length of the trajectory to be analyzed is 100 from trj_length-MODEL
+
+TRAPP: ++++++++++++++++++++++++++++++++ Trajectory will be splitted and superimosed by parts +++++++++++++++++++++++++++++++++++++
+INP:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU1/md_part0.pdbs
+OUT:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU1/md_part0.pdb
+REF:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU1/ref-trj.pdb  align -no
+TRAPP: Warning - this piece of the trajectory is empty; file -  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU1/md_part2.pdbs
+INP:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU1/md_part1.pdbs
+OUT:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU1/md_part1.pdb
+REF:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU1/ref-trj.pdb  align -no
+TRAPP: ++++++++++++++++++++++++++++++++ Trajectory  superimosition finished ++++++++++++++++++++++++++++++++++++++++++++
+
+TRAPP: ----------------------  ALIGNMENT and SUPERIMPOSITION -of the trajectory------LEU2
+INP:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU2/first.pdb
+OUT:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU2/ref-trj.pdb
+REF:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/ref.pdb  align -yes
+----------- Alignment Started--------------- 
+Sequence 1 (reference)    :  208 HMETFAFQAEIAQLMSLIINTFYSNKEIFLRELISNSSDALDKIRYESLTDPSKLDSGKELHINLIPNKQDRTLTIVDTGIGMTKADLINNLGTIAKSGTKAFMEALQAGADISMIGQFGVGFYSAYLVAEKVTVITKHNDDEQYAWESSAGGSFTVRTDTGEPMGRGTKVILHLKEDQTEYLEERRIKEIVKKHSQFIGYPITLFVE
+Sequence 2 (to be aligned):  208 SMETFAFQAEIAQLMSLIINTFYSNKEIFLRELISNSSDALDKIRYESLTDPSKLDSGKELSINLIPNKQDRTLTIVDTGIGMTKADLINNLGTIAKSGTKAFMEALQAGADISMIGQFGVGFYSAYLVAEKVTVITKSNDDEQYAWESSAGGSFTVRTDTGEPMGRGTKVILSLKEDQTEYLEERRIKEIVKKSSQFIGYPITLFVE
+NEW site [(chain, residue)]:  14 [(1, 33), (1, 36), (1, 37), (1, 39), (1, 40), (1, 78), (1, 81), (1, 82), (1, 83), (1, 92), (1, 123), (1, 135), (1, 169), (1, 171)]
+REF site [(chain, residue)]:  14 [(1, 48), (1, 51), (1, 52), (1, 54), (1, 55), (1, 93), (1, 96), (1, 97), (1, 98), (1, 107), (1, 138), (1, 150), (1, 184), (1, 186)]
+shift in the first residues relative to the reference snapshot:  [0]
+----------- Alignment is Finished--------------- 
+TRAPP: the expected length of the trajectory to be analyzed is 100 from trj_length-MODEL
+
+TRAPP: ++++++++++++++++++++++++++++++++ Trajectory will be splitted and superimosed by parts +++++++++++++++++++++++++++++++++++++
+INP:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU2/md_part0.pdbs
+OUT:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU2/md_part0.pdb
+REF:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU2/ref-trj.pdb  align -no
+TRAPP: Warning - this piece of the trajectory is empty; file -  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU2/md_part2.pdbs
+INP:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU2/md_part1.pdbs
+OUT:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU2/md_part1.pdb
+REF:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU2/ref-trj.pdb  align -no
+TRAPP: ++++++++++++++++++++++++++++++++ Trajectory  superimosition finished ++++++++++++++++++++++++++++++++++++++++++++
+
+TRAPP: ----------------------  ALIGNMENT and SUPERIMPOSITION -of the trajectory------LEU3
+INP:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU3/first.pdb
+OUT:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU3/ref-trj.pdb
+REF:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/ref.pdb  align -yes
+----------- Alignment Started--------------- 
+Sequence 1 (reference)    :  208 HMETFAFQAEIAQLMSLIINTFYSNKEIFLRELISNSSDALDKIRYESLTDPSKLDSGKELHINLIPNKQDRTLTIVDTGIGMTKADLINNLGTIAKSGTKAFMEALQAGADISMIGQFGVGFYSAYLVAEKVTVITKHNDDEQYAWESSAGGSFTVRTDTGEPMGRGTKVILHLKEDQTEYLEERRIKEIVKKHSQFIGYPITLFVE
+Sequence 2 (to be aligned):  208 SMETFAFQAEIAQLMSLIINTFYSNKEIFLRELISNSSDALDKIRYESLTDPSKLDSGKELSINLIPNKQDRTLTIVDTGIGMTKADLINNLGTIAKSGTKAFMEALQAGADISMIGQFGVGFYSAYLVAEKVTVITKSNDDEQYAWESSAGGSFTVRTDTGEPMGRGTKVILSLKEDQTEYLEERRIKEIVKKSSQFIGYPITLFVE
+NEW site [(chain, residue)]:  14 [(1, 33), (1, 36), (1, 37), (1, 39), (1, 40), (1, 78), (1, 81), (1, 82), (1, 83), (1, 92), (1, 123), (1, 135), (1, 169), (1, 171)]
+REF site [(chain, residue)]:  14 [(1, 48), (1, 51), (1, 52), (1, 54), (1, 55), (1, 93), (1, 96), (1, 97), (1, 98), (1, 107), (1, 138), (1, 150), (1, 184), (1, 186)]
+shift in the first residues relative to the reference snapshot:  [0]
+----------- Alignment is Finished--------------- 
+TRAPP: the expected length of the trajectory to be analyzed is 100 from trj_length-MODEL
+
+TRAPP: ++++++++++++++++++++++++++++++++ Trajectory will be splitted and superimosed by parts +++++++++++++++++++++++++++++++++++++
+INP:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU3/md_part0.pdbs
+OUT:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU3/md_part0.pdb
+REF:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU3/ref-trj.pdb  align -no
+TRAPP: Warning - this piece of the trajectory is empty; file -  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU3/md_part2.pdbs
+INP:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU3/md_part1.pdbs
+OUT:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU3/md_part1.pdb
+REF:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU3/ref-trj.pdb  align -no
+TRAPP: ++++++++++++++++++++++++++++++++ Trajectory  superimosition finished ++++++++++++++++++++++++++++++++++++++++++++
+
+
+TRAPP:#############################	STEP 2: LJ grid calculation and/or analysis   ##############################
+
+('ref.pdb', ':  Druggability model-- CNN: ', tensor(0.9993), '  LR: ', 0.966385270470733)
+
+TRAPP: multi-core mode for LJ pocket simulations starts
+
+('snap.51.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9986281815235718)
+('snap.52.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9987404444808986)
+('snap.53.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9985758020824751)
+('snap.54.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9983446833337223)
+('snap.55.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.998740602820793)
+('snap.56.pdb', ':  Druggability model-- CNN: ', tensor(1.), '  LR: ', 0.9988009457956383)
+('snap.57.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9986849265535768)
+('snap.58.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9979958005767517)
+('snap.59.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9971898768950638)
+('snap.60.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9981617340201151)
+('snap.61.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9977143504520077)
+('snap.62.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9978827308215231)
+('snap.63.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9973996192371117)
+('snap.64.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9976941540898958)
+('snap.65.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9954768509110442)
+('snap.66.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9945277173537086)
+('snap.67.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9922597422109956)
+('snap.68.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9928593807132489)
+('snap.69.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9877576952911427)
+('snap.70.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9791402575719813)
+('snap.71.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9936104803297642)
+('snap.72.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.994427767855265)
+('snap.73.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9907114095374336)
+('snap.74.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9896051098555645)
+('snap.75.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9924528171529069)
+('snap.76.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9908414036498094)
+('snap.77.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9909267803969982)
+('snap.78.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9927385825750102)
+('snap.79.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9863705993898121)
+('snap.80.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.988390322958041)
+('snap.81.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9793586621900472)
+('snap.82.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9797788015605831)
+('snap.83.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9845875036408357)
+('snap.84.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9849475228118882)
+('snap.85.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9891338204785151)
+('snap.86.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9865178098563555)
+('snap.87.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9855047391954267)
+('snap.88.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9845260105763276)
+('snap.89.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9923705604559083)
+('snap.90.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9909682296442943)
+('snap.91.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9970209884498973)
+('snap.92.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9961548408556734)
+('snap.93.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9955514112752506)
+('snap.94.pdb', ':('snap.1.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9935577278323023)
+('snap.2.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9930694740994943)
+('snap.3.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9913224913271259)
+('snap.4.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9920718681778143)
+('snap.5.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9940599938022935)
+('snap.6.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9964796978478866)
+('snap.7.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9889723254916516)
+('snap.8.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9918300707620468)
+('snap.9.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9936058979094613)
+('snap.10.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9894361591381164)
+('snap.11.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9913142618455517)
+('snap.12.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9924669816115558)
+('snap.13.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.994745466255921)
+('snap.14.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9950874828112226)
+('snap.15.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9931927216652521)
+('snap.16.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9939378302209685)
+('snap.17.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9928454086271673)
+('snap.18.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.994000247956547)
+('snap.19.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.996408422845551)
+('snap.20.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9911627807263461)
+('snap.21.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9840647536136746)
+('snap.22.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9825614287576271)
+('snap.23.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9880004266397888)
+('snap.24.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9957499922478947)
+('snap.25.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9982622951770552)
+('snap.26.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9978961783786299)
+('snap.27.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9976899156740184)
+('snap.28.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9970153962080334)
+('snap.29.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9971649207243691)
+('snap.30.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9980137831242857)
+('snap.31.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9978186389332575)
+('snap.32.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.998230455401905)
+('snap.33.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9987070956968631)
+('snap.34.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9982117172459986)
+('snap.35.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9978819254344534)
+('snap.36.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9980352432690606)
+('snap.37.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9979232360908976)
+('snap.38.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9984614245388315)
+('snap.39.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9988342261817807)
+('snap.40.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9987295272244932)
+('snap.41.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9984962548457591)
+('snap.42.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9979168283971065)
+('snap.43.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9982521507919332)
+('snap.44.pdb', ':  Drug  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9939662664576162)
+('snap.95.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9951484009943252)
+('snap.96.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9963108641276504)
+('snap.97.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9973988023178568)
+('snap.98.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9970507520076526)
+('snap.99.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9965028723194542)
+('snap.100.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.996082176772912)
+gability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9979903846303712)
+('snap.45.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9987766893908286)
+('snap.46.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9983045666867054)
+('snap.47.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9984046477658816)
+('snap.48.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9986393539925846)
+('snap.49.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9988452566651261)
+('snap.50.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.998339714607045)
+
+TRAPP: multi-core mode for LJ pocket simulations finished
+
+TRAPP: computing transient and conserved pocket regions averaged over all snapshots in a trajectory 0
+/share/apps/mcm/trapp4/trapptool/scripts/trapp-pocket.py:1319: ComplexWarning: Casting complex values to real discards the imaginary part
+  numpy.real(eval[i]/sum0)+" %10.5f" % (ssum)+"\n")
+
+TRAPP: ++++++++++++++++++++++  multicore starts  ++++++++++++++++++++++++++++++++++++
+
+TRAPP: 	PCA analysis of the transient pockets at the occurence of 25
+TRAPP: 	PCA analysis of the transient pockets at the occurence of 50
+
+TRAPP: ++++++++++++++++++++++++++++  multicore finished  +++++++++++++++++++++++++++++++++++++
+
+
+TRAPP: multi-core mode for LJ pocket simulations starts
+
+cp: cannot create regular file '/scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/LEU1//lj_l_tmp.pdb': File exists
+('snap.51.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9967252798910744)
+('snap.52.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9957131180895611)
+('snap.53.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9977208228553861)
+('snap.54.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9970723626416452)
+('snap.55.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9972962514546005)
+('snap.56.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9960200419758577)
+('snap.57.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.993438233961568)
+('snap.58.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9948509560468464)
+('snap.59.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9973835689541457)
+('snap.60.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9968703587338072)
+('snap.61.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.995349810911728)
+('snap.62.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9952791217793481)
+('snap.63.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9930725151419468)
+('snap.64.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9852106451981482)
+('snap.65.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9795849822075128)
+('snap.66.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9804282291502774)
+('snap.67.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9937808886703571)
+('snap.68.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9947915779470291)
+('snap.69.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.996640663190639)
+('snap.70.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9980176402884079)
+('snap.71.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9980021509456771)
+('snap.72.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9982382785443332)
+('snap.73.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9987799749075693)
+('snap.74.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9980488958931882)
+('snap.75.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9977599820081715)
+('snap.76.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9960222531797738)
+('snap.77.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.997318943801619)
+('snap.78.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9977645110989335)
+('snap.79.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9966533632049938)
+('snap.80.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9945545299696433)
+('snap.81.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9856188099745355)
+('snap.82.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9911110725414416)
+('snap.83.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9873219955726222)
+('snap.84.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9892695261948816)
+('snap.85.pdb', ':  Druggability model-- CNN: ', tensor(0.9997), '  LR: ', 0.9841990280840626)
+('snap.86.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9910650376234138)
+('snap.87.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9907903483656526)
+('snap.88.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9886908290170844)
+('snap.89.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9815760213859205)
+('snap.90.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9847669830668694)
+('snap.91.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9951638696381)
+('snap.92.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9974970416086983)
+('snap.93.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9933971927666105)
+('snap.94.pdb', ':('snap.1.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.995416521880501)
+('snap.2.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9934213839626921)
+('snap.3.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9912928588948466)
+('snap.4.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9928647039982256)
+('snap.5.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9921232645841214)
+('snap.6.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.996150429595332)
+('snap.7.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9969118103412773)
+('snap.8.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9967357290532712)
+('snap.9.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.996704662884878)
+('snap.10.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9960451363124518)
+('snap.11.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9961292792980063)
+('snap.12.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9961876859060911)
+('snap.13.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9922873646879979)
+('snap.14.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9932140162489259)
+('snap.15.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9939125755038444)
+('snap.16.pdb', ':  Druggability model-- CNN: ', tensor(0.9998), '  LR: ', 0.9803088426569452)
+('snap.17.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9731552070999123)
+('snap.18.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9846612500747328)
+('snap.19.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9828375749052667)
+('snap.20.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9839973989600472)
+('snap.21.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9856128723261656)
+('snap.22.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9872489891544115)
+('snap.23.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9871289902674139)
+('snap.24.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9855069220732842)
+('snap.25.pdb', ':  Druggability model-- CNN: ', tensor(0.9998), '  LR: ', 0.9851397175149147)
+('snap.26.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9867819824831473)
+('snap.27.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9871259339878916)
+('snap.28.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9944165499489648)
+('snap.29.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.992096124915129)
+('snap.30.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9917379547598864)
+('snap.31.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.993893751957829)
+('snap.32.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9912381284635039)
+('snap.33.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9953730252073704)
+('snap.34.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9959637139760376)
+('snap.35.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9945964418102278)
+('snap.36.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9905427862741997)
+('snap.37.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9877571783839961)
+('snap.38.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9899884686159984)
+('snap.39.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9906325679267146)
+('snap.40.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.993967135694289)
+('snap.41.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9959399573272473)
+('snap.42.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9959706030628227)
+('snap.43.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9884588924095137)
+('snap.44.pdb', ':  Drugga  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9912524317377428)
+('snap.95.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9887585812533826)
+('snap.96.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9877132481130436)
+('snap.97.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9934316718102302)
+('snap.98.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9929800728215716)
+('snap.99.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.995620744030952)
+('snap.100.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9937882917346483)
+bility model-- CNN: ', tensor(1.0000), '  LR: ', 0.995549347462834)
+('snap.45.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9920029880248784)
+('snap.46.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9929389664473472)
+('snap.47.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9943006616735979)
+('snap.48.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9944132587593402)
+('snap.49.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9949989776474285)
+('snap.50.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9958796015580627)
+
+TRAPP: multi-core mode for LJ pocket simulations finished
+
+TRAPP: computing transient and conserved pocket regions averaged over all snapshots in a trajectory 1
+
+TRAPP: ++++++++++++++++++++++  multicore starts  ++++++++++++++++++++++++++++++++++++
+
+TRAPP: 	PCA analysis of the transient pockets at the occurence of 25
+TRAPP: 	PCA analysis of the transient pockets at the occurence of 50
+
+TRAPP: ++++++++++++++++++++++++++++  multicore finished  +++++++++++++++++++++++++++++++++++++
+
+
+TRAPP: multi-core mode for LJ pocket simulations starts
+
+('snap.1.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.991570217509515)
+('snap.2.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9921268986234094)
+('snap.3.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9835113339095767)
+('snap.4.pdb', ':  Druggability model-- CNN: ', tensor(0.9998), '  LR: ', 0.9794393225713077)
+('snap.5.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9851452949592285)
+('snap.6.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9911691200021443)
+('snap.7.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9870274372199368)
+('snap.8.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9840406182618067)
+('snap.9.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9806762799392927)
+('snap.10.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9904132788381851)
+('snap.11.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9908423462318652)
+('snap.12.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9952504577826358)
+('snap.13.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9965689548537822)
+('snap.14.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9966631387796526)
+('snap.15.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9966986822629094)
+('snap.16.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9970988002560595)
+('snap.17.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9971830054313902)
+('snap.18.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9964451884615145)
+('snap.19.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9965297970753038)
+('snap.20.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9906128958372848)
+('snap.21.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9939129945741284)
+('snap.22.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9935500317545122)
+('snap.23.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9954313349175916)
+('snap.24.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9951508342237764)
+('snap.25.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9929367687187198)
+('snap.26.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9889780290079534)
+('snap.27.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9908486231392721)
+('snap.28.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9894312924006453)
+('snap.29.pdb', ':  Druggability model-- CNN: ', tensor(0.9998), '  LR: ', 0.9828612128308807)
+('snap.30.pdb', ':  Druggability model-- CNN: ', tensor(0.9993), '  LR: ', 0.9702522964557266)
+('snap.31.pdb', ':  Druggability model-- CNN: ', tensor(0.9996), '  LR: ', 0.9683288847716698)
+('snap.32.pdb', ':  Druggability model-- CNN: ', tensor(0.9994), '  LR: ', 0.958560596140503)
+('snap.33.pdb', ':  Druggability model-- CNN: ', tensor(0.9997), '  LR: ', 0.9797501950854856)
+('snap.34.pdb', ':  Druggability model-- CNN: ', tensor(0.9997), '  LR: ', 0.9771516165444201)
+('snap.35.pdb', ':  Druggability model-- CNN: ', tensor(0.9997), '  LR: ', 0.9639544607400545)
+('snap.36.pdb', ':  Druggability model-- CNN: ', tensor(0.9994), '  LR: ', 0.9530051844233881)
+('snap.37.pdb', ':  Druggability model-- CNN: ', tensor(0.9993), '  LR: ', 0.9493711866974568)
+('snap.38.pdb', ':  Druggability model-- CNN: ', tensor(0.9993), '  LR: ', 0.9432959246183913)
+('snap.39.pdb', ':  Druggability model-- CNN: ', tensor(0.9992), '  LR: ', 0.9423060690622742)
+('snap.40.pdb', ':  Druggability model-- CNN: ', tensor(0.9993), '  LR: ', 0.9199665605810513)
+('snap.41.pdb', ':  Druggability model-- CNN: ', tensor(0.9988), '  LR: ', 0.909197350794045)
+('snap.42.pdb', ':  Druggability model-- CNN: ', tensor(0.9979), '  LR: ', 0.8994897661584745)
+('snap.43.pdb', ':  Druggability model-- CNN: ', tensor(0.9987), '  LR: ', 0.9346145289314697)
+('snap.44.pdb', ':  Dru('snap.51.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9834739485220345)
+('snap.52.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.987161995579831)
+('snap.53.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9905894914922833)
+('snap.54.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9799177321631579)
+('snap.55.pdb', ':  Druggability model-- CNN: ', tensor(0.9998), '  LR: ', 0.9793113209567867)
+('snap.56.pdb', ':  Druggability model-- CNN: ', tensor(0.9998), '  LR: ', 0.9792609619816668)
+('snap.57.pdb', ':  Druggability model-- CNN: ', tensor(0.9998), '  LR: ', 0.9816116044397788)
+('snap.58.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9905502239353289)
+('snap.59.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9888612356470775)
+('snap.60.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9860675813892069)
+('snap.61.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9833071346097875)
+('snap.62.pdb', ':  Druggability model-- CNN: ', tensor(0.9997), '  LR: ', 0.9721716844659931)
+('snap.63.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9789407561632919)
+('snap.64.pdb', ':  Druggability model-- CNN: ', tensor(0.9998), '  LR: ', 0.9710098620886224)
+('snap.65.pdb', ':  Druggability model-- CNN: ', tensor(0.9996), '  LR: ', 0.9717334959709883)
+('snap.66.pdb', ':  Druggability model-- CNN: ', tensor(0.9995), '  LR: ', 0.970895766104309)
+('snap.67.pdb', ':  Druggability model-- CNN: ', tensor(0.9995), '  LR: ', 0.971270713007045)
+('snap.68.pdb', ':  Druggability model-- CNN: ', tensor(0.9995), '  LR: ', 0.968132289456497)
+('snap.69.pdb', ':  Druggability model-- CNN: ', tensor(0.9995), '  LR: ', 0.9654944161264803)
+('snap.70.pdb', ':  Druggability model-- CNN: ', tensor(0.9998), '  LR: ', 0.975843985244218)
+('snap.71.pdb', ':  Druggability model-- CNN: ', tensor(0.9998), '  LR: ', 0.968176847651107)
+('snap.72.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9778713648199361)
+('snap.73.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9685915640364274)
+('snap.74.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9693478961161585)
+('snap.75.pdb', ':  Druggability model-- CNN: ', tensor(0.9998), '  LR: ', 0.9659178431030315)
+('snap.76.pdb', ':  Druggability model-- CNN: ', tensor(0.9998), '  LR: ', 0.9631539961675161)
+('snap.77.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9713779435822348)
+('snap.78.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9739799035891539)
+('snap.79.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9758092907396967)
+('snap.80.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9769691985855936)
+('snap.81.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9682361732441851)
+('snap.82.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.976618721388606)
+('snap.83.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9693159530969373)
+('snap.84.pdb', ':  Druggability model-- CNN: ', tensor(0.9998), '  LR: ', 0.9615407598269301)
+('snap.85.pdb', ':  Druggability model-- CNN: ', tensor(0.9996), '  LR: ', 0.9513353972042927)
+('snap.86.pdb', ':  Druggability model-- CNN: ', tensor(0.9996), '  LR: ', 0.9560476432477089)
+('snap.87.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9702211726373373)
+('snap.88.pdb', ':  Druggability model-- CNN: ', tensor(0.9995), '  LR: ', 0.9480588910893103)
+('snap.89.pdb', ':  Druggability model-- CNN: ', tensor(0.9993), '  LR: ', 0.9509740158293274)
+('snap.90.pdb', ':  Druggability model-- CNN: ', tensor(0.9996), '  LR: ', 0.9555509433499636)
+('snap.91.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.978011218177593)
+('snap.92.pdb', ':  Druggability model-- CNN: ', tensor(0.9997), '  LR: ', 0.9718358647803841)
+('snap.93.pdb', ':  Druggability model-- CNN: ', tensor(0.9990), '  LR: ', 0.9498889046074687)
+('snap.94.pdb', ': ggability model-- CNN: ', tensor(0.9978), '  LR: ', 0.9351912127556539)
+('snap.45.pdb', ':  Druggability model-- CNN: ', tensor(0.9954), '  LR: ', 0.9335321007552178)
+('snap.46.pdb', ':  Druggability model-- CNN: ', tensor(0.9970), '  LR: ', 0.9527600084006197)
+('snap.47.pdb', ':  Druggability model-- CNN: ', tensor(0.9985), '  LR: ', 0.9603937369661546)
+('snap.48.pdb', ':  Druggability model-- CNN: ', tensor(0.9993), '  LR: ', 0.9677200378938081)
+('snap.49.pdb', ':  Druggability model-- CNN: ', tensor(0.9995), '  LR: ', 0.9829546002664514)
+('snap.50.pdb', ':  Druggability model-- CNN: ', tensor(0.9996), '  LR: ', 0.9727876868842161)
+ Druggability model-- CNN: ', tensor(0.9973), '  LR: ', 0.9464513734865299)
+('snap.95.pdb', ':  Druggability model-- CNN: ', tensor(0.9974), '  LR: ', 0.9483223862653651)
+('snap.96.pdb', ':  Druggability model-- CNN: ', tensor(0.9966), '  LR: ', 0.9021089810706727)
+('snap.97.pdb', ':  Druggability model-- CNN: ', tensor(0.9985), '  LR: ', 0.9125764816270917)
+('snap.98.pdb', ':  Druggability model-- CNN: ', tensor(0.9994), '  LR: ', 0.9259098509624395)
+('snap.99.pdb', ':  Druggability model-- CNN: ', tensor(0.9995), '  LR: ', 0.9301140293199356)
+('snap.100.pdb', ':  Druggability model-- CNN: ', tensor(0.9985), '  LR: ', 0.8922081016688704)
+
+TRAPP: multi-core mode for LJ pocket simulations finished
+
+TRAPP: computing transient and conserved pocket regions averaged over all snapshots in a trajectory 2
+
+TRAPP: ++++++++++++++++++++++  multicore starts  ++++++++++++++++++++++++++++++++++++
+
+TRAPP: 	PCA analysis of the transient pockets at the occurence of 25
+TRAPP: 	PCA analysis of the transient pockets at the occurence of 50
+
+TRAPP: ++++++++++++++++++++++++++++  multicore finished  +++++++++++++++++++++++++++++++++++++
+
+
+TRAPP: multi-core mode for LJ pocket simulations starts
+
+('snap.51.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9971211738334255)
+('snap.52.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9961228287295776)
+('snap.53.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9965480818875929)
+('snap.54.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.99777532938984)
+('snap.55.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9981186044579523)
+('snap.56.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9973063134190893)
+('snap.57.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9966419939774723)
+('snap.58.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.995924685438562)
+('snap.59.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9961092842070509)
+('snap.60.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9966949177150352)
+('snap.61.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9952850018833087)
+('snap.62.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9957457692866217)
+('snap.63.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.99638549525312)
+('snap.64.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9959397258203678)
+('snap.65.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9963891228131809)
+('snap.66.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.997766762583458)
+('snap.67.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9970877895775413)
+('snap.68.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9965348787838051)
+('snap.69.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9988110097135073)
+('snap.70.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9986089501920655)
+('snap.71.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9987572292861172)
+('snap.72.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9988384041669959)
+('snap.73.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9989294020465469)
+('snap.74.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9987644088586392)
+('snap.75.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9982593551615285)
+('snap.76.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9965202421523522)
+('snap.77.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9963033536466606)
+('snap.78.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9963584642359532)
+('snap.79.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9963960977719992)
+('snap.80.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9980522150631672)
+('snap.81.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9982095406397619)
+('snap.82.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9974429653383501)
+('snap.83.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9977189630729545)
+('snap.84.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9983036345833172)
+('snap.85.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9968063973134326)
+('snap.86.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9976044903137168)
+('snap.87.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9959430387585653)
+('snap.88.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9973952259357811)
+('snap.89.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9974619650564815)
+('snap.90.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9974878502285232)
+('snap.91.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9977883323677186)
+('snap.92.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9983385463534568)
+('snap.93.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9985903365652835)
+('snap.94.pdb', '('snap.1.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9859692878507947)
+('snap.2.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9868632293068427)
+('snap.3.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9909565367734202)
+('snap.4.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9931879526881885)
+('snap.5.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9951889854440837)
+('snap.6.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.993685304511167)
+('snap.7.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9945262012541835)
+('snap.8.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9939794475324263)
+('snap.9.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9960946322746921)
+('snap.10.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9970142989580794)
+('snap.11.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.996308021722182)
+('snap.12.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9956143395538376)
+('snap.13.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9937539718974883)
+('snap.14.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9930256801896526)
+('snap.15.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9922507200805509)
+('snap.16.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9863291942973937)
+('snap.17.pdb', ':  Druggability model-- CNN: ', tensor(0.9994), '  LR: ', 0.9841147630146622)
+('snap.18.pdb', ':  Druggability model-- CNN: ', tensor(0.9994), '  LR: ', 0.9863405620102439)
+('snap.19.pdb', ':  Druggability model-- CNN: ', tensor(0.9998), '  LR: ', 0.9880579074982115)
+('snap.20.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9920893318531399)
+('snap.21.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9931792685105478)
+('snap.22.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9940552395403385)
+('snap.23.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9936745344854551)
+('snap.24.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9927267947114017)
+('snap.25.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9941554251729431)
+('snap.26.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9946024051617206)
+('snap.27.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9945746117122404)
+('snap.28.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9937273199809052)
+('snap.29.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9934095619755124)
+('snap.30.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9944388872084597)
+('snap.31.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9953881249942237)
+('snap.32.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9949528682798034)
+('snap.33.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9969736780340708)
+('snap.34.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9972870094428826)
+('snap.35.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9952588985582046)
+('snap.36.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9970970187449629)
+('snap.37.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9966295169077862)
+('snap.38.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9956418319856299)
+('snap.39.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9951469312207969)
+('snap.40.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9946888903728247)
+('snap.41.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9922802949466135)
+('snap.42.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.996191537530336)
+('snap.43.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9968399059012812)
+('snap.44.pdb', ':  Dru:  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9985367634121906)
+('snap.95.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9986966907455841)
+('snap.96.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9981949409336528)
+('snap.97.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9980033305102732)
+('snap.98.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9974595271434771)
+('snap.99.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9956079211019919)
+('snap.100.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9966228358337702)
+ggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9967160987361031)
+('snap.45.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9959610094201758)
+('snap.46.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9968150945962356)
+('snap.47.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9969083125380619)
+('snap.48.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.997869570235944)
+('snap.49.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.997118489315206)
+('snap.50.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9980644325159276)
+
+TRAPP: multi-core mode for LJ pocket simulations finished
+
+TRAPP: computing transient and conserved pocket regions averaged over all snapshots in a trajectory 3
+
+TRAPP: ++++++++++++++++++++++  multicore starts  ++++++++++++++++++++++++++++++++++++
+
+TRAPP: 	PCA analysis of the transient pockets at the occurence of 25
+TRAPP: 	PCA analysis of the transient pockets at the occurence of 50
+
+TRAPP: ++++++++++++++++++++++++++++  multicore finished  +++++++++++++++++++++++++++++++++++++
+
+TRAPP: NOW compare all trajectories 
+TRAPP: clustering of transient pocket starts at the iso-value of 25 (Multicore regime)
+TRAPP: 		PCA analysis of the transient pockets at the occurence of 25
+TRAPP: clustering of transient pocket starts at the iso-value of 50 (Multicore regime)
+TRAPP: 		PCA analysis of the transient pockets at the occurence of 50
+
+TRAPP: ++++++++++++++++++++++++++++++++multicore starts++++++++++++++++++++++++++++++++++++++++++++
+
+TRAPP: shift in residue numbering relative the original numbers - -1
+Druggability filepath: /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/Jmol/models/LEU0/
+['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '62', '63', '64', '65', '66', '67', '68', '69', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99', '100']
+TRAPP: shift in residue numbering relative the original numbers - -1
+Druggability filepath: /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/Jmol/models/LEU1/
+['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '62', '63', '64', '65', '66', '67', '68', '69', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99', '100']
+TRAPP: shift in residue numbering relative the original numbers - -1
+Druggability filepath: /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/Jmol/models/LEU2/
+['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '62', '63', '64', '65', '66', '67', '68', '69', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99', '100']
+TRAPP: shift in residue numbering relative the original numbers - -1
+Druggability filepath: /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/Jmol/models/LEU3/
+['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '62', '63', '64', '65', '66', '67', '68', '69', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99', '100']
+('PLOT#:     ', './pocket_size_summ-traj_names.dat')
+Druggability filepath: /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/RIPlig/Jmol/models/ALL_TRJ/
+['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '62', '63', '64', '65', '66', '67', '68', '69', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99', '100', '101', '102', '103', '104', '105', '106', '107', '108', '109', '110', '111', '112', '113', '114', '115', '116', '117', '118', '119', '120', '121', '122', '123', '124', '125', '126', '127', '128', '129', '130', '131', '132', '133', '134', '135', '136', '137', '138', '139', '140', '141', '142', '143', '144', '145', '146', '147', '148', '149', '150', '151', '152', '153', '154', '155', '156', '157', '158', '159', '160', '161', '162', '163', '164', '165', '166', '167', '168', '169', '170', '171', '172', '173', '174', '175', '176', '177', '178', '179', '180', '181', '182', '183', '184', '185', '186', '187', '188', '189', '190', '191', '192', '193', '194', '195', '196', '197', '198', '199', '200', '201', '202', '203', '204', '205', '206', '207', '208', '209', '210', '211', '212', '213', '214', '215', '216', '217', '218', '219', '220', '221', '222', '223', '224', '225', '226', '227', '228', '229', '230', '231', '232', '233', '234', '235', '236', '237', '238', '239', '240', '241', '242', '243', '244', '245', '246', '247', '248', '249', '250', '251', '252', '253', '254', '255', '256', '257', '258', '259', '260', '261', '262', '263', '264', '265', '266', '267', '268', '269', '270', '271', '272', '273', '274', '275', '276', '277', '278', '279', '280', '281', '282', '283', '284', '285', '286', '287', '288', '289', '290', '291', '292', '293', '294', '295', '296', '297', '298', '299', '300', '301', '302', '303', '304', '305', '306', '307', '308', '309', '310', '311', '312', '313', '314', '315', '316', '317', '318', '319', '320', '321', '322', '323', '324', '325', '326', '327', '328', '329', '330', '331', '332', '333', '334', '335', '336', '337', '338', '339', '340', '341', '342', '343', '344', '345', '346', '347', '348', '349', '350', '351', '352', '353', '354', '355', '356', '357', '358', '359', '360', '361', '362', '363', '364', '365', '366', '367', '368', '369', '370', '371', '372', '373', '374', '375', '376', '377', '378', '379', '380', '381', '382', '383', '384', '385', '386', '387', '388', '389', '390', '391', '392', '393', '394', '395', '396', '397', '398', '399', '400']
+  Total simulation time: 1054.39016008 sec:   0 h 17 min
+(' Input file - ', 'trapp_pocket.input')
+____________________________ BBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+TRAPP :  ======= INPUT DATA: ==========
+
+
+TRAPP :  ======= to be done: ==========
+TRAPP :  SUPERIMPOSE_STRUCT = yes
+TRAPP :  LJ-GRID = yes
+TRAPP :  MOTION_ANALYSIS = yes
+TRAPP :  DRUGGABILITY_PREDICTION = yes
+TRAPP :  SIMILARITY_ANALYSIS = no
+TRAPP :  SAVE PLOTS = yes
+
+TRAPP :  ======= PATH: ==========
+TRAPP :  DIR= ./
+
+TRAPP :  ======= trajectories to be analyzed: ==========
+TRAPP :  MAXTRJ = 2
+
+TRAPP :  ===== name min max step reference===========
+TRAPP :  TRJ 1_trj_equil_supLEU3-bb_24 ; first snapshot 0 ; last snapshot 0 ; step 1
+TRAPP :  TRJ 2_trj_equil_supLEU3-bb_63 ; first snapshot 0 ; last snapshot 0 ; step 1
+
+TRAPP :  ======= input files: ==========
+TRAPP :  PDB = structure_5lr1.pdb
+TRAPP :  LIG = ligand_position.pdb
+TRAPP :  hydrogen will be added  to the refernce structure
+TRAPP: all HETATM and also HOH atoms will be removed from input structures
+TRAPP :  SITE = no-act-site
+
+======= grid parameters to be used: ==========
+TRAPP :  RADIUS = 3.5
+TRAPP :  GRD = 0.75
+
+TRAPP :  ======= parameters of LJ-pocket: ==========
+TRAPP :  HATOMS = yes
+TRAPP :  atom-dependent LJrad will be used
+TRAPP :  VECT-L = 7.0
+TRAPP :  VECT-alpha = 0.6
+TRAPP :  VECT-direct = 12.0
+TRAPP :  VECT-accuracy = 2.0
+TRAPP :  SPACIAL-AVERAGE = 3
+TRAPP :  CENTRAL-POCKET = yes
+
+TRAPP :  ======= PCA analysis: ==========
+TRAPP :  PCA-analysis no
+TRAPP :  PCA-TRJ 0
+TRAPP :  PCA-MODES 2
+
+TRAPP :  ======= parameters of visualization: ==========
+TRAPP :  LJ-SPHERES = 1.5
+TRAPP :  ISO = 0.6
+TRAPP :  ISO-T = [25, 50]%
+TRAPP :  CLUSTER = 0
+TRAPP :  PCA-TRANS-POCK = yes
+TRAPP :  CLUSTER-TRANS-POCK = yes
+TRAPP :  Jsmol = yes
+TRAPP:  1 cores will be used for simulations (as defined by a system variable TRAPP_NCORES)
+
+TRAPP:  standard NAMD  OMP version to be used , the command  namd2 +p threads
+
+
+TRAPP: ################################	STEP 0: some preparation needed...   ########################
+
+TRAPP: all residues within 3.5 Angstrom from a ligand will be considered as an active site
+TRAPP: active site includes  14 residues: 48; 51; 52; 54; 55; 93; 96; 97; 98; 107; 138; 150; 184; 186; 
+
+TRAPP: ################################	STEP 1: ALIGNMENT and SUPERIMPOSITION of  each trajectory to the reference structure  ########################
+
+TRAPP: ----------------------  ALIGNMENT and SUPERIMPOSITION -of the trajectory------1_trj_equil_supLEU3-bb_24
+INP:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/CLUSTER/1_trj_equil_supLEU3-bb_24/first.pdb
+OUT:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/CLUSTER/1_trj_equil_supLEU3-bb_24/ref-trj.pdb
+REF:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/CLUSTER/ref.pdb  align -yes
+----------- Alignment Started--------------- 
+Sequence 1 (reference)    :  208 HMETFAFQAEIAQLMSLIINTFYSNKEIFLRELISNSSDALDKIRYESLTDPSKLDSGKELHINLIPNKQDRTLTIVDTGIGMTKADLINNLGTIAKSGTKAFMEALQAGADISMIGQFGVGFYSAYLVAEKVTVITKHNDDEQYAWESSAGGSFTVRTDTGEPMGRGTKVILHLKEDQTEYLEERRIKEIVKKHSQFIGYPITLFVE
+Sequence 2 (to be aligned):  208 SMETFAFQAEIAQLMSLIINTFYSNKEIFLRELISNSSDALDKIRYESLTDPSKLDSGKELSINLIPNKQDRTLTIVDTGIGMTKADLINNLGTIAKSGTKAFMEALQAGADISMIGQFGVGFYSAYLVAEKVTVITKSNDDEQYAWESSAGGSFTVRTDTGEPMGRGTKVILSLKEDQTEYLEERRIKEIVKKSSQFIGYPITLFVE
+NEW site [(chain, residue)]:  14 [(1, 33), (1, 36), (1, 37), (1, 39), (1, 40), (1, 78), (1, 81), (1, 82), (1, 83), (1, 92), (1, 123), (1, 135), (1, 169), (1, 171)]
+REF site [(chain, residue)]:  14 [(1, 48), (1, 51), (1, 52), (1, 54), (1, 55), (1, 93), (1, 96), (1, 97), (1, 98), (1, 107), (1, 138), (1, 150), (1, 184), (1, 186)]
+shift in the first residues relative to the reference snapshot:  [0]
+----------- Alignment is Finished--------------- 
+TRAPP: the expected length of the trajectory to be analyzed is 0 from trj_length-END
+
+TRAPP: ++++++++++++++++++++++++++++++++ Single PDB structure is already superimposed ++++++++++++++++++++++++++++++++++++++++++++
+
+TRAPP: ----------------------  ALIGNMENT and SUPERIMPOSITION -of the trajectory------2_trj_equil_supLEU3-bb_63
+INP:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/CLUSTER/2_trj_equil_supLEU3-bb_63/first.pdb
+OUT:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/CLUSTER/2_trj_equil_supLEU3-bb_63/ref-trj.pdb
+REF:  /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/CLUSTER/ref.pdb  align -yes
+----------- Alignment Started--------------- 
+Sequence 1 (reference)    :  208 HMETFAFQAEIAQLMSLIINTFYSNKEIFLRELISNSSDALDKIRYESLTDPSKLDSGKELHINLIPNKQDRTLTIVDTGIGMTKADLINNLGTIAKSGTKAFMEALQAGADISMIGQFGVGFYSAYLVAEKVTVITKHNDDEQYAWESSAGGSFTVRTDTGEPMGRGTKVILHLKEDQTEYLEERRIKEIVKKHSQFIGYPITLFVE
+Sequence 2 (to be aligned):  208 SMETFAFQAEIAQLMSLIINTFYSNKEIFLRELISNSSDALDKIRYESLTDPSKLDSGKELSINLIPNKQDRTLTIVDTGIGMTKADLINNLGTIAKSGTKAFMEALQAGADISMIGQFGVGFYSAYLVAEKVTVITKSNDDEQYAWESSAGGSFTVRTDTGEPMGRGTKVILSLKEDQTEYLEERRIKEIVKKSSQFIGYPITLFVE
+NEW site [(chain, residue)]:  14 [(1, 33), (1, 36), (1, 37), (1, 39), (1, 40), (1, 78), (1, 81), (1, 82), (1, 83), (1, 92), (1, 123), (1, 135), (1, 169), (1, 171)]
+REF site [(chain, residue)]:  14 [(1, 48), (1, 51), (1, 52), (1, 54), (1, 55), (1, 93), (1, 96), (1, 97), (1, 98), (1, 107), (1, 138), (1, 150), (1, 184), (1, 186)]
+shift in the first residues relative to the reference snapshot:  [0]
+----------- Alignment is Finished--------------- 
+TRAPP: the expected length of the trajectory to be analyzed is 0 from trj_length-END
+
+TRAPP: ++++++++++++++++++++++++++++++++ Single PDB structure is already superimposed ++++++++++++++++++++++++++++++++++++++++++++
+
+
+TRAPP:#############################	STEP 2: LJ grid calculation and/or analysis   ##############################
+
+('ref.pdb', ':  Druggability model-- CNN: ', tensor(0.9993), '  LR: ', 0.966385270470733)
+('snap.1.pdb', ':  Druggability model-- CNN: ', tensor(1.0000), '  LR: ', 0.9925104591329251)
+TRAPP: computing transient and conserved pocket regions averaged over all snapshots in a trajectory 0
+('snap.1.pdb', ':  Druggability model-- CNN: ', tensor(0.9999), '  LR: ', 0.9964818107043327)
+TRAPP: computing transient and conserved pocket regions averaged over all snapshots in a trajectory 1
+TRAPP: NOW compare all trajectories 
+TRAPP:  clustering of transient pocket starts at the iso-value of 25
+/share/apps/mcm/trapp4/trapptool/scripts/trapp-pocket.py:1302: RuntimeWarning: invalid value encountered in double_scalars
+  evec[i, ii] *= numpy.real(eval[ii])/numpy.real(eval[0])
+TRAPP:  clustering of transient pocket starts at the iso-value of 50
+/scratch/mcm/trapp/software/anaconda3/envs/py2/lib/python2.7/site-packages/matplotlib/cbook/deprecation.py:107: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+  warnings.warn(message, mplDeprecation, stacklevel=1)
+('PLOT#:     ', './pocket_size_summ-traj_names.dat')
+Druggability filepath: /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/TRAPP-POCKET/CLUSTER/Jmol/models/ALL_TRJ/
+['0', '1', '2']
+  Total simulation time: 60.374104023 sec:   0 h 1 min

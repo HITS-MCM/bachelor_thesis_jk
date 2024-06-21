@@ -1,0 +1,436 @@
+---
+title: "Untitled"
+format: html
+editor: visual
+---
+
+## packages
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(plotly)
+
+library(readxl)
+library(ggmagnify)
+library(dplyr)
+library("ggpubr")
+library(corrplot)
+library("Hmisc")
+library(RColorBrewer)
+library(reshape2)
+library(formattable)
+library(gtExtras)
+library(gt)
+```
+
+##geneeral initalization
+
+```{r}
+
+dataFiles <- lapply(Sys.glob("/home/kunzjn/Desktop/bachelor_thesis/kbbox/analysis_R_folder/betalactasamase_table_new_grid_center.xlsx"), read_excel)
+
+df <-do.call(rbind.data.frame, dataFiles)
+
+df_pocket_values <- read.table("/hits/basement/mcm/kunzjn/bachelor_thesis/box_bad_ex/OUT/pocket_size_summ.dat",skip=2)
+ 
+
+pocket_header=c("Snap", "unsquashLR","drugLR","unsquashCNN","drugCNN","volume","exposure","pos_charge","neg_charge","h_donor","h_acceptor","hydrophob","aromatic","metal")
+ colnames(df_pocket_values) <- pocket_header
+ df_pocket_values
+
+df <- merge(df,df_pocket_values,by="Snap")
+df <- df[-c(93,94,95,96,97,98,99,100), ]
+
+```
+
+##Boxplot with the druggability scores sorted by their pocket conformation
+
+```{r}
+
+
+cnn <-ggplot(df %>% 
+  filter(GRID_CONFIG_lj_NEW!= "HALF_OPEN") %>% 
+  group_by(GRID_CONFIG_lj_NEW) %>% 
+  summarise_at(vars(Drugg_Score_CNN), list(mean=mean, sd=sd)) ,
+  aes(x=GRID_CONFIG_lj_NEW, y=mean )) + 
+  geom_errorbar(aes(ymin=mean-sd, ymax=mean+sd,col=GRID_CONFIG_lj_NEW), width=.3) +
+      scale_color_brewer(palette="Dark2")+
+  geom_point(size=3,aes(col=GRID_CONFIG_lj_NEW))+
+  geom_jitter(data=df %>%  filter(GRID_CONFIG_lj_NEW!= "HALF_OPEN"),aes(y=Drugg_Score_CNN,col=GRID_CONFIG_lj_NEW),size=0.8)+
+  coord_cartesian(ylim=c(0,1))+
+  theme(axis.text.x=element_blank(), 
+      axis.ticks.x=element_blank(),
+  
+      panel.border = element_rect(colour = "black", fill=NA, size=0.5),
+      legend.position = "none")+
+  labs(title  ="(A)")+
+  ylab("Druggability Score CNN")+
+  xlab("")
+  
+lr <- ggplot(df %>% 
+  filter(GRID_CONFIG_lj_NEW!= "HALF_OPEN") %>% 
+  group_by(GRID_CONFIG_lj_NEW) %>% 
+  summarise_at(vars(Drugg_Score_LR), list(mean=mean, sd=sd)) ,
+  aes(x=GRID_CONFIG_lj_NEW, y=mean )) + 
+  geom_errorbar(aes(ymin=mean-sd, ymax=mean+sd,col=GRID_CONFIG_lj_NEW), width=.3) +
+      scale_color_brewer(palette="Dark2")+
+  geom_point(size=3,aes(col=GRID_CONFIG_lj_NEW))+
+  geom_jitter(data=df %>%  filter(GRID_CONFIG_lj_NEW!= "HALF_OPEN"),aes(y=Drugg_Score_LR,col=GRID_CONFIG_lj_NEW),size=0.8)+
+  coord_cartesian(ylim=c(0,1))+
+  theme(
+
+      panel.border = element_rect(colour = "black", fill=NA, size=0.5),
+      legend.position = "none")+
+  labs(title  ="(B)")+
+  ylab("Druggability Score LR")+
+  xlab("")
+lr
+druggability <-ggarrange(cnn,lr,nrow = 2)
+druggability
+ggsave("lac_drugg.png",plot=druggability,path="~/Desktop/bachelor_thesis/thesis_picture_etc",dpi =600,width = 10,height = 8)
+```
+
+##RMSD between grid space and docked position, basically does the docking software find the ligand
+
+```{r}
+df %>% 
+  filter(GRID_CONFIG_lj_NEW != "HALF_OPEN") %>% 
+ggplot(aes(y=RMSD_TO_GRID_NEW,x=GRID_CONFIG_lj_NEW,fill=GRID_CONFIG_lj_NEW))+
+ facet_wrap(~GRID_CONFIG_lj_NEW,scales = "free",nrow=1)+
+  geom_boxplot()+
+  ylab("Distance_to_grid")+
+   theme(axis.text.x=element_blank(), 
+      axis.ticks.x=element_blank(),
+      plot.subtitle = element_text(hjust = 0.5),
+      panel.border = element_rect(colour = "black", fill=NA, size=0.5),
+      legend.position = "none")+
+  scale_fill_brewer(palette="Dark2")+
+  labs(title  ="(A)")+
+  ylab("")+
+  xlab("")+
+  stat_summary(fun.y=mean, geom="point", shape=22, size=5, color="#666666", fill="#666666")
+
+
+
+lac_dist_to_pck_boxplot<-ggplot(df %>% 
+  filter(GRID_CONFIG_lj_NEW!= "HALF_OPEN") %>% 
+  group_by(GRID_CONFIG_lj_NEW) %>% 
+  summarise_at(vars(RMSD_TO_GRID_NEW), list(mean=mean, sd=sd)) ,
+  aes(x=GRID_CONFIG_lj_NEW, y=mean )) + 
+  geom_errorbar(aes(ymin=mean-sd, ymax=mean+sd,col=GRID_CONFIG_lj_NEW), width=.3) +
+      scale_color_brewer(palette="Dark2")+
+  geom_point(size=3,aes(col=GRID_CONFIG_lj_NEW))+
+  geom_jitter(data=df %>%  filter(GRID_CONFIG_lj_NEW!= "HALF_OPEN"),aes(y=RMSD_TO_GRID_NEW,col=GRID_CONFIG_lj_NEW),size=0.8)+
+  facet_wrap(~GRID_CONFIG_lj_NEW,nrow=1,scales="free_x")+
+  theme(axis.text.x=element_blank(), 
+    axis.ticks.x=element_blank(),
+      panel.border = element_rect(colour = "black", fill=NA, size=0.5),
+      legend.position = "none")+
+  labs(title  ="(A)")+
+  ylab("Distance to the grid (\u212b)")+
+  xlab("")
+lac_dist_to_pck_boxplot
+ggsave("lac_dist_to_pck_boxplot.png",plot=lac_dist_to_pck_boxplot,path="~/Desktop/bachelor_thesis/thesis_picture_etc",dpi =600,width = 7,height = 4)  
+
+
+
+df %>% 
+  filter(GRID_CONFIG_lj_NEW!= "HALF_OPEN") %>% 
+  group_by(GRID_CONFIG_lj_NEW) %>% 
+  summarise_at(vars(RMSD_TO_GRID_NEW), list(mean=mean, sd=sd)) 
+
+ 
+
+
+
+number_atoms_first <-df %>% 
+  filter(GRID_CONFIG_lj_NEW != "HALF_OPEN") %>% 
+ggplot(aes(x=BOUND_GRID_POS_LJ,fill=""))+
+ facet_wrap(~GRID_CONFIG_lj_NEW,scales = "free_x",nrow=1)+
+  geom_histogram(stat = "count",binwidth = 0.3)+
+     theme(
+      plot.subtitle = element_text(hjust = 0.5),
+      panel.border = element_rect(colour = "black", fill=NA, size=0.5),
+      legend.position = "none")+
+  scale_fill_brewer(palette="Dark2")+
+  labs(title  ="(B)")+
+  xlab("Classification of how many atoms are inside the grid")+
+  ylab("count of docking runs")+ 
+  scale_x_discrete(limits = c("in", "s.-out", "m.-out","out"))
+number_atoms_first 
+combined <-ggarrange(lac_dist_to_pck_boxplot,number_atoms_first,nrow = 2)
+ggsave("lac_number_atoms_in_grid_first+dist_grid.png",plot=combined,path="~/Desktop/bachelor_thesis/thesis_picture_etc",dpi =600,width = 8,height = 7) 
+
+
+number_atoms_improved<-df %>% 
+  filter(GRID_CONFIG_lj_NEW != "HALF_OPEN") %>% 
+ggplot(aes(x=only_grid_min_dist,fill=""))+
+ facet_wrap(~GRID_CONFIG_lj_NEW,nrow=1)+
+  geom_histogram()+
+     theme(
+      plot.subtitle = element_text(hjust = 0.5),
+      panel.border = element_rect(colour = "black", fill=NA, size=0.5),
+      legend.position = "none")+
+  scale_fill_brewer(palette="Dark2")+
+  labs(title  ="(A)")+
+  xlab("")+
+  ylab("")
+
+
+number_atoms_improved <-df %>% 
+  filter(GRID_CONFIG_lj_NEW != "HALF_OPEN") %>% 
+ggplot(aes(x=only_grid_min_dist,fill=""))+
+ facet_wrap(~GRID_CONFIG_lj_NEW,scales = "free_x",nrow=1)+
+  geom_histogram(stat = "count",binwidth = 0.3)+
+     theme(
+      plot.subtitle = element_text(hjust = 0.5),
+      panel.border = element_rect(colour = "black", fill=NA, size=0.5),
+      legend.position = "none")+
+  scale_fill_brewer(palette="Dark2")+
+  labs(title  ="(B)")+
+  xlab("Classification of how many atoms are inside the grid")+
+  ylab("count of docking runs")+ 
+  scale_x_discrete(limits = c("in", "s.-out", "m.-out","out"))
+
+number_atoms_improved
+ggsave("lac_number_atoms_in_grid_improved.png",plot=number_atoms_improved,path="~/Desktop/bachelor_thesis/thesis_picture_etc",dpi =600,width = 8,height = 3) 
+```
+
+##DISTRIBUTION OF STD DEV\> OF MEDIAN OF AFF VALUES OF POSES
+
+```{r}
+dataFiles_mean <- read_xlsx("/home/kunzjn/Desktop/bachelor_thesis/kbbox/analysis_R_folder/betalactasamase_table_new_grid_center.xlsx", sheet='distribution_aff_Val')
+dist_aff_lac<-ggplot (dataFiles_mean)+
+ 
+ geom_histogram(aes(x=value),bins = 50, fill="#1B9E77")+
+   geom_density(aes(x=value),col="black")+
+  #coord_trans(x = "log10")+
+  
+  geom_vline(aes(xintercept= median(dataFiles_mean$value)),linetype="dashed",col="black")+
+   #annotate(geom="text", x=median(dataFiles_mean$value)+0.08, y=11.8, label=paste("median=", round(median(dataFiles_mean$value),digits=2)),vjust=1,col="black")+
+  #annotate("segment", x =median(dataFiles_mean$value) ,y = 10,xend=median(dataFiles_mean$value)+0.05,yend=11,col="black")+
+  ylab('density')+
+  xlab(expression('deviation '[(kcal/mol)]))+
+  labs(title  ='(A)')+
+  xlim(0,1)+
+  scale_fill_brewer(palette = "Dark2")+
+   theme(
+      plot.subtitle = element_text(hjust = 0.5),
+      panel.border = element_rect(colour = "black", fill=NA, size=0.5),
+      legend.position = "none")
+ggsave("lac_dist_aff.png",plot=dist_aff_lac,path="~/Desktop/bachelor_thesis/thesis_picture_etc",dpi =600,width = 8,height = 3) 
+dist_aff_lac
+median(dataFiles_mean$value)
+```
+
+##DISTRIBUTION OF STD DEV. OF MEDIAN OF RMSD OF POSES
+
+```{r}
+dataFiles_RMSD <- read_xlsx("/home/kunzjn/Desktop/bachelor_thesis/kbbox/analysis_R_folder/betalactasamase_table_new_grid_center.xlsx", sheet='distribution_RMSD')
+
+dist_rmsd_lac<-ggplot (dataFiles_RMSD, aes(x= value))+
+  geom_histogram(aes(x=value,y=..density..,fill="#1B9E77"),bins=50)+
+  geom_density(aes(x=value),col="black")+
+  geom_vline(aes(xintercept= median(dataFiles_RMSD$value)),linetype="dashed",col="black")+
+  #annotate(geom="text", x=median(dataFiles_RMSD$value)+0.8, y=0.58, label=paste("median=", round(median(dataFiles_RMSD$value),digits=2)),vjust=1,col="black")+
+  #annotate("segment", x =median(dataFiles_RMSD$value) ,y = 0.5,xend=median(dataFiles_RMSD$value)+0.5,yend=0.55,col="black")+
+  ylab('density')+
+  xlab(expression('average RMSD '[('\u212b')]))+
+  labs(title  ='(A)')+
+  scale_fill_brewer(palette = "Dark2")+
+   theme(
+      plot.subtitle = element_text(hjust = 0.5),
+      panel.border = element_rect(colour = "black", fill=NA, size=0.5),
+      legend.position = "none")
+ggsave("lac_dist_rmsd.png",plot=dist_rmsd_lac,path="~/Desktop/bachelor_thesis/thesis_picture_etc",dpi =600,width = 8,height = 4) 
+
+median(dataFiles_RMSD$value)
+
+```
+
+## the last point of analysis of this cursed stuff
+
+```{r}
+
+df$new_order <- factor(df$BOUND_GRID_POS_LJ,levels = c("in","s.-out","m.-out","out"))
+lr<-df %>% 
+ filter(GRID_CONFIG_lj_NEW  != "HALF_OPEN") %>% 
+  ggplot(aes(y=Drugg_Score_LR,x=Aff_Val,color=factor(new_order)))+
+  geom_point(size=2)+
+  facet_wrap(~GRID_CONFIG_lj_NEW,nrow = 1)+
+  geom_vline(xintercept = -6.72,linetype="dotdash")+
+  geom_vline(xintercept = -6.2,linetype="solid")+
+     #annotate(geom="text", x=-7, y=0.73, label="median=",vjust=1,col="black")+
+ # annotate("segment", x =-6.72 ,y =0.65,xend=-7,yend=0.7,col="black")+
+       #annotate(geom="text", x=, y=11.5, label="median=",vjust=1,col="black")+
+  #annotate("segment", x =-6.2 ,y =0.75,xend=-5.8,yend=0.8,col="black")+
+  xlim(-8.6,-5.5)+
+  scale_color_brewer(palette = "Dark2")+
+  guides(color = guide_legend(title = "Number of Atoms outside grid"))+
+    theme(axis.text.x=element_blank(), 
+      axis.ticks.x=element_blank(),
+      plot.subtitle = element_text(hjust = 0.5),
+      panel.border = element_rect(colour = "black", fill=NA, size=0.5),
+      legend.position = "none")+
+  labs(title  ="(A)")  +
+  ylab("Druggability Score LR")+
+  xlab("")
+
+
+cnn<-df %>% 
+ filter(GRID_CONFIG_lj_NEW  != "HALF_OPEN") %>% 
+  ggplot(aes(y=Drugg_Score_CNN,x=Aff_Val,color=factor(new_order)))+
+  geom_point(size=2)+
+  facet_wrap(~GRID_CONFIG_lj_NEW,nrow = 1)+
+  geom_vline(xintercept = -6.72,linetype="dotdash")+
+  geom_vline(xintercept = -6.2,linetype="solid")+
+     #annotate(geom="text", x=-7, y=0.73, label="median=",vjust=1,col="black")+
+ # annotate("segment", x =-6.72 ,y =0.65,xend=-7,yend=0.7,col="black")+
+       #annotate(geom="text", x=, y=11.5, label="median=",vjust=1,col="black")+
+  #annotate("segment", x =-6.2 ,y =0.75,xend=-5.8,yend=0.8,col="black")+
+  xlim(-8.6,-5.5)+
+  scale_color_brewer(palette = "Dark2")+
+  guides(color = guide_legend(title = "Classification of how many atoms are inside the grid"))+
+    theme(
+      plot.subtitle = element_text(hjust = 0.5),
+      panel.border = element_rect(colour = "black", fill=NA, size=0.5),
+      legend.position = "bottom")+
+  labs(title  ="(B)")+
+  ylab("Druggability Score CNN")+
+  xlab(expression('Affinity Value '[(kcal/mol)]))
+
+
+
+
+drugg_aff_comp <-ggarrange(lr,cnn,nrow=2)
+ggsave("lac_drugg_aff_comparison.png",plot=drugg_aff_comp,path="~/Desktop/bachelor_thesis/thesis_picture_etc",dpi =600,width = 11,height = 7) 
+df %>% 
+  filter(GRID_CONFIG_lj_NEW =="OPEN" & Aff_Val > -6.7 & RMSD_TO_GRID_NEW < 3)
+df %>% 
+  filter(GRID_CONFIG_lj_NEW =="OPEN" & Aff_Val > -6.7)
+
+df %>% 
+  filter(GRID_CONFIG_lj_NEW =="CLOSED" & Aff_Val < -6.2) %>% 
+  summarise(mean(Aff_Val))
+df %>% 
+  filter(GRID_CONFIG_lj_NEW =="BOTH" & Snap != 174) %>% 
+  summarise(mean(volume))
+
+df %>% 
+  filter(GRID_CONFIG_lj_NEW == "OPEN" & RMSD_TO_GRID_NEW <3)
+```
+
+## the heat map stuff
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+#low open
+results <- data.frame()
+low_open <- df %>% 
+  filter(GRID_CONFIG_lj_NEW =="OPEN"   & Aff_Val > -6.7 & RMSD_TO_GRID_NEW < 3) %>% 
+  summarise(volume=mean(volume),exposure=mean(exposure),pos_charge=mean(pos_charge),neg_charge=mean(neg_charge),h_donor=mean(h_donor),h_acceptor=mean(h_acceptor),hydrophob=mean(hydrophob),aromatic=mean(aromatic))
+results <- rbind(results, low_open)
+
+#high open
+high_open <-df %>% 
+  filter(GRID_CONFIG_lj_NEW =="OPEN"   & Aff_Val < -6.7 & RMSD_TO_GRID_NEW < 3) %>% 
+  summarise(volume=mean(volume),exposure=mean(exposure),pos_charge=mean(pos_charge),neg_charge=mean(neg_charge),h_donor=mean(h_donor),h_acceptor=mean(h_acceptor),hydrophob=mean(hydrophob),aromatic=mean(aromatic))
+results <- rbind(results, high_open)
+#closed
+closed <-df %>% 
+  filter(GRID_CONFIG_lj_NEW =="CLOSED") %>% 
+  summarise(volume=mean(volume),exposure=mean(exposure),pos_charge=mean(pos_charge),neg_charge=mean(neg_charge),h_donor=mean(h_donor),h_acceptor=mean(h_acceptor),hydrophob=mean(hydrophob),aromatic=mean(aromatic))
+results <- rbind(results, closed)
+
+results$group <- c("low_open","high_open","closed")
+
+results<-results[,c(9,1,2,3,4,5,6,7,8)]
+
+
+results <- results %>% mutate(across(where(is.numeric), round, 2))
+#formattable(results,list(volume=color_bar("#1B9E77"),exposure=color_bar("#D95F02"),pos_charge=color_bar("#7570B3"),neg_charge=color_bar("#E7298A"),h_donor=color_bar("#66A61E"),h_acceptor=color_bar("#E6AB02"),hydrophob=color_bar("#A6761D"),aromatic=color_bar("#666666")))
+
+#rownames(results)<-results$group
+#results$group<- NULL              
+table_pocket_results <-results %>% 
+  gt() %>% 
+      tab_header(title = md("**Pocket Parameters**")) %>% 
+  gt_theme_nytimes() %>% 
+  gt_add_divider(group,sides = "right") %>% 
+  gt_add_divider(1:9,sides = "top") %>% 
+  gt_add_divider(1:9,sides = "bottom") %>% 
+  gt_add_divider(-1,sides = "right") %>% 
+  gt_add_divider(1,sides = "left") 
+ # gt_color_rows(2:9,palette="RColorBrewer::Dark2")
+
+gtsave(filename = "lac_pocket_inf.png",data=table_pocket_results,path="~/Desktop/bachelor_thesis/thesis_picture_etc") 
+```
+```{r}
+
+df_plottin<-df_plottin %>% 
+  mutate(group =  ifelse(GRID_CONFIG_lj_NEW =="CLOSED","closed",group))
+df_plottin<- df_plottin %>% 
+  mutate(group =  ifelse(GRID_CONFIG_lj_NEW =="OPEN"   & Aff_Val < -6.7 & RMSD_TO_GRID_NEW < 3,"high_open",group))
+df_plottin<- df_plottin %>% 
+  mutate(group =  ifelse(GRID_CONFIG_lj_NEW =="OPEN"   & Aff_Val > -6.7 & RMSD_TO_GRID_NEW < 3,"low_open",group))
+df_plottin <-df_plottin %>%  filter(group != 0)
+
+func_atributes <- function(name, letter){
+df_plottin %>% 
+  ggplot(aes(x={{name}},fill=group))+
+  geom_density(alpha=0.6)+
+     theme(
+        plot.subtitle = element_text(hjust = 0.5),
+        panel.border = element_rect(colour = "black", fill=NA, size=0.5),
+        legend.position = "none")+
+    geom_vline(data = df_plottin %>% filter(group=="closed") %>% summarise(value=mean({{name}})), mapping = aes(xintercept =value),linetype="solid")+
+    geom_vline(data = df_plottin %>% filter(group=="high_open") %>% summarise(value=mean({{name}})), mapping = aes(xintercept = value),linetype="dotdash")+
+    geom_vline(data = df_plottin %>% filter(group=="low_open") %>% summarise(value=mean({{name}})), mapping = aes(xintercept = value),linetype="dashed")+
+   # geom_vline(data = loop, mapping = aes(xintercept = Value),linetype="dotdash")+
+  
+    scale_fill_brewer(palette="Dark2")+
+    labs(title  =letter)+
+    ylab("density")+
+    labs(fill= "group")
+}
+
+legend <- df_plottin %>% 
+  ggplot(aes(x=volume,y=1,color=group))+
+  geom_point()+
+  lims(x = c(1,1), y = c(0,0))+
+  theme_void()+
+  theme(legend.position = c(0.5,0.5),
+        legend.key.size = unit(1, "cm"),
+        legend.text = element_text(size =  20),
+        legend.title = element_text(size = 20, face = "bold"))+
+  guides(colour = guide_legend(override.aes = list(size=10)))+
+   scale_fill_brewer(palette="Dark2")+
+  scale_color_brewer(palette = "Dark2")+
+  labs(fill= "group")
+legend
+plot_lac_drugg <- ggarrange(func_atributes(volume,"(A)"), 
+          func_atributes(exposure,"(B)"),
+          func_atributes(pos_charge,"(C)"),
+          func_atributes(neg_charge,"(D)"),
+          func_atributes(h_donor,"(E)"),
+          func_atributes(h_acceptor,"(F)"),
+          func_atributes(hydrophob,"(G)"),
+          func_atributes(aromatic,"(H)"),
+        
+          nrow = 3,ncol = 3)
+plot_lac_drugg
+ggsave("lac_drug_prop_final.png",plot=plot_lac_drugg,path="~/Desktop/bachelor_thesis/thesis_picture_etc",dpi =600,width = 11,height = 7) 
+ggsave("legend.png",plot=legend,path="~/Desktop/bachelor_thesis/thesis_picture_etc",dpi =600,width = 11,height = 7) 
+```

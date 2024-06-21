@@ -1,0 +1,176 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<script type="text/javascript" src="${jmol_PATH}/JSmol.min.js"></script>
+<script type="text/javascript" src="${jmol_PATH}/js/Jmol2.js"></script>
+<script type="text/javascript" src="../../../html/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../../html/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://s3.eu-central-1.amazonaws.com/cdn.bio.sh/msa/latest/msa.min.gz.js"></script>
+<script src="../../../html/msa-visualization.js" type="text/javascript" charset="utf-8"></script>
+<link href="../../../html/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css">
+    .jmolBox {
+        background-image:url(../../../html/JSmol_spinner.gif);
+        background-repeat:no-repeat;
+        background-position:center;
+    }
+</style>
+<script>
+
+    function showToggle() {
+        var visibility = document.getElementById('hideShowProsat').style.visibility;
+        if (document.getElementById('hideShowProsat').className == "col-md-8 hidden"){
+           document.getElementById('hideShowProsat').className = "col-md-8";
+           document.getElementById('jmoldiv').className = "col-md-4";
+           Jmol.script(jmolApplet0,"refresh;");
+           if (!document.getElementById('prosatwindow').hasAttribute('src')) {
+              document.getElementById('prosatwindow').setAttribute('src',document.getElementById('prosatwindow').getAttribute('data-src'));
+           }
+           loadspecificMSA();
+
+        }
+        else{
+            document.getElementById('jmoldiv').className = "col-md-12";
+            document.getElementById('hideShowProsat').className = "col-md-8 hidden";
+            Jmol.script(jmolApplet0,"refresh;");
+            loadspecificMSA();
+      }};
+
+${show_conservation}
+</script>
+</head>
+<div class="row">
+<div id="jmoldiv" class="col-md-12"><div class="row"><div id="jmolappdiv" class="col-md-12 center-block" style="width:100%; height:65%;">
+<script>
+var Info = {
+        width: "100%",
+        height: "100%",
+        debug:false,
+        coverImage: "../../../html/JSmol_spinner.gif",
+        deferUncover: true,
+        serverURL: "php/jsmol.php",
+        j2sPath: "${jmol_PATH}/j2s",
+        use:"HTML5",
+        script:" fr=0; bkg=3; shC=0; shT=0; shTn=0; shP=1; isoT=${isoT}; isoTn=${isoTn}; isoC=${isoC} ;  set navigationDepth 80; ${load_model0}",
+        disableInitialConsole: true,
+        disableJ2SLoadMonitor: true,
+        allowJavaScript: true
+}
+Jmol.setAppletCss("jmolBox");
+Jmol.getApplet("jmolApplet0",Info);
+</script>
+</div>
+</div>
+<form>
+<div class="row">
+<ul class="nav nav-tabs" style="padding-top:8px">
+    <li class="active"><a data-toggle="tab" href="#JSmol">Change JSmol View</a></li>
+    <li><a data-toggle="tab" href="#pocketChar">Pocket Characteristics</a></li>
+    <li><a data-toggle="tab" href="#msa">Show MSA</a></li>
+	<li><a><button onclick="showToggle()" type="button" style="float:center" title ="ProSAT - Compare protein pocket dynamics with sequence annotations mapped onto 3D structur.">Show/Hide ProSAT<sup>+</sup></button></a></li>
+</ul>
+<div class="tab-content" style="padding-top:8px;">
+  <div id="JSmol" class="tab-pane fade in active">
+<div class="col-md-12">
+<div class="row">
+<div class="col-md-4">Select background model</div> 
+<div class="col-md-5"><script>
+Jmol.jmolMenu("jmolApplet0", [["${set_background1}","ligand"],["${set_background2}" ,"ref.struct."],["${set_background3}", "lig. and ref.struct."]],1,"ButtBG","Select background")
+</script>
+</div>
+<div class="col-md-3">
+<script>
+Jmol.jmolCheckbox("jmolApplet0", "${choose_bkg_st} isosurface AA* OFF; shP=0; refresh;","${choose_bkg_st} isosurface AA* ON; shP=1; refresh; " ,"Hide pockets")
+</script>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+Select frames to load
+</div>
+<div class="col-md-5">
+<script>
+Jmol.jmolMenu("jmolApplet0", [["${load_model0}; fr = 0;","Reference Structure"] ${load_models} ],1,"ButtFrame","Select a set of snapshots to be visualize")
+Jmol.jmolButton("jmolApplet0", "model ${MDLfirst}; refresh;" ," |< ","ButFr1","First Frame")
+Jmol.jmolButton("jmolApplet0", "model Next; refresh;" ," > ","ButFr2"," Next Frame")
+</script>
+</div>
+<div class="col-md-3">
+    ${conservationCheckbox}
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">${line_cons_menu}</div>
+<div class="col-md-4">
+<script>
+Jmol.jmolMenu("jmolApplet0", [${line_level_C}],1,"ContourMenuC","Select countour level for representation of pocket occurrence in a trajectory/ensemble (high values show the most conserved pocket reguions)")
+</script>
+</div>
+</div>
+<div class="row">
+<div class="col-md-10">${line_trans_menu}</div>
+<div class="col-md-2">
+<script>
+Jmol.jmolMenu("jmolApplet0", [${line_level_T}],1,"ContourMenuT","Select countour level for representation of transient regions that appear (relativ to the binding pocket in a reference structure) ")
+</script>
+</div>
+</div>
+<div class="row">
+<div class="col-md-10">${line_ntrans_menu}</div>
+<div class="col-md-2">
+<script>
+Jmol.jmolMenu("jmolApplet0", [${line_level_nT}],1,"ContourMenuTn","Select countour level for representation of transient regions (that disappear relativ to the binding pocket in a reference structure)")
+</script>
+</div>
+</div>
+</div>
+</div>
+<div id="pocketChar" class="tab-pane fade">
+<div class="col-md-12">
+<div class="row">
+<div class="col-md-2">
+Pocket characteristics:
+</div>
+<div class="col-md-5">
+<button onclick="window.open('jmol-properties.html', 'blank','left=20,top=20,width=800,height=600,scrollbars=1,toolbar=0,resizable=1'); return false;" type="button" style="float:center"><b>Pocket characteristics and druggability</b></button>
+</div>
+<div class="col-md-5">
+<button onclick="window.open('vina-results.html', 'blank','left=20,top=20,width=800,height=600,scrollbars=1,toolbar=0,resizable=1'); return false;" type="button" style="float:center"><b>Hey I can copy stuff</b></button>
+</div>
+
+</div>
+<div class="col-md-12">
+<div class="row">
+<div class="col-md-4">
+<script>
+Jmol.jmolCheckbox("jmolApplet0", "select protein ; color relativeTemperature; refresh;","select protein; color none; refresh;" ,"Reference Coloring")
+</script>
+</div>
+<div class="col-md-4">
+<script>
+
+ Jmol.jmolCheckbox("jmolApplet0", "select all ; color relativeTemperature; refresh;","select all; color none; refresh;" ,"Snap Coloring")
+</script>
+</div>
+</div>
+<div class="row">
+${line_open_sub_html}
+</div><div class="row">
+${line_open_pca_html}
+</div></form><div class="row">
+${line_open_druggability_html}
+</div><div class="row"><div class="col-md-12">
+Please note, snapshots with the number 0 refer to the reference structure.
+</div>
+</div>
+</div>
+</div>
+<div id="msa" title ="Double-click on the residue numbers in the last row (numbering according to reference PDB structure) to highlight them in the structure" class="tab-pane fade"><div class="col-md-12"><div class="row"><div class="col-md-5">No MSA data submitted</div></div></div></div>
+</div>
+</div>
+</div>
+<div class="col-md-8 hidden" id="hideShowProsat">
+${pdb_id_prosat_iframe}
+</div>
+</div>
+</html>

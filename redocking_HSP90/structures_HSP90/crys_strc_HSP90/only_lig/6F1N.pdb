@@ -1,0 +1,66 @@
+CRYST1   65.672   90.120   99.109  90.00  90.00  90.00 I 2 2 2       1
+MODEL        1
+HETATM    1  C1  C8W A 302       3.289   6.730  22.632  1.00 74.17      C    C  
+HETATM    2  O2  C8W A 302       4.224   7.828  22.610  1.00 65.55      C    O  
+HETATM    3  S3  C8W A 302      -0.931   9.363  28.181  1.00 56.28      C    S  
+HETATM    4  C4  C8W A 302       0.731   8.805  28.227  1.00 58.91      C    C  
+HETATM    5  C5  C8W A 302       1.288   8.064  29.322  1.00 60.21      C    C  
+HETATM    6  N6  C8W A 302       0.542   7.802  30.413  1.00 57.02      C    N  
+HETATM    7  N7  C8W A 302      -2.438  11.990  24.107  1.00 49.21      C    N  
+HETATM    8  C8  C8W A 302      -1.399  11.358  24.749  1.00 51.26      C    C  
+HETATM    9  C9  C8W A 302      -0.092  11.298  24.187  1.00 51.08      C    C  
+HETATM   10  N10 C8W A 302      -1.656  10.829  25.925  1.00 54.73      C    N  
+HETATM   11  C11 C8W A 302       0.211  11.915  22.913  1.00 50.58      C    C  
+HETATM   12  N12 C8W A 302       0.490  12.397  21.919  1.00 47.99      C    N  
+HETATM   13  C13 C8W A 302      -0.731  10.154  26.630  1.00 56.47      C    C  
+HETATM   14  C14 C8W A 302       0.582   9.980  26.152  1.00 55.57      C    C  
+HETATM   15  C15 C8W A 302       1.393   9.197  27.093  1.00 56.80      C    C  
+HETATM   16  N16 C8W A 302       2.735   8.869  26.884  1.00 56.06      C    N  
+HETATM   17  C17 C8W A 302       3.888   9.034  23.158  1.00 58.49      C    C  
+HETATM   18  C18 C8W A 302       4.812  10.095  23.136  1.00 56.74      C    C  
+HETATM   19  C19 C8W A 302       4.437  11.332  23.674  1.00 53.40      C    C  
+HETATM   20  C20 C8W A 302       3.188  11.521  24.255  1.00 53.96      C    C  
+HETATM   21  C21 C8W A 302       2.274  10.455  24.301  1.00 53.36      C    C  
+HETATM   22  C22 C8W A 302       2.630   9.226  23.729  1.00 54.67      C    C  
+HETATM   23  C23 C8W A 302       0.915  10.591  24.889  1.00 51.83      C    C  
+HETATM   24  O24 C8W A 302       6.050   9.889  22.567  1.00 58.60      C    O  
+HETATM   25  C25 C8W A 302       7.066  10.902  22.550  1.00 55.06      C    C  
+HETATM   26  O26 C8W A 302       2.457   7.700  29.324  1.00 62.24      C    O  
+HETATM   27  C27 C8W A 302       3.669   5.653  21.606  1.00 82.19      C    C  
+HETATM   28  C28 C8W A 302       4.871   4.819  22.076  1.00 89.96      C    C  
+HETATM   29  C29 C8W A 302       4.522   3.892  23.222  1.00 97.01      C    C  
+HETATM   30  O30 C8W A 302       3.949   2.844  23.007  1.00 99.47      C    O  
+HETATM   31  O31 C8W A 302       4.854   4.225  24.486  1.00 99.66      C    O  
+ENDMDL
+CONECT    1    2   27
+CONECT    2    1   17
+CONECT    3    4   13
+CONECT    4    3    5   15
+CONECT    5    4    6   26
+CONECT    6    5
+CONECT    7    8
+CONECT    8    7    9   10
+CONECT    9    8   11   23
+CONECT   10    8   13
+CONECT   11    9   12
+CONECT   12   11
+CONECT   13    3   10   14
+CONECT   14   13   15   23
+CONECT   15    4   14   16
+CONECT   16   15
+CONECT   17    2   18   22
+CONECT   18   17   19   24
+CONECT   19   18   20
+CONECT   20   19   21
+CONECT   21   20   22   23
+CONECT   22   17   21
+CONECT   23    9   14   21
+CONECT   24   18   25
+CONECT   25   24
+CONECT   26    5
+CONECT   27    1   28
+CONECT   28   27   29
+CONECT   29   28   30   31
+CONECT   30   29
+CONECT   31   29
+END

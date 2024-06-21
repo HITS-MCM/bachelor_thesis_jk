@@ -1,0 +1,147 @@
+
+
+TRAPP: clustering starts now- ; grid file used: /scratch/mcm/trapp/jobs/pocket_1f2cd40d-8da8-4e03-b579-e495771b7375/TRAPP-POCKET/RIPlig/LEU2/LJ-OUT/transT_3.dx   at the iso-value 0.25
+
+TRAPP: hierarchical clustering of transient pockets: total volume (grid points): 1295
+hierarchical -clustering TRAPP: cluster size is: 1295
+hierarchical -clustering : number of clusters old: 1295 new:637
+hierarchical -clustering : number of clusters old: 637 new:234
+hierarchical -clustering : number of clusters old: 234 new:107
+hierarchical -clustering : number of clusters old: 107 new:69
+hierarchical -clustering : number of clusters old: 69 new:54
+hierarchical -clustering : number of clusters old: 54 new:34
+hierarchical -clustering : number of clusters old: 34 new:30
+hierarchical -clustering : number of clusters was not changed: 30
+TRAPP: cluster 0  size 1240
+ TRAPP: Pocket hierarchical -clustering- finished; found 1  clusters; 
+ 
+TRAPP: hierarchical clusters found: 1; max. cluster size: 1240
+TRAPP: cluster 1 (size=1240) will be splitted to sub-clusters
+k-mean clustering; Starting number of cluster centers is :8  min distance between clusters  20; min cluster size 150 at iso-value 0.247524752475
+TRAPP: k-mean clustering of the largest sub-pockets: total volume (grid points): 1295 pocket volume: 1240; centers: [652, 165, 462, 741, 332, 390, 1231, 90]
+ cluster 2 is not compact- cluster_volume/sphere_volume = 0.475537018004972
+ cluster 3 is not compact- cluster_volume/sphere_volume = 0.2513117743878159
+ cluster 4 is not compact- cluster_volume/sphere_volume = 0.25038710429566946
+ cluster 5 is not compact- cluster_volume/sphere_volume = 0.2938801292793391
+ cluster 6 is not compact- cluster_volume/sphere_volume = 0.48605583846331735
+ cluster 7 is not compact- cluster_volume/sphere_volume = 0.25637428670593887
+Cluster center is outside : old position: 0new position: [0 0 0 0 0 0 0 0]
+Cluster center is outside : old position: 0new position: [649   0   0   0   0   0   0   0]
+Cluster center is outside : old position: 0new position: [649 157   0   0   0   0   0   0]
+Cluster center is outside : old position: 0new position: [649 157 574   0   0   0   0   0]
+Cluster center is outside : old position: 0new position: [ 649  157  574 1057    0    0    0    0]
+Cluster center is outside : old position: 0new position: [ 649  157  574 1057  398    0    0    0]
+Cluster center is outside : old position: 0new position: [ 649  157  574 1057  398  339    0    0]
+Cluster center is outside : old position: 0new position: [ 649  157  574 1057  398  339 1085    0]
+ clustering step-  1number of clusters- 8; cluster size: [274 105  81 139 253 234 116  38]
+1: # clusters 8; relative change in the position of cluster centers 17.3126224656; cluster size: [274 105  81 139 253 234 116  38]
+Cluster center is outside : old position: 649new position: [ 649  157  574 1057  398  339 1085   52]
+Cluster center is outside : old position: 157new position: [ 580  157  574 1057  398  339 1085   52]
+Cluster center is outside : old position: 574new position: [ 580  146  574 1057  398  339 1085   52]
+Cluster center is outside : old position: 1057new position: [ 580  146  689 1057  398  339 1085   52]
+Cluster center is outside : old position: 398new position: [ 580  146  689 1061  398  339 1085   52]
+Cluster center is outside : old position: 339new position: [ 580  146  689 1061  294  339 1085   52]
+Cluster center is outside : old position: 1085new position: [ 580  146  689 1061  294  339 1085   52]
+Cluster center is outside : old position: 52new position: [ 580  146  689 1061  294  339 1023   52]
+ clustering step-  2number of clusters- 8; cluster size: [252  92  82 193 147 257 158  59]
+2: # clusters 8; relative change in the position of cluster centers 7.7933413161; cluster size: [252  92  82 193 147 257 158  59]
+Cluster center is outside : old position: 580new position: [ 580  146  689 1061  294  339 1023   52]
+Cluster center is outside : old position: 146new position: [ 522  146  689 1061  294  339 1023   52]
+Cluster center is outside : old position: 689new position: [ 522  233  689 1061  294  339 1023   52]
+Cluster center is outside : old position: 1061new position: [ 522  233  683 1061  294  339 1023   52]
+Cluster center is outside : old position: 294new position: [ 522  233  683  993  294  339 1023   52]
+Cluster center is outside : old position: 339new position: [ 522  233  683  993  280  339 1023   52]
+Cluster center is outside : old position: 1023new position: [ 522  233  683  993  280  339 1023   52]
+Cluster center is outside : old position: 52new position: [ 522  233  683  993  280  339 1023   52]
+ clustering step-  3number of clusters- 8; cluster size: [234 109  71 221 134 234 169  68]
+3: # clusters 8; relative change in the position of cluster centers 16.117657976; cluster size: [234 109  71 221 134 234 169  68]
+Cluster center is outside : old position: 233new position: [ 522  233  683  993  280  339 1023   26]
+Cluster center is outside : old position: 683new position: [ 522  220  683  993  280  339 1023   26]
+Cluster center is outside : old position: 993new position: [ 522  220  611  993  280  339 1023   26]
+Cluster center is outside : old position: 280new position: [ 522  220  611  993  280  339 1023   26]
+Cluster center is outside : old position: 339new position: [ 522  220  611  993  280  339 1023   26]
+Cluster center is outside : old position: 1023new position: [ 522  220  611  993  280  339 1023   26]
+Cluster center is outside : old position: 26new position: [ 522  220  611  993  280  339 1023   26]
+ clustering step-  4number of clusters- 8; cluster size: [206 132  78 255 117 221 167  64]
+4: Too small cluster (64), cl.8 will be eleminated
+4: # clusters 7; relative change in the position of cluster centers 1.76930516292; cluster size: [206 132  78 255 117 221 167   0]
+Cluster center is outside : old position: 522new position: [ 522  220  611  993  280  339 1023   27]
+Cluster center is outside : old position: 220new position: [ 368  220  611  993  280  339 1023   27]
+Cluster center is outside : old position: 611new position: [ 368  232  611  993  280  339 1023   27]
+Cluster center is outside : old position: 993new position: [ 368  232  611  993  280  339 1023   27]
+Cluster center is outside : old position: 280new position: [ 368  232  611  993  280  339 1023   27]
+Cluster center is outside : old position: 339new position: [ 368  232  611  993  280  339 1023   27]
+Cluster center is outside : old position: 1023new position: [ 368  232  611  993  280  237 1023   27]
+ clustering step-  5number of clusters- 7; cluster size: [229 155  80 255 108 245 168   0]
+5: Too small cluster (80), cl.3 will be eleminated
+5: # clusters 6; relative change in the position of cluster centers 9.00582145636; cluster size: [229 155 255 108 245 168   0   0]
+Cluster center is outside : old position: 368new position: [ 368  232  611  993  280  237 1023   27]
+Cluster center is outside : old position: 232new position: [ 367  232  611  993  280  237 1023   27]
+Cluster center is outside : old position: 611new position: [ 367  232  611  993  280  237 1023   27]
+Cluster center is outside : old position: 993new position: [ 367  232  917  993  280  237 1023   27]
+Cluster center is outside : old position: 280new position: [ 367  232  917  293  280  237 1023   27]
+Cluster center is outside : old position: 237new position: [ 367  232  917  293  237  237 1023   27]
+ clustering step-  6number of clusters- 6; cluster size: [191 186 312 152 218 181   0   0]
+6: # clusters 6; relative change in the position of cluster centers 1.35803253221; cluster size: [191 186 312 152 218 181   0   0]
+Cluster center is outside : old position: 367new position: [ 367  232  917  293  237 1029 1023   27]
+Cluster center is outside : old position: 232new position: [ 366  232  917  293  237 1029 1023   27]
+Cluster center is outside : old position: 917new position: [ 366  232  917  293  237 1029 1023   27]
+Cluster center is outside : old position: 293new position: [ 366  232  917  293  237 1029 1023   27]
+Cluster center is outside : old position: 237new position: [ 366  232  917  293  237 1029 1023   27]
+Cluster center is outside : old position: 1029new position: [ 366  232  917  293  237 1029 1023   27]
+ clustering step-  7number of clusters- 6; cluster size: [154 187 350 145 218 186   0   0]
+7: Too small cluster (145), cl.4 will be eleminated
+7: # clusters 5; relative change in the position of cluster centers 0.0273224043716; cluster size: [154 187 350 218 186   0   0   0]
+Cluster center is outside : old position: 366new position: [ 366  232  917  293  237 1029 1023   27]
+Cluster center is outside : old position: 232new position: [ 364  232  917  293  237 1029 1023   27]
+Cluster center is outside : old position: 917new position: [ 364  218  917  293  237 1029 1023   27]
+Cluster center is outside : old position: 293new position: [ 364  218  852  293  237 1029 1023   27]
+Cluster center is outside : old position: 237new position: [ 364  218  852  237  237 1029 1023   27]
+ clustering step-  8number of clusters- 5; cluster size: [175 250 363 218 234   0   0   0]
+8: # clusters 5; relative change in the position of cluster centers 3.27406457656; cluster size: [175 250 363 218 234   0   0   0]
+Cluster center is outside : old position: 364new position: [ 364  218  852  237  871 1029 1023   27]
+Cluster center is outside : old position: 218new position: [ 264  218  852  237  871 1029 1023   27]
+Cluster center is outside : old position: 852new position: [ 264  318  852  237  871 1029 1023   27]
+Cluster center is outside : old position: 237new position: [ 264  318  852  237  871 1029 1023   27]
+Cluster center is outside : old position: 871new position: [ 264  318  852  237  871 1029 1023   27]
+ clustering step-  9number of clusters- 5; cluster size: [140 186 391 279 244   0   0   0]
+9: # clusters 5; relative change in the position of cluster centers 6.96685781872; cluster size: [140 186 391 279 244   0   0   0]
+Cluster center is outside : old position: 264new position: [ 264  318  852  237  874 1029 1023   27]
+Cluster center is outside : old position: 318new position: [ 171  318  852  237  874 1029 1023   27]
+Cluster center is outside : old position: 852new position: [ 171  299  852  237  874 1029 1023   27]
+Cluster center is outside : old position: 237new position: [ 171  299  845  237  874 1029 1023   27]
+Cluster center is outside : old position: 874new position: [ 171  299  845  237  874 1029 1023   27]
+ clustering step-  10number of clusters- 5; cluster size: [132 176 397 291 244   0   0   0]
+10: # clusters 5; relative change in the position of cluster centers 6.15688823293; cluster size: [132 176 397 291 244   0   0   0]
+Cluster center is outside : old position: 171new position: [ 171  299  845  237  874 1029 1023   27]
+Cluster center is outside : old position: 299new position: [ 100  299  845  237  874 1029 1023   27]
+Cluster center is outside : old position: 845new position: [ 100  297  845  237  874 1029 1023   27]
+Cluster center is outside : old position: 237new position: [ 100  297  845  237  874 1029 1023   27]
+Cluster center is outside : old position: 874new position: [ 100  297  845  237  874 1029 1023   27]
+ clustering step-  11number of clusters- 5; cluster size: [115 154 412 314 245   0   0   0]
+11: # clusters 5; relative change in the position of cluster centers 7.16734006734; cluster size: [115 154 412 314 245   0   0   0]
+Cluster center is outside : old position: 297new position: [ 100  297  845  237  874 1029 1023   27]
+Cluster center is outside : old position: 845new position: [ 100  295  845  237  874 1029 1023   27]
+Cluster center is outside : old position: 237new position: [ 100  295  845  237  874 1029 1023   27]
+Cluster center is outside : old position: 874new position: [ 100  295  845  236  874 1029 1023   27]
+ clustering step-  12number of clusters- 5; cluster size: [105 157 418 341 219   0   0   0]
+12: # clusters 5; relative change in the position of cluster centers 0.948743915006; cluster size: [105 157 418 341 219   0   0   0]
+Cluster center is outside : old position: 295new position: [ 100  295  845  236  954 1029 1023   27]
+Cluster center is outside : old position: 845new position: [ 100  293  845  236  954 1029 1023   27]
+Cluster center is outside : old position: 236new position: [ 100  293  845  236  954 1029 1023   27]
+Cluster center is outside : old position: 954new position: [ 100  293  845  236  954 1029 1023   27]
+ clustering step-  13number of clusters- 5; cluster size: [104 160 421 357 198   0   0   0]
+13: # clusters 5; relative change in the position of cluster centers 0.797122359426; cluster size: [104 160 421 357 198   0   0   0]
+Cluster center is outside : old position: 293new position: [ 100  293  845  236 1029 1029 1023   27]
+Cluster center is outside : old position: 845new position: [ 100  293  845  236 1029 1029 1023   27]
+Cluster center is outside : old position: 236new position: [ 100  293  845  236 1029 1029 1023   27]
+Cluster center is outside : old position: 1029new position: [ 100  293  845  236 1029 1029 1023   27]
+ clustering step-  14number of clusters- 5; cluster size: [105 163 420 361 191   0   0   0]
+14: # clusters 5; relative change in the position of cluster centers 0.0; cluster size: [105 163 420 361 191   0   0   0]
+TRAPP: results of clustering will be saved in ovlp_snap-trans_S_25.dat
+ovlp_snap-trans_S Claster size: 1 105
+ovlp_snap-trans_S Claster size: 2 163
+ovlp_snap-trans_S Claster size: 3 420
+ovlp_snap-trans_S Claster size: 4 361
+ovlp_snap-trans_S Claster size: 5 191
+TRAPP: result of k-mean clustering : 5 clusters found ; size: [105 163 420 361 191   0   0   0]

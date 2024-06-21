@@ -1,0 +1,280 @@
+---
+title: "Untitled"
+format: html
+server: shiny
+---
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(plotly)
+library(stats)
+library(readxl)
+library(ggmagnify)
+library(dplyr)
+library(caret)
+library("ggpubr")
+library(outliers)
+library(tidyr)
+library(grid)
+```
+
+# Analysis of KBBOX - initial not sortee
+```{r}
+df <- read_xlsx("/home/kunzjn/Desktop/bachelor_thesis/kbbox/analysis_R_folder/kbbox_analysis.xlsx", sheet='global')
+
+
+
+
+```
+
+
+
+# Analyis KBBOX - thesis
+## distributionn of aff values and rmsd for the poses so that i can use all of the poses
+```{r}
+
+dist_aff_loop<-ggplot(df)+
+  geom_histogram(aes(x=distribution_aff_val_5j2x,y=..density..),bins = 50, fill="#1B9E77")+
+  #coord_trans(x = "log10")+
+  geom_density(stat="density",aes(x=distribution_aff_val_5j2x),col="black")+
+  geom_vline(aes(xintercept= median(df$distribution_aff_val_5j2x)),linetype="dashed",col="black")+
+   #annotate(geom="text", x=median(df$distribution_aff_val_5j2x)+0.13, y=11.5, label=paste("median=", round(median(df$distribution_aff_val_5j2x),digits=2)),vjust=1,col="black")+
+  #annotate("segment", x =median(df$`distribution_aff_val_5j2x`) ,y = 10,xend=median(df$distribution_aff_val_5j2x)+0.05,yend=11,col="black")+
+  ylab('density')+
+  xlab(expression('deviation '[(kcal/mol)]))+
+  labs(title  ='(A)')+
+  xlim(0,1)+
+  scale_fill_brewer(palette = "Dark2")+
+   theme(
+      plot.subtitle = element_text(hjust = 0.5),
+      panel.border = element_rect(colour = "black", fill=NA, size=0.5),
+      legend.position = "none")
+#ggsave("kbbox_dist_aff_loop.png",plot=dist_aff_loop,path="~/Desktop/bachelor_thesis/thesis_picture_etc/kbbox_tables",dpi =600,width = 7,height = 4) 
+dist_aff_loop
+dist_aff_helix<-ggplot (df, aes(x= distribution_aff_val_5lr1))+
+  geom_histogram(aes(x=distribution_aff_val_5lr1,y=..density..,fill="#1B9E77"),bins=50)+
+  geom_density(aes(x=distribution_aff_val_5lr1),col="black")+
+  geom_vline(aes(xintercept= median(df$distribution_aff_val_5lr1)),linetype="dashed",col="black")+
+  #annotate(geom="text", x=median(df$distribution_aff_val_5lr1)+0.18, y=4.5, label=paste("median=", round(median(df$distribution_aff_val_5lr1),digits=2)),vjust=1,col="black")+
+  #annotate("segment", x =median(df$distribution_aff_val_5lr1) ,y = 3.5,xend=median(df$distribution_aff_val_5lr1)+0.15,yend=4.3,col="black")+
+  ylab('density')+
+  xlab(expression('deviation '[(kcal/mol)]))+
+  labs(title  ='(B)')+
+  scale_fill_brewer(palette = "Dark2")+
+   theme(
+      plot.subtitle = element_text(hjust = 0.5),
+      panel.border = element_rect(colour = "black", fill=NA, size=0.5),
+      legend.position = "none")+
+  xlim(0,1.2)
+#ggsave("kbbox_dist_aff_helix.png",plot=dist_aff_helix,path="~/Desktop/bachelor_thesis/thesis_picture_etc/kbbox_tables",dpi =600,width = 7,height = 4) 
+
+
+dist_rmsd_helix<-ggplot (df, aes(x= distribution_rmsd_5lr1))+
+  geom_histogram(aes(x=distribution_rmsd_5lr1,y=..density..,fill="#1B9E77"),bins=50)+
+  geom_density(aes(x=distribution_rmsd_5lr1),col="black")+
+  geom_vline(aes(xintercept= median(df$distribution_rmsd_5lr1)),linetype="dashed",col="black")+
+  #annotate(geom="text", x=median(df$distribution_rmsd_5lr1)+0.3, y=1.1, label=paste("median=", round(median(df$distribution_rmsd_5lr1),digits=2)),vjust=1,col="black")+
+  #annotate("segment", x =median(df$distribution_rmsd_5lr1) ,y = 0.9,xend=median(df$distribution_rmsd_5lr1)+0.2,yend=1.05,col="black")+
+  ylab('density')+
+  xlab(expression('average RMSD '[('\u212b')]))+
+  labs(title  ='(D)')+
+  scale_fill_brewer(palette = "Dark2")+
+   theme(
+      plot.subtitle = element_text(hjust = 0.5),
+      panel.border = element_rect(colour = "black", fill=NA, size=0.5),
+      legend.position = "none")
+#ggsave("kbbox_dist_rmsd_helix.png",plot=dist_rmsd_helix,path="~/Desktop/bachelor_thesis/thesis_picture_etc/kbbox_tables",dpi =600,width = 7,height = 4) 
+
+
+dist_rmsd_loop<-ggplot (df, aes(x= distribution_rmsd_5j2x))+
+  geom_histogram(aes(x=distribution_rmsd_5j2x,y=..density..,fill="#1B9E77"),bins=50)+
+  geom_density(aes(x=distribution_rmsd_5j2x),col="black")+
+  geom_vline(aes(xintercept= median(df$distribution_rmsd_5j2x)),linetype="dashed",col="black")+
+  #annotate(geom="text", x=median(df$distribution_rmsd_5j2x)+0.6, y=0.95, label=paste("median=", round(median(df$distribution_rmsd_5j2x),digits=2)),vjust=1,col="black")+
+  #annotate("segment", x =median(df$distribution_rmsd_5j2x) ,y = 0.8,xend=median(df$distribution_rmsd_5j2x)+0.5,yend=0.9,col="black")+
+  ylab('density')+
+  xlab(expression('average RMSD '[('\u212b')]))+
+  labs(title  ='(C)')+
+  scale_fill_brewer(palette = "Dark2")+
+   theme(
+      plot.subtitle = element_text(hjust = 0.5),
+      panel.border = element_rect(colour = "black", fill=NA, size=0.5),
+      legend.position = "none")
+#ggsave("kbbox_dist_rmsd_loop.png",plot=dist_rmsd_loop,path="~/Desktop/bachelor_thesis/thesis_picture_etc/kbbox_tables",dpi =600,width = 7,height = 4) 
+
+distribution_combined <-ggarrange(dist_aff_loop,dist_aff_helix,dist_rmsd_loop,dist_rmsd_helix)
+
+distribution_combined
+ggsave("kbbox_distribution_combined.png",plot=distribution_combined,path="~/Desktop/bachelor_thesis/thesis_picture_etc/kbbox_tables",dpi =600,width = 7,height = 5) 
+
+df %>% 
+  summarise(median(distribution_aff_val_5j2x))
+```
+
+## all positional stuff between the ligands docked to helix and loop conformation
+
+
+
+
+
+```{r}
+
+func_first_table <- function(name, letter){
+ helix<- df %>% 
+  filter(conf =="helix") %>% 
+  group_by(conf) %>% 
+  summarise(Value = mean({{name}},na.rm = TRUE) ) 
+ loop<- df %>% 
+  filter(conf =="loop") %>% 
+  group_by(conf) %>% 
+  summarise(Value = mean({{name}},na.rm = TRUE)   )           
+  
+  df %>% 
+    filter(conf !="(n.d.)") %>% 
+  ggplot(aes(x={{name}},fill =conf))+
+    geom_density(alpha=0.6)+
+    ylab("Distance_to_grid")+
+     theme(
+        plot.subtitle = element_text(hjust = 0.5),
+        panel.border = element_rect(colour = "black", fill=NA, size=0.5),
+        legend.position = "bottom")+
+    geom_vline(data = helix, mapping = aes(xintercept = Value),linetype="solid")+
+    geom_vline(data = loop, mapping = aes(xintercept = Value),linetype="dotdash")+
+  
+    scale_fill_brewer(palette="Dark2")+
+    labs(title  =letter)+
+    ylab("density")+
+    labs(fill= "configuration")+
+    xlab(expression('average RMSD '[('\u212b')]))
+
+  
+}
+
+first_table <- ggarrange(func_first_table(dist_helix_lig_subp,"(A)")+theme(axis.title.x.bottom=element_blank()),
+                         func_first_table(dist_helix_lig_mainp,"(B)")+theme(axis.title.x.bottom=element_blank(), axis.title.y.left=element_blank()),
+                         func_first_table(center_mass_helix_lig_subp,"(C)"),
+                         func_first_table(com_helix_lig_mainp,"(D)")+theme( axis.title.y.left=element_blank()),
+                         nrow = 2,ncol = 2,common.legend = TRUE,legend = "bottom")
+first_table
+
+second_table <- ggarrange(func_first_table(dist_loop_lig_mainp,"(A)"),
+                         func_first_table(com_loop_lig_mainp,"(B)")+theme(axis.title.y.left=element_blank()),
+                         nrow = 1,ncol = 2,common.legend = TRUE,legend = "bottom")
+second_table
+  
+third_table <- ggarrange(func_first_table(`RMSD HELIX – LOOP docking`,"(A)"),
+                         func_first_table(com_ligands_helix_loop_docked,"(B)")+theme(axis.title.y.left=element_blank()),
+                         nrow = 1,ncol = 2,common.legend = TRUE,legend = "bottom")
+third_table
+
+fourth_table <- ggarrange(func_first_table(com_to_nat_lig_pos_of_docked_lig_to_loop,"(A)"),
+                         func_first_table(com_to_nat_lig_pos_of_docked_lig_to_helix,"(B)")+theme(axis.title.y.left=element_blank()),
+                         nrow = 1,ncol = 2,common.legend = TRUE,legend = "bottom")
+fourth_table
+
+ggsave("helix_dock.png",plot=first_table,path="~/Desktop/bachelor_thesis/thesis_picture_etc/kbbox_tables",dpi =600,width = 6,height = 4)
+ggsave("loop_dock.png",plot=second_table,path="~/Desktop/bachelor_thesis/thesis_picture_etc/kbbox_tables",dpi =600,width = 6,height = 4) 
+ggsave("comp_dock.png",plot=third_table,path="~/Desktop/bachelor_thesis/thesis_picture_etc/kbbox_tables",dpi =600,width = 6,height = 4) 
+ggsave("nat_dock.png",plot=fourth_table,path="~/Desktop/bachelor_thesis/thesis_picture_etc/kbbox_tables",dpi =600,width = 6,height = 4) 
+
+
+df %>% 
+  filter(conf !="(n.d.)") %>% 
+  group_by(conf) %>% 
+  summarise(mean(com_to_nat_lig_pos_of_docked_lig_to_helix,na.rm=TRUE))
+```
+
+
+## positional stuff to the native ligand pos
+```{r}
+
+```
+
+## stuff to affinity value 
+```{r}
+df %>% 
+  filter(conf != "(n.d.)") %>% 
+  group_by(conf, core) %>% 
+  summarise(mean(aff_val_5lr1),mean(aff_val_5j2x),mean(aff_values_redocked,na.rm = TRUE))
+
+df %>% 
+  filter(conf != "(n.d.)" & PDB !="(n.d.)") %>% 
+  group_by(conf) %>% 
+  summarise(mean(aff_val_5lr1),mean(aff_val_5j2x),mean(aff_values_redocked,na.rm = TRUE))
+
+
+df %>% 
+  filter(conf != "(n.d.)") %>% 
+  select(aff_val_5lr1, aff_values_redocked, aff_val_5j2x, LIGAND, conf) %>% 
+  group_by(conf) %>% 
+  mutate(diff = aff_val_5lr1 - aff_val_5j2x) %>% 
+  summarise(mean(diff))
+
+df %>% 
+ filter(conf != "(n.d.)") %>% 
+  select(aff_val_5lr1, aff_values_redocked, aff_val_5j2x, LIGAND, conf) %>% 
+  group_by(conf) %>% 
+  mutate(diff = aff_val_5lr1 - aff_val_5j2x) %>% 
+  summarise_at(vars(diff), list(mean=mean, sd=sd)) 
+
+
+difference <-df %>% 
+ filter(conf != "(n.d.)") %>% 
+  select(aff_val_5lr1, aff_values_redocked, aff_val_5j2x, LIGAND, conf) %>% 
+  group_by(conf) %>% 
+  mutate(diff = aff_val_5lr1 - aff_val_5j2x)
+
+difference_aff_values<-df %>% 
+ filter(conf != "(n.d.)") %>% 
+  select(aff_val_5lr1, aff_values_redocked, aff_val_5j2x, LIGAND, conf) %>% 
+  group_by(conf) %>% 
+  mutate(diff = aff_val_5lr1 - aff_val_5j2x) %>% 
+  summarise_at(vars(diff), list(mean=mean, sd=sd)) %>% 
+  ggplot(aes(x=conf, y=mean)) + 
+  geom_errorbar(aes(ymin=mean-sd, ymax=mean+sd,col=conf), width=.3) +
+      scale_color_brewer(palette="Dark2")+
+  geom_point(size=3,aes(col=conf))+
+ geom_jitter(data=difference  ,aes(y=diff,col=conf),size=0.8)+
+  facet_wrap(~conf,scales = "free_x")+
+ # coord_cartesian(ylim=c(0,1))+
+  theme(axis.text.x=element_blank(), 
+      axis.ticks.x=element_blank(),
+      plot.subtitle = element_text(hjust = 0.5),
+      panel.border = element_rect(colour = "black", fill=NA, size=0.5),
+      legend.position = "none")+
+  labs(title  ="(A)")+
+  ylab(expression('difference in affinity value '[(kcal/mol)]))+
+  xlab("")
+
+
+df %>% 
+ filter(conf != "(n.d.)") %>% 
+  select(aff_val_5lr1, aff_values_redocked, aff_val_5j2x, LIGAND, conf) %>% 
+  group_by(conf) %>% 
+  mutate(diff = aff_val_5lr1 - aff_val_5j2x) %>% 
+  summarise_at(vars(diff), list(mean=mean, sd=sd)) 
+difference_aff_values
+ggsave("difference_aff_values.png",plot=difference_aff_values,path="~/Desktop/bachelor_thesis/thesis_picture_etc/kbbox_tables",dpi =600,width = 7,height = 4) 
+```
+## analysis for the different ligand groups
+```{r}
+df %>% 
+ filter(conf == "helix") %>% 
+  ggplot(aes(x=aff_values_redocked, y=aff_val_5lr1))+
+  facet_wrap(~conf, scales = "free_x")+
+  geom_point()
+
+
+df %>% 
+  filter(conf == "helix" & core == "quinazoline")
+df
+
+df %>% 
+  filter(conf == "loop") %>% 
+  select(aff_val_5lr1, aff_values_redocked, aff_val_5j2x, LIGAND, conf)  %>% 
+  mutate(diff = aff_val_5lr1 - aff_values_redocked)%>% 
+  summarise(mean(diff, na.rm = TRUE))
+
+
+```

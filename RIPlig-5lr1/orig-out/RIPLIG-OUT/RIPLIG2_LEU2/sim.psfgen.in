@@ -1,0 +1,22 @@
+
+package require psfgen 
+topology /share/apps/mcm/trapp4/trapptool/auxi/rip-script-NAMD/pdbtool/parms/charmm27.topology
+alias residue HIS HSE 
+alias atom ILE CD1 CD 
+alias residue CYX CYS
+
+segment ch0 { 
+ pdb /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/RIPLIG-OUT/RIPLIG2_LEU2/sim.ch0.pdb 
+} 
+coordpdb /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/RIPLIG-OUT/RIPLIG2_LEU2/sim.ch0.pdb ch0
+
+segment ch1 { 
+ pdb /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/RIPLIG-OUT/RIPLIG2_LEU2/sim.ch1.pdb 
+} 
+coordpdb /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/RIPLIG-OUT/RIPLIG2_LEU2/sim.ch1.pdb ch1
+
+# insert water
+ 
+guesscoord 
+writepdb /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/RIPLIG-OUT/RIPLIG2_LEU2/sim.pdb 
+writepsf /scratch/mcm/trapp/jobs/pocket_505edb66-961a-471b-9951-1c9dc164f951/RIPLIG-OUT/RIPLIG2_LEU2/sim.psf 

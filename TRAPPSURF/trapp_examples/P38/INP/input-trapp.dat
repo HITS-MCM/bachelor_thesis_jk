@@ -1,0 +1,25 @@
+DIR =  ./
+TRJ trj_shorten = 1 -1 1
+PDB = 1r3c_protein.pdb
+#Job  with email: 
+#IP of client 193.197.73.111
+#derived from null
+DRUGGABILITY_PREDICTION = yes
+LIG = 1r3c_ligand.pdb 
+LIG-CENTER = 
+CENTRAL-POCKET = yes
+HATOMS = yes
+REF-H-ADD = yes 
+LJrad = 0.0
+GRD = 0.75
+VECT-L = 7.0
+VECT-accuracy = 2
+VECT-direct = 12
+VECT-alpha = 0.6
+SPACIAL-AVERAGE = 3.0
+LJR-SPHERES = 1.5
+ISO = 0.6
+RADIUS = 6.0
+ISO-T = 25 50
+PCA-TRANS-POCK = yes 
+CLUSTER-TRANS-POCK = yes 

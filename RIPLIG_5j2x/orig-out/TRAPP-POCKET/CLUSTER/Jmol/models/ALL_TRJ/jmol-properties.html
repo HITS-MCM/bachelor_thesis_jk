@@ -1,0 +1,87 @@
+<html>
+<script src="../../../html/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="../../../html/bootstrap/js/bootstrap.min.js"></script>
+<link href="../../../html/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script>
+       $(function() {
+            $('.pop').on('click', function() {
+                    var desc = $(this).data('desc');
+                    $('.desc').text(desc);
+                    $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+                    $('#imagemodal').modal('show');
+                    return false;
+                    // e.preventDefault();
+            });
+    });
+</script>
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<img src="" class="imagepreview" style="width: 100%;">
+<p class="text-left desc"></p>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-6" style="position:relative;">
+
+<h3 align="center"> Physicochemical characteristics of the pocket  </h3>
+<br><br>
+<a href="#" class="pop"><IMG class="img-responsive" SRC="./pocket_size_summ.png" NAME="graphics1"></a><br>
+<p align="center">You can view the data used <a href="#" data-toggle="modal" data-target="#basicModal">here.</a>
+<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+<div class="modal-dialog modal-lg" style="width:100%; height:100%">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+"
+<h4 class="modal-title" id="myModalLabel">Parameters of the binding pocket</h4>
+</div>
+<div class="modal-body">
+<object data="./pocket_size_summ.dat" style="width:100%; height:100%; overflow: auto;"></object>
+</div></div></div></div>
+<p align="center">You can view the names of trajectories <a href="#" data-toggle="modal" data-target="#basicModal1">here.</a>
+<div class="modal fade" id="basicModal1" tabindex="-1" role="dialog" aria-labelledby="basicModal1" aria-hidden="true">
+<div class="modal-dialog modal-lg" style="width:100%; height:100%">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+"
+<h4 class="modal-title" id="myModalLabel">Names of the trajectories in the plot of pocket properties</h4>
+</div>
+<div class="modal-body">
+<object data="./pocket_size_summ-traj_names.dat" style="width:100%; height:100%; overflow: auto;"></object>
+</div></div></div></div>
+<p align="center">Note: All parameter values are in arbitrary units, as re-scaled according to the ML model for the druggability assessment.</a>
+<p align="center">You can view the original values (in Angstrom^3)  <a href="#" data-toggle="modal" data-target="#basicModal2">here.</a>
+<div class="modal fade" id="basicModal2" tabindex="-1" role="dialog" aria-labelledby="basicModal2" aria-hidden="true">
+<div class="modal-dialog modal-lg" style="width:100%; height:100%">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+"
+<h4 class="modal-title" id="myModalLabel">Parameters of the binding pocket</h4>
+</div>
+<div class="modal-body">
+<object data="./pocket_size_summ_orig.dat" style="width:100%; height:100%; overflow: auto;"></object>
+</div></div></div></div>
+
+</div>
+<div class="col-md-6" style="position:relative;">
+<h3 align="center"> Pocket contact residues</h3>
+<br><br>
+
+<br>
+
+<br>
+<a href="#" class="pop"><IMG class="img-responsive" SRC="./boundary_resi.png" NAME="graphics1"></a><br>
+<p align="center">Note: Residues numbers can be shifted(the first residue is always set to 1)</a>
+
+</div>
+</div>
+</div>
+</html>

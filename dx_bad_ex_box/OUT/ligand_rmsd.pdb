@@ -1,0 +1,53 @@
+ATOM      1  N1  FTA A   1       2.996  15.865  17.658  1.00  0.00           N  
+ATOM      2  C2  FTA A   1       2.721  14.570  18.176  1.00  0.00           C  
+ATOM      3  C3  FTA A   1       3.365  14.181  19.354  1.00  0.00           C  
+ATOM      4  C4  FTA A   1       1.691  13.776  17.678  1.00  0.00           C  
+ATOM      5  C5  FTA A   1       2.997  13.022  20.026  1.00  0.00           C  
+ATOM      6  C6  FTA A   1       1.326  12.618  18.378  1.00  0.00           C  
+ATOM      7  C7  FTA A   1       1.959  12.236  19.558  1.00  0.00           C  
+ATOM      8  N8  FTA A   1       1.474  11.194  20.389  1.00  0.00           N  
+ATOM      9  C13 FTA A   1       3.599  17.193  15.097  1.00  0.00           C  
+ATOM     10  C14 FTA A   1       4.300  17.312  16.396  1.00  0.00           C  
+ATOM     11  N15 FTA A   1       4.074  17.632  13.863  1.00  0.00           N  
+ATOM     12  N16 FTA A   1       2.323  16.654  14.895  1.00  0.00           N  
+ATOM     13  C17 FTA A   1       4.214  16.307  17.290  1.00  0.00           C  
+ATOM     14  C18 FTA A   1       5.084  18.490  16.699  1.00  0.00           C  
+ATOM     15  N19 FTA A   1       3.090  17.369  12.919  1.00  0.00           N  
+ATOM     16  N20 FTA A   1       2.005  16.774  13.546  1.00  0.00           N  
+ATOM     17  N21 FTA A   1       5.703  19.401  17.101  1.00  0.00           N  
+ATOM     18  C24 FTA A   1       2.284  10.242  21.079  1.00  0.00           C  
+ATOM     19  C26 FTA A   1       3.652  10.227  20.943  1.00  0.00           C  
+ATOM     20  C27 FTA A   1       1.669   9.244  21.821  1.00  0.00           C  
+ATOM     21  C28 FTA A   1       4.361   9.178  21.497  1.00  0.00           C  
+ATOM     22  C29 FTA A   1       2.390   8.185  22.384  1.00  0.00           C  
+ATOM     23  C30 FTA A   1       3.748   8.161  22.209  1.00  0.00           C  
+ATOM     24  H1  FTA A   1       0.453  11.118  20.504  1.00  0.00           H  
+ATOM     25  H11 FTA A   1       2.203  16.515  17.556  1.00  0.00           H  
+ATOM     26  H15 FTA A   1       3.155  17.582  11.913  1.00  0.00           H  
+CONECT    1   13   25    2
+CONECT    2    1    3    4
+CONECT    3    2    5
+CONECT    4    2    6
+CONECT    5    3    7
+CONECT    6    4    7
+CONECT    7    5    6    8
+CONECT    8    7   18   24
+CONECT    9   11   12   10
+CONECT   10    9   14   13
+CONECT   11    9   15
+CONECT   12    9   16
+CONECT   13    1   10
+CONECT   14   10   17
+CONECT   15   11   16   26
+CONECT   16   15   12
+CONECT   17   14
+CONECT   18    8   19   20
+CONECT   19   18   21
+CONECT   20   18   22
+CONECT   21   19   23
+CONECT   22   20   23
+CONECT   23   21   22
+CONECT   24    8
+CONECT   25    1
+CONECT   26   15
+END

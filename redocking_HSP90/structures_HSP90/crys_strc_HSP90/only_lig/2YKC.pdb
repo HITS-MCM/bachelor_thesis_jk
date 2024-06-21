@@ -1,0 +1,66 @@
+CRYST1   66.430   90.360   98.470  90.00  90.00  90.00 I 2 2 2       1
+MODEL        1
+HETATM    1  C1  YKC A1224       7.666  10.341  23.557  1.00 10.06      B    C  
+HETATM    2  C2  YKC A1224       6.476   9.728  23.000  1.00 10.09      B    C  
+HETATM    3  C3  YKC A1224       5.231  10.398  23.200  1.00 10.81      B    C  
+HETATM    4  C4  YKC A1224       7.668  11.602  24.318  1.00 11.09      B    C  
+HETATM    5  C5  YKC A1224       6.404  12.279  24.493  1.00  9.92      B    C  
+HETATM    6  C6  YKC A1224       5.179  11.621  23.891  1.00  9.26      B    C  
+HETATM    7  C7  YKC A1224       4.040  12.503  24.209  1.00 10.09      B    C  
+HETATM    8  C8  YKC A1224       5.967  13.456  25.166  1.00  9.18      B    C  
+HETATM    9  C9  YKC A1224       4.571  13.607  24.990  1.00  7.26      B    C  
+HETATM   10  C10 YKC A1224       3.852  14.734  25.597  1.00  9.55      B    C  
+HETATM   11  C11 YKC A1224       4.569  15.683  26.389  1.00 10.58      B    C  
+HETATM   12  C12 YKC A1224       5.980  15.522  26.567  1.00 10.15      B    C  
+HETATM   13  C13 YKC A1224       6.681  14.431  25.958  1.00  7.97      B    C  
+HETATM   14  C14 YKC A1224       8.131  14.427  26.197  1.00 10.86      B    C  
+HETATM   15  N15 YKC A1224       9.091  14.247  25.277  1.00 10.19      B    N  
+HETATM   16  N16 YKC A1224       8.632  14.592  27.463  1.00  9.22      B    N  
+HETATM   17  C17 YKC A1224       9.967  14.582  27.329  1.00  8.58      B    C  
+HETATM   18  C18 YKC A1224      10.284  14.368  25.924  1.00  9.74      B    C  
+HETATM   19  C19 YKC A1224      11.610  14.310  25.466  1.00  9.59      B    C  
+HETATM   20  C20 YKC A1224      12.580  14.522  26.439  1.00  7.65      B    C  
+HETATM   21  N21 YKC A1224      12.297  14.696  27.799  1.00 12.85      B    N  
+HETATM   22  C22 YKC A1224      10.994  14.733  28.239  1.00  9.49      B    C  
+HETATM   23  N23 YKC A1224       2.852  12.004  24.837  1.00 12.05      B    N  
+HETATM   24  C24 YKC A1224       1.720  11.752  24.092  1.00 11.60      B    C  
+HETATM   25  C25 YKC A1224       0.501  11.309  24.835  1.00 10.95      B    C  
+HETATM   26  O26 YKC A1224       1.726  11.918  22.869  1.00 11.06      B    O  
+HETATM   27  C27 YKC A1224      -0.784  11.747  24.249  1.00 10.87      B    C  
+HETATM   28  C28 YKC A1224      -1.961  11.405  24.964  1.00  9.04      B    C  
+HETATM   29  N30 YKC A1224      -1.867  10.676  26.173  1.00  9.65      B    N  
+HETATM   30  C40 YKC A1224       0.586  10.592  26.089  1.00 11.58      B    C  
+HETATM   31  C60 YKC A1224      -0.649  10.257  26.765  1.00  9.98      B    C  
+ENDMDL
+CONECT    1    2    4
+CONECT    2    1    3
+CONECT    3    2    6
+CONECT    4    1    5
+CONECT    5    4    6    8
+CONECT    6    3    5    7
+CONECT    7    6    9   23
+CONECT    8    5    9   13
+CONECT    9    7    8   10
+CONECT   10    9   11
+CONECT   11   10   12
+CONECT   12   11   13
+CONECT   13    8   12   14
+CONECT   14   13   15   16
+CONECT   15   14   18
+CONECT   16   14   17
+CONECT   17   16   18   22
+CONECT   18   15   17   19
+CONECT   19   18   20
+CONECT   20   19   21
+CONECT   21   20   22
+CONECT   22   17   21
+CONECT   23    7   24
+CONECT   24   23   25   26
+CONECT   25   24   27   30
+CONECT   26   24
+CONECT   27   25   28
+CONECT   28   27   29
+CONECT   29   28   31
+CONECT   30   25   31
+CONECT   31   29   30
+END
